@@ -2,7 +2,7 @@ from graphviz import Digraph
 import os
 from pathlib import Path
 import datamap
-
+import leetcode
 
 def get_map(map_file):
     path = Path(os.path.abspath(__file__))
@@ -16,6 +16,8 @@ def get_leetcode_txt():
 
 
 def main():
+    leet = leetcode.Leetcode()
+    leet.update_db()
     m = datamap.DataMap(get_leetcode_txt())
     g = Digraph('stones', encoding='utf-8')
 

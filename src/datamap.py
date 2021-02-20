@@ -32,7 +32,7 @@ class DataMap:
             elif c == '[':
                 return pos
             elif len(p) > 0:
-                print("add problem:", p)
+                # print("add problem:", p)
                 node.problems.append(int(p))
                 p = ""
             pos += 1
@@ -66,7 +66,7 @@ class DataMap:
         if pos < 0:
             return pos
         
-        print("name:", node.name)
+        # print("name:", node.name)
 
         pos = self.consume_problems(pos, node)
         if pos < 0:
@@ -79,7 +79,7 @@ class DataMap:
         pos = 0
         while pos >= 0:
             pos = self.consume_node(pos)
-        print("parse finished:", self.nodes)
+        # print("parse finished:", self.nodes)
 
 
         
