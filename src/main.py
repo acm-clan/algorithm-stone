@@ -29,14 +29,16 @@ def main():
         # add problem
         last = ""
         for p in n.problems:
-            g.node(name=str(p), color='lightgrey', fontname="Microsoft YaHei")
+            title = leet.get_title(p)
+            g.node(name=title, color='lightgrey', fontname="Microsoft YaHei")
             if len(last) > 0:
-                g.edge(last, str(p))
+                g.edge(last, title)
             else:
-                g.edge(n.name, str(p))
-            last = str(p)
+                g.edge(n.name, title)
+            last = title
 
     g.render()
+    leet.close_db()
     # g.view()
 
 

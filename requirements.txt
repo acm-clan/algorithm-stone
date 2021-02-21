@@ -1,3 +1,9 @@
 graphviz
 requests
+lipsum
+psutil
+matplotlib
+psrecord
+wheel
+sqlitedict
 
