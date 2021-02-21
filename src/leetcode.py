@@ -14,6 +14,13 @@ def withUrl(u):
 def leetcode_key(id):
     return "leetcode_"+str(id)
 
+def is_int(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
+
 class Leetcode:
     def __init__(self):
         self.dict = self.init_db()
@@ -32,6 +39,14 @@ class Leetcode:
     def get_problem(self, id):
         v = self.dict.get(leetcode_key(id))
         return v
+
+    def get_level(self, id):
+        content = self.get_problem(id)
+        if content == None:
+            print("title not exist:", id)
+            return str(id)
+        j = json.loads(content)
+        return j['data']['question']['difficulty']
 
     def get_title(self, id):
         content = self.get_problem(id)
@@ -91,6 +106,9 @@ class Leetcode:
 
         for q in qlist['stat_status_pairs']:
             id = q['stat']['question_id']
+            front_id = q['stat']['frontend_question_id']
+            if is_int(front_id):
+                id = int(front_id)
             level = q['difficulty']['level']
             slug = q['stat']['question__title_slug']
             title = self.get_title_with_slug(id, slug)
