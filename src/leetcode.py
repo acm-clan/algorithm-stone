@@ -36,20 +36,28 @@ class Leetcode:
         self.dict[leetcode_key(id)] = content
         self.dict.commit()
 
-    def get_problem(self, id):
+    def get_problem_content(self, id):
         v = self.dict.get(leetcode_key(id))
         return v
 
     def get_level(self, id):
-        content = self.get_problem(id)
+        content = self.get_problem_content(id)
         if content == None:
             print("title not exist:", id)
             return str(id)
         j = json.loads(content)
         return j['data']['question']['difficulty']
 
+    def get_problem(self, id):
+        content = self.get_problem_content(id)
+        if content == None:
+            print("title not exist:", id)
+            return str(id)
+        j = json.loads(content)
+        return j
+
     def get_title(self, id):
-        content = self.get_problem(id)
+        content = self.get_problem_content(id)
         if content == None:
             print("title not exist:", id)
             return str(id)
@@ -57,7 +65,7 @@ class Leetcode:
         return j['data']['question']['translatedTitle']
 
     def get_title_with_slug(self, id, slug):
-        content = self.get_problem(id)
+        content = self.get_problem_content(id)
 
         if content:
             j = json.loads(content)
