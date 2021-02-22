@@ -35,6 +35,10 @@ def check_leetcode_tag(s):
         check_leetcode_tags()
         return
     tag = s[0].lower()
+    level = ""
+    if len(s) > 1:
+        level = s[1].lower()
+
     problems = leet.get_all_problems()
 
     datas = []
@@ -48,12 +52,21 @@ def check_leetcode_tag(s):
                     break
     # 
     ids = []
+    strs = {}
     for k in datas:
         id = get_problem_id(k)
         if int(id) < 100000:
-            ids.append(int(id))
+            lv = k['data']['question']['difficulty'].lower()
+            if level == lv or level == "":
+                ids.append(int(id))
+                s = "%s\t%s\t%s" % (id, k['data']['question']['difficulty'], k['data']['question']['translatedTitle'])
+                strs[int(id)] = s
+    
     ids.sort()
     print(' '.join([str(item) for item in ids ]))
+
+    # 输出详细的题目列表
+    print('\n'.join([str(strs[item]) for item in sorted(strs.keys())]))
 
 def check_leetcode(s):
     if s[0] != "leetcode":
