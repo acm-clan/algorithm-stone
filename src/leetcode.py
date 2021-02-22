@@ -32,6 +32,13 @@ class Leetcode:
     def close_db(self):
         self.dict.close()
 
+    def get_all_problems(self):
+        d = {}
+        for k, v in self.dict.iteritems():
+            if k.startswith("leetcode_"):
+                d[k] = v
+        return d
+
     def save_problem(self, id, content):
         self.dict[leetcode_key(id)] = content
         self.dict.commit()

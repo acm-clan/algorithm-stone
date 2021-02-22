@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "query",
+            "type": "python",
+            "request": "launch",
+            "program": "src/query.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "stone",
             "type": "python",
             "request": "launch",

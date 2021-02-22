@@ -14,3 +14,9 @@ def get_images(f):
     path = Path(os.path.abspath(__file__))
     return os.path.abspath(os.path.join(path.parent.parent, "images", f))
 
+def is_int(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
