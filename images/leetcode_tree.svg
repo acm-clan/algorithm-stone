@@ -94,7 +94,7 @@
 <g id="node3" class="node">
 <title>100</title>
 <g id="a_node3"><a xlink:href="https://leetcode-cn.com/problems/same-tree" xlink:title="100. 相同的树" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="180,-7524 74,-7524 74,-7488 180,-7488 180,-7524"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="180,-7524 74,-7524 74,-7488 180,-7488 180,-7524"/>
 <text text-anchor="middle" x="127" y="-7502.3" font-family="Microsoft YaHei" font-size="14.00">100. 相同的树</text>
 </a>
 </g>
@@ -109,7 +109,7 @@
 <g id="node4" class="node">
 <title>101</title>
 <g id="a_node4"><a xlink:href="https://leetcode-cn.com/problems/symmetric-tree" xlink:title="101. 对称二叉树" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="177.5,-7452 56.5,-7452 56.5,-7416 177.5,-7416 177.5,-7452"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="177.5,-7452 56.5,-7452 56.5,-7416 177.5,-7416 177.5,-7452"/>
 <text text-anchor="middle" x="117" y="-7430.3" font-family="Microsoft YaHei" font-size="14.00">101. 对称二叉树</text>
 </a>
 </g>

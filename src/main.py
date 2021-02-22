@@ -45,7 +45,17 @@ def generate_leetcode(leet, file, slug, out_name):
             else:
                 print("unknown level:", level)
             slug = problem['data']['question']['questionTitleSlug']
-            g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, color=color, fontname="Microsoft YaHei", shape='box')
+
+            # 题目节点
+            is_finished = leet.check_finish(idstr)
+
+            if is_finished:
+                g.node(name=idstr, label=title, style='filled', fillcolor="lawngreen", target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
+                    color=color, fontname="Microsoft YaHei", shape='box')
+            else:
+                g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
+                    color=color, fontname="Microsoft YaHei", shape='box')
+
             if len(last) > 0:
                 g.edge(last, idstr)
             else:

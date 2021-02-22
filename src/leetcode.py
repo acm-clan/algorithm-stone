@@ -4,6 +4,7 @@ import json
 import requests
 from sqlitedict import SqliteDict
 import util
+import os
 
 db_path = 'leetcode.db'
 user_agent = r'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
@@ -24,6 +25,11 @@ def is_int(s):
 class Leetcode:
     def __init__(self):
         self.dict = self.init_db()
+        self.finished = []
+        # read user
+        p = util.get_root("user", "leetcode")
+        entries = os.listdir(p)
+        self.finished = entries
 
     def init_db(self):
         d = SqliteDict(util.get_db('leetcode.sqlite'), autocommit=True)
@@ -54,6 +60,12 @@ class Leetcode:
             return str(id)
         j = json.loads(content)
         return j['data']['question']['difficulty']
+
+    def check_finish(self, id):
+        for k in self.finished:
+            if k.startswith(id+"."):
+                return True
+        return False
 
     def get_problem(self, id):
         content = self.get_problem_content(id)
