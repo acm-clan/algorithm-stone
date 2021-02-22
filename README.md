@@ -3,7 +3,10 @@
 本项目是公众号《ACM算法日常》整理的一个算法学习路线图。
 
 #### 动态规划路线图
-<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/dp.svg">
+<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_dp.svg">
+
+#### Tree路线图
+<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg">
 
 #### 安装开发环境
 

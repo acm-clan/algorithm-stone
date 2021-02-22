@@ -10,15 +10,13 @@ def get_map(map_file):
     return os.path.abspath(os.path.join(path.parent.parent, "map", map_file))
 
 
-def get_leetcode_txt():
-    f = open(get_map("leetcode.txt"), "r", encoding="utf-8")
+def get_leetcode_txt(file):
+    f = open(get_map(file), "r", encoding="utf-8")
     t = f.read()
     return t
 
-def generate_leetcode_dp():
-    leet = leetcode.Leetcode()
-    leet.update_db()
-    m = datamap.DataMap(get_leetcode_txt())
+def generate_leetcode(leet, file, slug, out_name):
+    m = datamap.DataMap(get_leetcode_txt(file))
     g = Digraph('stones', encoding='utf-8')
 
     for n in m.nodes:
@@ -26,7 +24,7 @@ def generate_leetcode_dp():
             g.node(name=n.name, style='filled', fillcolor="lightslategray", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
             g.edge(n.parent, n.name)
         else:
-            g.node(name=n.name, style='filled', target="_blank", href="https://leetcode-cn.com/tag/dynamic-programming/", fillcolor="orangered", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
+            g.node(name=n.name, style='filled', target="_blank", href="https://leetcode-cn.com/tag/"+slug, fillcolor="orangered", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
 
         # add problem
         last = ""
@@ -55,14 +53,15 @@ def generate_leetcode_dp():
             last = idstr
 
     g.format = 'svg'
-    g.render(filename=util.get_images("dp"))
-    os.remove(util.get_images("dp"))
-    leet.close_db()
-    # g.view()
+    g.render(filename=util.get_images(out_name))
+    os.remove(util.get_images(out_name))
 
 def main():
-    generate_leetcode_dp()
-
+    leet = leetcode.Leetcode()
+    leet.update_db()
+    generate_leetcode(leet, "leetcode.txt", "dynamic-programming", "leetcode_dp")
+    generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
+    leet.close_db()
 
 if __name__ == "__main__":
     main()
