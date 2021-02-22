@@ -283,7 +283,7 @@
 <g id="node7" class="node">
 <title>746</title>
 <g id="a_node7"><a xlink:href="https://leetcode-cn.com/problems/min-cost-climbing-stairs" xlink:title="746. 使用最小花费爬楼梯" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="374,-1332 196,-1332 196,-1296 374,-1296 374,-1332"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="374,-1332 196,-1332 196,-1296 374,-1296 374,-1332"/>
 <text text-anchor="middle" x="285" y="-1310.3" font-family="Microsoft YaHei" font-size="14.00">746. 使用最小花费爬楼梯</text>
 </a>
 </g>
