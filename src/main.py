@@ -45,7 +45,7 @@ def generate_leetcode(leet, file, slug, out_name):
             else:
                 print("unknown level:", level)
             slug = problem['data']['question']['questionTitleSlug']
-            g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, color=color, fontname="Microsoft YaHei", shape='box')
+            g.node(name=idstr, label=title, target="_blank", href="https://leetcode-cn.com/problems/"+slug, color=color, fontname="Microsoft YaHei", shape='box')
             if len(last) > 0:
                 g.edge(last, idstr)
             else:
