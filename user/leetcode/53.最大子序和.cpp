@@ -14,9 +14,11 @@ public:
         int m = f[0];
         for(int i=1; i<n; i++){
             f[i] = nums[i];
+            // 是否需要加上前一个值
             if(f[i-1] > 0){
                 f[i] = f[i-1] + nums[i];
             }
+            // 记录最大值
             m = max(f[i], m);
         }
         return m;
