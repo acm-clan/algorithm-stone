@@ -59,7 +59,7 @@ def generate_leetcode(leet, file, slug, out_name):
 def main():
     leet = leetcode.Leetcode()
     leet.update_db()
-    generate_leetcode(leet, "leetcode.txt", "dynamic-programming", "leetcode_dp")
+    generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
     leet.close_db()
 
