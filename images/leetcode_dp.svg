@@ -354,18 +354,18 @@
 <path fill="none" stroke="black" d="M169.27,-1079.7C168.5,-1071.98 167.57,-1062.71 166.71,-1054.11"/>
 <polygon fill="black" stroke="black" points="170.19,-1053.71 165.71,-1044.1 163.22,-1054.4 170.19,-1053.71"/>
 </g>
-<!-- 5687 -->
+<!-- 1770 -->
 <g id="node12" class="node">
-<title>5687</title>
-<g id="a_node12"><a xlink:href="https://leetcode-cn.com/problems/maximum-score-from-performing-multiplication-operations" xlink:title="5687. 执行乘法运算的最大分数" target="_parent">
+<title>1770</title>
+<g id="a_node12"><a xlink:href="https://leetcode-cn.com/problems/maximum-score-from-performing-multiplication-operations" xlink:title="1770. 执行乘法运算的最大分数" target="_parent">
 <polygon fill="none" stroke="orange" points="257,-972 43,-972 43,-936 257,-936 257,-972"/>
-<text text-anchor="middle" x="150" y="-950.3" font-family="Microsoft YaHei" font-size="14.00">5687. 执行乘法运算的最大分数</text>
+<text text-anchor="middle" x="150" y="-950.3" font-family="Microsoft YaHei" font-size="14.00">1770. 执行乘法运算的最大分数</text>
 </a>
 </g>
 </g>
-<!-- 213&#45;&gt;5687 -->
+<!-- 213&#45;&gt;1770 -->
 <g id="edge11" class="edge">
-<title>213&#45;&gt;5687</title>
+<title>213&#45;&gt;1770</title>
 <path fill="none" stroke="black" d="M160.54,-1007.7C159,-999.98 157.14,-990.71 155.42,-982.11"/>
 <polygon fill="black" stroke="black" points="158.81,-981.22 153.42,-972.1 151.95,-982.6 158.81,-981.22"/>
 </g>
