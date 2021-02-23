@@ -10,13 +10,13 @@ def get_map(map_file):
     return os.path.abspath(os.path.join(path.parent.parent, "map", map_file))
 
 
-def get_leetcode_txt(file):
+def get_leetcode_map_txt(file):
     f = open(get_map(file), "r", encoding="utf-8")
     t = f.read()
     return t
 
 def generate_leetcode(leet, file, slug, out_name):
-    m = datamap.DataMap(get_leetcode_txt(file))
+    m = datamap.DataMap(get_leetcode_map_txt(file))
     g = Digraph('stones', encoding='utf-8')
 
     for n in m.nodes:
@@ -66,12 +66,15 @@ def generate_leetcode(leet, file, slug, out_name):
     g.render(filename=util.get_images(out_name))
     os.remove(util.get_images(out_name))
 
-def main():
+def process_leetcode():
     leet = leetcode.Leetcode()
     leet.update_db()
     generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
     leet.close_db()
+
+def main():
+    process_leetcode()
 
 if __name__ == "__main__":
     main()
