@@ -29,10 +29,10 @@ def generate_leetcode(leet, file, slug, out_name):
         # add problem
         last = ""
         for p in n.problems:
-            title = leet.get_title(p)
-            level = leet.get_level(p)
-            problem = leet.get_problem(p)
-            idstr = str(p)
+            title = leet.get_title(p.id)
+            level = leet.get_level(p.id)
+            problem = leet.get_problem(p.id)
+            idstr = str(p.id)
             title = idstr+". "+title
             color = "lightgrey"
 
