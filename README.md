@@ -2,6 +2,12 @@
 
 本项目是公众号《ACM算法日常》整理的一个算法学习路线图。
 
+使用说明：
+使用鼠标点击下面的图片，会打开一个svg文件，按照svg文件中题目从上到下从左往右的顺序刷题，题目顺序是精心编排的，减少做题的梯度。
+将做过的题放到user目录中，可以点亮题目。
+
+> Tip:点击svg文件中的题目，可以跳转到题目页面。
+
 #### 动态规划路线图
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_dp.svg">
 
