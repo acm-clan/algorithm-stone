@@ -33,3 +33,42 @@ python src/main.py
 
 更加详细的开发说明参考：[开发文档](https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev.md)
 
+#### 规划模块
+以下是Leetcode所有模块，每个模块由一个人专门处理。
+
+数组 array
+回溯算法 backtracking
+树状数组 binary-indexed-tree
+二分查找 binary-search
+二分查找树 binary-search-tree
+位运算 bit-manipulation
+智商题 brainteaser
+BFS搜索 breadth-first-search
+DFS搜索 depth-first-search
+设计题 design
+分治算法 divide-and-conquer
+动态规划 `dynamic-programming` —— dansen
+几何题 geometry
+图论 graph
+贪心算法 greedy
+Hash表 hash-table
+堆算法 heap
+链表 linked-list
+数学题 math
+最小最大值 minimax
+排序Map ordered-map
+队列 queue
+随机数 random
+递归 recursion
+拒绝采样 rejection-sampling
+储藏采样 reservoir-sampling
+线段树 segment-tree
+滑动窗口 sliding-window
+排序 sort
+栈 stack
+字符串 string
+拓扑排序 topological-sort
+树 tree
+Trie树 trie
+双指针 two-pointers
+并查集 union-find
