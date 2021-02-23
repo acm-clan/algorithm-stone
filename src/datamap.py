@@ -29,6 +29,8 @@ class DataMap:
         t = ""
         while pos < length:
             c = self.data[pos]
+            if c == ')':
+                return t, pos
             if c.isalpha():
                 t += c
             elif len(t)>0:
@@ -50,7 +52,9 @@ class DataMap:
         types = {}
         while True:
             key, pos = self.consume_key(pos)
-            value, pos = self.consume_key(pos)
+            if key == "":
+                break
+            value, pos = self.consume_value(pos)
             types[key] = value
         return pos, types
 

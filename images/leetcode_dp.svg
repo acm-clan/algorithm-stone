@@ -388,7 +388,7 @@
 <g id="node15" class="node">
 <title>64</title>
 <g id="a_node15"><a xlink:href="https://leetcode-cn.com/problems/minimum-path-sum" xlink:title="64. 最小路径和" target="_parent">
-<polygon fill="none" stroke="orange" points="401,-1260 289,-1260 289,-1224 401,-1224 401,-1260"/>
+<polygon fill="lawngreen" stroke="orange" points="401,-1260 289,-1260 289,-1224 401,-1224 401,-1260"/>
 <text text-anchor="middle" x="345" y="-1238.3" font-family="Microsoft YaHei" font-size="14.00">64. 最小路径和</text>
 </a>
 </g>
