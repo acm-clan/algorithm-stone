@@ -23,3 +23,5 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
+更加详细的开发说明参考：[开发文档](https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev.md)
+
