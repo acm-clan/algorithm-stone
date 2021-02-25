@@ -52,11 +52,12 @@ def generate_leetcode(leet, file, slug, out_name):
             is_finished = leet.check_finish(idstr)
 
             if is_finished:
-                g.node(name=idstr, label=title, style='filled', fillcolor="lawngreen", target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
-                    color=color, fontname="Microsoft YaHei", shape='box')
+                g.node(name=idstr, label=title, style='filled', fillcolor="lawngreen", target="_parent", 
+                    href="https://leetcode-cn.com/problems/"+slug, 
+                    color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
             else:
                 g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
-                    color=color, fontname="Microsoft YaHei", shape='box')
+                    color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
 
             if len(last) > 0:
                 g.edge(last, idstr)
