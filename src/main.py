@@ -24,8 +24,8 @@ def generate_leetcode(leet, file, slug, out_name):
             g.node(name=n.name, style='filled', target="_parent", href="https://leetcode-cn.com/tag/"+slug, fillcolor="orangered", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
         else:
             # 普通模块节点
-            name = "%s(%s)" % (n.name, str(len(n.problems)))
-            g.node(name=name, style='filled', fillcolor="lightslategray", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
+            label = "%s(%s)" % (n.name, str(len(n.problems)))
+            g.node(name=n.name, label=label, style='filled', fillcolor="lightslategray", color='lightgrey', fontcolor="white", fontname="Microsoft YaHei", shape='box')
             g.edge(n.parent, n.name)
 
         # add problem
