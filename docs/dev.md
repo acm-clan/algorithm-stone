@@ -7,7 +7,7 @@
 2 打开vscode，打开terminal，使用windowns的cmd  
 3 安装python库，执行如下命令  
 ```shell
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 4 安装graphviz，记得添加到PATH中  
@@ -20,7 +20,7 @@ python src/main.py
 1 安装python3.9和pip3，请自行google如何安装  
 2 安装python库，执行如下命令  
 ```shell
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 4 安装graphviz-4.6.1，建议直接采用源码安装，安装完成后检查版本：
@@ -35,7 +35,7 @@ python3 src/main.py
 ###### Mac开发
 1 安装python3.9和pip3，建议直接在python官网下载安装包
 ```shell
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 4 安装graphviz-4.6.1，建议直接采用源码安装，安装完成后检查版本：
