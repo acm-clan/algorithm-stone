@@ -1,9 +1,8 @@
-graphviz
-requests
-lipsum
-psutil
-matplotlib
-psrecord
-wheel
-sqlitedict
-
+graphviz == 0.16
+requests == 2.18.4
+lipsum == 0.1.2
+psutil == 5.8.0
+matplotlib == 3.3.4
+psrecord == 1.2
+wheel == 0.30.0
+sqlitedict == 1.7.0
