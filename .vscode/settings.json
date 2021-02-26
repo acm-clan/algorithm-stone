@@ -2,6 +2,7 @@
     "files.associations": {
         "vector": "cpp",
         "utility": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "algorithm": "cpp"
     }
 }
