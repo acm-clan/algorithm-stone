@@ -10,7 +10,7 @@
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-4 安装graphviz，记得添加到PATH中  
+4 安装graphviz-4.6.1，记得添加到PATH中  
 5 在根目录执行  
 ```shell
 python src/main.py
