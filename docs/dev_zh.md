@@ -3,7 +3,7 @@
 #### 安装开发环境
 
 ###### Windows开发
-1 安装python3.9 
+1 安装python3.9  
 2 打开vscode，打开terminal，使用windowns的cmd  
 3 安装python库，执行如下命令  
 ```shell
