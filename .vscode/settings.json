@@ -5,6 +5,8 @@
         "limits": "cpp",
         "algorithm": "cpp",
         "xutility": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "deque": "cpp",
+        "queue": "cpp"
     }
 }
