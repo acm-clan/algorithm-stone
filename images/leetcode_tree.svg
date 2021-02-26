@@ -229,7 +229,7 @@
 <g id="node12" class="node">
 <title>530</title>
 <g id="a_node12"><a xlink:href="https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst" xlink:title="530. 二叉搜索树的最小绝对差" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="182,-6876 6,-6876 6,-6840 182,-6840 182,-6876"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="182,-6876 6,-6876 6,-6840 182,-6840 182,-6876"/>
 <text text-anchor="middle" x="94" y="-6854.9" font-family="Microsoft YaHei" font-size="12.00">530. 二叉搜索树的最小绝对差</text>
 </a>
 </g>
@@ -244,7 +244,7 @@
 <g id="node13" class="node">
 <title>543</title>
 <g id="a_node13"><a xlink:href="https://leetcode-cn.com/problems/diameter-of-binary-tree" xlink:title="543. 二叉树的直径" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="152,-6804 36,-6804 36,-6768 152,-6768 152,-6804"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="152,-6804 36,-6804 36,-6768 152,-6768 152,-6804"/>
 <text text-anchor="middle" x="94" y="-6782.9" font-family="Microsoft YaHei" font-size="12.00">543. 二叉树的直径</text>
 </a>
 </g>
@@ -259,7 +259,7 @@
 <g id="node14" class="node">
 <title>563</title>
 <g id="a_node14"><a xlink:href="https://leetcode-cn.com/problems/binary-tree-tilt" xlink:title="563. 二叉树的坡度" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="152,-6732 36,-6732 36,-6696 152,-6696 152,-6732"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="152,-6732 36,-6732 36,-6696 152,-6696 152,-6732"/>
 <text text-anchor="middle" x="94" y="-6710.9" font-family="Microsoft YaHei" font-size="12.00">563. 二叉树的坡度</text>
 </a>
 </g>
