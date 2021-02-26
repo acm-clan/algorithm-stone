@@ -1,6 +1,8 @@
 /*
  * @lc app=leetcode.cn id=112 lang=cpp
- *
+ * 1
+ * 2 null
+ * 3 
  * [112] 路径总和
  */
 
@@ -18,8 +20,29 @@
  */
 class Solution {
 public:
-    bool hasPathSum(TreeNode* root, int targetSum) {
+    bool sum(TreeNode* t, int targetSum) {
+        if(!t->left && !t->right){
+            return targetSum == t->val;
+        }
+        
+        if(t->left && t->right){
+            return sum(t->left, targetSum-t->val) || 
+                sum(t->right, targetSum-t->val);
+        }
+        
+        if(t->left){
+            return sum(t->left, targetSum-t->val);
+        }
 
+        return sum(t->right, targetSum-t->val);
+    }
+
+    bool hasPathSum(TreeNode* t, int targetSum) {
+        if(!t){
+            return false;
+        }
+
+        return sum(t, targetSum);
     }
 };
 // @lc code=end
