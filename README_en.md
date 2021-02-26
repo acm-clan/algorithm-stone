@@ -18,7 +18,7 @@
 
 #### 安装开发环境
 
-详细的开发说明参考：[开发文档](https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev.md)
+详细的开发说明参考：[开发文档](https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev_en.md)
 
 #### 规划模块
 以下是Leetcode所有模块，每个模块由一个人专门处理。  
