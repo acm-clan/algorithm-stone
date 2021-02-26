@@ -47,6 +47,9 @@ dot -v
 python3 src/main.py
 ```
 
+#### 如何调试
+在vscode中安装python插件，直接按F5键即可开始调试
+
 #### 目录说明
 
 1 src目录，源代码目录，可以从main.py开始熟悉代码  
@@ -65,3 +68,4 @@ python3 src/main.py
 map文件中对于主模块是[xxx]，对于子模块是[-xxx]，然后子模块下是题目号码，可以参考leetcode-dp.txt文件。
 
 #### 如何参与该项目
+
