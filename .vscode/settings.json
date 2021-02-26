@@ -3,6 +3,8 @@
         "vector": "cpp",
         "utility": "cpp",
         "limits": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "xutility": "cpp",
+        "xstring": "cpp"
     }
 }
