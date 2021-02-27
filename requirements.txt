@@ -5,3 +5,4 @@ psutil == 5.8.0
 psrecord == 1.2
 wheel == 0.30.0
 sqlitedict == 1.7.0
+beautifulsoup4 == 4.9.3

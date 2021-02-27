@@ -82,7 +82,7 @@ def generate_leetcode(leet, file, slug, out_name):
     g.render(filename=util.get_images(out_name))
     os.remove(util.get_images(out_name))
 
-def process_leetcode():
+def process():
     leet = leetcode.Leetcode()
     leet.update_db()
     generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
