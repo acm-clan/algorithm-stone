@@ -16,12 +16,18 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+#include <set>
+using namespace std;
+
 class Solution {
 public:
     bool res = false;
     set<int> m;
     void travel(TreeNode* root, int k){
         if(!root)return;
+        if(m.find(root->val) != m.end()){
+            res = true;
+        }
         int d = k-root->val;
         m.insert(d);
         travel(root->left, k);
@@ -29,6 +35,7 @@ public:
     }
     bool findTarget(TreeNode* root, int k) {
         travel(root, k);
+        return res;
     }
 };
 // @lc code=end
