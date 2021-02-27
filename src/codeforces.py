@@ -72,20 +72,30 @@ class Codeforces:
         if self.get_db_problem(id) != None:
             return
         url = "https://codeforces.com/problemset/problem/%s/%s" % (cid, index)
-        f = urllib.request.urlopen(url)
-        content = f.read().decode('utf-8')
-        self.save_db_problem(id, content)
+        
+        try:
+            f = urllib.request.urlopen(url)
+            content = f.read().decode('utf-8')
+            self.save_db_problem(id, content)
+        except Exception as e:
+            print("check problem error:", e)
+            pass
 
     def update_db(self):
         url = "https://codeforces.com/api/problemset.problems"
-        f = urllib.request.urlopen(url)
-        content = f.read().decode('utf-8')
-        qlist = json.loads(content)
         
-        for k in qlist["result"]["problems"]:
-            id = str(k['contestId'])+str(k['index'])
-            self.check_problem(id, str(k['contestId']), str(k['index']))
-            print("id:", id, k['name'], k['type'], k['rating'])
+        try:
+            f = urllib.request.urlopen(url)
+            content = f.read().decode('utf-8')
+            qlist = json.loads(content)
+        
+            for k in qlist["result"]["problems"]:
+                id = str(k['contestId'])+str(k['index'])
+                print("id:", id, k['name'])
+                self.check_problem(id, str(k['contestId']), str(k['index']))
+        except Exception as e:
+            print("update_db error:", e)
+            pass
     
     def close_db(self):
         pass
