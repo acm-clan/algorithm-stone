@@ -12,9 +12,9 @@
 <!-- Codeforces -->
 <g id="node1" class="node">
 <title>Codeforces</title>
-<g id="a_node1"><a xlink:href="https://codeforces.com/problemset" xlink:title="Codeforces(0)" target="_parent">
+<g id="a_node1"><a xlink:href="https://codeforces.com/problemset" xlink:title="Codeforces(5)" target="_parent">
 <polygon fill="orangered" stroke="lightgrey" points="239,-396 127,-396 127,-360 239,-360 239,-396"/>
-<text text-anchor="middle" x="183" y="-374.3" font-family="Microsoft YaHei" font-size="14.00" fill="white">Codeforces(0)</text>
+<text text-anchor="middle" x="183" y="-374.3" font-family="Microsoft YaHei" font-size="14.00" fill="white">Codeforces(5)</text>
 </a>
 </g>
 </g>
@@ -46,7 +46,7 @@
 <g id="node3" class="node">
 <title>1A</title>
 <g id="a_node3"><a xlink:href="https://codeforces.com/problemset/problem/1/A" xlink:title="1A. Theatre Square" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="166.5,-252 41.5,-252 41.5,-216 166.5,-216 166.5,-252"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="166.5,-252 41.5,-252 41.5,-216 166.5,-216 166.5,-252"/>
 <text text-anchor="middle" x="104" y="-230.9" font-family="Microsoft YaHei" font-size="12.00">1A. Theatre Square</text>
 </a>
 </g>
@@ -61,7 +61,7 @@
 <g id="node4" class="node">
 <title>4A</title>
 <g id="a_node4"><a xlink:href="https://codeforces.com/problemset/problem/4/A" xlink:title="4A. Watermelon" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="158.5,-180 49.5,-180 49.5,-144 158.5,-144 158.5,-180"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="158.5,-180 49.5,-180 49.5,-144 158.5,-144 158.5,-180"/>
 <text text-anchor="middle" x="104" y="-158.9" font-family="Microsoft YaHei" font-size="12.00">4A. Watermelon</text>
 </a>
 </g>
@@ -76,7 +76,7 @@
 <g id="node5" class="node">
 <title>5A</title>
 <g id="a_node5"><a xlink:href="https://codeforces.com/problemset/problem/5/A" xlink:title="5A. Chat Servers Outgoing Traffic" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="208,-108 0,-108 0,-72 208,-72 208,-108"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="208,-108 0,-108 0,-72 208,-72 208,-108"/>
 <text text-anchor="middle" x="104" y="-86.9" font-family="Microsoft YaHei" font-size="12.00">5A. Chat Servers Outgoing Traffic</text>
 </a>
 </g>
@@ -91,7 +91,7 @@
 <g id="node6" class="node">
 <title>6A</title>
 <g id="a_node6"><a xlink:href="https://codeforces.com/problemset/problem/6/A" xlink:title="6A. Triangle" target="_parent">
-<polygon fill="none" stroke="greenyellow" points="146,-36 62,-36 62,0 146,0 146,-36"/>
+<polygon fill="lawngreen" stroke="greenyellow" points="146,-36 62,-36 62,0 146,0 146,-36"/>
 <text text-anchor="middle" x="104" y="-14.9" font-family="Microsoft YaHei" font-size="12.00">6A. Triangle</text>
 </a>
 </g>
@@ -106,7 +106,7 @@
 <g id="node8" class="node">
 <title>409H</title>
 <g id="a_node8"><a xlink:href="https://codeforces.com/problemset/problem/409/H" xlink:title="409H. A + B Strikes Back" target="_parent">
-<polygon fill="none" stroke="orange" points="341.5,-252 184.5,-252 184.5,-216 341.5,-216 341.5,-252"/>
+<polygon fill="lawngreen" stroke="orange" points="341.5,-252 184.5,-252 184.5,-216 341.5,-216 341.5,-252"/>
 <text text-anchor="middle" x="263" y="-230.9" font-family="Microsoft YaHei" font-size="12.00">409H. A + B Strikes Back</text>
 </a>
 </g>

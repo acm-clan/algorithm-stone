@@ -6,13 +6,19 @@ from pathlib import Path
 import datamap
 import codeforces
 
+def get_module_problem_count(m):
+    c = 0
+    for n in m.nodes:
+        c += len(n.problems)
+    return c
+
 def generate_codeforces(code, file, out_name):
     m = datamap.DataMap(util.get_map_content(file))
     g = Digraph('stones', encoding='utf-8')
 
     for n in m.nodes:
         if n.is_root:
-            count = 0
+            count = get_module_problem_count(m)
             label = "%s(%s)" % (n.name, str(count))
             # 根节点
             g.node(name=n.name, label=label, style='filled', target="_parent", href="https://codeforces.com/problemset", 

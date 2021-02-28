@@ -43,6 +43,9 @@ class Codeforces:
         return "Easy"
 
     def check_finish(self, id):
+        for k in self.finished:
+            if k.startswith(id+"."):
+                return True
         return False
 
     def get_db_problem(self, id):
