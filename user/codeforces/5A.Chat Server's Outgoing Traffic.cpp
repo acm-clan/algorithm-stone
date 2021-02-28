@@ -2,33 +2,33 @@
 using namespace std;
 
 char a[10001];
-int ans=0,sum=0;
+int ans = 0, sum = 0;
 
 int main()
 {
-	
-	while(gets(a))
+
+	while (gets(a))
 	{
-		if(a[0]=='+')
+		if (a[0] == '+')
 		{
 			sum++;
 		}
-		else if(a[0]=='-')
+		else if (a[0] == '-')
 		{
 			sum--;
 		}
 		else
 		{
-			for(int i=0;i<strlen(a);i++)
+			for (int i = 0; i < strlen(a); i++)
 			{
-				if(a[i]==':')
+				if (a[i] == ':')
 				{
-					ans+=(strlen(a)-i-1)*sum;//¼ÆËã´ğ°¸ 
+					ans += (strlen(a) - i - 1) * sum;
 				}
 			}
 		}
 	}
-	cout<<ans;
-	
+	cout << ans;
+
 	return 0;
 }

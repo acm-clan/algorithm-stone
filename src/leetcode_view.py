@@ -11,18 +11,8 @@ def get_module_problem_count(m):
         c += len(n.problems)
     return c
 
-def get_map(map_file):
-    path = Path(os.path.abspath(__file__))
-    return os.path.abspath(os.path.join(path.parent.parent, "map", map_file))
-
-
-def get_leetcode_map_txt(file):
-    f = open(get_map(file), "r", encoding="utf-8")
-    t = f.read()
-    return t
-
 def generate_leetcode(leet, file, slug, out_name):
-    m = datamap.DataMap(get_leetcode_map_txt(file))
+    m = datamap.DataMap(util.get_map_content(file))
     g = Digraph('stones', encoding='utf-8')
 
     for n in m.nodes:
