@@ -3,4 +3,3 @@
 *.gv
 *.gv.pdf
 out/
-db/codeforces.sqlite

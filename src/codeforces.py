@@ -92,7 +92,8 @@ class Codeforces:
             for k in qlist["result"]["problems"]:
                 id = str(k['contestId'])+str(k['index'])
                 print("id:", id, k['name'])
-                self.check_problem(id, str(k['contestId']), str(k['index']))
+                value = json.dumps(k)
+                self.save_db_problem(id, value)
         except Exception as e:
             print("update_db error:", e)
             pass
