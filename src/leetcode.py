@@ -125,18 +125,37 @@ class Leetcode:
         self.save_problem(id, content)
         return j['data']['question']['translatedTitle']
 
+    def get_update_db_time(self):
+        t = self.dict.get("leetcode_update_db_time")
+        if t == None:
+            return 0
+        return t
+
+    def save_update_db_time(self):
+        self.dict["leetcode_update_db_time"] = util.now()
+
     def update_db(self):
+        t = self.get_update_db_time()
+        if util.now()-t < 24*3600*1000:
+            return
+
         url = withUrl("api/problems/all/")
         f = urllib.request.urlopen(url)
         content = f.read().decode('utf-8')
         qlist = json.loads(content)
 
-        for q in qlist['stat_status_pairs']:
-            id = q['stat']['question_id']
-            front_id = q['stat']['frontend_question_id']
-            if is_int(front_id):
-                id = int(front_id)
-            level = q['difficulty']['level']
-            slug = q['stat']['question__title_slug']
-            title = self.get_title_with_slug(id, slug)
-            print("id:", id, level, title)
+        try:
+            for q in qlist['stat_status_pairs']:
+                id = q['stat']['question_id']
+                front_id = q['stat']['frontend_question_id']
+                if is_int(front_id):
+                    id = int(front_id)
+                level = q['difficulty']['level']
+                slug = q['stat']['question__title_slug']
+                title = self.get_title_with_slug(id, slug)
+                print("id:", id, level, title)
+            
+            self.save_update_db_time()
+        except Exception as e:
+            print("leetcode update db error:", e)
+            pass

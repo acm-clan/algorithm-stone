@@ -70,11 +70,11 @@ class DataMap:
                 return pos
             elif c == '(':
                 pos, types = self.consome_problem_types(pos)
-            elif c >= '0' and c <= '9':
+            elif (c >= '0' and c <= '9') or c.isalpha():
                 p += c
             elif len(p) > 0:
                 # print("add problem:", p)
-                pb = Problem(int(p), types)
+                pb = Problem(p, types)
                 node.problems.append(pb)
                 p = ""
             pos += 1
