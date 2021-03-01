@@ -87,5 +87,4 @@ def process():
     leet.update_db()
     generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
-    generate_leetcode(leet, "leetcode-linked-list.txt", "linked-list", "leetcode_linked_list")
     leet.close_db()
