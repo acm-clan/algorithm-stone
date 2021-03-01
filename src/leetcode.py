@@ -83,7 +83,7 @@ class Leetcode:
         j = json.loads(content)
         return j['data']['question']['translatedTitle']
 
-    def get_title_with_slug(self, id, slug):
+    def get_title_with_slug(self, id, slug, paid_only):
         content = self.get_problem_content(id)
 
         if content:
@@ -122,7 +122,8 @@ class Leetcode:
         resp = session.post(url, data=json_data, headers=headers, timeout=10)
         content = resp.text
         j = json.loads(content)
-        self.save_problem(id, content)
+        j['data']['question']['paid_only'] = paid_only
+        self.save_problem(id, json.dumps(j))
         return j['data']['question']['translatedTitle']
 
     def get_update_db_time(self):
@@ -152,7 +153,8 @@ class Leetcode:
                     id = int(front_id)
                 level = q['difficulty']['level']
                 slug = q['stat']['question__title_slug']
-                title = self.get_title_with_slug(id, slug)
+                paid_only = q['paid_only']
+                title = self.get_title_with_slug(id, slug, paid_only)
                 print("id:", id, level, title)
             
             self.save_update_db_time()

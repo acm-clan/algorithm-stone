@@ -49,6 +49,7 @@ def generate_leetcode(leet, file, slug, out_name):
                 color = "red"
             else:
                 print("unknown level:", level)
+                continue
             slug = problem['data']['question']['questionTitleSlug']
 
             # 题目节点
