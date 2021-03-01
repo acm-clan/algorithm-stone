@@ -1,6 +1,15 @@
 from graphviz import Digraph
 import os
 from pathlib import Path
+import time
+
+def now():
+    return round(time.time() * 1000)
+
+def get_map_content(file):
+    f = open(get_map(file), "r", encoding="utf-8")
+    t = f.read()
+    return t
 
 def get_root(d, f):
     path = Path(os.path.abspath(__file__))

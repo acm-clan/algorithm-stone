@@ -35,8 +35,26 @@ class Codeforces:
     def get_problem_meta(self, id):
         return self.dict.get("codeforces_problem_meta_%s" % id)
 
+    def get_level(self, problem):
+        if problem['rating'] > 2000:
+            return "Hard"
+        if problem['rating'] > 1000:
+            return "Medium"
+        return "Easy"
+
+    def check_finish(self, id):
+        for k in self.finished:
+            if k.startswith(id+"."):
+                return True
+        return False
+
     def get_db_problem(self, id):
-        return self.dict.get("codeforces_problem_%s" % id)
+        v = self.dict.get("codeforces_problem_%s" % id)
+
+        if v == None:
+            return None
+        
+        return json.loads(v)
 
     def save_db_problem(self, id, data):
         self.dict["codeforces_problem_%s" % id] = data
@@ -81,7 +99,20 @@ class Codeforces:
             print("check problem error:", e)
             pass
 
+    def get_update_db_time(self):
+        t = self.dict.get("codeforce_update_db_time")
+        if t == None:
+            return 0
+        return t
+
+    def save_update_db_time(self):
+        self.dict["codeforce_update_db_time"] = util.now()
+
     def update_db(self):
+        t = self.get_update_db_time()
+        if util.now()-t < 24*3600*1000:
+            return
+
         url = "https://codeforces.com/api/problemset.problems"
         
         try:
@@ -92,7 +123,10 @@ class Codeforces:
             for k in qlist["result"]["problems"]:
                 id = str(k['contestId'])+str(k['index'])
                 print("id:", id, k['name'])
-                self.check_problem(id, str(k['contestId']), str(k['index']))
+                value = json.dumps(k)
+                self.save_db_problem(id, value)
+            
+            self.save_update_db_time()
         except Exception as e:
             print("update_db error:", e)
             pass
