@@ -16,6 +16,9 @@
 #### Tree路线图
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg">
 
+#### 链表路线图
+<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg">
+
 #### Codeforces路线图
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg">
 
