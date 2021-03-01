@@ -52,7 +52,16 @@ class Codeforces:
         v = self.dict.get("codeforces_problem_%s" % id)
 
         if v == None:
-            return None
+            # 尝试读取小一号的
+            new_id = id[:len(id)-1]
+            new_index = id[len(id)-1:]
+            if new_index == 'D':
+                new_index = 'A'
+            elif new_index == 'E':
+                new_index = 'B'
+            elif new_index == 'F':
+                new_index = 'C'
+            return self.get_db_problem("%d%s"%(int(new_id)-1, new_index))
         
         return json.loads(v)
 

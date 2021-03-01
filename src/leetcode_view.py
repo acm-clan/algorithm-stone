@@ -1,4 +1,5 @@
 from graphviz import Digraph
+import theme
 import util
 import os
 from pathlib import Path
@@ -29,7 +30,7 @@ def generate_leetcode(leet, file, slug, out_name):
             g.node(name=n.name, label=label, style='filled', fillcolor="lightslategray", color='lightgrey', 
                 fontsize='12',
                 fontcolor="white", fontname="Microsoft YaHei", shape='box')
-            g.edge(n.parent, n.name)
+            g.edge(n.parent, n.name, color=theme.color_arrow)
 
         # add problem
         last = ""
@@ -49,6 +50,7 @@ def generate_leetcode(leet, file, slug, out_name):
                 color = "red"
             else:
                 print("unknown level:", level)
+                continue
             slug = problem['data']['question']['questionTitleSlug']
 
             # 题目节点
@@ -63,9 +65,9 @@ def generate_leetcode(leet, file, slug, out_name):
                     color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
 
             if len(last) > 0:
-                g.edge(last, idstr)
+                g.edge(last, idstr, color=theme.color_arrow)
             else:
-                g.edge(n.name, idstr)
+                g.edge(n.name, idstr, color=theme.color_arrow)
             last = idstr
 
     g.format = 'svg'
@@ -77,4 +79,5 @@ def process():
     leet.update_db()
     generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
+    generate_leetcode(leet, "leetcode-linked-list.txt", "linked-list", "leetcode_linked_list")
     leet.close_db()

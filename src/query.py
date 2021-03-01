@@ -41,15 +41,20 @@ def check_leetcode_tag(s):
 
     problems = leet.get_all_problems()
 
-    datas = []
+    datas = [] 
     for k in problems:
-        j = json.loads(problems[k])
-        tags = j['data']['question']['topicTags']
-        if len(tags) > 0:
-            for t in tags:
-                if t['slug'] == tag:
-                    datas.append(j)
-                    break
+        try:
+            j = json.loads(problems[k])
+            tags = j['data']['question']['topicTags']
+            paid_only = j['data']['question']['paid_only']
+            if len(tags) > 0:
+                for t in tags:
+                    if t['slug'] == tag and paid_only == False:
+                        datas.append(j)
+                        break
+        except Exception as e:
+            print("unknow key:", k, e)
+            pass
     # 
     ids = []
     strs = {}
@@ -79,6 +84,9 @@ def main():
     show_menu()
     while True:
         s = input().strip()
+        if s == "q":
+            print('Bye.')
+            break
         slist = s.split()
         if s == "help":
             show_menu()
