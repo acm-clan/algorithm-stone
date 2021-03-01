@@ -27,8 +27,8 @@
 <!-- Leetcode&#45;树&#45;&gt;遍历二叉树 -->
 <g id="edge1" class="edge">
 <title>Leetcode&#45;树&#45;&gt;遍历二叉树</title>
-<path fill="none" stroke="black" d="M1240.38,-1384.25C1077.83,-1381.79 629.2,-1371.63 258,-1332 243.37,-1330.44 227.66,-1328.18 213,-1325.82"/>
-<polygon fill="black" stroke="black" points="213.49,-1322.35 203.05,-1324.17 212.34,-1329.25 213.49,-1322.35"/>
+<path fill="none" stroke="gray" d="M1240.38,-1384.25C1077.83,-1381.79 629.2,-1371.63 258,-1332 243.37,-1330.44 227.66,-1328.18 213,-1325.82"/>
+<polygon fill="gray" stroke="gray" points="213.49,-1322.35 203.05,-1324.17 212.34,-1329.25 213.49,-1322.35"/>
 </g>
 <!-- 二叉搜索树中序遍历 -->
 <g id="node21" class="node">
@@ -39,8 +39,8 @@
 <!-- Leetcode&#45;树&#45;&gt;二叉搜索树中序遍历 -->
 <g id="edge20" class="edge">
 <title>Leetcode&#45;树&#45;&gt;二叉搜索树中序遍历</title>
-<path fill="none" stroke="black" d="M1240.46,-1383.39C1097.9,-1379.24 738.01,-1366 439,-1332 431.68,-1331.17 424.09,-1330.17 416.5,-1329.07"/>
-<polygon fill="black" stroke="black" points="416.95,-1325.6 406.55,-1327.58 415.92,-1332.52 416.95,-1325.6"/>
+<path fill="none" stroke="gray" d="M1240.46,-1383.39C1097.9,-1379.24 738.01,-1366 439,-1332 431.68,-1331.17 424.09,-1330.17 416.5,-1329.07"/>
+<polygon fill="gray" stroke="gray" points="416.95,-1325.6 406.55,-1327.58 415.92,-1332.52 416.95,-1325.6"/>
 </g>
 <!-- 层次遍历 -->
 <g id="node27" class="node">
@@ -51,8 +51,8 @@
 <!-- Leetcode&#45;树&#45;&gt;层次遍历 -->
 <g id="edge26" class="edge">
 <title>Leetcode&#45;树&#45;&gt;层次遍历</title>
-<path fill="none" stroke="black" d="M1240.44,-1383.75C1112.78,-1380.5 813.36,-1369.22 565,-1332 558.26,-1330.99 551.22,-1329.69 544.27,-1328.27"/>
-<polygon fill="black" stroke="black" points="544.73,-1324.79 534.22,-1326.1 543.26,-1331.63 544.73,-1324.79"/>
+<path fill="none" stroke="gray" d="M1240.44,-1383.75C1112.78,-1380.5 813.36,-1369.22 565,-1332 558.26,-1330.99 551.22,-1329.69 544.27,-1328.27"/>
+<polygon fill="gray" stroke="gray" points="544.73,-1324.79 534.22,-1326.1 543.26,-1331.63 544.73,-1324.79"/>
 </g>
 <!-- 生成二叉树 -->
 <g id="node38" class="node">
@@ -63,8 +63,8 @@
 <!-- Leetcode&#45;树&#45;&gt;生成二叉树 -->
 <g id="edge37" class="edge">
 <title>Leetcode&#45;树&#45;&gt;生成二叉树</title>
-<path fill="none" stroke="black" d="M1240.18,-1380.21C1135.75,-1371.99 919.93,-1353.96 738,-1332 719.83,-1329.81 700.09,-1327.03 682.19,-1324.37"/>
-<polygon fill="black" stroke="black" points="682.58,-1320.88 672.17,-1322.86 681.54,-1327.81 682.58,-1320.88"/>
+<path fill="none" stroke="gray" d="M1240.18,-1380.21C1135.75,-1371.99 919.93,-1353.96 738,-1332 719.83,-1329.81 700.09,-1327.03 682.19,-1324.37"/>
+<polygon fill="gray" stroke="gray" points="682.58,-1320.88 672.17,-1322.86 681.54,-1327.81 682.58,-1320.88"/>
 </g>
 <!-- 记录路径 -->
 <g id="node49" class="node">
@@ -75,8 +75,8 @@
 <!-- Leetcode&#45;树&#45;&gt;记录路径 -->
 <g id="edge48" class="edge">
 <title>Leetcode&#45;树&#45;&gt;记录路径</title>
-<path fill="none" stroke="black" d="M1240.31,-1377.17C1160.84,-1367.16 1019.65,-1349.07 899,-1332 878.61,-1329.12 856.17,-1325.75 836.76,-1322.77"/>
-<polygon fill="black" stroke="black" points="837.04,-1319.28 826.62,-1321.21 835.98,-1326.19 837.04,-1319.28"/>
+<path fill="none" stroke="gray" d="M1240.31,-1377.17C1160.84,-1367.16 1019.65,-1349.07 899,-1332 878.61,-1329.12 856.17,-1325.75 836.76,-1322.77"/>
+<polygon fill="gray" stroke="gray" points="837.04,-1319.28 826.62,-1321.21 835.98,-1326.19 837.04,-1319.28"/>
 </g>
 <!-- 叶子节点 -->
 <g id="node52" class="node">
@@ -87,8 +87,8 @@
 <!-- Leetcode&#45;树&#45;&gt;叶子节点 -->
 <g id="edge51" class="edge">
 <title>Leetcode&#45;树&#45;&gt;叶子节点</title>
-<path fill="none" stroke="black" d="M1240.35,-1372.65C1171.25,-1359.02 1061.44,-1337.37 997.9,-1324.84"/>
-<polygon fill="black" stroke="black" points="998.22,-1321.34 987.74,-1322.84 996.87,-1328.2 998.22,-1321.34"/>
+<path fill="none" stroke="gray" d="M1240.35,-1372.65C1171.25,-1359.02 1061.44,-1337.37 997.9,-1324.84"/>
+<polygon fill="gray" stroke="gray" points="998.22,-1321.34 987.74,-1322.84 996.87,-1328.2 998.22,-1321.34"/>
 </g>
 <!-- 非递归实现 -->
 <g id="node54" class="node">
@@ -99,8 +99,8 @@
 <!-- Leetcode&#45;树&#45;&gt;非递归实现 -->
 <g id="edge53" class="edge">
 <title>Leetcode&#45;树&#45;&gt;非递归实现</title>
-<path fill="none" stroke="black" d="M1258.48,-1367.88C1233.27,-1358.18 1201.55,-1345.98 1174.93,-1335.74"/>
-<polygon fill="black" stroke="black" points="1175.97,-1332.39 1165.38,-1332.07 1173.45,-1338.92 1175.97,-1332.39"/>
+<path fill="none" stroke="gray" d="M1258.48,-1367.88C1233.27,-1358.18 1201.55,-1345.98 1174.93,-1335.74"/>
+<polygon fill="gray" stroke="gray" points="1175.97,-1332.39 1165.38,-1332.07 1173.45,-1338.92 1175.97,-1332.39"/>
 </g>
 <!-- 公共祖先 -->
 <g id="node57" class="node">
@@ -111,8 +111,8 @@
 <!-- Leetcode&#45;树&#45;&gt;公共祖先 -->
 <g id="edge56" class="edge">
 <title>Leetcode&#45;树&#45;&gt;公共祖先</title>
-<path fill="none" stroke="black" d="M1291.63,-1367.7C1286.28,-1359.56 1279.8,-1349.69 1273.89,-1340.7"/>
-<polygon fill="black" stroke="black" points="1276.66,-1338.54 1268.24,-1332.1 1270.81,-1342.38 1276.66,-1338.54"/>
+<path fill="none" stroke="gray" d="M1291.63,-1367.7C1286.28,-1359.56 1279.8,-1349.69 1273.89,-1340.7"/>
+<polygon fill="gray" stroke="gray" points="1276.66,-1338.54 1268.24,-1332.1 1270.81,-1342.38 1276.66,-1338.54"/>
 </g>
 <!-- 树形dp -->
 <g id="node59" class="node">
@@ -123,8 +123,8 @@
 <!-- Leetcode&#45;树&#45;&gt;树形dp -->
 <g id="edge58" class="edge">
 <title>Leetcode&#45;树&#45;&gt;树形dp</title>
-<path fill="none" stroke="black" d="M1322.03,-1367.7C1331.54,-1359.05 1343.21,-1348.45 1353.57,-1339.03"/>
-<polygon fill="black" stroke="black" points="1356.14,-1341.42 1361.19,-1332.1 1351.43,-1336.24 1356.14,-1341.42"/>
+<path fill="none" stroke="gray" d="M1322.03,-1367.7C1331.54,-1359.05 1343.21,-1348.45 1353.57,-1339.03"/>
+<polygon fill="gray" stroke="gray" points="1356.14,-1341.42 1361.19,-1332.1 1351.43,-1336.24 1356.14,-1341.42"/>
 </g>
 <!-- 前缀和 -->
 <g id="node61" class="node">
@@ -135,8 +135,8 @@
 <!-- Leetcode&#45;树&#45;&gt;前缀和 -->
 <g id="edge60" class="edge">
 <title>Leetcode&#45;树&#45;&gt;前缀和</title>
-<path fill="none" stroke="black" d="M1351.18,-1367.97C1383.62,-1356.5 1426.03,-1341.5 1457.45,-1330.4"/>
-<polygon fill="black" stroke="black" points="1458.98,-1333.57 1467.24,-1326.94 1456.64,-1326.97 1458.98,-1333.57"/>
+<path fill="none" stroke="gray" d="M1351.18,-1367.97C1383.62,-1356.5 1426.03,-1341.5 1457.45,-1330.4"/>
+<polygon fill="gray" stroke="gray" points="1458.98,-1333.57 1467.24,-1326.94 1456.64,-1326.97 1458.98,-1333.57"/>
 </g>
 <!-- 二叉树序列化 -->
 <g id="node63" class="node">
@@ -147,8 +147,8 @@
 <!-- Leetcode&#45;树&#45;&gt;二叉树序列化 -->
 <g id="edge62" class="edge">
 <title>Leetcode&#45;树&#45;&gt;二叉树序列化</title>
-<path fill="none" stroke="black" d="M1365.7,-1372.57C1430.3,-1359.76 1530.35,-1339.92 1594.51,-1327.19"/>
-<polygon fill="black" stroke="black" points="1595.35,-1330.59 1604.48,-1325.22 1593.99,-1323.73 1595.35,-1330.59"/>
+<path fill="none" stroke="gray" d="M1365.7,-1372.57C1430.3,-1359.76 1530.35,-1339.92 1594.51,-1327.19"/>
+<polygon fill="gray" stroke="gray" points="1595.35,-1330.59 1604.48,-1325.22 1593.99,-1323.73 1595.35,-1330.59"/>
 </g>
 <!-- 所有路径 -->
 <g id="node68" class="node">
@@ -159,8 +159,8 @@
 <!-- Leetcode&#45;树&#45;&gt;所有路径 -->
 <g id="edge67" class="edge">
 <title>Leetcode&#45;树&#45;&gt;所有路径</title>
-<path fill="none" stroke="black" d="M1365.7,-1377.52C1446.69,-1367.72 1592.02,-1349.71 1716,-1332 1735.1,-1329.27 1756.07,-1326.03 1774.4,-1323.11"/>
-<polygon fill="black" stroke="black" points="1774.97,-1326.56 1784.29,-1321.53 1773.86,-1319.65 1774.97,-1326.56"/>
+<path fill="none" stroke="gray" d="M1365.7,-1377.52C1446.69,-1367.72 1592.02,-1349.71 1716,-1332 1735.1,-1329.27 1756.07,-1326.03 1774.4,-1323.11"/>
+<polygon fill="gray" stroke="gray" points="1774.97,-1326.56 1784.29,-1321.53 1773.86,-1319.65 1774.97,-1326.56"/>
 </g>
 <!-- 图与树 -->
 <g id="node71" class="node">
@@ -171,8 +171,8 @@
 <!-- Leetcode&#45;树&#45;&gt;图与树 -->
 <g id="edge70" class="edge">
 <title>Leetcode&#45;树&#45;&gt;图与树</title>
-<path fill="none" stroke="black" d="M1365.54,-1381.19C1470.55,-1374.33 1688.83,-1358.16 1872,-1332 1886.5,-1329.93 1902.24,-1327.08 1916.34,-1324.31"/>
-<polygon fill="black" stroke="black" points="1917.17,-1327.71 1926.28,-1322.32 1915.79,-1320.85 1917.17,-1327.71"/>
+<path fill="none" stroke="gray" d="M1365.54,-1381.19C1470.55,-1374.33 1688.83,-1358.16 1872,-1332 1886.5,-1329.93 1902.24,-1327.08 1916.34,-1324.31"/>
+<polygon fill="gray" stroke="gray" points="1917.17,-1327.71 1926.28,-1322.32 1915.79,-1320.85 1917.17,-1327.71"/>
 </g>
 <!-- 剪枝 -->
 <g id="node73" class="node">
@@ -183,8 +183,8 @@
 <!-- Leetcode&#45;树&#45;&gt;剪枝 -->
 <g id="edge72" class="edge">
 <title>Leetcode&#45;树&#45;&gt;剪枝</title>
-<path fill="none" stroke="black" d="M1365.5,-1383.17C1488.14,-1378.94 1768.68,-1366.1 2002,-1332 2015.31,-1330.05 2029.74,-1327.14 2042.53,-1324.27"/>
-<polygon fill="black" stroke="black" points="2043.42,-1327.66 2052.37,-1322 2041.84,-1320.84 2043.42,-1327.66"/>
+<path fill="none" stroke="gray" d="M1365.5,-1383.17C1488.14,-1378.94 1768.68,-1366.1 2002,-1332 2015.31,-1330.05 2029.74,-1327.14 2042.53,-1324.27"/>
+<polygon fill="gray" stroke="gray" points="2043.42,-1327.66 2052.37,-1322 2041.84,-1320.84 2043.42,-1327.66"/>
 </g>
 <!-- 中等题 -->
 <g id="node76" class="node">
@@ -195,8 +195,8 @@
 <!-- Leetcode&#45;树&#45;&gt;中等题 -->
 <g id="edge75" class="edge">
 <title>Leetcode&#45;树&#45;&gt;中等题</title>
-<path fill="none" stroke="black" d="M1365.69,-1383.23C1502.39,-1378.86 1837.4,-1365.39 2116,-1332 2133.57,-1329.89 2152.79,-1326.71 2169.46,-1323.67"/>
-<polygon fill="black" stroke="black" points="2170.28,-1327.07 2179.46,-1321.8 2168.99,-1320.19 2170.28,-1327.07"/>
+<path fill="none" stroke="gray" d="M1365.69,-1383.23C1502.39,-1378.86 1837.4,-1365.39 2116,-1332 2133.57,-1329.89 2152.79,-1326.71 2169.46,-1323.67"/>
+<polygon fill="gray" stroke="gray" points="2170.28,-1327.07 2179.46,-1321.8 2168.99,-1320.19 2170.28,-1327.07"/>
 </g>
 <!-- 困难题 -->
 <g id="node86" class="node">
@@ -207,8 +207,8 @@
 <!-- Leetcode&#45;树&#45;&gt;困难题 -->
 <g id="edge85" class="edge">
 <title>Leetcode&#45;树&#45;&gt;困难题</title>
-<path fill="none" stroke="black" d="M1365.55,-1383.72C1518.03,-1380.13 1920.87,-1367.75 2255,-1332 2274.73,-1329.89 2296.36,-1326.63 2314.98,-1323.53"/>
-<polygon fill="black" stroke="black" points="2315.71,-1326.96 2324.98,-1321.83 2314.54,-1320.06 2315.71,-1326.96"/>
+<path fill="none" stroke="gray" d="M1365.55,-1383.72C1518.03,-1380.13 1920.87,-1367.75 2255,-1332 2274.73,-1329.89 2296.36,-1326.63 2314.98,-1323.53"/>
+<polygon fill="gray" stroke="gray" points="2315.71,-1326.96 2324.98,-1321.83 2314.54,-1320.06 2315.71,-1326.96"/>
 </g>
 <!-- 94 -->
 <g id="node3" class="node">
@@ -222,8 +222,8 @@
 <!-- 遍历二叉树&#45;&gt;94 -->
 <g id="edge2" class="edge">
 <title>遍历二叉树&#45;&gt;94</title>
-<path fill="none" stroke="black" d="M144.36,-1295.7C139.87,-1287.64 134.44,-1277.89 129.48,-1268.98"/>
-<polygon fill="black" stroke="black" points="132.45,-1267.14 124.53,-1260.1 126.34,-1270.54 132.45,-1267.14"/>
+<path fill="none" stroke="gray" d="M144.36,-1295.7C139.87,-1287.64 134.44,-1277.89 129.48,-1268.98"/>
+<polygon fill="gray" stroke="gray" points="132.45,-1267.14 124.53,-1260.1 126.34,-1270.54 132.45,-1267.14"/>
 </g>
 <!-- 100 -->
 <g id="node4" class="node">
@@ -237,8 +237,8 @@
 <!-- 94&#45;&gt;100 -->
 <g id="edge3" class="edge">
 <title>94&#45;&gt;100</title>
-<path fill="none" stroke="black" d="M115,-1223.7C115,-1215.98 115,-1206.71 115,-1198.11"/>
-<polygon fill="black" stroke="black" points="118.5,-1198.1 115,-1188.1 111.5,-1198.1 118.5,-1198.1"/>
+<path fill="none" stroke="gray" d="M115,-1223.7C115,-1215.98 115,-1206.71 115,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="118.5,-1198.1 115,-1188.1 111.5,-1198.1 118.5,-1198.1"/>
 </g>
 <!-- 101 -->
 <g id="node5" class="node">
@@ -252,8 +252,8 @@
 <!-- 100&#45;&gt;101 -->
 <g id="edge4" class="edge">
 <title>100&#45;&gt;101</title>
-<path fill="none" stroke="black" d="M115,-1151.7C115,-1143.98 115,-1134.71 115,-1126.11"/>
-<polygon fill="black" stroke="black" points="118.5,-1126.1 115,-1116.1 111.5,-1126.1 118.5,-1126.1"/>
+<path fill="none" stroke="gray" d="M115,-1151.7C115,-1143.98 115,-1134.71 115,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="118.5,-1126.1 115,-1116.1 111.5,-1126.1 118.5,-1126.1"/>
 </g>
 <!-- 104 -->
 <g id="node6" class="node">
@@ -267,8 +267,8 @@
 <!-- 101&#45;&gt;104 -->
 <g id="edge5" class="edge">
 <title>101&#45;&gt;104</title>
-<path fill="none" stroke="black" d="M109.81,-1079.7C107.47,-1071.9 104.65,-1062.51 102.05,-1053.83"/>
-<polygon fill="black" stroke="black" points="105.36,-1052.68 99.13,-1044.1 98.65,-1054.69 105.36,-1052.68"/>
+<path fill="none" stroke="gray" d="M109.81,-1079.7C107.47,-1071.9 104.65,-1062.51 102.05,-1053.83"/>
+<polygon fill="gray" stroke="gray" points="105.36,-1052.68 99.13,-1044.1 98.65,-1054.69 105.36,-1052.68"/>
 </g>
 <!-- 110 -->
 <g id="node7" class="node">
@@ -282,8 +282,8 @@
 <!-- 104&#45;&gt;110 -->
 <g id="edge6" class="edge">
 <title>104&#45;&gt;110</title>
-<path fill="none" stroke="black" d="M94,-1007.7C94,-999.98 94,-990.71 94,-982.11"/>
-<polygon fill="black" stroke="black" points="97.5,-982.1 94,-972.1 90.5,-982.1 97.5,-982.1"/>
+<path fill="none" stroke="gray" d="M94,-1007.7C94,-999.98 94,-990.71 94,-982.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-982.1 94,-972.1 90.5,-982.1 97.5,-982.1"/>
 </g>
 <!-- 112 -->
 <g id="node8" class="node">
@@ -297,8 +297,8 @@
 <!-- 110&#45;&gt;112 -->
 <g id="edge7" class="edge">
 <title>110&#45;&gt;112</title>
-<path fill="none" stroke="black" d="M94,-935.7C94,-927.98 94,-918.71 94,-910.11"/>
-<polygon fill="black" stroke="black" points="97.5,-910.1 94,-900.1 90.5,-910.1 97.5,-910.1"/>
+<path fill="none" stroke="gray" d="M94,-935.7C94,-927.98 94,-918.71 94,-910.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-910.1 94,-900.1 90.5,-910.1 97.5,-910.1"/>
 </g>
 <!-- 226 -->
 <g id="node9" class="node">
@@ -312,8 +312,8 @@
 <!-- 112&#45;&gt;226 -->
 <g id="edge8" class="edge">
 <title>112&#45;&gt;226</title>
-<path fill="none" stroke="black" d="M94,-863.7C94,-855.98 94,-846.71 94,-838.11"/>
-<polygon fill="black" stroke="black" points="97.5,-838.1 94,-828.1 90.5,-838.1 97.5,-838.1"/>
+<path fill="none" stroke="gray" d="M94,-863.7C94,-855.98 94,-846.71 94,-838.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-838.1 94,-828.1 90.5,-838.1 97.5,-838.1"/>
 </g>
 <!-- 530 -->
 <g id="node10" class="node">
@@ -327,8 +327,8 @@
 <!-- 226&#45;&gt;530 -->
 <g id="edge9" class="edge">
 <title>226&#45;&gt;530</title>
-<path fill="none" stroke="black" d="M94,-791.7C94,-783.98 94,-774.71 94,-766.11"/>
-<polygon fill="black" stroke="black" points="97.5,-766.1 94,-756.1 90.5,-766.1 97.5,-766.1"/>
+<path fill="none" stroke="gray" d="M94,-791.7C94,-783.98 94,-774.71 94,-766.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-766.1 94,-756.1 90.5,-766.1 97.5,-766.1"/>
 </g>
 <!-- 543 -->
 <g id="node11" class="node">
@@ -342,8 +342,8 @@
 <!-- 530&#45;&gt;543 -->
 <g id="edge10" class="edge">
 <title>530&#45;&gt;543</title>
-<path fill="none" stroke="black" d="M94,-719.7C94,-711.98 94,-702.71 94,-694.11"/>
-<polygon fill="black" stroke="black" points="97.5,-694.1 94,-684.1 90.5,-694.1 97.5,-694.1"/>
+<path fill="none" stroke="gray" d="M94,-719.7C94,-711.98 94,-702.71 94,-694.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-694.1 94,-684.1 90.5,-694.1 97.5,-694.1"/>
 </g>
 <!-- 563 -->
 <g id="node12" class="node">
@@ -357,8 +357,8 @@
 <!-- 543&#45;&gt;563 -->
 <g id="edge11" class="edge">
 <title>543&#45;&gt;563</title>
-<path fill="none" stroke="black" d="M94,-647.7C94,-639.98 94,-630.71 94,-622.11"/>
-<polygon fill="black" stroke="black" points="97.5,-622.1 94,-612.1 90.5,-622.1 97.5,-622.1"/>
+<path fill="none" stroke="gray" d="M94,-647.7C94,-639.98 94,-630.71 94,-622.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-622.1 94,-612.1 90.5,-622.1 97.5,-622.1"/>
 </g>
 <!-- 572 -->
 <g id="node13" class="node">
@@ -372,8 +372,8 @@
 <!-- 563&#45;&gt;572 -->
 <g id="edge12" class="edge">
 <title>563&#45;&gt;572</title>
-<path fill="none" stroke="black" d="M94,-575.7C94,-567.98 94,-558.71 94,-550.11"/>
-<polygon fill="black" stroke="black" points="97.5,-550.1 94,-540.1 90.5,-550.1 97.5,-550.1"/>
+<path fill="none" stroke="gray" d="M94,-575.7C94,-567.98 94,-558.71 94,-550.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-550.1 94,-540.1 90.5,-550.1 97.5,-550.1"/>
 </g>
 <!-- 606 -->
 <g id="node14" class="node">
@@ -387,8 +387,8 @@
 <!-- 572&#45;&gt;606 -->
 <g id="edge13" class="edge">
 <title>572&#45;&gt;606</title>
-<path fill="none" stroke="black" d="M94,-503.7C94,-495.98 94,-486.71 94,-478.11"/>
-<polygon fill="black" stroke="black" points="97.5,-478.1 94,-468.1 90.5,-478.1 97.5,-478.1"/>
+<path fill="none" stroke="gray" d="M94,-503.7C94,-495.98 94,-486.71 94,-478.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-478.1 94,-468.1 90.5,-478.1 97.5,-478.1"/>
 </g>
 <!-- 102 -->
 <g id="node15" class="node">
@@ -402,8 +402,8 @@
 <!-- 606&#45;&gt;102 -->
 <g id="edge14" class="edge">
 <title>606&#45;&gt;102</title>
-<path fill="none" stroke="black" d="M94,-431.7C94,-423.98 94,-414.71 94,-406.11"/>
-<polygon fill="black" stroke="black" points="97.5,-406.1 94,-396.1 90.5,-406.1 97.5,-406.1"/>
+<path fill="none" stroke="gray" d="M94,-431.7C94,-423.98 94,-414.71 94,-406.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-406.1 94,-396.1 90.5,-406.1 97.5,-406.1"/>
 </g>
 <!-- 637 -->
 <g id="node16" class="node">
@@ -417,8 +417,8 @@
 <!-- 102&#45;&gt;637 -->
 <g id="edge15" class="edge">
 <title>102&#45;&gt;637</title>
-<path fill="none" stroke="black" d="M94,-359.7C94,-351.98 94,-342.71 94,-334.11"/>
-<polygon fill="black" stroke="black" points="97.5,-334.1 94,-324.1 90.5,-334.1 97.5,-334.1"/>
+<path fill="none" stroke="gray" d="M94,-359.7C94,-351.98 94,-342.71 94,-334.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-334.1 94,-324.1 90.5,-334.1 97.5,-334.1"/>
 </g>
 <!-- 653 -->
 <g id="node17" class="node">
@@ -432,8 +432,8 @@
 <!-- 637&#45;&gt;653 -->
 <g id="edge16" class="edge">
 <title>637&#45;&gt;653</title>
-<path fill="none" stroke="black" d="M94,-287.7C94,-279.98 94,-270.71 94,-262.11"/>
-<polygon fill="black" stroke="black" points="97.5,-262.1 94,-252.1 90.5,-262.1 97.5,-262.1"/>
+<path fill="none" stroke="gray" d="M94,-287.7C94,-279.98 94,-270.71 94,-262.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-262.1 94,-252.1 90.5,-262.1 97.5,-262.1"/>
 </g>
 <!-- 671 -->
 <g id="node18" class="node">
@@ -447,8 +447,8 @@
 <!-- 653&#45;&gt;671 -->
 <g id="edge17" class="edge">
 <title>653&#45;&gt;671</title>
-<path fill="none" stroke="black" d="M94,-215.7C94,-207.98 94,-198.71 94,-190.11"/>
-<polygon fill="black" stroke="black" points="97.5,-190.1 94,-180.1 90.5,-190.1 97.5,-190.1"/>
+<path fill="none" stroke="gray" d="M94,-215.7C94,-207.98 94,-198.71 94,-190.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-190.1 94,-180.1 90.5,-190.1 97.5,-190.1"/>
 </g>
 <!-- 508 -->
 <g id="node19" class="node">
@@ -462,8 +462,8 @@
 <!-- 671&#45;&gt;508 -->
 <g id="edge18" class="edge">
 <title>671&#45;&gt;508</title>
-<path fill="none" stroke="black" d="M94,-143.7C94,-135.98 94,-126.71 94,-118.11"/>
-<polygon fill="black" stroke="black" points="97.5,-118.1 94,-108.1 90.5,-118.1 97.5,-118.1"/>
+<path fill="none" stroke="gray" d="M94,-143.7C94,-135.98 94,-126.71 94,-118.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-118.1 94,-108.1 90.5,-118.1 97.5,-118.1"/>
 </g>
 <!-- 510 -->
 <g id="node20" class="node">
@@ -477,8 +477,8 @@
 <!-- 508&#45;&gt;510 -->
 <g id="edge19" class="edge">
 <title>508&#45;&gt;510</title>
-<path fill="none" stroke="black" d="M94,-71.7C94,-63.98 94,-54.71 94,-46.11"/>
-<polygon fill="black" stroke="black" points="97.5,-46.1 94,-36.1 90.5,-46.1 97.5,-46.1"/>
+<path fill="none" stroke="gray" d="M94,-71.7C94,-63.98 94,-54.71 94,-46.11"/>
+<polygon fill="gray" stroke="gray" points="97.5,-46.1 94,-36.1 90.5,-46.1 97.5,-46.1"/>
 </g>
 <!-- 235 -->
 <g id="node22" class="node">
@@ -492,8 +492,8 @@
 <!-- 二叉搜索树中序遍历&#45;&gt;235 -->
 <g id="edge21" class="edge">
 <title>二叉搜索树中序遍历&#45;&gt;235</title>
-<path fill="none" stroke="black" d="M326.37,-1295.7C321.37,-1287.56 315.31,-1277.69 309.79,-1268.7"/>
-<polygon fill="black" stroke="black" points="312.72,-1266.79 304.51,-1260.1 306.76,-1270.46 312.72,-1266.79"/>
+<path fill="none" stroke="gray" d="M326.37,-1295.7C321.37,-1287.56 315.31,-1277.69 309.79,-1268.7"/>
+<polygon fill="gray" stroke="gray" points="312.72,-1266.79 304.51,-1260.1 306.76,-1270.46 312.72,-1266.79"/>
 </g>
 <!-- 501 -->
 <g id="node23" class="node">
@@ -507,8 +507,8 @@
 <!-- 235&#45;&gt;501 -->
 <g id="edge22" class="edge">
 <title>235&#45;&gt;501</title>
-<path fill="none" stroke="black" d="M293.26,-1223.7C292.93,-1215.98 292.53,-1206.71 292.16,-1198.11"/>
-<polygon fill="black" stroke="black" points="295.66,-1197.95 291.73,-1188.1 288.66,-1198.25 295.66,-1197.95"/>
+<path fill="none" stroke="gray" d="M293.26,-1223.7C292.93,-1215.98 292.53,-1206.71 292.16,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="295.66,-1197.95 291.73,-1188.1 288.66,-1198.25 295.66,-1197.95"/>
 </g>
 <!-- 98 -->
 <g id="node24" class="node">
@@ -522,8 +522,8 @@
 <!-- 501&#45;&gt;98 -->
 <g id="edge23" class="edge">
 <title>501&#45;&gt;98</title>
-<path fill="none" stroke="black" d="M288.28,-1151.7C287.07,-1143.98 285.61,-1134.71 284.26,-1126.11"/>
-<polygon fill="black" stroke="black" points="287.7,-1125.44 282.69,-1116.1 280.78,-1126.53 287.7,-1125.44"/>
+<path fill="none" stroke="gray" d="M288.28,-1151.7C287.07,-1143.98 285.61,-1134.71 284.26,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="287.7,-1125.44 282.69,-1116.1 280.78,-1126.53 287.7,-1125.44"/>
 </g>
 <!-- 230 -->
 <g id="node25" class="node">
@@ -537,8 +537,8 @@
 <!-- 98&#45;&gt;230 -->
 <g id="edge24" class="edge">
 <title>98&#45;&gt;230</title>
-<path fill="none" stroke="black" d="M278.52,-1079.7C277.86,-1071.98 277.06,-1062.71 276.32,-1054.11"/>
-<polygon fill="black" stroke="black" points="279.81,-1053.77 275.47,-1044.1 272.83,-1054.37 279.81,-1053.77"/>
+<path fill="none" stroke="gray" d="M278.52,-1079.7C277.86,-1071.98 277.06,-1062.71 276.32,-1054.11"/>
+<polygon fill="gray" stroke="gray" points="279.81,-1053.77 275.47,-1044.1 272.83,-1054.37 279.81,-1053.77"/>
 </g>
 <!-- 538 -->
 <g id="node26" class="node">
@@ -552,8 +552,8 @@
 <!-- 230&#45;&gt;538 -->
 <g id="edge25" class="edge">
 <title>230&#45;&gt;538</title>
-<path fill="none" stroke="black" d="M274,-1007.7C274,-999.98 274,-990.71 274,-982.11"/>
-<polygon fill="black" stroke="black" points="277.5,-982.1 274,-972.1 270.5,-982.1 277.5,-982.1"/>
+<path fill="none" stroke="gray" d="M274,-1007.7C274,-999.98 274,-990.71 274,-982.11"/>
+<polygon fill="gray" stroke="gray" points="277.5,-982.1 274,-972.1 270.5,-982.1 277.5,-982.1"/>
 </g>
 <!-- 111 -->
 <g id="node28" class="node">
@@ -567,8 +567,8 @@
 <!-- 层次遍历&#45;&gt;111 -->
 <g id="edge27" class="edge">
 <title>层次遍历&#45;&gt;111</title>
-<path fill="none" stroke="black" d="M487.29,-1295.7C485.64,-1287.98 483.65,-1278.71 481.81,-1270.11"/>
-<polygon fill="black" stroke="black" points="485.18,-1269.15 479.67,-1260.1 478.34,-1270.62 485.18,-1269.15"/>
+<path fill="none" stroke="gray" d="M487.29,-1295.7C485.64,-1287.98 483.65,-1278.71 481.81,-1270.11"/>
+<polygon fill="gray" stroke="gray" points="485.18,-1269.15 479.67,-1260.1 478.34,-1270.62 485.18,-1269.15"/>
 </g>
 <!-- 103 -->
 <g id="node29" class="node">
@@ -582,8 +582,8 @@
 <!-- 111&#45;&gt;103 -->
 <g id="edge28" class="edge">
 <title>111&#45;&gt;103</title>
-<path fill="none" stroke="black" d="M476,-1223.7C476,-1215.98 476,-1206.71 476,-1198.11"/>
-<polygon fill="black" stroke="black" points="479.5,-1198.1 476,-1188.1 472.5,-1198.1 479.5,-1198.1"/>
+<path fill="none" stroke="gray" d="M476,-1223.7C476,-1215.98 476,-1206.71 476,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="479.5,-1198.1 476,-1188.1 472.5,-1198.1 479.5,-1198.1"/>
 </g>
 <!-- 107 -->
 <g id="node30" class="node">
@@ -597,8 +597,8 @@
 <!-- 103&#45;&gt;107 -->
 <g id="edge29" class="edge">
 <title>103&#45;&gt;107</title>
-<path fill="none" stroke="black" d="M476.74,-1151.7C477.07,-1143.98 477.47,-1134.71 477.84,-1126.11"/>
-<polygon fill="black" stroke="black" points="481.34,-1126.25 478.27,-1116.1 474.34,-1125.95 481.34,-1126.25"/>
+<path fill="none" stroke="gray" d="M476.74,-1151.7C477.07,-1143.98 477.47,-1134.71 477.84,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="481.34,-1126.25 478.27,-1116.1 474.34,-1125.95 481.34,-1126.25"/>
 </g>
 <!-- 116 -->
 <g id="node31" class="node">
@@ -612,8 +612,8 @@
 <!-- 107&#45;&gt;116 -->
 <g id="edge30" class="edge">
 <title>107&#45;&gt;116</title>
-<path fill="none" stroke="black" d="M484.69,-1079.7C487.25,-1071.9 490.33,-1062.51 493.18,-1053.83"/>
-<polygon fill="black" stroke="black" points="496.58,-1054.7 496.38,-1044.1 489.93,-1052.51 496.58,-1054.7"/>
+<path fill="none" stroke="gray" d="M484.69,-1079.7C487.25,-1071.9 490.33,-1062.51 493.18,-1053.83"/>
+<polygon fill="gray" stroke="gray" points="496.58,-1054.7 496.38,-1044.1 489.93,-1052.51 496.58,-1054.7"/>
 </g>
 <!-- 429 -->
 <g id="node32" class="node">
@@ -627,8 +627,8 @@
 <!-- 116&#45;&gt;429 -->
 <g id="edge31" class="edge">
 <title>116&#45;&gt;429</title>
-<path fill="none" stroke="black" d="M502,-1007.7C502,-999.98 502,-990.71 502,-982.11"/>
-<polygon fill="black" stroke="black" points="505.5,-982.1 502,-972.1 498.5,-982.1 505.5,-982.1"/>
+<path fill="none" stroke="gray" d="M502,-1007.7C502,-999.98 502,-990.71 502,-982.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-982.1 502,-972.1 498.5,-982.1 505.5,-982.1"/>
 </g>
 <!-- 513 -->
 <g id="node33" class="node">
@@ -642,8 +642,8 @@
 <!-- 429&#45;&gt;513 -->
 <g id="edge32" class="edge">
 <title>429&#45;&gt;513</title>
-<path fill="none" stroke="black" d="M502,-935.7C502,-927.98 502,-918.71 502,-910.11"/>
-<polygon fill="black" stroke="black" points="505.5,-910.1 502,-900.1 498.5,-910.1 505.5,-910.1"/>
+<path fill="none" stroke="gray" d="M502,-935.7C502,-927.98 502,-918.71 502,-910.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-910.1 502,-900.1 498.5,-910.1 505.5,-910.1"/>
 </g>
 <!-- 515 -->
 <g id="node34" class="node">
@@ -657,8 +657,8 @@
 <!-- 513&#45;&gt;515 -->
 <g id="edge33" class="edge">
 <title>513&#45;&gt;515</title>
-<path fill="none" stroke="black" d="M502,-863.7C502,-855.98 502,-846.71 502,-838.11"/>
-<polygon fill="black" stroke="black" points="505.5,-838.1 502,-828.1 498.5,-838.1 505.5,-838.1"/>
+<path fill="none" stroke="gray" d="M502,-863.7C502,-855.98 502,-846.71 502,-838.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-838.1 502,-828.1 498.5,-838.1 505.5,-838.1"/>
 </g>
 <!-- 545 -->
 <g id="node35" class="node">
@@ -672,8 +672,8 @@
 <!-- 515&#45;&gt;545 -->
 <g id="edge34" class="edge">
 <title>515&#45;&gt;545</title>
-<path fill="none" stroke="black" d="M502,-791.7C502,-783.98 502,-774.71 502,-766.11"/>
-<polygon fill="black" stroke="black" points="505.5,-766.1 502,-756.1 498.5,-766.1 505.5,-766.1"/>
+<path fill="none" stroke="gray" d="M502,-791.7C502,-783.98 502,-774.71 502,-766.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-766.1 502,-756.1 498.5,-766.1 505.5,-766.1"/>
 </g>
 <!-- 623 -->
 <g id="node36" class="node">
@@ -687,8 +687,8 @@
 <!-- 545&#45;&gt;623 -->
 <g id="edge35" class="edge">
 <title>545&#45;&gt;623</title>
-<path fill="none" stroke="black" d="M502,-719.7C502,-711.98 502,-702.71 502,-694.11"/>
-<polygon fill="black" stroke="black" points="505.5,-694.1 502,-684.1 498.5,-694.1 505.5,-694.1"/>
+<path fill="none" stroke="gray" d="M502,-719.7C502,-711.98 502,-702.71 502,-694.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-694.1 502,-684.1 498.5,-694.1 505.5,-694.1"/>
 </g>
 <!-- 662 -->
 <g id="node37" class="node">
@@ -702,8 +702,8 @@
 <!-- 623&#45;&gt;662 -->
 <g id="edge36" class="edge">
 <title>623&#45;&gt;662</title>
-<path fill="none" stroke="black" d="M502,-647.7C502,-639.98 502,-630.71 502,-622.11"/>
-<polygon fill="black" stroke="black" points="505.5,-622.1 502,-612.1 498.5,-622.1 505.5,-622.1"/>
+<path fill="none" stroke="gray" d="M502,-647.7C502,-639.98 502,-630.71 502,-622.11"/>
+<polygon fill="gray" stroke="gray" points="505.5,-622.1 502,-612.1 498.5,-622.1 505.5,-622.1"/>
 </g>
 <!-- 617 -->
 <g id="node39" class="node">
@@ -717,8 +717,8 @@
 <!-- 生成二叉树&#45;&gt;617 -->
 <g id="edge38" class="edge">
 <title>生成二叉树&#45;&gt;617</title>
-<path fill="none" stroke="black" d="M621.27,-1295.7C620.5,-1287.98 619.57,-1278.71 618.71,-1270.11"/>
-<polygon fill="black" stroke="black" points="622.19,-1269.71 617.71,-1260.1 615.22,-1270.4 622.19,-1269.71"/>
+<path fill="none" stroke="gray" d="M621.27,-1295.7C620.5,-1287.98 619.57,-1278.71 618.71,-1270.11"/>
+<polygon fill="gray" stroke="gray" points="622.19,-1269.71 617.71,-1260.1 615.22,-1270.4 622.19,-1269.71"/>
 </g>
 <!-- 95 -->
 <g id="node40" class="node">
@@ -732,8 +732,8 @@
 <!-- 617&#45;&gt;95 -->
 <g id="edge39" class="edge">
 <title>617&#45;&gt;95</title>
-<path fill="none" stroke="black" d="M625.39,-1223.7C629.76,-1215.64 635.06,-1205.89 639.9,-1196.98"/>
-<polygon fill="black" stroke="black" points="643.02,-1198.56 644.71,-1188.1 636.87,-1195.22 643.02,-1198.56"/>
+<path fill="none" stroke="gray" d="M625.39,-1223.7C629.76,-1215.64 635.06,-1205.89 639.9,-1196.98"/>
+<polygon fill="gray" stroke="gray" points="643.02,-1198.56 644.71,-1188.1 636.87,-1195.22 643.02,-1198.56"/>
 </g>
 <!-- 96 -->
 <g id="node41" class="node">
@@ -747,8 +747,8 @@
 <!-- 95&#45;&gt;96 -->
 <g id="edge40" class="edge">
 <title>95&#45;&gt;96</title>
-<path fill="none" stroke="black" d="M664.38,-1151.7C669.26,-1143.56 675.19,-1133.69 680.58,-1124.7"/>
-<polygon fill="black" stroke="black" points="683.59,-1126.48 685.74,-1116.1 677.59,-1122.88 683.59,-1126.48"/>
+<path fill="none" stroke="gray" d="M664.38,-1151.7C669.26,-1143.56 675.19,-1133.69 680.58,-1124.7"/>
+<polygon fill="gray" stroke="gray" points="683.59,-1126.48 685.74,-1116.1 677.59,-1122.88 683.59,-1126.48"/>
 </g>
 <!-- 108 -->
 <g id="node42" class="node">
@@ -762,8 +762,8 @@
 <!-- 96&#45;&gt;108 -->
 <g id="edge41" class="edge">
 <title>96&#45;&gt;108</title>
-<path fill="none" stroke="black" d="M706.38,-1079.7C711.26,-1071.56 717.19,-1061.69 722.58,-1052.7"/>
-<polygon fill="black" stroke="black" points="725.59,-1054.48 727.74,-1044.1 719.59,-1050.88 725.59,-1054.48"/>
+<path fill="none" stroke="gray" d="M706.38,-1079.7C711.26,-1071.56 717.19,-1061.69 722.58,-1052.7"/>
+<polygon fill="gray" stroke="gray" points="725.59,-1054.48 727.74,-1044.1 719.59,-1050.88 725.59,-1054.48"/>
 </g>
 <!-- 105 -->
 <g id="node43" class="node">
@@ -777,8 +777,8 @@
 <!-- 108&#45;&gt;105 -->
 <g id="edge42" class="edge">
 <title>108&#45;&gt;105</title>
-<path fill="none" stroke="black" d="M738,-1007.7C738,-999.98 738,-990.71 738,-982.11"/>
-<polygon fill="black" stroke="black" points="741.5,-982.1 738,-972.1 734.5,-982.1 741.5,-982.1"/>
+<path fill="none" stroke="gray" d="M738,-1007.7C738,-999.98 738,-990.71 738,-982.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-982.1 738,-972.1 734.5,-982.1 741.5,-982.1"/>
 </g>
 <!-- 106 -->
 <g id="node44" class="node">
@@ -792,8 +792,8 @@
 <!-- 105&#45;&gt;106 -->
 <g id="edge43" class="edge">
 <title>105&#45;&gt;106</title>
-<path fill="none" stroke="black" d="M738,-935.7C738,-927.98 738,-918.71 738,-910.11"/>
-<polygon fill="black" stroke="black" points="741.5,-910.1 738,-900.1 734.5,-910.1 741.5,-910.1"/>
+<path fill="none" stroke="gray" d="M738,-935.7C738,-927.98 738,-918.71 738,-910.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-910.1 738,-900.1 734.5,-910.1 741.5,-910.1"/>
 </g>
 <!-- 889 -->
 <g id="node45" class="node">
@@ -807,8 +807,8 @@
 <!-- 106&#45;&gt;889 -->
 <g id="edge44" class="edge">
 <title>106&#45;&gt;889</title>
-<path fill="none" stroke="black" d="M738,-863.7C738,-855.98 738,-846.71 738,-838.11"/>
-<polygon fill="black" stroke="black" points="741.5,-838.1 738,-828.1 734.5,-838.1 741.5,-838.1"/>
+<path fill="none" stroke="gray" d="M738,-863.7C738,-855.98 738,-846.71 738,-838.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-838.1 738,-828.1 734.5,-838.1 741.5,-838.1"/>
 </g>
 <!-- 450 -->
 <g id="node46" class="node">
@@ -822,8 +822,8 @@
 <!-- 889&#45;&gt;450 -->
 <g id="edge45" class="edge">
 <title>889&#45;&gt;450</title>
-<path fill="none" stroke="black" d="M738,-791.7C738,-783.98 738,-774.71 738,-766.11"/>
-<polygon fill="black" stroke="black" points="741.5,-766.1 738,-756.1 734.5,-766.1 741.5,-766.1"/>
+<path fill="none" stroke="gray" d="M738,-791.7C738,-783.98 738,-774.71 738,-766.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-766.1 738,-756.1 734.5,-766.1 741.5,-766.1"/>
 </g>
 <!-- 654 -->
 <g id="node47" class="node">
@@ -837,8 +837,8 @@
 <!-- 450&#45;&gt;654 -->
 <g id="edge46" class="edge">
 <title>450&#45;&gt;654</title>
-<path fill="none" stroke="black" d="M738,-719.7C738,-711.98 738,-702.71 738,-694.11"/>
-<polygon fill="black" stroke="black" points="741.5,-694.1 738,-684.1 734.5,-694.1 741.5,-694.1"/>
+<path fill="none" stroke="gray" d="M738,-719.7C738,-711.98 738,-702.71 738,-694.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-694.1 738,-684.1 734.5,-694.1 741.5,-694.1"/>
 </g>
 <!-- 669 -->
 <g id="node48" class="node">
@@ -852,8 +852,8 @@
 <!-- 654&#45;&gt;669 -->
 <g id="edge47" class="edge">
 <title>654&#45;&gt;669</title>
-<path fill="none" stroke="black" d="M738,-647.7C738,-639.98 738,-630.71 738,-622.11"/>
-<polygon fill="black" stroke="black" points="741.5,-622.1 738,-612.1 734.5,-622.1 741.5,-622.1"/>
+<path fill="none" stroke="gray" d="M738,-647.7C738,-639.98 738,-630.71 738,-622.11"/>
+<polygon fill="gray" stroke="gray" points="741.5,-622.1 738,-612.1 734.5,-622.1 741.5,-622.1"/>
 </g>
 <!-- 113 -->
 <g id="node50" class="node">
@@ -867,8 +867,8 @@
 <!-- 记录路径&#45;&gt;113 -->
 <g id="edge49" class="edge">
 <title>记录路径&#45;&gt;113</title>
-<path fill="none" stroke="black" d="M774.89,-1295.7C769.13,-1287.47 762.14,-1277.48 755.79,-1268.42"/>
-<polygon fill="black" stroke="black" points="758.58,-1266.29 749.97,-1260.1 752.84,-1270.3 758.58,-1266.29"/>
+<path fill="none" stroke="gray" d="M774.89,-1295.7C769.13,-1287.47 762.14,-1277.48 755.79,-1268.42"/>
+<polygon fill="gray" stroke="gray" points="758.58,-1266.29 749.97,-1260.1 752.84,-1270.3 758.58,-1266.29"/>
 </g>
 <!-- 114 -->
 <g id="node51" class="node">
@@ -882,8 +882,8 @@
 <!-- 113&#45;&gt;114 -->
 <g id="edge50" class="edge">
 <title>113&#45;&gt;114</title>
-<path fill="none" stroke="black" d="M756.79,-1223.7C766.17,-1215.05 777.68,-1204.45 787.91,-1195.03"/>
-<polygon fill="black" stroke="black" points="790.45,-1197.45 795.43,-1188.1 785.7,-1192.3 790.45,-1197.45"/>
+<path fill="none" stroke="gray" d="M756.79,-1223.7C766.17,-1215.05 777.68,-1204.45 787.91,-1195.03"/>
+<polygon fill="gray" stroke="gray" points="790.45,-1197.45 795.43,-1188.1 785.7,-1192.3 790.45,-1197.45"/>
 </g>
 <!-- 129 -->
 <g id="node53" class="node">
@@ -897,8 +897,8 @@
 <!-- 叶子节点&#45;&gt;129 -->
 <g id="edge52" class="edge">
 <title>叶子节点&#45;&gt;129</title>
-<path fill="none" stroke="black" d="M935.15,-1295.7C928.97,-1287.39 921.46,-1277.28 914.68,-1268.14"/>
-<polygon fill="black" stroke="black" points="917.48,-1266.04 908.71,-1260.1 911.86,-1270.22 917.48,-1266.04"/>
+<path fill="none" stroke="gray" d="M935.15,-1295.7C928.97,-1287.39 921.46,-1277.28 914.68,-1268.14"/>
+<polygon fill="gray" stroke="gray" points="917.48,-1266.04 908.71,-1260.1 911.86,-1270.22 917.48,-1266.04"/>
 </g>
 <!-- 144 -->
 <g id="node55" class="node">
@@ -912,8 +912,8 @@
 <!-- 非递归实现&#45;&gt;144 -->
 <g id="edge54" class="edge">
 <title>非递归实现&#45;&gt;144</title>
-<path fill="none" stroke="black" d="M1108.89,-1295.7C1103.13,-1287.47 1096.14,-1277.48 1089.79,-1268.42"/>
-<polygon fill="black" stroke="black" points="1092.58,-1266.29 1083.97,-1260.1 1086.84,-1270.3 1092.58,-1266.29"/>
+<path fill="none" stroke="gray" d="M1108.89,-1295.7C1103.13,-1287.47 1096.14,-1277.48 1089.79,-1268.42"/>
+<polygon fill="gray" stroke="gray" points="1092.58,-1266.29 1083.97,-1260.1 1086.84,-1270.3 1092.58,-1266.29"/>
 </g>
 <!-- 145 -->
 <g id="node56" class="node">
@@ -927,8 +927,8 @@
 <!-- 144&#45;&gt;145 -->
 <g id="edge55" class="edge">
 <title>144&#45;&gt;145</title>
-<path fill="none" stroke="black" d="M1072,-1223.7C1072,-1215.98 1072,-1206.71 1072,-1198.11"/>
-<polygon fill="black" stroke="black" points="1075.5,-1198.1 1072,-1188.1 1068.5,-1198.1 1075.5,-1198.1"/>
+<path fill="none" stroke="gray" d="M1072,-1223.7C1072,-1215.98 1072,-1206.71 1072,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="1075.5,-1198.1 1072,-1188.1 1068.5,-1198.1 1075.5,-1198.1"/>
 </g>
 <!-- 236 -->
 <g id="node58" class="node">
@@ -942,8 +942,8 @@
 <!-- 公共祖先&#45;&gt;236 -->
 <g id="edge57" class="edge">
 <title>公共祖先&#45;&gt;236</title>
-<path fill="none" stroke="black" d="M1253.29,-1295.7C1251.64,-1287.98 1249.65,-1278.71 1247.81,-1270.11"/>
-<polygon fill="black" stroke="black" points="1251.18,-1269.15 1245.67,-1260.1 1244.34,-1270.62 1251.18,-1269.15"/>
+<path fill="none" stroke="gray" d="M1253.29,-1295.7C1251.64,-1287.98 1249.65,-1278.71 1247.81,-1270.11"/>
+<polygon fill="gray" stroke="gray" points="1251.18,-1269.15 1245.67,-1260.1 1244.34,-1270.62 1251.18,-1269.15"/>
 </g>
 <!-- 337 -->
 <g id="node60" class="node">
@@ -957,8 +957,8 @@
 <!-- 树形dp&#45;&gt;337 -->
 <g id="edge59" class="edge">
 <title>树形dp&#45;&gt;337</title>
-<path fill="none" stroke="black" d="M1383.96,-1295.7C1385.72,-1287.98 1387.84,-1278.71 1389.8,-1270.11"/>
-<polygon fill="black" stroke="black" points="1393.27,-1270.63 1392.09,-1260.1 1386.45,-1269.07 1393.27,-1270.63"/>
+<path fill="none" stroke="gray" d="M1383.96,-1295.7C1385.72,-1287.98 1387.84,-1278.71 1389.8,-1270.11"/>
+<polygon fill="gray" stroke="gray" points="1393.27,-1270.63 1392.09,-1260.1 1386.45,-1269.07 1393.27,-1270.63"/>
 </g>
 <!-- 437 -->
 <g id="node62" class="node">
@@ -972,8 +972,8 @@
 <!-- 前缀和&#45;&gt;437 -->
 <g id="edge61" class="edge">
 <title>前缀和&#45;&gt;437</title>
-<path fill="none" stroke="black" d="M1505.94,-1295.7C1508.17,-1287.9 1510.85,-1278.51 1513.33,-1269.83"/>
-<polygon fill="black" stroke="black" points="1516.73,-1270.68 1516.11,-1260.1 1510,-1268.76 1516.73,-1270.68"/>
+<path fill="none" stroke="gray" d="M1505.94,-1295.7C1508.17,-1287.9 1510.85,-1278.51 1513.33,-1269.83"/>
+<polygon fill="gray" stroke="gray" points="1516.73,-1270.68 1516.11,-1260.1 1510,-1268.76 1516.73,-1270.68"/>
 </g>
 <!-- 449 -->
 <g id="node64" class="node">
@@ -987,8 +987,8 @@
 <!-- 二叉树序列化&#45;&gt;449 -->
 <g id="edge63" class="edge">
 <title>二叉树序列化&#45;&gt;449</title>
-<path fill="none" stroke="black" d="M1665.15,-1295.7C1669.4,-1287.64 1674.56,-1277.89 1679.27,-1268.98"/>
-<polygon fill="black" stroke="black" points="1682.38,-1270.58 1683.96,-1260.1 1676.19,-1267.31 1682.38,-1270.58"/>
+<path fill="none" stroke="gray" d="M1665.15,-1295.7C1669.4,-1287.64 1674.56,-1277.89 1679.27,-1268.98"/>
+<polygon fill="gray" stroke="gray" points="1682.38,-1270.58 1683.96,-1260.1 1676.19,-1267.31 1682.38,-1270.58"/>
 </g>
 <!-- 536 -->
 <g id="node65" class="node">
@@ -1002,8 +1002,8 @@
 <!-- 449&#45;&gt;536 -->
 <g id="edge64" class="edge">
 <title>449&#45;&gt;536</title>
-<path fill="none" stroke="black" d="M1688.06,-1223.7C1685.83,-1215.9 1683.15,-1206.51 1680.67,-1197.83"/>
-<polygon fill="black" stroke="black" points="1684,-1196.76 1677.89,-1188.1 1677.27,-1198.68 1684,-1196.76"/>
+<path fill="none" stroke="gray" d="M1688.06,-1223.7C1685.83,-1215.9 1683.15,-1206.51 1680.67,-1197.83"/>
+<polygon fill="gray" stroke="gray" points="1684,-1196.76 1677.89,-1188.1 1677.27,-1198.68 1684,-1196.76"/>
 </g>
 <!-- 652 -->
 <g id="node66" class="node">
@@ -1017,8 +1017,8 @@
 <!-- 536&#45;&gt;652 -->
 <g id="edge65" class="edge">
 <title>536&#45;&gt;652</title>
-<path fill="none" stroke="black" d="M1673,-1151.7C1673,-1143.98 1673,-1134.71 1673,-1126.11"/>
-<polygon fill="black" stroke="black" points="1676.5,-1126.1 1673,-1116.1 1669.5,-1126.1 1676.5,-1126.1"/>
+<path fill="none" stroke="gray" d="M1673,-1151.7C1673,-1143.98 1673,-1134.71 1673,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="1676.5,-1126.1 1673,-1116.1 1669.5,-1126.1 1676.5,-1126.1"/>
 </g>
 <!-- 655 -->
 <g id="node67" class="node">
@@ -1032,8 +1032,8 @@
 <!-- 652&#45;&gt;655 -->
 <g id="edge66" class="edge">
 <title>652&#45;&gt;655</title>
-<path fill="none" stroke="black" d="M1673,-1079.7C1673,-1071.98 1673,-1062.71 1673,-1054.11"/>
-<polygon fill="black" stroke="black" points="1676.5,-1054.1 1673,-1044.1 1669.5,-1054.1 1676.5,-1054.1"/>
+<path fill="none" stroke="gray" d="M1673,-1079.7C1673,-1071.98 1673,-1062.71 1673,-1054.11"/>
+<polygon fill="gray" stroke="gray" points="1676.5,-1054.1 1673,-1044.1 1669.5,-1054.1 1676.5,-1054.1"/>
 </g>
 <!-- 687 -->
 <g id="node69" class="node">
@@ -1047,8 +1047,8 @@
 <!-- 所有路径&#45;&gt;687 -->
 <g id="edge68" class="edge">
 <title>所有路径&#45;&gt;687</title>
-<path fill="none" stroke="black" d="M1835.12,-1295.7C1840.36,-1287.56 1846.7,-1277.69 1852.48,-1268.7"/>
-<polygon fill="black" stroke="black" points="1855.54,-1270.41 1858,-1260.1 1849.65,-1266.62 1855.54,-1270.41"/>
+<path fill="none" stroke="gray" d="M1835.12,-1295.7C1840.36,-1287.56 1846.7,-1277.69 1852.48,-1268.7"/>
+<polygon fill="gray" stroke="gray" points="1855.54,-1270.41 1858,-1260.1 1849.65,-1266.62 1855.54,-1270.41"/>
 </g>
 <!-- 863 -->
 <g id="node70" class="node">
@@ -1062,8 +1062,8 @@
 <!-- 687&#45;&gt;863 -->
 <g id="edge69" class="edge">
 <title>687&#45;&gt;863</title>
-<path fill="none" stroke="black" d="M1869,-1223.7C1869,-1215.98 1869,-1206.71 1869,-1198.11"/>
-<polygon fill="black" stroke="black" points="1872.5,-1198.1 1869,-1188.1 1865.5,-1198.1 1872.5,-1198.1"/>
+<path fill="none" stroke="gray" d="M1869,-1223.7C1869,-1215.98 1869,-1206.71 1869,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="1872.5,-1198.1 1869,-1188.1 1865.5,-1198.1 1872.5,-1198.1"/>
 </g>
 <!-- 684 -->
 <g id="node72" class="node">
@@ -1077,8 +1077,8 @@
 <!-- 图与树&#45;&gt;684 -->
 <g id="edge71" class="edge">
 <title>图与树&#45;&gt;684</title>
-<path fill="none" stroke="black" d="M1967.66,-1295.7C1971.19,-1287.73 1975.46,-1278.1 1979.37,-1269.26"/>
-<polygon fill="black" stroke="black" points="1982.58,-1270.67 1983.43,-1260.1 1976.18,-1267.83 1982.58,-1270.67"/>
+<path fill="none" stroke="gray" d="M1967.66,-1295.7C1971.19,-1287.73 1975.46,-1278.1 1979.37,-1269.26"/>
+<polygon fill="gray" stroke="gray" points="1982.58,-1270.67 1983.43,-1260.1 1976.18,-1267.83 1982.58,-1270.67"/>
 </g>
 <!-- 814 -->
 <g id="node74" class="node">
@@ -1092,8 +1092,8 @@
 <!-- 剪枝&#45;&gt;814 -->
 <g id="edge73" class="edge">
 <title>剪枝&#45;&gt;814</title>
-<path fill="none" stroke="black" d="M2086.67,-1295.7C2089.71,-1287.81 2093.38,-1278.3 2096.76,-1269.55"/>
-<polygon fill="black" stroke="black" points="2100.07,-1270.69 2100.4,-1260.1 2093.54,-1268.17 2100.07,-1270.69"/>
+<path fill="none" stroke="gray" d="M2086.67,-1295.7C2089.71,-1287.81 2093.38,-1278.3 2096.76,-1269.55"/>
+<polygon fill="gray" stroke="gray" points="2100.07,-1270.69 2100.4,-1260.1 2093.54,-1268.17 2100.07,-1270.69"/>
 </g>
 <!-- 865 -->
 <g id="node75" class="node">
@@ -1107,8 +1107,8 @@
 <!-- 814&#45;&gt;865 -->
 <g id="edge74" class="edge">
 <title>814&#45;&gt;865</title>
-<path fill="none" stroke="black" d="M2102.55,-1223.7C2100.55,-1215.9 2098.13,-1206.51 2095.9,-1197.83"/>
-<polygon fill="black" stroke="black" points="2099.28,-1196.92 2093.4,-1188.1 2092.5,-1198.66 2099.28,-1196.92"/>
+<path fill="none" stroke="gray" d="M2102.55,-1223.7C2100.55,-1215.9 2098.13,-1206.51 2095.9,-1197.83"/>
+<polygon fill="gray" stroke="gray" points="2099.28,-1196.92 2093.4,-1188.1 2092.5,-1198.66 2099.28,-1196.92"/>
 </g>
 <!-- 894 -->
 <g id="node77" class="node">
@@ -1122,8 +1122,8 @@
 <!-- 中等题&#45;&gt;894 -->
 <g id="edge76" class="edge">
 <title>中等题&#45;&gt;894</title>
-<path fill="none" stroke="black" d="M2225.85,-1295.7C2232.03,-1287.39 2239.54,-1277.28 2246.32,-1268.14"/>
-<polygon fill="black" stroke="black" points="2249.14,-1270.22 2252.29,-1260.1 2243.52,-1266.04 2249.14,-1270.22"/>
+<path fill="none" stroke="gray" d="M2225.85,-1295.7C2232.03,-1287.39 2239.54,-1277.28 2246.32,-1268.14"/>
+<polygon fill="gray" stroke="gray" points="2249.14,-1270.22 2252.29,-1260.1 2243.52,-1266.04 2249.14,-1270.22"/>
 </g>
 <!-- 919 -->
 <g id="node78" class="node">
@@ -1137,8 +1137,8 @@
 <!-- 894&#45;&gt;919 -->
 <g id="edge77" class="edge">
 <title>894&#45;&gt;919</title>
-<path fill="none" stroke="black" d="M2267.97,-1223.7C2269.29,-1215.98 2270.88,-1206.71 2272.35,-1198.11"/>
-<polygon fill="black" stroke="black" points="2275.83,-1198.55 2274.07,-1188.1 2268.93,-1197.37 2275.83,-1198.55"/>
+<path fill="none" stroke="gray" d="M2267.97,-1223.7C2269.29,-1215.98 2270.88,-1206.71 2272.35,-1198.11"/>
+<polygon fill="gray" stroke="gray" points="2275.83,-1198.55 2274.07,-1188.1 2268.93,-1197.37 2275.83,-1198.55"/>
 </g>
 <!-- 951 -->
 <g id="node79" class="node">
@@ -1152,8 +1152,8 @@
 <!-- 919&#45;&gt;951 -->
 <g id="edge78" class="edge">
 <title>919&#45;&gt;951</title>
-<path fill="none" stroke="black" d="M2276.01,-1151.7C2275.57,-1143.98 2275.04,-1134.71 2274.55,-1126.11"/>
-<polygon fill="black" stroke="black" points="2278.04,-1125.89 2273.98,-1116.1 2271.05,-1126.29 2278.04,-1125.89"/>
+<path fill="none" stroke="gray" d="M2276.01,-1151.7C2275.57,-1143.98 2275.04,-1134.71 2274.55,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="2278.04,-1125.89 2273.98,-1116.1 2271.05,-1126.29 2278.04,-1125.89"/>
 </g>
 <!-- 958 -->
 <g id="node80" class="node">
@@ -1167,8 +1167,8 @@
 <!-- 951&#45;&gt;958 -->
 <g id="edge79" class="edge">
 <title>951&#45;&gt;958</title>
-<path fill="none" stroke="black" d="M2272.26,-1079.7C2271.93,-1071.98 2271.53,-1062.71 2271.16,-1054.11"/>
-<polygon fill="black" stroke="black" points="2274.66,-1053.95 2270.73,-1044.1 2267.66,-1054.25 2274.66,-1053.95"/>
+<path fill="none" stroke="gray" d="M2272.26,-1079.7C2271.93,-1071.98 2271.53,-1062.71 2271.16,-1054.11"/>
+<polygon fill="gray" stroke="gray" points="2274.66,-1053.95 2270.73,-1044.1 2267.66,-1054.25 2274.66,-1053.95"/>
 </g>
 <!-- 971 -->
 <g id="node81" class="node">
@@ -1182,8 +1182,8 @@
 <!-- 958&#45;&gt;971 -->
 <g id="edge80" class="edge">
 <title>958&#45;&gt;971</title>
-<path fill="none" stroke="black" d="M2269.01,-1007.7C2268.57,-999.98 2268.04,-990.71 2267.55,-982.11"/>
-<polygon fill="black" stroke="black" points="2271.04,-981.89 2266.98,-972.1 2264.05,-982.29 2271.04,-981.89"/>
+<path fill="none" stroke="gray" d="M2269.01,-1007.7C2268.57,-999.98 2268.04,-990.71 2267.55,-982.11"/>
+<polygon fill="gray" stroke="gray" points="2271.04,-981.89 2266.98,-972.1 2264.05,-982.29 2271.04,-981.89"/>
 </g>
 <!-- 979 -->
 <g id="node82" class="node">
@@ -1197,8 +1197,8 @@
 <!-- 971&#45;&gt;979 -->
 <g id="edge81" class="edge">
 <title>971&#45;&gt;979</title>
-<path fill="none" stroke="black" d="M2266,-935.7C2266,-927.98 2266,-918.71 2266,-910.11"/>
-<polygon fill="black" stroke="black" points="2269.5,-910.1 2266,-900.1 2262.5,-910.1 2269.5,-910.1"/>
+<path fill="none" stroke="gray" d="M2266,-935.7C2266,-927.98 2266,-918.71 2266,-910.11"/>
+<polygon fill="gray" stroke="gray" points="2269.5,-910.1 2266,-900.1 2262.5,-910.1 2269.5,-910.1"/>
 </g>
 <!-- 988 -->
 <g id="node83" class="node">
@@ -1212,8 +1212,8 @@
 <!-- 979&#45;&gt;988 -->
 <g id="edge82" class="edge">
 <title>979&#45;&gt;988</title>
-<path fill="none" stroke="black" d="M2266,-863.7C2266,-855.98 2266,-846.71 2266,-838.11"/>
-<polygon fill="black" stroke="black" points="2269.5,-838.1 2266,-828.1 2262.5,-838.1 2269.5,-838.1"/>
+<path fill="none" stroke="gray" d="M2266,-863.7C2266,-855.98 2266,-846.71 2266,-838.11"/>
+<polygon fill="gray" stroke="gray" points="2269.5,-838.1 2266,-828.1 2262.5,-838.1 2269.5,-838.1"/>
 </g>
 <!-- 998 -->
 <g id="node84" class="node">
@@ -1227,8 +1227,8 @@
 <!-- 988&#45;&gt;998 -->
 <g id="edge83" class="edge">
 <title>988&#45;&gt;998</title>
-<path fill="none" stroke="black" d="M2266,-791.7C2266,-783.98 2266,-774.71 2266,-766.11"/>
-<polygon fill="black" stroke="black" points="2269.5,-766.1 2266,-756.1 2262.5,-766.1 2269.5,-766.1"/>
+<path fill="none" stroke="gray" d="M2266,-791.7C2266,-783.98 2266,-774.71 2266,-766.11"/>
+<polygon fill="gray" stroke="gray" points="2269.5,-766.1 2266,-756.1 2262.5,-766.1 2269.5,-766.1"/>
 </g>
 <!-- 742 -->
 <g id="node85" class="node">
@@ -1242,8 +1242,8 @@
 <!-- 998&#45;&gt;742 -->
 <g id="edge84" class="edge">
 <title>998&#45;&gt;742</title>
-<path fill="none" stroke="black" d="M2266,-719.7C2266,-711.98 2266,-702.71 2266,-694.11"/>
-<polygon fill="black" stroke="black" points="2269.5,-694.1 2266,-684.1 2262.5,-694.1 2269.5,-694.1"/>
+<path fill="none" stroke="gray" d="M2266,-719.7C2266,-711.98 2266,-702.71 2266,-694.11"/>
+<polygon fill="gray" stroke="gray" points="2269.5,-694.1 2266,-684.1 2262.5,-694.1 2269.5,-694.1"/>
 </g>
 <!-- 99 -->
 <g id="node87" class="node">
@@ -1257,8 +1257,8 @@
 <!-- 困难题&#45;&gt;99 -->
 <g id="edge86" class="edge">
 <title>困难题&#45;&gt;99</title>
-<path fill="none" stroke="black" d="M2379.55,-1295.7C2388.23,-1287.14 2398.86,-1276.66 2408.35,-1267.3"/>
-<polygon fill="black" stroke="black" points="2410.99,-1269.62 2415.65,-1260.1 2406.07,-1264.63 2410.99,-1269.62"/>
+<path fill="none" stroke="gray" d="M2379.55,-1295.7C2388.23,-1287.14 2398.86,-1276.66 2408.35,-1267.3"/>
+<polygon fill="gray" stroke="gray" points="2410.99,-1269.62 2415.65,-1260.1 2406.07,-1264.63 2410.99,-1269.62"/>
 </g>
 <!-- 124 -->
 <g id="node88" class="node">
@@ -1272,8 +1272,8 @@
 <!-- 99&#45;&gt;124 -->
 <g id="edge87" class="edge">
 <title>99&#45;&gt;124</title>
-<path fill="none" stroke="black" d="M2438.69,-1223.7C2441.25,-1215.9 2444.33,-1206.51 2447.18,-1197.83"/>
-<polygon fill="black" stroke="black" points="2450.58,-1198.7 2450.38,-1188.1 2443.93,-1196.51 2450.58,-1198.7"/>
+<path fill="none" stroke="gray" d="M2438.69,-1223.7C2441.25,-1215.9 2444.33,-1206.51 2447.18,-1197.83"/>
+<polygon fill="gray" stroke="gray" points="2450.58,-1198.7 2450.38,-1188.1 2443.93,-1196.51 2450.58,-1198.7"/>
 </g>
 <!-- 272 -->
 <g id="node89" class="node">
@@ -1287,8 +1287,8 @@
 <!-- 124&#45;&gt;272 -->
 <g id="edge88" class="edge">
 <title>124&#45;&gt;272</title>
-<path fill="none" stroke="black" d="M2456.74,-1151.7C2457.07,-1143.98 2457.47,-1134.71 2457.84,-1126.11"/>
-<polygon fill="black" stroke="black" points="2461.34,-1126.25 2458.27,-1116.1 2454.34,-1125.95 2461.34,-1126.25"/>
+<path fill="none" stroke="gray" d="M2456.74,-1151.7C2457.07,-1143.98 2457.47,-1134.71 2457.84,-1126.11"/>
+<polygon fill="gray" stroke="gray" points="2461.34,-1126.25 2458.27,-1116.1 2454.34,-1125.95 2461.34,-1126.25"/>
 </g>
 <!-- 297 -->
 <g id="node90" class="node">
@@ -1302,8 +1302,8 @@
 <!-- 272&#45;&gt;297 -->
 <g id="edge89" class="edge">
 <title>272&#45;&gt;297</title>
-<path fill="none" stroke="black" d="M2460.48,-1079.7C2461.14,-1071.98 2461.94,-1062.71 2462.68,-1054.11"/>
-<polygon fill="black" stroke="black" points="2466.17,-1054.37 2463.53,-1044.1 2459.19,-1053.77 2466.17,-1054.37"/>
+<path fill="none" stroke="gray" d="M2460.48,-1079.7C2461.14,-1071.98 2461.94,-1062.71 2462.68,-1054.11"/>
+<polygon fill="gray" stroke="gray" points="2466.17,-1054.37 2463.53,-1044.1 2459.19,-1053.77 2466.17,-1054.37"/>
 </g>
 <!-- 428 -->
 <g id="node91" class="node">
@@ -1317,8 +1317,8 @@
 <!-- 297&#45;&gt;428 -->
 <g id="edge90" class="edge">
 <title>297&#45;&gt;428</title>
-<path fill="none" stroke="black" d="M2465.99,-1007.7C2466.43,-999.98 2466.96,-990.71 2467.45,-982.11"/>
-<polygon fill="black" stroke="black" points="2470.95,-982.29 2468.02,-972.1 2463.96,-981.89 2470.95,-982.29"/>
+<path fill="none" stroke="gray" d="M2465.99,-1007.7C2466.43,-999.98 2466.96,-990.71 2467.45,-982.11"/>
+<polygon fill="gray" stroke="gray" points="2470.95,-982.29 2468.02,-972.1 2463.96,-981.89 2470.95,-982.29"/>
 </g>
 <!-- 431 -->
 <g id="node92" class="node">
@@ -1332,8 +1332,8 @@
 <!-- 428&#45;&gt;431 -->
 <g id="edge91" class="edge">
 <title>428&#45;&gt;431</title>
-<path fill="none" stroke="black" d="M2469,-935.7C2469,-927.98 2469,-918.71 2469,-910.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-910.1 2469,-900.1 2465.5,-910.1 2472.5,-910.1"/>
+<path fill="none" stroke="gray" d="M2469,-935.7C2469,-927.98 2469,-918.71 2469,-910.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-910.1 2469,-900.1 2465.5,-910.1 2472.5,-910.1"/>
 </g>
 <!-- 685 -->
 <g id="node93" class="node">
@@ -1347,8 +1347,8 @@
 <!-- 431&#45;&gt;685 -->
 <g id="edge92" class="edge">
 <title>431&#45;&gt;685</title>
-<path fill="none" stroke="black" d="M2469,-863.7C2469,-855.98 2469,-846.71 2469,-838.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-838.1 2469,-828.1 2465.5,-838.1 2472.5,-838.1"/>
+<path fill="none" stroke="gray" d="M2469,-863.7C2469,-855.98 2469,-846.71 2469,-838.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-838.1 2469,-828.1 2465.5,-838.1 2472.5,-838.1"/>
 </g>
 <!-- 834 -->
 <g id="node94" class="node">
@@ -1362,8 +1362,8 @@
 <!-- 685&#45;&gt;834 -->
 <g id="edge93" class="edge">
 <title>685&#45;&gt;834</title>
-<path fill="none" stroke="black" d="M2469,-791.7C2469,-783.98 2469,-774.71 2469,-766.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-766.1 2469,-756.1 2465.5,-766.1 2472.5,-766.1"/>
+<path fill="none" stroke="gray" d="M2469,-791.7C2469,-783.98 2469,-774.71 2469,-766.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-766.1 2469,-756.1 2465.5,-766.1 2472.5,-766.1"/>
 </g>
 <!-- 968 -->
 <g id="node95" class="node">
@@ -1377,8 +1377,8 @@
 <!-- 834&#45;&gt;968 -->
 <g id="edge94" class="edge">
 <title>834&#45;&gt;968</title>
-<path fill="none" stroke="black" d="M2469,-719.7C2469,-711.98 2469,-702.71 2469,-694.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-694.1 2469,-684.1 2465.5,-694.1 2472.5,-694.1"/>
+<path fill="none" stroke="gray" d="M2469,-719.7C2469,-711.98 2469,-702.71 2469,-694.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-694.1 2469,-684.1 2465.5,-694.1 2472.5,-694.1"/>
 </g>
 <!-- 987 -->
 <g id="node96" class="node">
@@ -1392,8 +1392,8 @@
 <!-- 968&#45;&gt;987 -->
 <g id="edge95" class="edge">
 <title>968&#45;&gt;987</title>
-<path fill="none" stroke="black" d="M2469,-647.7C2469,-639.98 2469,-630.71 2469,-622.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-622.1 2469,-612.1 2465.5,-622.1 2472.5,-622.1"/>
+<path fill="none" stroke="gray" d="M2469,-647.7C2469,-639.98 2469,-630.71 2469,-622.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-622.1 2469,-612.1 2465.5,-622.1 2472.5,-622.1"/>
 </g>
 <!-- 1028 -->
 <g id="node97" class="node">
@@ -1407,8 +1407,8 @@
 <!-- 987&#45;&gt;1028 -->
 <g id="edge96" class="edge">
 <title>987&#45;&gt;1028</title>
-<path fill="none" stroke="black" d="M2469,-575.7C2469,-567.98 2469,-558.71 2469,-550.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-550.1 2469,-540.1 2465.5,-550.1 2472.5,-550.1"/>
+<path fill="none" stroke="gray" d="M2469,-575.7C2469,-567.98 2469,-558.71 2469,-550.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-550.1 2469,-540.1 2465.5,-550.1 2472.5,-550.1"/>
 </g>
 <!-- 1516 -->
 <g id="node98" class="node">
@@ -1422,8 +1422,8 @@
 <!-- 1028&#45;&gt;1516 -->
 <g id="edge97" class="edge">
 <title>1028&#45;&gt;1516</title>
-<path fill="none" stroke="black" d="M2469,-503.7C2469,-495.98 2469,-486.71 2469,-478.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-478.1 2469,-468.1 2465.5,-478.1 2472.5,-478.1"/>
+<path fill="none" stroke="gray" d="M2469,-503.7C2469,-495.98 2469,-486.71 2469,-478.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-478.1 2469,-468.1 2465.5,-478.1 2472.5,-478.1"/>
 </g>
 <!-- 1597 -->
 <g id="node99" class="node">
@@ -1437,8 +1437,8 @@
 <!-- 1516&#45;&gt;1597 -->
 <g id="edge98" class="edge">
 <title>1516&#45;&gt;1597</title>
-<path fill="none" stroke="black" d="M2469,-431.7C2469,-423.98 2469,-414.71 2469,-406.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-406.1 2469,-396.1 2465.5,-406.1 2472.5,-406.1"/>
+<path fill="none" stroke="gray" d="M2469,-431.7C2469,-423.98 2469,-414.71 2469,-406.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-406.1 2469,-396.1 2465.5,-406.1 2472.5,-406.1"/>
 </g>
 <!-- 1719 -->
 <g id="node100" class="node">
@@ -1452,8 +1452,8 @@
 <!-- 1597&#45;&gt;1719 -->
 <g id="edge99" class="edge">
 <title>1597&#45;&gt;1719</title>
-<path fill="none" stroke="black" d="M2469,-359.7C2469,-351.98 2469,-342.71 2469,-334.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-334.1 2469,-324.1 2465.5,-334.1 2472.5,-334.1"/>
+<path fill="none" stroke="gray" d="M2469,-359.7C2469,-351.98 2469,-342.71 2469,-334.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-334.1 2469,-324.1 2465.5,-334.1 2472.5,-334.1"/>
 </g>
 <!-- 1766 -->
 <g id="node101" class="node">
@@ -1467,8 +1467,8 @@
 <!-- 1719&#45;&gt;1766 -->
 <g id="edge100" class="edge">
 <title>1719&#45;&gt;1766</title>
-<path fill="none" stroke="black" d="M2469,-287.7C2469,-279.98 2469,-270.71 2469,-262.11"/>
-<polygon fill="black" stroke="black" points="2472.5,-262.1 2469,-252.1 2465.5,-262.1 2472.5,-262.1"/>
+<path fill="none" stroke="gray" d="M2469,-287.7C2469,-279.98 2469,-270.71 2469,-262.11"/>
+<polygon fill="gray" stroke="gray" points="2472.5,-262.1 2469,-252.1 2465.5,-262.1 2472.5,-262.1"/>
 </g>
 </g>
 </svg>

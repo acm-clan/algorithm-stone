@@ -27,8 +27,8 @@
 <!-- Codeforces&#45;&gt;基础题 -->
 <g id="edge1" class="edge">
 <title>Codeforces&#45;&gt;基础题</title>
-<path fill="none" stroke="black" d="M167.92,-359.7C160.61,-351.3 151.69,-341.07 143.66,-331.86"/>
-<polygon fill="black" stroke="black" points="146.11,-329.34 136.91,-324.1 140.84,-333.94 146.11,-329.34"/>
+<path fill="none" stroke="gray" d="M167.92,-359.7C160.61,-351.3 151.69,-341.07 143.66,-331.86"/>
+<polygon fill="gray" stroke="gray" points="146.11,-329.34 136.91,-324.1 140.84,-333.94 146.11,-329.34"/>
 </g>
 <!-- Maths -->
 <g id="node7" class="node">
@@ -39,8 +39,8 @@
 <!-- Codeforces&#45;&gt;Maths -->
 <g id="edge6" class="edge">
 <title>Codeforces&#45;&gt;Maths</title>
-<path fill="none" stroke="black" d="M198.08,-359.7C205.39,-351.3 214.31,-341.07 222.34,-331.86"/>
-<polygon fill="black" stroke="black" points="225.16,-333.94 229.09,-324.1 219.89,-329.34 225.16,-333.94"/>
+<path fill="none" stroke="gray" d="M198.08,-359.7C205.39,-351.3 214.31,-341.07 222.34,-331.86"/>
+<polygon fill="gray" stroke="gray" points="225.16,-333.94 229.09,-324.1 219.89,-329.34 225.16,-333.94"/>
 </g>
 <!-- 1A -->
 <g id="node3" class="node">
@@ -54,8 +54,8 @@
 <!-- 基础题&#45;&gt;1A -->
 <g id="edge2" class="edge">
 <title>基础题&#45;&gt;1A</title>
-<path fill="none" stroke="black" d="M117.55,-287.7C115.55,-279.9 113.13,-270.51 110.9,-261.83"/>
-<polygon fill="black" stroke="black" points="114.28,-260.92 108.4,-252.1 107.5,-262.66 114.28,-260.92"/>
+<path fill="none" stroke="gray" d="M117.55,-287.7C115.55,-279.9 113.13,-270.51 110.9,-261.83"/>
+<polygon fill="gray" stroke="gray" points="114.28,-260.92 108.4,-252.1 107.5,-262.66 114.28,-260.92"/>
 </g>
 <!-- 4A -->
 <g id="node4" class="node">
@@ -69,8 +69,8 @@
 <!-- 1A&#45;&gt;4A -->
 <g id="edge3" class="edge">
 <title>1A&#45;&gt;4A</title>
-<path fill="none" stroke="black" d="M104,-215.7C104,-207.98 104,-198.71 104,-190.11"/>
-<polygon fill="black" stroke="black" points="107.5,-190.1 104,-180.1 100.5,-190.1 107.5,-190.1"/>
+<path fill="none" stroke="gray" d="M104,-215.7C104,-207.98 104,-198.71 104,-190.11"/>
+<polygon fill="gray" stroke="gray" points="107.5,-190.1 104,-180.1 100.5,-190.1 107.5,-190.1"/>
 </g>
 <!-- 5A -->
 <g id="node5" class="node">
@@ -84,8 +84,8 @@
 <!-- 4A&#45;&gt;5A -->
 <g id="edge4" class="edge">
 <title>4A&#45;&gt;5A</title>
-<path fill="none" stroke="black" d="M104,-143.7C104,-135.98 104,-126.71 104,-118.11"/>
-<polygon fill="black" stroke="black" points="107.5,-118.1 104,-108.1 100.5,-118.1 107.5,-118.1"/>
+<path fill="none" stroke="gray" d="M104,-143.7C104,-135.98 104,-126.71 104,-118.11"/>
+<polygon fill="gray" stroke="gray" points="107.5,-118.1 104,-108.1 100.5,-118.1 107.5,-118.1"/>
 </g>
 <!-- 6A -->
 <g id="node6" class="node">
@@ -99,8 +99,8 @@
 <!-- 5A&#45;&gt;6A -->
 <g id="edge5" class="edge">
 <title>5A&#45;&gt;6A</title>
-<path fill="none" stroke="black" d="M104,-71.7C104,-63.98 104,-54.71 104,-46.11"/>
-<polygon fill="black" stroke="black" points="107.5,-46.1 104,-36.1 100.5,-46.1 107.5,-46.1"/>
+<path fill="none" stroke="gray" d="M104,-71.7C104,-63.98 104,-54.71 104,-46.11"/>
+<polygon fill="gray" stroke="gray" points="107.5,-46.1 104,-36.1 100.5,-46.1 107.5,-46.1"/>
 </g>
 <!-- 409H -->
 <g id="node8" class="node">
@@ -114,8 +114,8 @@
 <!-- Maths&#45;&gt;409H -->
 <g id="edge7" class="edge">
 <title>Maths&#45;&gt;409H</title>
-<path fill="none" stroke="black" d="M248.7,-287.7C250.81,-279.9 253.36,-270.51 255.72,-261.83"/>
-<polygon fill="black" stroke="black" points="259.12,-262.67 258.36,-252.1 252.36,-260.84 259.12,-262.67"/>
+<path fill="none" stroke="gray" d="M248.7,-287.7C250.81,-279.9 253.36,-270.51 255.72,-261.83"/>
+<polygon fill="gray" stroke="gray" points="259.12,-262.67 258.36,-252.1 252.36,-260.84 259.12,-262.67"/>
 </g>
 </g>
 </svg>
