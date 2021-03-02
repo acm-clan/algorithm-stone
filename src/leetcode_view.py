@@ -6,11 +6,22 @@ from pathlib import Path
 import datamap
 import leetcode
 
+finish_icon_svg = '''
+</g>
+<g transform="translate(208, -108) scale(0.3)">
+<circle fill="#4CAF50" cx="24" cy="24" r="21"/>
+    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+</g>
+'''
+
 def get_module_problem_count(m):
     c = 0
     for n in m.nodes:
         c += len(n.problems)
     return c
+
+def leetcode_post_process(path):
+    print(path)
 
 def generate_leetcode(leet, file, slug, out_name):
     m = datamap.DataMap(util.get_map_content(file))
@@ -56,12 +67,7 @@ def generate_leetcode(leet, file, slug, out_name):
             # 题目节点
             is_finished = leet.check_finish(idstr)
 
-            if is_finished:
-                g.node(name=idstr, label=title, style='filled', fillcolor="lawngreen", target="_parent", 
-                    href="https://leetcode-cn.com/problems/"+slug, 
-                    color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
-            else:
-                g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
+            g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
                     color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
 
             if len(last) > 0:
@@ -73,6 +79,7 @@ def generate_leetcode(leet, file, slug, out_name):
     g.format = 'svg'
     g.render(filename=util.get_images(out_name))
     os.remove(util.get_images(out_name))
+    leetcode_post_process(util.get_images(out_name)+".svg")
 
 def process():
     leet = leetcode.Leetcode()

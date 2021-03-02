@@ -88,10 +88,10 @@
 <g id="node5" class="node">
 <title>5A</title>
 <g id="a_node5"><a xlink:href="https://codeforces.com/problemset/problem/5/A" xlink:title="5A. Chat Servers Outgoing Traffic" target="_parent">
-<polygon fill="lawngreen" stroke="greenyellow" points="208,-108 0,-108 0,-72 208,-72 208,-108"/>
+<polygon fill="white" stroke="black" points="208,-108 0,-108 0,-72 208,-72 208,-108"/>
 <text text-anchor="middle" x="104" y="-86.9" font-family="Microsoft YaHei" font-size="12.00">5A. Chat Servers Outgoing Traffic</text>
 </a>
-</g>
+
 </g>
 <!-- 4A&#45;&gt;5A -->
 <g id="edge4" class="edge">
@@ -138,7 +138,7 @@
 </a>
 </g>
 </g>
-<!-- 数论&#45;扩展欧几里得算法&#45;&gt;1478D -->
+<!-- 数论&#45;扩展欧几里得算法1&#45;&gt;1478D -->
 <g id="edge9" class="edge">
 <title>数论&#45;扩展欧几里得算法&#45;&gt;1478D</title>
 <path fill="none" stroke="gray" d="M422.93,-287.7C425.61,-279.9 428.83,-270.51 431.8,-261.83"/>
