@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import datamap
 import leetcode
+from svgpathtools import svg2paths
 
 finish_icon_svg = '''
 </g>
@@ -21,7 +22,8 @@ def get_module_problem_count(m):
     return c
 
 def leetcode_post_process(path):
-    print(path)
+    paths, attributes = svg2paths(path)
+    print(paths, attributes)
 
 def generate_leetcode(leet, file, slug, out_name):
     m = datamap.DataMap(util.get_map_content(file))

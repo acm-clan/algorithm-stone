@@ -6,3 +6,4 @@ psrecord == 1.2
 wheel == 0.30.0
 sqlitedict == 1.7.0
 beautifulsoup4 == 4.9.3
+svgpathtools == 1.4.1

@@ -106,7 +106,7 @@
 <g id="node3" class="node">
 <title>1290</title>
 <g id="a_node3"><a xlink:href="https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer" xlink:title="1290. 二进制链表转整数" target="_parent">
-<polygon fill="lawngreen" stroke="greenyellow" points="360,-972 214,-972 214,-936 360,-936 360,-972"/>
+<polygon fill="none" stroke="greenyellow" points="360,-972 214,-972 214,-936 360,-936 360,-972"/>
 <text text-anchor="middle" x="287" y="-950.9" font-family="Microsoft YaHei" font-size="12.00">1290. 二进制链表转整数</text>
 </a>
 </g>
@@ -166,7 +166,7 @@
 <g id="node9" class="node">
 <title>83</title>
 <g id="a_node9"><a xlink:href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list" xlink:title="83. 删除排序链表中的重复元素" target="_parent">
-<polygon fill="lawngreen" stroke="greenyellow" points="391.5,-1404 210.5,-1404 210.5,-1368 391.5,-1368 391.5,-1404"/>
+<polygon fill="none" stroke="greenyellow" points="391.5,-1404 210.5,-1404 210.5,-1368 391.5,-1368 391.5,-1404"/>
 <text text-anchor="middle" x="301" y="-1382.9" font-family="Microsoft YaHei" font-size="12.00">83. 删除排序链表中的重复元素</text>
 </a>
 </g>
@@ -181,7 +181,7 @@
 <g id="node10" class="node">
 <title>82</title>
 <g id="a_node10"><a xlink:href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii" xlink:title="82. 删除排序链表中的重复元素 II" target="_parent">
-<polygon fill="lawngreen" stroke="orange" points="397,-1332 205,-1332 205,-1296 397,-1296 397,-1332"/>
+<polygon fill="none" stroke="orange" points="397,-1332 205,-1332 205,-1296 397,-1296 397,-1332"/>
 <text text-anchor="middle" x="301" y="-1310.9" font-family="Microsoft YaHei" font-size="12.00">82. 删除排序链表中的重复元素 II</text>
 </a>
 </g>
@@ -196,7 +196,7 @@
 <g id="node11" class="node">
 <title>19</title>
 <g id="a_node11"><a xlink:href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list" xlink:title="19. 删除链表的倒数第 N 个结点" target="_parent">
-<polygon fill="lawngreen" stroke="orange" points="394,-1260 208,-1260 208,-1224 394,-1224 394,-1260"/>
+<polygon fill="none" stroke="orange" points="394,-1260 208,-1260 208,-1224 394,-1224 394,-1260"/>
 <text text-anchor="middle" x="301" y="-1238.9" font-family="Microsoft YaHei" font-size="12.00">19. 删除链表的倒数第 N 个结点</text>
 </a>
 </g>
