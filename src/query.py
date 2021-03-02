@@ -27,7 +27,7 @@ def check_leetcode_tags():
             all_tags.append(t['slug'])
     all_tags = list(dict.fromkeys(all_tags))
     all_tags.sort()
-    print('\n'.join([str(item) for item in all_tags]))
+    print('\n'.join([str(item)+" "+str(len(leet.get_tag_problems(item))) for item in all_tags]))
     print("--------------tags end-------------")
 
 def check_leetcode_tag(s):
