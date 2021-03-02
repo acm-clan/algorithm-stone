@@ -41,7 +41,7 @@ class Leetcode:
     def get_all_problems(self):
         d = {}
         for k, v in self.dict.iteritems():
-            if k.startswith("leetcode_"):
+            if k.startswith("leetcode_") and k[9].isdigit():
                 d[k] = v
         return d
 
