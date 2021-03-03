@@ -15,9 +15,26 @@ svg_icon_finish = '''
 </g>
 '''
 
+svg_text_key = '''
+<g class='key'>
+  <defs>
+    <filter x="0" y="0" width="1" height="1" id="solid">
+      <feFlood flood-color="#808285" result="bg" />
+      <feMorphology operator="dilate" radius="2"/>
+      <feMerge>
+        <feMergeNode in="bg"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text filter="url(#solid)" text-anchor="middle" x="%s" y="%s" font-family="Microsoft YaHei" font-size="10.00">%s</text>
+</g>
+'''
+
 class LeetcodeView:
     def __init__(self, leet):
         self.leet = leet
+        self.m = None
 
     def get_module_problem_count(self, m):
         c = 0
@@ -30,11 +47,23 @@ class LeetcodeView:
         if not self.leet.check_finish(title):
             return
         # get positions
-        points = n.g.polygon['points'].split()[0].split(",")
-        x = float(points[0])-8
-        y = float(points[1])-6
-        t = BeautifulSoup(svg_icon_finish % (str(x), str(y)), "xml").select_one("g")
+        points = n.g.polygon['points'].split()
+        p0 = points[0].split(",")
+        x0 = float(p0[0])
+        y0 = float(p0[1])
+        t = BeautifulSoup(svg_icon_finish % (str(x0-8), str(y0-6)), "xml").select_one("g")
         n.append(t)
+        # key text
+        p1 = points[1].split(",")
+        x1 = float(p1[0])
+        y1 = float(p1[1])
+        p2 = points[2].split(",")
+        x2 = float(p2[0])
+        y2 = float(p2[1])
+        pro = self.m.problem_map[title]
+        if 'key' in pro.tags:
+            key_node = BeautifulSoup(svg_text_key % (str((x1+x0)/2), str(y2+5), pro.tags['key']), "xml").select_one("g")
+            n.append(key_node)
 
     def leetcode_add_finish_icon(self, path):
         c = util.get_file_content(path)
@@ -53,6 +82,7 @@ class LeetcodeView:
 
     def generate_leetcode(self, leet, file, slug, out_name):
         m = datamap.DataMap(util.get_file_content(util.get_map(file)))
+        self.m = m
         g = Digraph('stones', encoding='utf-8')
 
         for n in m.nodes:

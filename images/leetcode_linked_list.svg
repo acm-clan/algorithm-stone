@@ -258,6 +258,21 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
+   <g class="key">
+    <defs>
+     <filter height="1" id="solid" width="1" x="0" y="0">
+      <feFlood flood-color="#808285" result="bg"/>
+      <feMorphology operator="dilate" radius="2"/>
+      <feMerge>
+       <feMergeNode in="bg"/>
+       <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+     </filter>
+    </defs>
+    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="301.0" y="-1363.0">
+     简单删除
+    </text>
+   </g>
   </g>
   <!-- 237&#45;&gt;83 -->
   <g class="edge" id="edge8">
@@ -284,6 +299,21 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
+   <g class="key">
+    <defs>
+     <filter height="1" id="solid" width="1" x="0" y="0">
+      <feFlood flood-color="#808285" result="bg"/>
+      <feMorphology operator="dilate" radius="2"/>
+      <feMerge>
+       <feMergeNode in="bg"/>
+       <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+     </filter>
+    </defs>
+    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="301.0" y="-1291.0">
+     简单删除
+    </text>
+   </g>
   </g>
   <!-- 83&#45;&gt;82 -->
   <g class="edge" id="edge9">
@@ -309,6 +339,21 @@
    <g transform="translate(386.0, -1266.0) scale(0.3)">
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+   <g class="key">
+    <defs>
+     <filter height="1" id="solid" width="1" x="0" y="0">
+      <feFlood flood-color="#808285" result="bg"/>
+      <feMorphology operator="dilate" radius="2"/>
+      <feMerge>
+       <feMergeNode in="bg"/>
+       <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+     </filter>
+    </defs>
+    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="301.0" y="-1219.0">
+     简单删除
+    </text>
    </g>
   </g>
   <!-- 82&#45;&gt;19 -->
