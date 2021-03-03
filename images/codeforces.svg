@@ -27,8 +27,8 @@
 <!-- Codeforces&#45;&gt;基础题 -->
 <g id="edge1" class="edge">
 <title>Codeforces&#45;&gt;基础题</title>
-<path fill="none" stroke="gray" d="M233.16,-359.88C217.06,-350.64 197,-339.13 179.71,-329.21"/>
-<polygon fill="gray" stroke="gray" points="181.37,-326.13 170.96,-324.19 177.89,-332.2 181.37,-326.13"/>
+<path fill="none" stroke="lightgrey" d="M233.16,-359.88C217.06,-350.64 197,-339.13 179.71,-329.21"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="181.37,-326.13 170.96,-324.19 177.89,-332.2 181.37,-326.13"/>
 </g>
 <!-- Maths -->
 <g id="node7" class="node">
@@ -39,8 +39,8 @@
 <!-- Codeforces&#45;&gt;Maths -->
 <g id="edge6" class="edge">
 <title>Codeforces&#45;&gt;Maths</title>
-<path fill="none" stroke="gray" d="M263,-359.7C263,-351.98 263,-342.71 263,-334.11"/>
-<polygon fill="gray" stroke="gray" points="266.5,-334.1 263,-324.1 259.5,-334.1 266.5,-334.1"/>
+<path fill="none" stroke="lightgrey" d="M263,-359.7C263,-351.98 263,-342.71 263,-334.11"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="266.5,-334.1 263,-324.1 259.5,-334.1 266.5,-334.1"/>
 </g>
 <!-- 数论&#45;扩展欧几里得算法 -->
 <g id="node9" class="node">
@@ -51,8 +51,8 @@
 <!-- Codeforces&#45;&gt;数论&#45;扩展欧几里得算法 -->
 <g id="edge8" class="edge">
 <title>Codeforces&#45;&gt;数论&#45;扩展欧几里得算法</title>
-<path fill="none" stroke="gray" d="M300.67,-359.88C321.63,-350.35 347.9,-338.41 370.18,-328.28"/>
-<polygon fill="gray" stroke="gray" points="371.79,-331.39 379.45,-324.07 368.9,-325.02 371.79,-331.39"/>
+<path fill="none" stroke="lightgrey" d="M300.67,-359.88C321.63,-350.35 347.9,-338.41 370.18,-328.28"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="371.79,-331.39 379.45,-324.07 368.9,-325.02 371.79,-331.39"/>
 </g>
 <!-- 1A -->
 <g id="node3" class="node">
@@ -66,8 +66,8 @@
 <!-- 基础题&#45;&gt;1A -->
 <g id="edge2" class="edge">
 <title>基础题&#45;&gt;1A</title>
-<path fill="none" stroke="gray" d="M131.85,-287.7C127.6,-279.64 122.44,-269.89 117.73,-260.98"/>
-<polygon fill="gray" stroke="gray" points="120.81,-259.31 113.04,-252.1 114.62,-262.58 120.81,-259.31"/>
+<path fill="none" stroke="lightgrey" d="M131.85,-287.7C127.6,-279.64 122.44,-269.89 117.73,-260.98"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="120.81,-259.31 113.04,-252.1 114.62,-262.58 120.81,-259.31"/>
 </g>
 <!-- 4A -->
 <g id="node4" class="node">
@@ -81,8 +81,8 @@
 <!-- 1A&#45;&gt;4A -->
 <g id="edge3" class="edge">
 <title>1A&#45;&gt;4A</title>
-<path fill="none" stroke="gray" d="M104,-215.7C104,-207.98 104,-198.71 104,-190.11"/>
-<polygon fill="gray" stroke="gray" points="107.5,-190.1 104,-180.1 100.5,-190.1 107.5,-190.1"/>
+<path fill="none" stroke="lightgrey" d="M104,-215.7C104,-207.98 104,-198.71 104,-190.11"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="107.5,-190.1 104,-180.1 100.5,-190.1 107.5,-190.1"/>
 </g>
 <!-- 5A -->
 <g id="node5" class="node">
@@ -96,8 +96,8 @@
 <!-- 4A&#45;&gt;5A -->
 <g id="edge4" class="edge">
 <title>4A&#45;&gt;5A</title>
-<path fill="none" stroke="gray" d="M104,-143.7C104,-135.98 104,-126.71 104,-118.11"/>
-<polygon fill="gray" stroke="gray" points="107.5,-118.1 104,-108.1 100.5,-118.1 107.5,-118.1"/>
+<path fill="none" stroke="lightgrey" d="M104,-143.7C104,-135.98 104,-126.71 104,-118.11"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="107.5,-118.1 104,-108.1 100.5,-118.1 107.5,-118.1"/>
 </g>
 <!-- 6A -->
 <g id="node6" class="node">
@@ -111,8 +111,8 @@
 <!-- 5A&#45;&gt;6A -->
 <g id="edge5" class="edge">
 <title>5A&#45;&gt;6A</title>
-<path fill="none" stroke="gray" d="M104,-71.7C104,-63.98 104,-54.71 104,-46.11"/>
-<polygon fill="gray" stroke="gray" points="107.5,-46.1 104,-36.1 100.5,-46.1 107.5,-46.1"/>
+<path fill="none" stroke="lightgrey" d="M104,-71.7C104,-63.98 104,-54.71 104,-46.11"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="107.5,-46.1 104,-36.1 100.5,-46.1 107.5,-46.1"/>
 </g>
 <!-- 409H -->
 <g id="node8" class="node">
@@ -126,8 +126,8 @@
 <!-- Maths&#45;&gt;409H -->
 <g id="edge7" class="edge">
 <title>Maths&#45;&gt;409H</title>
-<path fill="none" stroke="gray" d="M263,-287.7C263,-279.98 263,-270.71 263,-262.11"/>
-<polygon fill="gray" stroke="gray" points="266.5,-262.1 263,-252.1 259.5,-262.1 266.5,-262.1"/>
+<path fill="none" stroke="lightgrey" d="M263,-287.7C263,-279.98 263,-270.71 263,-262.11"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="266.5,-262.1 263,-252.1 259.5,-262.1 266.5,-262.1"/>
 </g>
 <!-- 1478D -->
 <g id="node10" class="node">
@@ -141,8 +141,8 @@
 <!-- 数论&#45;扩展欧几里得算法&#45;&gt;1478D -->
 <g id="edge9" class="edge">
 <title>数论&#45;扩展欧几里得算法&#45;&gt;1478D</title>
-<path fill="none" stroke="gray" d="M422.93,-287.7C425.61,-279.9 428.83,-270.51 431.8,-261.83"/>
-<polygon fill="gray" stroke="gray" points="435.2,-262.7 435.14,-252.1 428.58,-260.43 435.2,-262.7"/>
+<path fill="none" stroke="lightgrey" d="M422.93,-287.7C425.61,-279.9 428.83,-270.51 431.8,-261.83"/>
+<polygon fill="lightgrey" stroke="lightgrey" points="435.2,-262.7 435.14,-252.1 428.58,-260.43 435.2,-262.7"/>
 </g>
 </g>
 </svg>

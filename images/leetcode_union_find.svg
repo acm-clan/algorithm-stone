@@ -38,8 +38,8 @@
    <title>
     Leetcode-并查集-&gt;中等题
    </title>
-   <path d="M254.37,-1079.7C249.37,-1071.56 243.31,-1061.69 237.79,-1052.7" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="240.72,-1050.79 232.51,-1044.1 234.76,-1054.46 240.72,-1050.79" stroke="gray"/>
+   <path d="M254.37,-1079.7C249.37,-1071.56 243.31,-1061.69 237.79,-1052.7" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="240.72,-1050.79 232.51,-1044.1 234.76,-1054.46 240.72,-1050.79" stroke="lightgrey"/>
   </g>
   <!-- 难题 -->
   <g class="node" id="node17">
@@ -56,8 +56,8 @@
    <title>
     Leetcode-并查集-&gt;难题
    </title>
-   <path d="M278.6,-1079.7C285.12,-1071.39 293.07,-1061.28 300.25,-1052.14" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="303.13,-1054.13 306.56,-1044.1 297.63,-1049.81 303.13,-1054.13" stroke="gray"/>
+   <path d="M278.6,-1079.7C285.12,-1071.39 293.07,-1061.28 300.25,-1052.14" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="303.13,-1054.13 306.56,-1044.1 297.63,-1049.81 303.13,-1054.13" stroke="lightgrey"/>
   </g>
   <!-- 130 -->
   <g class="node" id="node3">
@@ -78,8 +78,8 @@
    <title>
     中等题-&gt;130
    </title>
-   <path d="M216.07,-1007.7C213.39,-999.9 210.17,-990.51 207.2,-981.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="210.42,-980.43 203.86,-972.1 203.8,-982.7 210.42,-980.43" stroke="gray"/>
+   <path d="M216.07,-1007.7C213.39,-999.9 210.17,-990.51 207.2,-981.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="210.42,-980.43 203.86,-972.1 203.8,-982.7 210.42,-980.43" stroke="lightgrey"/>
   </g>
   <!-- 200 -->
   <g class="node" id="node4">
@@ -100,8 +100,8 @@
    <title>
     130-&gt;200
    </title>
-   <path d="M197.75,-935.7C197.64,-927.98 197.51,-918.71 197.39,-910.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="200.89,-910.05 197.24,-900.1 193.89,-910.15 200.89,-910.05" stroke="gray"/>
+   <path d="M197.75,-935.7C197.64,-927.98 197.51,-918.71 197.39,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="200.89,-910.05 197.24,-900.1 193.89,-910.15 200.89,-910.05" stroke="lightgrey"/>
   </g>
   <!-- 399 -->
   <g class="node" id="node5">
@@ -122,8 +122,8 @@
    <title>
     200-&gt;399
    </title>
-   <path d="M196.26,-863.7C195.93,-855.98 195.53,-846.71 195.16,-838.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="198.66,-837.95 194.73,-828.1 191.66,-838.25 198.66,-837.95" stroke="gray"/>
+   <path d="M196.26,-863.7C195.93,-855.98 195.53,-846.71 195.16,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="198.66,-837.95 194.73,-828.1 191.66,-838.25 198.66,-837.95" stroke="lightgrey"/>
   </g>
   <!-- 547 -->
   <g class="node" id="node6">
@@ -144,8 +144,8 @@
    <title>
     399-&gt;547
    </title>
-   <path d="M192.52,-791.7C191.86,-783.98 191.06,-774.71 190.32,-766.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="193.81,-765.77 189.47,-756.1 186.83,-766.37 193.81,-765.77" stroke="gray"/>
+   <path d="M192.52,-791.7C191.86,-783.98 191.06,-774.71 190.32,-766.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="193.81,-765.77 189.47,-756.1 186.83,-766.37 193.81,-765.77" stroke="lightgrey"/>
   </g>
   <!-- 684 -->
   <g class="node" id="node7">
@@ -166,8 +166,8 @@
    <title>
     547-&gt;684
    </title>
-   <path d="M186.27,-719.7C185.5,-711.98 184.57,-702.71 183.71,-694.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="187.19,-693.71 182.71,-684.1 180.22,-694.4 187.19,-693.71" stroke="gray"/>
+   <path d="M186.27,-719.7C185.5,-711.98 184.57,-702.71 183.71,-694.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="187.19,-693.71 182.71,-684.1 180.22,-694.4 187.19,-693.71" stroke="lightgrey"/>
   </g>
   <!-- 721 -->
   <g class="node" id="node8">
@@ -188,8 +188,8 @@
    <title>
     684-&gt;721
    </title>
-   <path d="M177.79,-647.7C176.35,-639.98 174.63,-630.71 173.04,-622.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="176.44,-621.3 171.18,-612.1 169.56,-622.58 176.44,-621.3" stroke="gray"/>
+   <path d="M177.79,-647.7C176.35,-639.98 174.63,-630.71 173.04,-622.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="176.44,-621.3 171.18,-612.1 169.56,-622.58 176.44,-621.3" stroke="lightgrey"/>
   </g>
   <!-- 947 -->
   <g class="node" id="node9">
@@ -210,8 +210,8 @@
    <title>
     721-&gt;947
    </title>
-   <path d="M161.33,-575.7C158.29,-567.81 154.62,-558.3 151.24,-549.55" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="154.46,-548.17 147.6,-540.1 147.93,-550.69 154.46,-548.17" stroke="gray"/>
+   <path d="M161.33,-575.7C158.29,-567.81 154.62,-558.3 151.24,-549.55" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="154.46,-548.17 147.6,-540.1 147.93,-550.69 154.46,-548.17" stroke="lightgrey"/>
   </g>
   <!-- 959 -->
   <g class="node" id="node10">
@@ -232,8 +232,8 @@
    <title>
     947-&gt;959
    </title>
-   <path d="M140.26,-503.7C139.93,-495.98 139.53,-486.71 139.16,-478.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="142.66,-477.95 138.73,-468.1 135.66,-478.25 142.66,-477.95" stroke="gray"/>
+   <path d="M140.26,-503.7C139.93,-495.98 139.53,-486.71 139.16,-478.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="142.66,-477.95 138.73,-468.1 135.66,-478.25 142.66,-477.95" stroke="lightgrey"/>
   </g>
   <!-- 990 -->
   <g class="node" id="node11">
@@ -254,8 +254,8 @@
    <title>
     959-&gt;990
    </title>
-   <path d="M136.52,-431.7C135.86,-423.98 135.06,-414.71 134.32,-406.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="137.81,-405.77 133.47,-396.1 130.83,-406.37 137.81,-405.77" stroke="gray"/>
+   <path d="M136.52,-431.7C135.86,-423.98 135.06,-414.71 134.32,-406.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="137.81,-405.77 133.47,-396.1 130.83,-406.37 137.81,-405.77" stroke="lightgrey"/>
   </g>
   <!-- 1202 -->
   <g class="node" id="node12">
@@ -276,8 +276,8 @@
    <title>
     990-&gt;1202
    </title>
-   <path d="M129.03,-359.7C127.71,-351.98 126.12,-342.71 124.65,-334.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="128.07,-333.37 122.93,-324.1 121.17,-334.55 128.07,-333.37" stroke="gray"/>
+   <path d="M129.03,-359.7C127.71,-351.98 126.12,-342.71 124.65,-334.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="128.07,-333.37 122.93,-324.1 121.17,-334.55 128.07,-333.37" stroke="lightgrey"/>
   </g>
   <!-- 1319 -->
   <g class="node" id="node13">
@@ -298,8 +298,8 @@
    <title>
     1202-&gt;1319
    </title>
-   <path d="M119.75,-287.7C119.64,-279.98 119.51,-270.71 119.39,-262.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="122.89,-262.05 119.24,-252.1 115.89,-262.15 122.89,-262.05" stroke="gray"/>
+   <path d="M119.75,-287.7C119.64,-279.98 119.51,-270.71 119.39,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="122.89,-262.05 119.24,-252.1 115.89,-262.15 122.89,-262.05" stroke="lightgrey"/>
   </g>
   <!-- 1584 -->
   <g class="node" id="node14">
@@ -320,8 +320,8 @@
    <title>
     1319-&gt;1584
    </title>
-   <path d="M118.75,-215.7C118.64,-207.98 118.51,-198.71 118.39,-190.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="121.89,-190.05 118.24,-180.1 114.89,-190.15 121.89,-190.05" stroke="gray"/>
+   <path d="M118.75,-215.7C118.64,-207.98 118.51,-198.71 118.39,-190.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="121.89,-190.05 118.24,-180.1 114.89,-190.15 121.89,-190.05" stroke="lightgrey"/>
   </g>
   <!-- 1631 -->
   <g class="node" id="node15">
@@ -342,8 +342,8 @@
    <title>
     1584-&gt;1631
    </title>
-   <path d="M117.26,-143.7C116.93,-135.98 116.53,-126.71 116.16,-118.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="119.66,-117.95 115.73,-108.1 112.66,-118.25 119.66,-117.95" stroke="gray"/>
+   <path d="M117.26,-143.7C116.93,-135.98 116.53,-126.71 116.16,-118.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="119.66,-117.95 115.73,-108.1 112.66,-118.25 119.66,-117.95" stroke="lightgrey"/>
   </g>
   <!-- 1722 -->
   <g class="node" id="node16">
@@ -364,8 +364,8 @@
    <title>
     1631-&gt;1722
    </title>
-   <path d="M113.52,-71.7C112.86,-63.98 112.06,-54.71 111.32,-46.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="114.81,-45.77 110.47,-36.1 107.83,-46.37 114.81,-45.77" stroke="gray"/>
+   <path d="M113.52,-71.7C112.86,-63.98 112.06,-54.71 111.32,-46.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="114.81,-45.77 110.47,-36.1 107.83,-46.37 114.81,-45.77" stroke="lightgrey"/>
   </g>
   <!-- 128 -->
   <g class="node" id="node18">
@@ -386,8 +386,8 @@
    <title>
     难题-&gt;128
    </title>
-   <path d="M323.21,-1007.7C324.65,-999.98 326.37,-990.71 327.96,-982.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="331.44,-982.58 329.82,-972.1 324.56,-981.3 331.44,-982.58" stroke="gray"/>
+   <path d="M323.21,-1007.7C324.65,-999.98 326.37,-990.71 327.96,-982.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="331.44,-982.58 329.82,-972.1 324.56,-981.3 331.44,-982.58" stroke="lightgrey"/>
   </g>
   <!-- 685 -->
   <g class="node" id="node19">
@@ -408,8 +408,8 @@
    <title>
     128-&gt;685
    </title>
-   <path d="M333.49,-935.7C333.71,-927.98 333.98,-918.71 334.23,-910.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="337.72,-910.2 334.51,-900.1 330.73,-910 337.72,-910.2" stroke="gray"/>
+   <path d="M333.49,-935.7C333.71,-927.98 333.98,-918.71 334.23,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="337.72,-910.2 334.51,-900.1 330.73,-910 337.72,-910.2" stroke="lightgrey"/>
   </g>
   <!-- 765 -->
   <g class="node" id="node20">
@@ -430,8 +430,8 @@
    <title>
     685-&gt;765
    </title>
-   <path d="M335.25,-863.7C335.36,-855.98 335.49,-846.71 335.61,-838.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="339.11,-838.15 335.76,-828.1 332.11,-838.05 339.11,-838.15" stroke="gray"/>
+   <path d="M335.25,-863.7C335.36,-855.98 335.49,-846.71 335.61,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="339.11,-838.15 335.76,-828.1 332.11,-838.05 339.11,-838.15" stroke="lightgrey"/>
   </g>
   <!-- 778 -->
   <g class="node" id="node21">
@@ -452,8 +452,8 @@
    <title>
     765-&gt;778
    </title>
-   <path d="M336.25,-791.7C336.36,-783.98 336.49,-774.71 336.61,-766.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="340.11,-766.15 336.76,-756.1 333.11,-766.05 340.11,-766.15" stroke="gray"/>
+   <path d="M336.25,-791.7C336.36,-783.98 336.49,-774.71 336.61,-766.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="340.11,-766.15 336.76,-756.1 333.11,-766.05 340.11,-766.15" stroke="lightgrey"/>
   </g>
   <!-- 803 -->
   <g class="node" id="node22">
@@ -474,8 +474,8 @@
    <title>
     778-&gt;803
    </title>
-   <path d="M337.25,-719.7C337.36,-711.98 337.49,-702.71 337.61,-694.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="341.11,-694.15 337.76,-684.1 334.11,-694.05 341.11,-694.15" stroke="gray"/>
+   <path d="M337.25,-719.7C337.36,-711.98 337.49,-702.71 337.61,-694.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="341.11,-694.15 337.76,-684.1 334.11,-694.05 341.11,-694.15" stroke="lightgrey"/>
   </g>
   <!-- 839 -->
   <g class="node" id="node23">
@@ -496,8 +496,8 @@
    <title>
     803-&gt;839
    </title>
-   <path d="M338.49,-647.7C338.71,-639.98 338.98,-630.71 339.23,-622.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="342.72,-622.2 339.51,-612.1 335.73,-622 342.72,-622.2" stroke="gray"/>
+   <path d="M338.49,-647.7C338.71,-639.98 338.98,-630.71 339.23,-622.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="342.72,-622.2 339.51,-612.1 335.73,-622 342.72,-622.2" stroke="lightgrey"/>
   </g>
   <!-- 924 -->
   <g class="node" id="node24">
@@ -518,8 +518,8 @@
    <title>
     839-&gt;924
    </title>
-   <path d="M340.49,-575.7C340.71,-567.98 340.98,-558.71 341.23,-550.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="344.72,-550.2 341.51,-540.1 337.73,-550 344.72,-550.2" stroke="gray"/>
+   <path d="M340.49,-575.7C340.71,-567.98 340.98,-558.71 341.23,-550.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="344.72,-550.2 341.51,-540.1 337.73,-550 344.72,-550.2" stroke="lightgrey"/>
   </g>
   <!-- 928 -->
   <g class="node" id="node25">
@@ -540,8 +540,8 @@
    <title>
     924-&gt;928
    </title>
-   <path d="M342,-503.7C342,-495.98 342,-486.71 342,-478.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="345.5,-478.1 342,-468.1 338.5,-478.1 345.5,-478.1" stroke="gray"/>
+   <path d="M342,-503.7C342,-495.98 342,-486.71 342,-478.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="345.5,-478.1 342,-468.1 338.5,-478.1 345.5,-478.1" stroke="lightgrey"/>
   </g>
   <!-- 952 -->
   <g class="node" id="node26">
@@ -562,8 +562,8 @@
    <title>
     928-&gt;952
    </title>
-   <path d="M342.25,-431.7C342.36,-423.98 342.49,-414.71 342.61,-406.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="346.11,-406.15 342.76,-396.1 339.11,-406.05 346.11,-406.15" stroke="gray"/>
+   <path d="M342.25,-431.7C342.36,-423.98 342.49,-414.71 342.61,-406.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="346.11,-406.15 342.76,-396.1 339.11,-406.05 346.11,-406.15" stroke="lightgrey"/>
   </g>
   <!-- 1489 -->
   <g class="node" id="node27">
@@ -584,8 +584,8 @@
    <title>
     952-&gt;1489
    </title>
-   <path d="M343.25,-359.7C343.36,-351.98 343.49,-342.71 343.61,-334.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="347.11,-334.15 343.76,-324.1 340.11,-334.05 347.11,-334.15" stroke="gray"/>
+   <path d="M343.25,-359.7C343.36,-351.98 343.49,-342.71 343.61,-334.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="347.11,-334.15 343.76,-324.1 340.11,-334.05 347.11,-334.15" stroke="lightgrey"/>
   </g>
   <!-- 1579 -->
   <g class="node" id="node28">
@@ -606,8 +606,8 @@
    <title>
     1489-&gt;1579
    </title>
-   <path d="M344,-287.7C344,-279.98 344,-270.71 344,-262.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="347.5,-262.1 344,-252.1 340.5,-262.1 347.5,-262.1" stroke="gray"/>
+   <path d="M344,-287.7C344,-279.98 344,-270.71 344,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="347.5,-262.1 344,-252.1 340.5,-262.1 347.5,-262.1" stroke="lightgrey"/>
   </g>
   <!-- 1627 -->
   <g class="node" id="node29">
@@ -628,8 +628,8 @@
    <title>
     1579-&gt;1627
    </title>
-   <path d="M344,-215.7C344,-207.98 344,-198.71 344,-190.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="347.5,-190.1 344,-180.1 340.5,-190.1 347.5,-190.1" stroke="gray"/>
+   <path d="M344,-215.7C344,-207.98 344,-198.71 344,-190.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="347.5,-190.1 344,-180.1 340.5,-190.1 347.5,-190.1" stroke="lightgrey"/>
   </g>
   <!-- 1632 -->
   <g class="node" id="node30">
@@ -650,8 +650,8 @@
    <title>
     1627-&gt;1632
    </title>
-   <path d="M344,-143.7C344,-135.98 344,-126.71 344,-118.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="347.5,-118.1 344,-108.1 340.5,-118.1 347.5,-118.1" stroke="gray"/>
+   <path d="M344,-143.7C344,-135.98 344,-126.71 344,-118.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="347.5,-118.1 344,-108.1 340.5,-118.1 347.5,-118.1" stroke="lightgrey"/>
   </g>
   <!-- 1697 -->
   <g class="node" id="node31">
@@ -672,8 +672,8 @@
    <title>
     1632-&gt;1697
    </title>
-   <path d="M344.25,-71.7C344.36,-63.98 344.49,-54.71 344.61,-46.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="348.11,-46.15 344.76,-36.1 341.11,-46.05 348.11,-46.15" stroke="gray"/>
+   <path d="M344.25,-71.7C344.36,-63.98 344.49,-54.71 344.61,-46.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="348.11,-46.15 344.76,-36.1 341.11,-46.05 348.11,-46.15" stroke="lightgrey"/>
   </g>
  </g>
 </svg>

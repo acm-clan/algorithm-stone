@@ -18,9 +18,8 @@ svg_icon_finish = '''
 svg_text_key = '''
 <g class='key'>
   <defs>
-    <filter x="0" y="0" width="1" height="1" id="solid">
-      <feFlood flood-color="#808285" result="bg" />
-      <feMorphology operator="dilate" radius="2"/>
+    <filter x="-0.1" y="-0.1" width="1.2" height="1.2" id="solid">
+      <feFlood flood-color="#CCFF90" result="bg" />
       <feMerge>
         <feMergeNode in="bg"/>
         <feMergeNode in="SourceGraphic"/>
@@ -42,7 +41,7 @@ class LeetcodeView:
             c += len(n.problems)
         return c
 
-    def post_process_problem_node(self, n):
+    def post_process_problem_node(self, graph, n):
         title = n.title.get_text()
         if not self.leet.check_finish(title):
             return
@@ -63,17 +62,18 @@ class LeetcodeView:
         pro = self.m.problem_map[title]
         if 'key' in pro.tags:
             key_node = BeautifulSoup(svg_text_key % (str((x1+x0)/2), str(y2+5), pro.tags['key']), "xml").select_one("g")
-            n.append(key_node)
+            graph.append(key_node)
 
     def leetcode_add_finish_icon(self, path):
         c = util.get_file_content(path)
         b = BeautifulSoup(c, "xml")
         nodes = b.select("g.node")
+        graph = b.select_one("g.graph")
         for n in nodes:
             title = n.title.get_text()
             if not title.isdigit():
                 continue
-            self.post_process_problem_node(n)
+            self.post_process_problem_node(graph, n)
         content = b.prettify()
         util.save_file_content(path, content)
 

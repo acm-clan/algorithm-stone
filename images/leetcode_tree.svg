@@ -38,8 +38,8 @@
    <title>
     Leetcode-树-&gt;遍历二叉树
    </title>
-   <path d="M1136.34,-1886.31C989.66,-1880.1 627.94,-1863.17 326,-1836 298.83,-1833.55 268.83,-1830.08 243.43,-1826.9" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="243.57,-1823.39 233.21,-1825.61 242.7,-1830.34 243.57,-1823.39" stroke="gray"/>
+   <path d="M1136.34,-1886.31C989.66,-1880.1 627.94,-1863.17 326,-1836 298.83,-1833.55 268.83,-1830.08 243.43,-1826.9" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="243.57,-1823.39 233.21,-1825.61 242.7,-1830.34 243.57,-1823.39" stroke="lightgrey"/>
   </g>
   <!-- 二叉搜索树中序遍历 -->
   <g class="node" id="node28">
@@ -56,8 +56,8 @@
    <title>
     Leetcode-树-&gt;二叉搜索树中序遍历
    </title>
-   <path d="M1136.09,-1885.13C1014.43,-1877.79 748.97,-1860.37 526,-1836 512.59,-1834.53 498.39,-1832.75 484.6,-1830.89" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="485.03,-1827.42 474.65,-1829.53 484.08,-1834.35 485.03,-1827.42" stroke="gray"/>
+   <path d="M1136.09,-1885.13C1014.43,-1877.79 748.97,-1860.37 526,-1836 512.59,-1834.53 498.39,-1832.75 484.6,-1830.89" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="485.03,-1827.42 474.65,-1829.53 484.08,-1834.35 485.03,-1827.42" stroke="lightgrey"/>
   </g>
   <!-- 层次遍历 -->
   <g class="node" id="node37">
@@ -74,8 +74,8 @@
    <title>
     Leetcode-树-&gt;层次遍历
    </title>
-   <path d="M1136.42,-1885.99C1031.35,-1880.5 820.94,-1866.49 645,-1836 640.37,-1835.2 635.58,-1834.24 630.8,-1833.2" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="631.57,-1829.78 621.04,-1830.96 630,-1836.61 631.57,-1829.78" stroke="gray"/>
+   <path d="M1136.42,-1885.99C1031.35,-1880.5 820.94,-1866.49 645,-1836 640.37,-1835.2 635.58,-1834.24 630.8,-1833.2" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="631.57,-1829.78 621.04,-1830.96 630,-1836.61 631.57,-1829.78" stroke="lightgrey"/>
   </g>
   <!-- 生成二叉树 -->
   <g class="node" id="node54">
@@ -92,8 +92,8 @@
    <title>
     Leetcode-树-&gt;生成二叉树
    </title>
-   <path d="M1136.37,-1880.93C1056.88,-1871.13 920.06,-1853.7 803,-1836 789.75,-1834 775.54,-1831.68 762.11,-1829.42" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="762.47,-1825.93 752.02,-1827.7 761.3,-1832.83 762.47,-1825.93" stroke="gray"/>
+   <path d="M1136.37,-1880.93C1056.88,-1871.13 920.06,-1853.7 803,-1836 789.75,-1834 775.54,-1831.68 762.11,-1829.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="762.47,-1825.93 752.02,-1827.7 761.3,-1832.83 762.47,-1825.93" stroke="lightgrey"/>
   </g>
   <!-- 记录路径 -->
   <g class="node" id="node69">
@@ -110,8 +110,8 @@
    <title>
     Leetcode-树-&gt;记录路径
    </title>
-   <path d="M1136.15,-1875.67C1067.76,-1862.03 963.07,-1841.15 901.68,-1828.91" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="902.34,-1825.47 891.84,-1826.95 900.97,-1832.33 902.34,-1825.47" stroke="gray"/>
+   <path d="M1136.15,-1875.67C1067.76,-1862.03 963.07,-1841.15 901.68,-1828.91" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="902.34,-1825.47 891.84,-1826.95 900.97,-1832.33 902.34,-1825.47" stroke="lightgrey"/>
   </g>
   <!-- 叶子节点 -->
   <g class="node" id="node78">
@@ -128,8 +128,8 @@
    <title>
     Leetcode-树-&gt;叶子节点
    </title>
-   <path d="M1157.25,-1871.88C1129.28,-1861.4 1093.5,-1848.01 1064.95,-1837.33" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1066.16,-1834.04 1055.57,-1833.81 1063.71,-1840.6 1066.16,-1834.04" stroke="gray"/>
+   <path d="M1157.25,-1871.88C1129.28,-1861.4 1093.5,-1848.01 1064.95,-1837.33" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1066.16,-1834.04 1055.57,-1833.81 1063.71,-1840.6 1066.16,-1834.04" stroke="lightgrey"/>
   </g>
   <!-- 非递归实现 -->
   <g class="node" id="node80">
@@ -146,8 +146,8 @@
    <title>
     Leetcode-树-&gt;非递归实现
    </title>
-   <path d="M1190.39,-1871.7C1184.4,-1863.47 1177.12,-1853.48 1170.52,-1844.42" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1173.18,-1842.13 1164.46,-1836.1 1167.52,-1846.25 1173.18,-1842.13" stroke="gray"/>
+   <path d="M1190.39,-1871.7C1184.4,-1863.47 1177.12,-1853.48 1170.52,-1844.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1173.18,-1842.13 1164.46,-1836.1 1167.52,-1846.25 1173.18,-1842.13" stroke="lightgrey"/>
   </g>
   <!-- 公共祖先 -->
   <g class="node" id="node83">
@@ -164,8 +164,8 @@
    <title>
     Leetcode-树-&gt;公共祖先
    </title>
-   <path d="M1224.01,-1871.7C1234.72,-1862.88 1247.89,-1852.03 1259.5,-1842.47" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1261.74,-1845.16 1267.23,-1836.1 1257.29,-1839.76 1261.74,-1845.16" stroke="gray"/>
+   <path d="M1224.01,-1871.7C1234.72,-1862.88 1247.89,-1852.03 1259.5,-1842.47" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1261.74,-1845.16 1267.23,-1836.1 1257.29,-1839.76 1261.74,-1845.16" stroke="lightgrey"/>
   </g>
   <!-- 树形dp -->
   <g class="node" id="node85">
@@ -182,8 +182,8 @@
    <title>
     Leetcode-树-&gt;树形dp
    </title>
-   <path d="M1257.75,-1871.97C1296.16,-1860.02 1346.88,-1844.24 1382.95,-1833.02" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1384.2,-1836.29 1392.71,-1829.98 1382.12,-1829.61 1384.2,-1836.29" stroke="gray"/>
+   <path d="M1257.75,-1871.97C1296.16,-1860.02 1346.88,-1844.24 1382.95,-1833.02" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1384.2,-1836.29 1392.71,-1829.98 1382.12,-1829.61 1384.2,-1836.29" stroke="lightgrey"/>
   </g>
   <!-- 前缀和 -->
   <g class="node" id="node88">
@@ -200,8 +200,8 @@
    <title>
     Leetcode-树-&gt;前缀和
    </title>
-   <path d="M1269.61,-1875.89C1324.04,-1865.17 1403,-1849.62 1472,-1836 1485.68,-1833.3 1500.59,-1830.35 1514.09,-1827.68" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1514.97,-1831.08 1524.1,-1825.71 1513.61,-1824.21 1514.97,-1831.08" stroke="gray"/>
+   <path d="M1269.61,-1875.89C1324.04,-1865.17 1403,-1849.62 1472,-1836 1485.68,-1833.3 1500.59,-1830.35 1514.09,-1827.68" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1514.97,-1831.08 1524.1,-1825.71 1513.61,-1824.21 1514.97,-1831.08" stroke="lightgrey"/>
   </g>
   <!-- 二叉树序列化 -->
   <g class="node" id="node90">
@@ -218,8 +218,8 @@
    <title>
     Leetcode-树-&gt;二叉树序列化
    </title>
-   <path d="M1269.76,-1880.33C1348.68,-1870.02 1483.96,-1852.18 1600,-1836 1617.93,-1833.5 1637.39,-1830.71 1655.2,-1828.12" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1656.08,-1831.52 1665.47,-1826.62 1655.07,-1824.6 1656.08,-1831.52" stroke="gray"/>
+   <path d="M1269.76,-1880.33C1348.68,-1870.02 1483.96,-1852.18 1600,-1836 1617.93,-1833.5 1637.39,-1830.71 1655.2,-1828.12" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1656.08,-1831.52 1665.47,-1826.62 1655.07,-1824.6 1656.08,-1831.52" stroke="lightgrey"/>
   </g>
   <!-- 所有路径 -->
   <g class="node" id="node97">
@@ -236,8 +236,8 @@
    <title>
     Leetcode-树-&gt;所有路径
    </title>
-   <path d="M1269.86,-1884.1C1377.06,-1875.97 1593.96,-1858.32 1777,-1836 1796.19,-1833.66 1817.16,-1830.61 1835.7,-1827.74" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1836.4,-1831.18 1845.73,-1826.17 1835.31,-1824.26 1836.4,-1831.18" stroke="gray"/>
+   <path d="M1269.86,-1884.1C1377.06,-1875.97 1593.96,-1858.32 1777,-1836 1796.19,-1833.66 1817.16,-1830.61 1835.7,-1827.74" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1836.4,-1831.18 1845.73,-1826.17 1835.31,-1824.26 1836.4,-1831.18" stroke="lightgrey"/>
   </g>
   <!-- 图与树 -->
   <g class="node" id="node108">
@@ -254,8 +254,8 @@
    <title>
     Leetcode-树-&gt;图与树
    </title>
-   <path d="M1269.69,-1886.97C1399.46,-1882.41 1694.81,-1869.04 1941,-1836 1954.82,-1834.14 1969.77,-1831.44 1983.26,-1828.73" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1984.17,-1832.12 1993.26,-1826.67 1982.76,-1825.26 1984.17,-1832.12" stroke="gray"/>
+   <path d="M1269.69,-1886.97C1399.46,-1882.41 1694.81,-1869.04 1941,-1836 1954.82,-1834.14 1969.77,-1831.44 1983.26,-1828.73" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1984.17,-1832.12 1993.26,-1826.67 1982.76,-1825.26 1984.17,-1832.12" stroke="lightgrey"/>
   </g>
   <!-- 剪枝 -->
   <g class="node" id="node114">
@@ -272,8 +272,8 @@
    <title>
     Leetcode-树-&gt;剪枝
    </title>
-   <path d="M1269.71,-1888.53C1415.59,-1886.7 1773.61,-1877.94 2070,-1836 2082.66,-1834.21 2096.33,-1831.42 2108.54,-1828.62" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2109.48,-1832 2118.4,-1826.28 2107.86,-1825.18 2109.48,-1832" stroke="gray"/>
+   <path d="M1269.71,-1888.53C1415.59,-1886.7 1773.61,-1877.94 2070,-1836 2082.66,-1834.21 2096.33,-1831.42 2108.54,-1828.62" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2109.48,-1832 2118.4,-1826.28 2107.86,-1825.18 2109.48,-1832" stroke="lightgrey"/>
   </g>
   <!-- 94 -->
   <g class="node" id="node3">
@@ -292,29 +292,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1723.0">
-     基础
-    </text>
-   </g>
   </g>
   <!-- 遍历二叉树&#45;&gt;94 -->
   <g class="edge" id="edge2">
    <title>
     遍历二叉树-&gt;94
    </title>
-   <path d="M179.3,-1799.7C177.19,-1791.9 174.64,-1782.51 172.28,-1773.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="175.64,-1772.84 169.64,-1764.1 168.88,-1774.67 175.64,-1772.84" stroke="gray"/>
+   <path d="M179.3,-1799.7C177.19,-1791.9 174.64,-1782.51 172.28,-1773.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="175.64,-1772.84 169.64,-1764.1 168.88,-1774.67 175.64,-1772.84" stroke="lightgrey"/>
   </g>
   <!-- 100 -->
   <g class="node" id="node4">
@@ -333,29 +318,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1651.0">
-     基础
-    </text>
-   </g>
   </g>
   <!-- 94&#45;&gt;100 -->
   <g class="edge" id="edge3">
    <title>
     94-&gt;100
    </title>
-   <path d="M165,-1727.7C165,-1719.98 165,-1710.71 165,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="168.5,-1702.1 165,-1692.1 161.5,-1702.1 168.5,-1702.1" stroke="gray"/>
+   <path d="M165,-1727.7C165,-1719.98 165,-1710.71 165,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="168.5,-1702.1 165,-1692.1 161.5,-1702.1 168.5,-1702.1" stroke="lightgrey"/>
   </g>
   <!-- 101 -->
   <g class="node" id="node5">
@@ -374,29 +344,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1579.0">
-     基础
-    </text>
-   </g>
   </g>
   <!-- 100&#45;&gt;101 -->
   <g class="edge" id="edge4">
    <title>
     100-&gt;101
    </title>
-   <path d="M165,-1655.7C165,-1647.98 165,-1638.71 165,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="168.5,-1630.1 165,-1620.1 161.5,-1630.1 168.5,-1630.1" stroke="gray"/>
+   <path d="M165,-1655.7C165,-1647.98 165,-1638.71 165,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="168.5,-1630.1 165,-1620.1 161.5,-1630.1 168.5,-1630.1" stroke="lightgrey"/>
   </g>
   <!-- 104 -->
   <g class="node" id="node6">
@@ -415,29 +370,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="130.0" y="-1507.0">
-     一行代码
-    </text>
-   </g>
   </g>
   <!-- 101&#45;&gt;104 -->
   <g class="edge" id="edge5">
    <title>
     101-&gt;104
    </title>
-   <path d="M156.35,-1583.7C152.36,-1575.73 147.55,-1566.1 143.13,-1557.26" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="146.15,-1555.48 138.55,-1548.1 139.89,-1558.61 146.15,-1555.48" stroke="gray"/>
+   <path d="M156.35,-1583.7C152.36,-1575.73 147.55,-1566.1 143.13,-1557.26" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="146.15,-1555.48 138.55,-1548.1 139.89,-1558.61 146.15,-1555.48" stroke="lightgrey"/>
   </g>
   <!-- 110 -->
   <g class="node" id="node7">
@@ -456,29 +396,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="128.0" y="-1435.0">
-     深度结合递归好题
-    </text>
-   </g>
   </g>
   <!-- 104&#45;&gt;110 -->
   <g class="edge" id="edge6">
    <title>
     104-&gt;110
    </title>
-   <path d="M129.51,-1511.7C129.29,-1503.98 129.02,-1494.71 128.77,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="132.27,-1486 128.49,-1476.1 125.28,-1486.2 132.27,-1486" stroke="gray"/>
+   <path d="M129.51,-1511.7C129.29,-1503.98 129.02,-1494.71 128.77,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="132.27,-1486 128.49,-1476.1 125.28,-1486.2 132.27,-1486" stroke="lightgrey"/>
   </g>
   <!-- 112 -->
   <g class="node" id="node8">
@@ -497,29 +422,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="124.0" y="-1363.0">
-     分情况
-    </text>
-   </g>
   </g>
   <!-- 110&#45;&gt;112 -->
   <g class="edge" id="edge7">
    <title>
     110-&gt;112
    </title>
-   <path d="M127.01,-1439.7C126.57,-1431.98 126.04,-1422.71 125.55,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="129.04,-1413.89 124.98,-1404.1 122.05,-1414.29 129.04,-1413.89" stroke="gray"/>
+   <path d="M127.01,-1439.7C126.57,-1431.98 126.04,-1422.71 125.55,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="129.04,-1413.89 124.98,-1404.1 122.05,-1414.29 129.04,-1413.89" stroke="lightgrey"/>
   </g>
   <!-- 226 -->
   <g class="node" id="node9">
@@ -538,29 +448,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="117.0" y="-1291.0">
-     交换左右
-    </text>
-   </g>
   </g>
   <!-- 112&#45;&gt;226 -->
   <g class="edge" id="edge8">
    <title>
     112-&gt;226
    </title>
-   <path d="M122.27,-1367.7C121.5,-1359.98 120.57,-1350.71 119.71,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="123.19,-1341.71 118.71,-1332.1 116.22,-1342.4 123.19,-1341.71" stroke="gray"/>
+   <path d="M122.27,-1367.7C121.5,-1359.98 120.57,-1350.71 119.71,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="123.19,-1341.71 118.71,-1332.1 116.22,-1342.4 123.19,-1341.71" stroke="lightgrey"/>
   </g>
   <!-- 530 -->
   <g class="node" id="node10">
@@ -579,29 +474,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1219.0">
-     中序遍历递增
-    </text>
-   </g>
   </g>
   <!-- 226&#45;&gt;530 -->
   <g class="edge" id="edge9">
    <title>
     226-&gt;530
    </title>
-   <path d="M113.54,-1295.7C112,-1287.98 110.14,-1278.71 108.42,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="111.81,-1269.22 106.42,-1260.1 104.95,-1270.6 111.81,-1269.22" stroke="gray"/>
+   <path d="M113.54,-1295.7C112,-1287.98 110.14,-1278.71 108.42,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="111.81,-1269.22 106.42,-1260.1 104.95,-1270.6 111.81,-1269.22" stroke="lightgrey"/>
   </g>
   <!-- 543 -->
   <g class="node" id="node11">
@@ -620,29 +500,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1147.0">
-     深度与直径
-    </text>
-   </g>
   </g>
   <!-- 530&#45;&gt;543 -->
   <g class="edge" id="edge10">
    <title>
     530-&gt;543
    </title>
-   <path d="M103,-1223.7C103,-1215.98 103,-1206.71 103,-1198.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-1198.1 103,-1188.1 99.5,-1198.1 106.5,-1198.1" stroke="gray"/>
+   <path d="M103,-1223.7C103,-1215.98 103,-1206.71 103,-1198.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-1198.1 103,-1188.1 99.5,-1198.1 106.5,-1198.1" stroke="lightgrey"/>
   </g>
   <!-- 563 -->
   <g class="node" id="node12">
@@ -661,29 +526,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1075.0">
-     算总值
-    </text>
-   </g>
   </g>
   <!-- 543&#45;&gt;563 -->
   <g class="edge" id="edge11">
    <title>
     543-&gt;563
    </title>
-   <path d="M103,-1151.7C103,-1143.98 103,-1134.71 103,-1126.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-1126.1 103,-1116.1 99.5,-1126.1 106.5,-1126.1" stroke="gray"/>
+   <path d="M103,-1151.7C103,-1143.98 103,-1134.71 103,-1126.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-1126.1 103,-1116.1 99.5,-1126.1 106.5,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 572 -->
   <g class="node" id="node13">
@@ -702,29 +552,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1003.0">
-     每一步检查
-    </text>
-   </g>
   </g>
   <!-- 563&#45;&gt;572 -->
   <g class="edge" id="edge12">
    <title>
     563-&gt;572
    </title>
-   <path d="M103,-1079.7C103,-1071.98 103,-1062.71 103,-1054.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-1054.1 103,-1044.1 99.5,-1054.1 106.5,-1054.1" stroke="gray"/>
+   <path d="M103,-1079.7C103,-1071.98 103,-1062.71 103,-1054.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-1054.1 103,-1044.1 99.5,-1054.1 106.5,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 606 -->
   <g class="node" id="node14">
@@ -743,29 +578,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-931.0">
-     每一步检查
-    </text>
-   </g>
   </g>
   <!-- 572&#45;&gt;606 -->
   <g class="edge" id="edge13">
    <title>
     572-&gt;606
    </title>
-   <path d="M103,-1007.7C103,-999.98 103,-990.71 103,-982.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-982.1 103,-972.1 99.5,-982.1 106.5,-982.1" stroke="gray"/>
+   <path d="M103,-1007.7C103,-999.98 103,-990.71 103,-982.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-982.1 103,-972.1 99.5,-982.1 106.5,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 102 -->
   <g class="node" id="node15">
@@ -784,29 +604,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-859.0">
-     经典题队列实现
-    </text>
-   </g>
   </g>
   <!-- 606&#45;&gt;102 -->
   <g class="edge" id="edge14">
    <title>
     606-&gt;102
    </title>
-   <path d="M103,-935.7C103,-927.98 103,-918.71 103,-910.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-910.1 103,-900.1 99.5,-910.1 106.5,-910.1" stroke="gray"/>
+   <path d="M103,-935.7C103,-927.98 103,-918.71 103,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-910.1 103,-900.1 99.5,-910.1 106.5,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 637 -->
   <g class="node" id="node16">
@@ -825,29 +630,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-787.0">
-     队列实现
-    </text>
-   </g>
   </g>
   <!-- 102&#45;&gt;637 -->
   <g class="edge" id="edge15">
    <title>
     102-&gt;637
    </title>
-   <path d="M103,-863.7C103,-855.98 103,-846.71 103,-838.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-838.1 103,-828.1 99.5,-838.1 106.5,-838.1" stroke="gray"/>
+   <path d="M103,-863.7C103,-855.98 103,-846.71 103,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-838.1 103,-828.1 99.5,-838.1 106.5,-838.1" stroke="lightgrey"/>
   </g>
   <!-- 653 -->
   <g class="node" id="node17">
@@ -866,29 +656,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-715.0">
-     Hash
-    </text>
-   </g>
   </g>
   <!-- 637&#45;&gt;653 -->
   <g class="edge" id="edge16">
    <title>
     637-&gt;653
    </title>
-   <path d="M103,-791.7C103,-783.98 103,-774.71 103,-766.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-766.1 103,-756.1 99.5,-766.1 106.5,-766.1" stroke="gray"/>
+   <path d="M103,-791.7C103,-783.98 103,-774.71 103,-766.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-766.1 103,-756.1 99.5,-766.1 106.5,-766.1" stroke="lightgrey"/>
   </g>
   <!-- 671 -->
   <g class="node" id="node18">
@@ -907,29 +682,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-643.0">
-     记录次小值
-    </text>
-   </g>
   </g>
   <!-- 653&#45;&gt;671 -->
   <g class="edge" id="edge17">
    <title>
     653-&gt;671
    </title>
-   <path d="M103,-719.7C103,-711.98 103,-702.71 103,-694.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-694.1 103,-684.1 99.5,-694.1 106.5,-694.1" stroke="gray"/>
+   <path d="M103,-719.7C103,-711.98 103,-702.71 103,-694.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-694.1 103,-684.1 99.5,-694.1 106.5,-694.1" stroke="lightgrey"/>
   </g>
   <!-- 508 -->
   <g class="node" id="node19">
@@ -948,29 +708,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-571.0">
-     记录次小值
-    </text>
-   </g>
   </g>
   <!-- 671&#45;&gt;508 -->
   <g class="edge" id="edge18">
    <title>
     671-&gt;508
    </title>
-   <path d="M103,-647.7C103,-639.98 103,-630.71 103,-622.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-622.1 103,-612.1 99.5,-622.1 106.5,-622.1" stroke="gray"/>
+   <path d="M103,-647.7C103,-639.98 103,-630.71 103,-622.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-622.1 103,-612.1 99.5,-622.1 106.5,-622.1" stroke="lightgrey"/>
   </g>
   <!-- 510 -->
   <g class="node" id="node20">
@@ -991,8 +736,8 @@
    <title>
     508-&gt;510
    </title>
-   <path d="M103,-575.7C103,-567.98 103,-558.71 103,-550.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-550.1 103,-540.1 99.5,-550.1 106.5,-550.1" stroke="gray"/>
+   <path d="M103,-575.7C103,-567.98 103,-558.71 103,-550.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-550.1 103,-540.1 99.5,-550.1 106.5,-550.1" stroke="lightgrey"/>
   </g>
   <!-- 951 -->
   <g class="node" id="node21">
@@ -1013,8 +758,8 @@
    <title>
     510-&gt;951
    </title>
-   <path d="M103,-503.7C103,-495.98 103,-486.71 103,-478.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-478.1 103,-468.1 99.5,-478.1 106.5,-478.1" stroke="gray"/>
+   <path d="M103,-503.7C103,-495.98 103,-486.71 103,-478.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-478.1 103,-468.1 99.5,-478.1 106.5,-478.1" stroke="lightgrey"/>
   </g>
   <!-- 971 -->
   <g class="node" id="node22">
@@ -1035,8 +780,8 @@
    <title>
     951-&gt;971
    </title>
-   <path d="M103,-431.7C103,-423.98 103,-414.71 103,-406.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-406.1 103,-396.1 99.5,-406.1 106.5,-406.1" stroke="gray"/>
+   <path d="M103,-431.7C103,-423.98 103,-414.71 103,-406.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-406.1 103,-396.1 99.5,-406.1 106.5,-406.1" stroke="lightgrey"/>
   </g>
   <!-- 1026 -->
   <g class="node" id="node23">
@@ -1057,8 +802,8 @@
    <title>
     971-&gt;1026
    </title>
-   <path d="M103,-359.7C103,-351.98 103,-342.71 103,-334.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-334.1 103,-324.1 99.5,-334.1 106.5,-334.1" stroke="gray"/>
+   <path d="M103,-359.7C103,-351.98 103,-342.71 103,-334.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-334.1 103,-324.1 99.5,-334.1 106.5,-334.1" stroke="lightgrey"/>
   </g>
   <!-- 1038 -->
   <g class="node" id="node24">
@@ -1079,8 +824,8 @@
    <title>
     1026-&gt;1038
    </title>
-   <path d="M103,-287.7C103,-279.98 103,-270.71 103,-262.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-262.1 103,-252.1 99.5,-262.1 106.5,-262.1" stroke="gray"/>
+   <path d="M103,-287.7C103,-279.98 103,-270.71 103,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-262.1 103,-252.1 99.5,-262.1 106.5,-262.1" stroke="lightgrey"/>
   </g>
   <!-- 1379 -->
   <g class="node" id="node25">
@@ -1099,29 +844,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-139.0">
-     克隆节点
-    </text>
-   </g>
   </g>
   <!-- 1038&#45;&gt;1379 -->
   <g class="edge" id="edge24">
    <title>
     1038-&gt;1379
    </title>
-   <path d="M103,-215.7C103,-207.98 103,-198.71 103,-190.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-190.1 103,-180.1 99.5,-190.1 106.5,-190.1" stroke="gray"/>
+   <path d="M103,-215.7C103,-207.98 103,-198.71 103,-190.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-190.1 103,-180.1 99.5,-190.1 106.5,-190.1" stroke="lightgrey"/>
   </g>
   <!-- 1448 -->
   <g class="node" id="node26">
@@ -1140,29 +870,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-67.0">
-     克隆节点
-    </text>
-   </g>
   </g>
   <!-- 1379&#45;&gt;1448 -->
   <g class="edge" id="edge25">
    <title>
     1379-&gt;1448
    </title>
-   <path d="M103,-143.7C103,-135.98 103,-126.71 103,-118.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-118.1 103,-108.1 99.5,-118.1 106.5,-118.1" stroke="gray"/>
+   <path d="M103,-143.7C103,-135.98 103,-126.71 103,-118.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-118.1 103,-108.1 99.5,-118.1 106.5,-118.1" stroke="lightgrey"/>
   </g>
   <!-- 1600 -->
   <g class="node" id="node27">
@@ -1181,29 +896,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="5.0">
-     克隆节点
-    </text>
-   </g>
   </g>
   <!-- 1448&#45;&gt;1600 -->
   <g class="edge" id="edge26">
    <title>
     1448-&gt;1600
    </title>
-   <path d="M103,-71.7C103,-63.98 103,-54.71 103,-46.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="106.5,-46.1 103,-36.1 99.5,-46.1 106.5,-46.1" stroke="gray"/>
+   <path d="M103,-71.7C103,-63.98 103,-54.71 103,-46.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="106.5,-46.1 103,-36.1 99.5,-46.1 106.5,-46.1" stroke="lightgrey"/>
   </g>
   <!-- 235 -->
   <g class="node" id="node29">
@@ -1222,29 +922,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="344.0" y="-1723.0">
-     搜索有序树
-    </text>
-   </g>
   </g>
   <!-- 二叉搜索树中序遍历&#45;&gt;235 -->
   <g class="edge" id="edge28">
    <title>
     二叉搜索树中序遍历-&gt;235
    </title>
-   <path d="M389.92,-1799.7C382.61,-1791.3 373.69,-1781.07 365.66,-1771.86" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="368.11,-1769.34 358.91,-1764.1 362.84,-1773.94 368.11,-1769.34" stroke="gray"/>
+   <path d="M389.92,-1799.7C382.61,-1791.3 373.69,-1781.07 365.66,-1771.86" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="368.11,-1769.34 358.91,-1764.1 362.84,-1773.94 368.11,-1769.34" stroke="lightgrey"/>
   </g>
   <!-- 501 -->
   <g class="node" id="node30">
@@ -1263,29 +948,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="332.0" y="-1651.0">
-     中序遍历递增
-    </text>
-   </g>
   </g>
   <!-- 235&#45;&gt;501 -->
   <g class="edge" id="edge29">
    <title>
     235-&gt;501
    </title>
-   <path d="M341.03,-1727.7C339.71,-1719.98 338.12,-1710.71 336.65,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="340.07,-1701.37 334.93,-1692.1 333.17,-1702.55 340.07,-1701.37" stroke="gray"/>
+   <path d="M341.03,-1727.7C339.71,-1719.98 338.12,-1710.71 336.65,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="340.07,-1701.37 334.93,-1692.1 333.17,-1702.55 340.07,-1701.37" stroke="lightgrey"/>
   </g>
   <!-- 98 -->
   <g class="node" id="node31">
@@ -1304,29 +974,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="318.0" y="-1579.0">
-     中序遍历
-    </text>
-   </g>
   </g>
   <!-- 501&#45;&gt;98 -->
   <g class="edge" id="edge30">
    <title>
     501-&gt;98
    </title>
-   <path d="M328.54,-1655.7C327,-1647.98 325.14,-1638.71 323.42,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="326.81,-1629.22 321.42,-1620.1 319.95,-1630.6 326.81,-1629.22" stroke="gray"/>
+   <path d="M328.54,-1655.7C327,-1647.98 325.14,-1638.71 323.42,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="326.81,-1629.22 321.42,-1620.1 319.95,-1630.6 326.81,-1629.22" stroke="lightgrey"/>
   </g>
   <!-- 230 -->
   <g class="node" id="node32">
@@ -1345,29 +1000,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="311.0" y="-1507.0">
-     中序遍历
-    </text>
-   </g>
   </g>
   <!-- 98&#45;&gt;230 -->
   <g class="edge" id="edge31">
    <title>
     98-&gt;230
    </title>
-   <path d="M316.27,-1583.7C315.5,-1575.98 314.57,-1566.71 313.71,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="317.19,-1557.71 312.71,-1548.1 310.22,-1558.4 317.19,-1557.71" stroke="gray"/>
+   <path d="M316.27,-1583.7C315.5,-1575.98 314.57,-1566.71 313.71,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="317.19,-1557.71 312.71,-1548.1 310.22,-1558.4 317.19,-1557.71" stroke="lightgrey"/>
   </g>
   <!-- 538 -->
   <g class="node" id="node33">
@@ -1388,8 +1028,8 @@
    <title>
     230-&gt;538
    </title>
-   <path d="M311,-1511.7C311,-1503.98 311,-1494.71 311,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="314.5,-1486.1 311,-1476.1 307.5,-1486.1 314.5,-1486.1" stroke="gray"/>
+   <path d="M311,-1511.7C311,-1503.98 311,-1494.71 311,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="314.5,-1486.1 311,-1476.1 307.5,-1486.1 314.5,-1486.1" stroke="lightgrey"/>
   </g>
   <!-- 1008 -->
   <g class="node" id="node34">
@@ -1410,8 +1050,8 @@
    <title>
     538-&gt;1008
    </title>
-   <path d="M311,-1439.7C311,-1431.98 311,-1422.71 311,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="314.5,-1414.1 311,-1404.1 307.5,-1414.1 314.5,-1414.1" stroke="gray"/>
+   <path d="M311,-1439.7C311,-1431.98 311,-1422.71 311,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="314.5,-1414.1 311,-1404.1 307.5,-1414.1 314.5,-1414.1" stroke="lightgrey"/>
   </g>
   <!-- 99 -->
   <g class="node" id="node35">
@@ -1430,29 +1070,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="311.0" y="-1291.0">
-     二叉搜索树
-    </text>
-   </g>
   </g>
   <!-- 1008&#45;&gt;99 -->
   <g class="edge" id="edge34">
    <title>
     1008-&gt;99
    </title>
-   <path d="M311,-1367.7C311,-1359.98 311,-1350.71 311,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="314.5,-1342.1 311,-1332.1 307.5,-1342.1 314.5,-1342.1" stroke="gray"/>
+   <path d="M311,-1367.7C311,-1359.98 311,-1350.71 311,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="314.5,-1342.1 311,-1332.1 307.5,-1342.1 314.5,-1342.1" stroke="lightgrey"/>
   </g>
   <!-- 1305 -->
   <g class="node" id="node36">
@@ -1471,29 +1096,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="312.0" y="-1219.0">
-     二叉搜索树
-    </text>
-   </g>
   </g>
   <!-- 99&#45;&gt;1305 -->
   <g class="edge" id="edge35">
    <title>
     99-&gt;1305
    </title>
-   <path d="M311.25,-1295.7C311.36,-1287.98 311.49,-1278.71 311.61,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="315.11,-1270.15 311.76,-1260.1 308.11,-1270.05 315.11,-1270.15" stroke="gray"/>
+   <path d="M311.25,-1295.7C311.36,-1287.98 311.49,-1278.71 311.61,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="315.11,-1270.15 311.76,-1260.1 308.11,-1270.05 315.11,-1270.15" stroke="lightgrey"/>
   </g>
   <!-- 111 -->
   <g class="node" id="node38">
@@ -1512,29 +1122,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1723.0">
-     层次遍历
-    </text>
-   </g>
   </g>
   <!-- 层次遍历&#45;&gt;111 -->
   <g class="edge" id="edge37">
    <title>
     层次遍历-&gt;111
    </title>
-   <path d="M568.36,-1799.7C563.87,-1791.64 558.44,-1781.89 553.48,-1772.98" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="556.45,-1771.14 548.53,-1764.1 550.34,-1774.54 556.45,-1771.14" stroke="gray"/>
+   <path d="M568.36,-1799.7C563.87,-1791.64 558.44,-1781.89 553.48,-1772.98" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="556.45,-1771.14 548.53,-1764.1 550.34,-1774.54 556.45,-1771.14" stroke="lightgrey"/>
   </g>
   <!-- 103 -->
   <g class="node" id="node39">
@@ -1555,8 +1150,8 @@
    <title>
     111-&gt;103
    </title>
-   <path d="M539,-1727.7C539,-1719.98 539,-1710.71 539,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1702.1 539,-1692.1 535.5,-1702.1 542.5,-1702.1" stroke="gray"/>
+   <path d="M539,-1727.7C539,-1719.98 539,-1710.71 539,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1702.1 539,-1692.1 535.5,-1702.1 542.5,-1702.1" stroke="lightgrey"/>
   </g>
   <!-- 107 -->
   <g class="node" id="node40">
@@ -1577,8 +1172,8 @@
    <title>
     103-&gt;107
    </title>
-   <path d="M539,-1655.7C539,-1647.98 539,-1638.71 539,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1630.1 539,-1620.1 535.5,-1630.1 542.5,-1630.1" stroke="gray"/>
+   <path d="M539,-1655.7C539,-1647.98 539,-1638.71 539,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1630.1 539,-1620.1 535.5,-1630.1 542.5,-1630.1" stroke="lightgrey"/>
   </g>
   <!-- 116 -->
   <g class="node" id="node41">
@@ -1597,29 +1192,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1507.0">
-     层次遍历
-    </text>
-   </g>
   </g>
   <!-- 107&#45;&gt;116 -->
   <g class="edge" id="edge40">
    <title>
     107-&gt;116
    </title>
-   <path d="M539,-1583.7C539,-1575.98 539,-1566.71 539,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1558.1 539,-1548.1 535.5,-1558.1 542.5,-1558.1" stroke="gray"/>
+   <path d="M539,-1583.7C539,-1575.98 539,-1566.71 539,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1558.1 539,-1548.1 535.5,-1558.1 542.5,-1558.1" stroke="lightgrey"/>
   </g>
   <!-- 429 -->
   <g class="node" id="node42">
@@ -1638,29 +1218,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1435.0">
-     层次遍历
-    </text>
-   </g>
   </g>
   <!-- 116&#45;&gt;429 -->
   <g class="edge" id="edge41">
    <title>
     116-&gt;429
    </title>
-   <path d="M539,-1511.7C539,-1503.98 539,-1494.71 539,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1486.1 539,-1476.1 535.5,-1486.1 542.5,-1486.1" stroke="gray"/>
+   <path d="M539,-1511.7C539,-1503.98 539,-1494.71 539,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1486.1 539,-1476.1 535.5,-1486.1 542.5,-1486.1" stroke="lightgrey"/>
   </g>
   <!-- 513 -->
   <g class="node" id="node43">
@@ -1679,29 +1244,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1363.0">
-     层次遍历
-    </text>
-   </g>
   </g>
   <!-- 429&#45;&gt;513 -->
   <g class="edge" id="edge42">
    <title>
     429-&gt;513
    </title>
-   <path d="M539,-1439.7C539,-1431.98 539,-1422.71 539,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1414.1 539,-1404.1 535.5,-1414.1 542.5,-1414.1" stroke="gray"/>
+   <path d="M539,-1439.7C539,-1431.98 539,-1422.71 539,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1414.1 539,-1404.1 535.5,-1414.1 542.5,-1414.1" stroke="lightgrey"/>
   </g>
   <!-- 515 -->
   <g class="node" id="node44">
@@ -1722,8 +1272,8 @@
    <title>
     513-&gt;515
    </title>
-   <path d="M539,-1367.7C539,-1359.98 539,-1350.71 539,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1342.1 539,-1332.1 535.5,-1342.1 542.5,-1342.1" stroke="gray"/>
+   <path d="M539,-1367.7C539,-1359.98 539,-1350.71 539,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1342.1 539,-1332.1 535.5,-1342.1 542.5,-1342.1" stroke="lightgrey"/>
   </g>
   <!-- 545 -->
   <g class="node" id="node45">
@@ -1744,8 +1294,8 @@
    <title>
     515-&gt;545
    </title>
-   <path d="M539,-1295.7C539,-1287.98 539,-1278.71 539,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1270.1 539,-1260.1 535.5,-1270.1 542.5,-1270.1" stroke="gray"/>
+   <path d="M539,-1295.7C539,-1287.98 539,-1278.71 539,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1270.1 539,-1260.1 535.5,-1270.1 542.5,-1270.1" stroke="lightgrey"/>
   </g>
   <!-- 623 -->
   <g class="node" id="node46">
@@ -1766,8 +1316,8 @@
    <title>
     545-&gt;623
    </title>
-   <path d="M539,-1223.7C539,-1215.98 539,-1206.71 539,-1198.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1198.1 539,-1188.1 535.5,-1198.1 542.5,-1198.1" stroke="gray"/>
+   <path d="M539,-1223.7C539,-1215.98 539,-1206.71 539,-1198.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1198.1 539,-1188.1 535.5,-1198.1 542.5,-1198.1" stroke="lightgrey"/>
   </g>
   <!-- 662 -->
   <g class="node" id="node47">
@@ -1786,29 +1336,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1075.0">
-     层次遍历
-    </text>
-   </g>
   </g>
   <!-- 623&#45;&gt;662 -->
   <g class="edge" id="edge46">
    <title>
     623-&gt;662
    </title>
-   <path d="M539,-1151.7C539,-1143.98 539,-1134.71 539,-1126.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1126.1 539,-1116.1 535.5,-1126.1 542.5,-1126.1" stroke="gray"/>
+   <path d="M539,-1151.7C539,-1143.98 539,-1134.71 539,-1126.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1126.1 539,-1116.1 535.5,-1126.1 542.5,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 958 -->
   <g class="node" id="node48">
@@ -1829,8 +1364,8 @@
    <title>
     662-&gt;958
    </title>
-   <path d="M539,-1079.7C539,-1071.98 539,-1062.71 539,-1054.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-1054.1 539,-1044.1 535.5,-1054.1 542.5,-1054.1" stroke="gray"/>
+   <path d="M539,-1079.7C539,-1071.98 539,-1062.71 539,-1054.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-1054.1 539,-1044.1 535.5,-1054.1 542.5,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 919 -->
   <g class="node" id="node49">
@@ -1851,8 +1386,8 @@
    <title>
     958-&gt;919
    </title>
-   <path d="M539,-1007.7C539,-999.98 539,-990.71 539,-982.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-982.1 539,-972.1 535.5,-982.1 542.5,-982.1" stroke="gray"/>
+   <path d="M539,-1007.7C539,-999.98 539,-990.71 539,-982.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-982.1 539,-972.1 535.5,-982.1 542.5,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 1104 -->
   <g class="node" id="node50">
@@ -1873,8 +1408,8 @@
    <title>
     919-&gt;1104
    </title>
-   <path d="M539,-935.7C539,-927.98 539,-918.71 539,-910.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-910.1 539,-900.1 535.5,-910.1 542.5,-910.1" stroke="gray"/>
+   <path d="M539,-935.7C539,-927.98 539,-918.71 539,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-910.1 539,-900.1 535.5,-910.1 542.5,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 1161 -->
   <g class="node" id="node51">
@@ -1893,29 +1428,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-787.0">
-     z字形树
-    </text>
-   </g>
   </g>
   <!-- 1104&#45;&gt;1161 -->
   <g class="edge" id="edge50">
    <title>
     1104-&gt;1161
    </title>
-   <path d="M539,-863.7C539,-855.98 539,-846.71 539,-838.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-838.1 539,-828.1 535.5,-838.1 542.5,-838.1" stroke="gray"/>
+   <path d="M539,-863.7C539,-855.98 539,-846.71 539,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-838.1 539,-828.1 535.5,-838.1 542.5,-838.1" stroke="lightgrey"/>
   </g>
   <!-- 1302 -->
   <g class="node" id="node52">
@@ -1934,29 +1454,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-715.0">
-     最深叶子节点和
-    </text>
-   </g>
   </g>
   <!-- 1161&#45;&gt;1302 -->
   <g class="edge" id="edge51">
    <title>
     1161-&gt;1302
    </title>
-   <path d="M539,-791.7C539,-783.98 539,-774.71 539,-766.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-766.1 539,-756.1 535.5,-766.1 542.5,-766.1" stroke="gray"/>
+   <path d="M539,-791.7C539,-783.98 539,-774.71 539,-766.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-766.1 539,-756.1 535.5,-766.1 542.5,-766.1" stroke="lightgrey"/>
   </g>
   <!-- 1609 -->
   <g class="node" id="node53">
@@ -1975,29 +1480,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-643.0">
-     奇偶树
-    </text>
-   </g>
   </g>
   <!-- 1302&#45;&gt;1609 -->
   <g class="edge" id="edge52">
    <title>
     1302-&gt;1609
    </title>
-   <path d="M539,-719.7C539,-711.98 539,-702.71 539,-694.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="542.5,-694.1 539,-684.1 535.5,-694.1 542.5,-694.1" stroke="gray"/>
+   <path d="M539,-719.7C539,-711.98 539,-702.71 539,-694.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="542.5,-694.1 539,-684.1 535.5,-694.1 542.5,-694.1" stroke="lightgrey"/>
   </g>
   <!-- 617 -->
   <g class="node" id="node55">
@@ -2022,8 +1512,8 @@
    <title>
     生成二叉树-&gt;617
    </title>
-   <path d="M697.07,-1799.7C694.39,-1791.9 691.17,-1782.51 688.2,-1773.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="691.42,-1772.43 684.86,-1764.1 684.8,-1774.7 691.42,-1772.43" stroke="gray"/>
+   <path d="M697.07,-1799.7C694.39,-1791.9 691.17,-1782.51 688.2,-1773.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="691.42,-1772.43 684.86,-1764.1 684.8,-1774.7 691.42,-1772.43" stroke="lightgrey"/>
   </g>
   <!-- 95 -->
   <g class="node" id="node56">
@@ -2042,29 +1532,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="746.0" y="-1651.0">
-     暴力遍历
-    </text>
-   </g>
   </g>
   <!-- 617&#45;&gt;95 -->
   <g class="edge" id="edge55">
    <title>
     617-&gt;95
    </title>
-   <path d="M695.56,-1727.7C703.68,-1719.22 713.59,-1708.86 722.47,-1699.58" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="725.24,-1701.75 729.63,-1692.1 720.19,-1696.91 725.24,-1701.75" stroke="gray"/>
+   <path d="M695.56,-1727.7C703.68,-1719.22 713.59,-1708.86 722.47,-1699.58" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="725.24,-1701.75 729.63,-1692.1 720.19,-1696.91 725.24,-1701.75" stroke="lightgrey"/>
   </g>
   <!-- 96 -->
   <g class="node" id="node57">
@@ -2085,8 +1560,8 @@
    <title>
     95-&gt;96
    </title>
-   <path d="M749.21,-1655.7C750.65,-1647.98 752.37,-1638.71 753.96,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="757.44,-1630.58 755.82,-1620.1 750.56,-1629.3 757.44,-1630.58" stroke="gray"/>
+   <path d="M749.21,-1655.7C750.65,-1647.98 752.37,-1638.71 753.96,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="757.44,-1630.58 755.82,-1620.1 750.56,-1629.3 757.44,-1630.58" stroke="lightgrey"/>
   </g>
   <!-- 108 -->
   <g class="node" id="node58">
@@ -2105,29 +1580,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="775.0" y="-1507.0">
-     二分
-    </text>
-   </g>
   </g>
   <!-- 96&#45;&gt;108 -->
   <g class="edge" id="edge57">
    <title>
     96-&gt;108
    </title>
-   <path d="M762.96,-1583.7C764.72,-1575.98 766.84,-1566.71 768.8,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="772.27,-1558.63 771.09,-1548.1 765.45,-1557.07 772.27,-1558.63" stroke="gray"/>
+   <path d="M762.96,-1583.7C764.72,-1575.98 766.84,-1566.71 768.8,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="772.27,-1558.63 771.09,-1548.1 765.45,-1557.07 772.27,-1558.63" stroke="lightgrey"/>
   </g>
   <!-- 105 -->
   <g class="node" id="node59">
@@ -2148,8 +1608,8 @@
    <title>
     108-&gt;105
    </title>
-   <path d="M774.26,-1511.7C773.93,-1503.98 773.53,-1494.71 773.16,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="776.66,-1485.95 772.73,-1476.1 769.66,-1486.25 776.66,-1485.95" stroke="gray"/>
+   <path d="M774.26,-1511.7C773.93,-1503.98 773.53,-1494.71 773.16,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="776.66,-1485.95 772.73,-1476.1 769.66,-1486.25 776.66,-1485.95" stroke="lightgrey"/>
   </g>
   <!-- 106 -->
   <g class="node" id="node60">
@@ -2170,8 +1630,8 @@
    <title>
     105-&gt;106
    </title>
-   <path d="M772,-1439.7C772,-1431.98 772,-1422.71 772,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1414.1 772,-1404.1 768.5,-1414.1 775.5,-1414.1" stroke="gray"/>
+   <path d="M772,-1439.7C772,-1431.98 772,-1422.71 772,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1414.1 772,-1404.1 768.5,-1414.1 775.5,-1414.1" stroke="lightgrey"/>
   </g>
   <!-- 889 -->
   <g class="node" id="node61">
@@ -2192,8 +1652,8 @@
    <title>
     106-&gt;889
    </title>
-   <path d="M772,-1367.7C772,-1359.98 772,-1350.71 772,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1342.1 772,-1332.1 768.5,-1342.1 775.5,-1342.1" stroke="gray"/>
+   <path d="M772,-1367.7C772,-1359.98 772,-1350.71 772,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1342.1 772,-1332.1 768.5,-1342.1 775.5,-1342.1" stroke="lightgrey"/>
   </g>
   <!-- 450 -->
   <g class="node" id="node62">
@@ -2212,29 +1672,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="772.0" y="-1219.0">
-     二叉搜索树删除元素
-    </text>
-   </g>
   </g>
   <!-- 889&#45;&gt;450 -->
   <g class="edge" id="edge61">
    <title>
     889-&gt;450
    </title>
-   <path d="M772,-1295.7C772,-1287.98 772,-1278.71 772,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1270.1 772,-1260.1 768.5,-1270.1 775.5,-1270.1" stroke="gray"/>
+   <path d="M772,-1295.7C772,-1287.98 772,-1278.71 772,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1270.1 772,-1260.1 768.5,-1270.1 775.5,-1270.1" stroke="lightgrey"/>
   </g>
   <!-- 654 -->
   <g class="node" id="node63">
@@ -2255,8 +1700,8 @@
    <title>
     450-&gt;654
    </title>
-   <path d="M772,-1223.7C772,-1215.98 772,-1206.71 772,-1198.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1198.1 772,-1188.1 768.5,-1198.1 775.5,-1198.1" stroke="gray"/>
+   <path d="M772,-1223.7C772,-1215.98 772,-1206.71 772,-1198.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1198.1 772,-1188.1 768.5,-1198.1 775.5,-1198.1" stroke="lightgrey"/>
   </g>
   <!-- 669 -->
   <g class="node" id="node64">
@@ -2277,8 +1722,8 @@
    <title>
     654-&gt;669
    </title>
-   <path d="M772,-1151.7C772,-1143.98 772,-1134.71 772,-1126.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1126.1 772,-1116.1 768.5,-1126.1 775.5,-1126.1" stroke="gray"/>
+   <path d="M772,-1151.7C772,-1143.98 772,-1134.71 772,-1126.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1126.1 772,-1116.1 768.5,-1126.1 775.5,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 894 -->
   <g class="node" id="node65">
@@ -2299,8 +1744,8 @@
    <title>
     669-&gt;894
    </title>
-   <path d="M772,-1079.7C772,-1071.98 772,-1062.71 772,-1054.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-1054.1 772,-1044.1 768.5,-1054.1 775.5,-1054.1" stroke="gray"/>
+   <path d="M772,-1079.7C772,-1071.98 772,-1062.71 772,-1054.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-1054.1 772,-1044.1 768.5,-1054.1 775.5,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 998 -->
   <g class="node" id="node66">
@@ -2321,8 +1766,8 @@
    <title>
     894-&gt;998
    </title>
-   <path d="M772,-1007.7C772,-999.98 772,-990.71 772,-982.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-982.1 772,-972.1 768.5,-982.1 775.5,-982.1" stroke="gray"/>
+   <path d="M772,-1007.7C772,-999.98 772,-990.71 772,-982.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-982.1 772,-972.1 768.5,-982.1 775.5,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 1130 -->
   <g class="node" id="node67">
@@ -2343,8 +1788,8 @@
    <title>
     998-&gt;1130
    </title>
-   <path d="M772,-935.7C772,-927.98 772,-918.71 772,-910.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-910.1 772,-900.1 768.5,-910.1 775.5,-910.1" stroke="gray"/>
+   <path d="M772,-935.7C772,-927.98 772,-918.71 772,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-910.1 772,-900.1 768.5,-910.1 775.5,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 1261 -->
   <g class="node" id="node68">
@@ -2363,29 +1808,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="772.0" y="-787.0">
-     最大二叉树
-    </text>
-   </g>
   </g>
   <!-- 1130&#45;&gt;1261 -->
   <g class="edge" id="edge67">
    <title>
     1130-&gt;1261
    </title>
-   <path d="M772,-863.7C772,-855.98 772,-846.71 772,-838.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="775.5,-838.1 772,-828.1 768.5,-838.1 775.5,-838.1" stroke="gray"/>
+   <path d="M772,-863.7C772,-855.98 772,-846.71 772,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="775.5,-838.1 772,-828.1 768.5,-838.1 775.5,-838.1" stroke="lightgrey"/>
   </g>
   <!-- 113 -->
   <g class="node" id="node70">
@@ -2410,8 +1840,8 @@
    <title>
     记录路径-&gt;113
    </title>
-   <path d="M839.39,-1799.7C833.4,-1791.47 826.12,-1781.48 819.52,-1772.42" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="822.18,-1770.13 813.46,-1764.1 816.52,-1774.25 822.18,-1770.13" stroke="gray"/>
+   <path d="M839.39,-1799.7C833.4,-1791.47 826.12,-1781.48 819.52,-1772.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="822.18,-1770.13 813.46,-1764.1 816.52,-1774.25 822.18,-1770.13" stroke="lightgrey"/>
   </g>
   <!-- 114 -->
   <g class="node" id="node71">
@@ -2436,8 +1866,8 @@
    <title>
     113-&gt;114
    </title>
-   <path d="M837.69,-1727.88C858.02,-1718.39 883.47,-1706.51 905.1,-1696.42" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="906.84,-1699.47 914.43,-1692.07 903.88,-1693.13 906.84,-1699.47" stroke="gray"/>
+   <path d="M837.69,-1727.88C858.02,-1718.39 883.47,-1706.51 905.1,-1696.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="906.84,-1699.47 914.43,-1692.07 903.88,-1693.13 906.84,-1699.47" stroke="lightgrey"/>
   </g>
   <!-- 988 -->
   <g class="node" id="node72">
@@ -2458,8 +1888,8 @@
    <title>
     114-&gt;988
    </title>
-   <path d="M956.44,-1655.7C958.89,-1647.9 961.84,-1638.51 964.57,-1629.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="967.96,-1630.69 967.62,-1620.1 961.29,-1628.59 967.96,-1630.69" stroke="gray"/>
+   <path d="M956.44,-1655.7C958.89,-1647.9 961.84,-1638.51 964.57,-1629.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="967.96,-1630.69 967.62,-1620.1 961.29,-1628.59 967.96,-1630.69" stroke="lightgrey"/>
   </g>
   <!-- 1123 -->
   <g class="node" id="node73">
@@ -2480,8 +1910,8 @@
    <title>
     988-&gt;1123
    </title>
-   <path d="M978.69,-1583.7C981.25,-1575.9 984.33,-1566.51 987.18,-1557.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="990.58,-1558.7 990.38,-1548.1 983.93,-1556.51 990.58,-1558.7" stroke="gray"/>
+   <path d="M978.69,-1583.7C981.25,-1575.9 984.33,-1566.51 987.18,-1557.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="990.58,-1558.7 990.38,-1548.1 983.93,-1556.51 990.58,-1558.7" stroke="lightgrey"/>
   </g>
   <!-- 1315 -->
   <g class="node" id="node74">
@@ -2500,29 +1930,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1435.0">
-     祖父节点
-    </text>
-   </g>
   </g>
   <!-- 1123&#45;&gt;1315 -->
   <g class="edge" id="edge73">
    <title>
     1123-&gt;1315
    </title>
-   <path d="M996.74,-1511.7C997.07,-1503.98 997.47,-1494.71 997.84,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1001.34,-1486.25 998.27,-1476.1 994.34,-1485.95 1001.34,-1486.25" stroke="gray"/>
+   <path d="M996.74,-1511.7C997.07,-1503.98 997.47,-1494.71 997.84,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1001.34,-1486.25 998.27,-1476.1 994.34,-1485.95 1001.34,-1486.25" stroke="lightgrey"/>
   </g>
   <!-- 1367 -->
   <g class="node" id="node75">
@@ -2541,29 +1956,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1363.0">
-     部分路径
-    </text>
-   </g>
   </g>
   <!-- 1315&#45;&gt;1367 -->
   <g class="edge" id="edge74">
    <title>
     1315-&gt;1367
    </title>
-   <path d="M999,-1439.7C999,-1431.98 999,-1422.71 999,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1002.5,-1414.1 999,-1404.1 995.5,-1414.1 1002.5,-1414.1" stroke="gray"/>
+   <path d="M999,-1439.7C999,-1431.98 999,-1422.71 999,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1002.5,-1414.1 999,-1404.1 995.5,-1414.1 1002.5,-1414.1" stroke="lightgrey"/>
   </g>
   <!-- 1372 -->
   <g class="node" id="node76">
@@ -2582,29 +1982,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1291.0">
-     左右交替
-    </text>
-   </g>
   </g>
   <!-- 1367&#45;&gt;1372 -->
   <g class="edge" id="edge75">
    <title>
     1367-&gt;1372
    </title>
-   <path d="M999,-1367.7C999,-1359.98 999,-1350.71 999,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1002.5,-1342.1 999,-1332.1 995.5,-1342.1 1002.5,-1342.1" stroke="gray"/>
+   <path d="M999,-1367.7C999,-1359.98 999,-1350.71 999,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1002.5,-1342.1 999,-1332.1 995.5,-1342.1 1002.5,-1342.1" stroke="lightgrey"/>
   </g>
   <!-- 1457 -->
   <g class="node" id="node77">
@@ -2623,29 +2008,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1219.0">
-     判断路径伪回文
-    </text>
-   </g>
   </g>
   <!-- 1372&#45;&gt;1457 -->
   <g class="edge" id="edge76">
    <title>
     1372-&gt;1457
    </title>
-   <path d="M999,-1295.7C999,-1287.98 999,-1278.71 999,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1002.5,-1270.1 999,-1260.1 995.5,-1270.1 1002.5,-1270.1" stroke="gray"/>
+   <path d="M999,-1295.7C999,-1287.98 999,-1278.71 999,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1002.5,-1270.1 999,-1260.1 995.5,-1270.1 1002.5,-1270.1" stroke="lightgrey"/>
   </g>
   <!-- 129 -->
   <g class="node" id="node79">
@@ -2670,8 +2040,8 @@
    <title>
     叶子节点-&gt;129
    </title>
-   <path d="M1001.91,-1799.7C995.08,-1791.3 986.74,-1781.07 979.24,-1771.86" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="981.96,-1769.65 972.93,-1764.1 976.53,-1774.07 981.96,-1769.65" stroke="gray"/>
+   <path d="M1001.91,-1799.7C995.08,-1791.3 986.74,-1781.07 979.24,-1771.86" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="981.96,-1769.65 972.93,-1764.1 976.53,-1774.07 981.96,-1769.65" stroke="lightgrey"/>
   </g>
   <!-- 144 -->
   <g class="node" id="node81">
@@ -2696,8 +2066,8 @@
    <title>
     非递归实现-&gt;144
    </title>
-   <path d="M1147.8,-1799.7C1145.9,-1791.9 1143.62,-1782.51 1141.52,-1773.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1144.92,-1773 1139.15,-1764.1 1138.11,-1774.65 1144.92,-1773" stroke="gray"/>
+   <path d="M1147.8,-1799.7C1145.9,-1791.9 1143.62,-1782.51 1141.52,-1773.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1144.92,-1773 1139.15,-1764.1 1138.11,-1774.65 1144.92,-1773" stroke="lightgrey"/>
   </g>
   <!-- 145 -->
   <g class="node" id="node82">
@@ -2722,8 +2092,8 @@
    <title>
     144-&gt;145
    </title>
-   <path d="M1135,-1727.7C1135,-1719.98 1135,-1710.71 1135,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1138.5,-1702.1 1135,-1692.1 1131.5,-1702.1 1138.5,-1702.1" stroke="gray"/>
+   <path d="M1135,-1727.7C1135,-1719.98 1135,-1710.71 1135,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1138.5,-1702.1 1135,-1692.1 1131.5,-1702.1 1138.5,-1702.1" stroke="lightgrey"/>
   </g>
   <!-- 236 -->
   <g class="node" id="node84">
@@ -2742,29 +2112,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1305.0" y="-1723.0">
-     经典解法
-    </text>
-   </g>
   </g>
   <!-- 公共祖先&#45;&gt;236 -->
   <g class="edge" id="edge83">
    <title>
     公共祖先-&gt;236
    </title>
-   <path d="M1292.2,-1799.7C1294.1,-1791.9 1296.38,-1782.51 1298.48,-1773.83" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1301.89,-1774.65 1300.85,-1764.1 1295.08,-1773 1301.89,-1774.65" stroke="gray"/>
+   <path d="M1292.2,-1799.7C1294.1,-1791.9 1296.38,-1782.51 1298.48,-1773.83" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1301.89,-1774.65 1300.85,-1764.1 1295.08,-1773 1301.89,-1774.65" stroke="lightgrey"/>
   </g>
   <!-- 337 -->
   <g class="node" id="node86">
@@ -2789,8 +2144,8 @@
    <title>
     树形dp-&gt;337
    </title>
-   <path d="M1435.66,-1799.7C1439.19,-1791.73 1443.46,-1782.1 1447.37,-1773.26" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1450.58,-1774.67 1451.43,-1764.1 1444.18,-1771.83 1450.58,-1774.67" stroke="gray"/>
+   <path d="M1435.66,-1799.7C1439.19,-1791.73 1443.46,-1782.1 1447.37,-1773.26" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1450.58,-1774.67 1451.43,-1764.1 1444.18,-1771.83 1450.58,-1774.67" stroke="lightgrey"/>
   </g>
   <!-- 834 -->
   <g class="node" id="node87">
@@ -2811,8 +2166,8 @@
    <title>
     337-&gt;834
    </title>
-   <path d="M1459,-1727.7C1459,-1719.98 1459,-1710.71 1459,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1462.5,-1702.1 1459,-1692.1 1455.5,-1702.1 1462.5,-1702.1" stroke="gray"/>
+   <path d="M1459,-1727.7C1459,-1719.98 1459,-1710.71 1459,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1462.5,-1702.1 1459,-1692.1 1455.5,-1702.1 1462.5,-1702.1" stroke="lightgrey"/>
   </g>
   <!-- 437 -->
   <g class="node" id="node89">
@@ -2837,8 +2192,8 @@
    <title>
     前缀和-&gt;437
    </title>
-   <path d="M1564.43,-1799.7C1567.36,-1791.81 1570.89,-1782.3 1574.14,-1773.55" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1577.45,-1774.7 1577.65,-1764.1 1570.88,-1772.26 1577.45,-1774.7" stroke="gray"/>
+   <path d="M1564.43,-1799.7C1567.36,-1791.81 1570.89,-1782.3 1574.14,-1773.55" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1577.45,-1774.7 1577.65,-1764.1 1570.88,-1772.26 1577.45,-1774.7" stroke="lightgrey"/>
   </g>
   <!-- 449 -->
   <g class="node" id="node91">
@@ -2863,8 +2218,8 @@
    <title>
     二叉树序列化-&gt;449
    </title>
-   <path d="M1726.64,-1799.7C1731.13,-1791.64 1736.56,-1781.89 1741.52,-1772.98" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1744.66,-1774.54 1746.47,-1764.1 1738.55,-1771.14 1744.66,-1774.54" stroke="gray"/>
+   <path d="M1726.64,-1799.7C1731.13,-1791.64 1736.56,-1781.89 1741.52,-1772.98" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1744.66,-1774.54 1746.47,-1764.1 1738.55,-1771.14 1744.66,-1774.54" stroke="lightgrey"/>
   </g>
   <!-- 536 -->
   <g class="node" id="node92">
@@ -2885,8 +2240,8 @@
    <title>
     449-&gt;536
    </title>
-   <path d="M1747.84,-1727.7C1744.09,-1719.73 1739.55,-1710.1 1735.38,-1701.26" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1738.49,-1699.66 1731.06,-1692.1 1732.16,-1702.64 1738.49,-1699.66" stroke="gray"/>
+   <path d="M1747.84,-1727.7C1744.09,-1719.73 1739.55,-1710.1 1735.38,-1701.26" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1738.49,-1699.66 1731.06,-1692.1 1732.16,-1702.64 1738.49,-1699.66" stroke="lightgrey"/>
   </g>
   <!-- 652 -->
   <g class="node" id="node93">
@@ -2907,8 +2262,8 @@
    <title>
     536-&gt;652
    </title>
-   <path d="M1722.75,-1655.7C1722.64,-1647.98 1722.51,-1638.71 1722.39,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1725.89,-1630.05 1722.24,-1620.1 1718.89,-1630.15 1725.89,-1630.05" stroke="gray"/>
+   <path d="M1722.75,-1655.7C1722.64,-1647.98 1722.51,-1638.71 1722.39,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1725.89,-1630.05 1722.24,-1620.1 1718.89,-1630.15 1725.89,-1630.05" stroke="lightgrey"/>
   </g>
   <!-- 655 -->
   <g class="node" id="node94">
@@ -2927,29 +2282,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1721.0" y="-1507.0">
-     二维数组
-    </text>
-   </g>
   </g>
   <!-- 652&#45;&gt;655 -->
   <g class="edge" id="edge93">
    <title>
     652-&gt;655
    </title>
-   <path d="M1721.75,-1583.7C1721.64,-1575.98 1721.51,-1566.71 1721.39,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1724.89,-1558.05 1721.24,-1548.1 1717.89,-1558.15 1724.89,-1558.05" stroke="gray"/>
+   <path d="M1721.75,-1583.7C1721.64,-1575.98 1721.51,-1566.71 1721.39,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1724.89,-1558.05 1721.24,-1548.1 1717.89,-1558.15 1724.89,-1558.05" stroke="lightgrey"/>
   </g>
   <!-- 297 -->
   <g class="node" id="node95">
@@ -2970,8 +2310,8 @@
    <title>
     655-&gt;297
    </title>
-   <path d="M1721,-1511.7C1721,-1503.98 1721,-1494.71 1721,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1724.5,-1486.1 1721,-1476.1 1717.5,-1486.1 1724.5,-1486.1" stroke="gray"/>
+   <path d="M1721,-1511.7C1721,-1503.98 1721,-1494.71 1721,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1724.5,-1486.1 1721,-1476.1 1717.5,-1486.1 1724.5,-1486.1" stroke="lightgrey"/>
   </g>
   <!-- 1028 -->
   <g class="node" id="node96">
@@ -2992,8 +2332,8 @@
    <title>
     297-&gt;1028
    </title>
-   <path d="M1720.26,-1439.7C1719.93,-1431.98 1719.53,-1422.71 1719.16,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1722.66,-1413.95 1718.73,-1404.1 1715.66,-1414.25 1722.66,-1413.95" stroke="gray"/>
+   <path d="M1720.26,-1439.7C1719.93,-1431.98 1719.53,-1422.71 1719.16,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1722.66,-1413.95 1718.73,-1404.1 1715.66,-1414.25 1722.66,-1413.95" stroke="lightgrey"/>
   </g>
   <!-- 687 -->
   <g class="node" id="node98">
@@ -3014,8 +2354,8 @@
    <title>
     所有路径-&gt;687
    </title>
-   <path d="M1899.63,-1799.7C1904.63,-1791.56 1910.69,-1781.69 1916.21,-1772.7" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1919.24,-1774.46 1921.49,-1764.1 1913.28,-1770.79 1919.24,-1774.46" stroke="gray"/>
+   <path d="M1899.63,-1799.7C1904.63,-1791.56 1910.69,-1781.69 1916.21,-1772.7" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1919.24,-1774.46 1921.49,-1764.1 1913.28,-1770.79 1919.24,-1774.46" stroke="lightgrey"/>
   </g>
   <!-- 863 -->
   <g class="node" id="node99">
@@ -3036,8 +2376,8 @@
    <title>
     687-&gt;863
    </title>
-   <path d="M1928.79,-1727.7C1927.35,-1719.98 1925.63,-1710.71 1924.04,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1927.44,-1701.3 1922.18,-1692.1 1920.56,-1702.58 1927.44,-1701.3" stroke="gray"/>
+   <path d="M1928.79,-1727.7C1927.35,-1719.98 1925.63,-1710.71 1924.04,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1927.44,-1701.3 1922.18,-1692.1 1920.56,-1702.58 1927.44,-1701.3" stroke="lightgrey"/>
   </g>
   <!-- 979 -->
   <g class="node" id="node100">
@@ -3058,8 +2398,8 @@
    <title>
     863-&gt;979
    </title>
-   <path d="M1919,-1655.7C1919,-1647.98 1919,-1638.71 1919,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1922.5,-1630.1 1919,-1620.1 1915.5,-1630.1 1922.5,-1630.1" stroke="gray"/>
+   <path d="M1919,-1655.7C1919,-1647.98 1919,-1638.71 1919,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1922.5,-1630.1 1919,-1620.1 1915.5,-1630.1 1922.5,-1630.1" stroke="lightgrey"/>
   </g>
   <!-- 742 -->
   <g class="node" id="node101">
@@ -3080,8 +2420,8 @@
    <title>
     979-&gt;742
    </title>
-   <path d="M1918.75,-1583.7C1918.64,-1575.98 1918.51,-1566.71 1918.39,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1921.89,-1558.05 1918.24,-1548.1 1914.89,-1558.15 1921.89,-1558.05" stroke="gray"/>
+   <path d="M1918.75,-1583.7C1918.64,-1575.98 1918.51,-1566.71 1918.39,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1921.89,-1558.05 1918.24,-1548.1 1914.89,-1558.15 1921.89,-1558.05" stroke="lightgrey"/>
   </g>
   <!-- 124 -->
   <g class="node" id="node102">
@@ -3102,8 +2442,8 @@
    <title>
     742-&gt;124
    </title>
-   <path d="M1918.74,-1511.7C1919.07,-1503.98 1919.47,-1494.71 1919.84,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1923.34,-1486.25 1920.27,-1476.1 1916.34,-1485.95 1923.34,-1486.25" stroke="gray"/>
+   <path d="M1918.74,-1511.7C1919.07,-1503.98 1919.47,-1494.71 1919.84,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1923.34,-1486.25 1920.27,-1476.1 1916.34,-1485.95 1923.34,-1486.25" stroke="lightgrey"/>
   </g>
   <!-- 1443 -->
   <g class="node" id="node103">
@@ -3122,29 +2462,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1363.0">
-     寻找目标点
-    </text>
-   </g>
   </g>
   <!-- 124&#45;&gt;1443 -->
   <g class="edge" id="edge102">
    <title>
     124-&gt;1443
    </title>
-   <path d="M1921.74,-1439.7C1922.07,-1431.98 1922.47,-1422.71 1922.84,-1414.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1926.34,-1414.25 1923.27,-1404.1 1919.34,-1413.95 1926.34,-1414.25" stroke="gray"/>
+   <path d="M1921.74,-1439.7C1922.07,-1431.98 1922.47,-1422.71 1922.84,-1414.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1926.34,-1414.25 1923.27,-1404.1 1919.34,-1413.95 1926.34,-1414.25" stroke="lightgrey"/>
   </g>
   <!-- 1530 -->
   <g class="node" id="node104">
@@ -3163,29 +2488,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1291.0">
-     路径长度
-    </text>
-   </g>
   </g>
   <!-- 1443&#45;&gt;1530 -->
   <g class="edge" id="edge103">
    <title>
     1443-&gt;1530
    </title>
-   <path d="M1924,-1367.7C1924,-1359.98 1924,-1350.71 1924,-1342.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1927.5,-1342.1 1924,-1332.1 1920.5,-1342.1 1927.5,-1342.1" stroke="gray"/>
+   <path d="M1924,-1367.7C1924,-1359.98 1924,-1350.71 1924,-1342.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1927.5,-1342.1 1924,-1332.1 1920.5,-1342.1 1927.5,-1342.1" stroke="lightgrey"/>
   </g>
   <!-- 1145 -->
   <g class="node" id="node105">
@@ -3204,29 +2514,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1219.0">
-     邻近节点
-    </text>
-   </g>
   </g>
   <!-- 1530&#45;&gt;1145 -->
   <g class="edge" id="edge104">
    <title>
     1530-&gt;1145
    </title>
-   <path d="M1924,-1295.7C1924,-1287.98 1924,-1278.71 1924,-1270.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1927.5,-1270.1 1924,-1260.1 1920.5,-1270.1 1927.5,-1270.1" stroke="gray"/>
+   <path d="M1924,-1295.7C1924,-1287.98 1924,-1278.71 1924,-1270.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1927.5,-1270.1 1924,-1260.1 1920.5,-1270.1 1927.5,-1270.1" stroke="lightgrey"/>
   </g>
   <!-- 968 -->
   <g class="node" id="node106">
@@ -3245,29 +2540,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1147.0">
-     安装摄像头
-    </text>
-   </g>
   </g>
   <!-- 1145&#45;&gt;968 -->
   <g class="edge" id="edge105">
    <title>
     1145-&gt;968
    </title>
-   <path d="M1924,-1223.7C1924,-1215.98 1924,-1206.71 1924,-1198.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1927.5,-1198.1 1924,-1188.1 1920.5,-1198.1 1927.5,-1198.1" stroke="gray"/>
+   <path d="M1924,-1223.7C1924,-1215.98 1924,-1206.71 1924,-1198.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1927.5,-1198.1 1924,-1188.1 1920.5,-1198.1 1927.5,-1198.1" stroke="lightgrey"/>
   </g>
   <!-- 987 -->
   <g class="node" id="node107">
@@ -3286,29 +2566,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1075.0">
-     垂直遍历
-    </text>
-   </g>
   </g>
   <!-- 968&#45;&gt;987 -->
   <g class="edge" id="edge106">
    <title>
     968-&gt;987
    </title>
-   <path d="M1924,-1151.7C1924,-1143.98 1924,-1134.71 1924,-1126.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="1927.5,-1126.1 1924,-1116.1 1920.5,-1126.1 1927.5,-1126.1" stroke="gray"/>
+   <path d="M1924,-1151.7C1924,-1143.98 1924,-1134.71 1924,-1126.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1927.5,-1126.1 1924,-1116.1 1920.5,-1126.1 1927.5,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 684 -->
   <g class="node" id="node109">
@@ -3329,8 +2594,8 @@
    <title>
     图与树-&gt;684
    </title>
-   <path d="M2039.61,-1799.7C2045.6,-1791.47 2052.88,-1781.48 2059.48,-1772.42" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2062.48,-1774.25 2065.54,-1764.1 2056.82,-1770.13 2062.48,-1774.25" stroke="gray"/>
+   <path d="M2039.61,-1799.7C2045.6,-1791.47 2052.88,-1781.48 2059.48,-1772.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2062.48,-1774.25 2065.54,-1764.1 2056.82,-1770.13 2062.48,-1774.25" stroke="lightgrey"/>
   </g>
   <!-- 685 -->
   <g class="node" id="node110">
@@ -3351,8 +2616,8 @@
    <title>
     684-&gt;685
    </title>
-   <path d="M2080.97,-1727.7C2082.29,-1719.98 2083.88,-1710.71 2085.35,-1702.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2088.83,-1702.55 2087.07,-1692.1 2081.93,-1701.37 2088.83,-1702.55" stroke="gray"/>
+   <path d="M2080.97,-1727.7C2082.29,-1719.98 2083.88,-1710.71 2085.35,-1702.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2088.83,-1702.55 2087.07,-1692.1 2081.93,-1701.37 2088.83,-1702.55" stroke="lightgrey"/>
   </g>
   <!-- 1466 -->
   <g class="node" id="node111">
@@ -3371,29 +2636,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2090.0" y="-1579.0">
-     翻转指向
-    </text>
-   </g>
   </g>
   <!-- 685&#45;&gt;1466 -->
   <g class="edge" id="edge110">
    <title>
     685-&gt;1466
    </title>
-   <path d="M2090,-1655.7C2090,-1647.98 2090,-1638.71 2090,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2093.5,-1630.1 2090,-1620.1 2086.5,-1630.1 2093.5,-1630.1" stroke="gray"/>
+   <path d="M2090,-1655.7C2090,-1647.98 2090,-1638.71 2090,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2093.5,-1630.1 2090,-1620.1 2086.5,-1630.1 2093.5,-1630.1" stroke="lightgrey"/>
   </g>
   <!-- 1719 -->
   <g class="node" id="node112">
@@ -3412,29 +2662,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2091.0" y="-1507.0">
-     重构树
-    </text>
-   </g>
   </g>
   <!-- 1466&#45;&gt;1719 -->
   <g class="edge" id="edge111">
    <title>
     1466-&gt;1719
    </title>
-   <path d="M2090.25,-1583.7C2090.36,-1575.98 2090.49,-1566.71 2090.61,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2094.11,-1558.15 2090.76,-1548.1 2087.11,-1558.05 2094.11,-1558.15" stroke="gray"/>
+   <path d="M2090.25,-1583.7C2090.36,-1575.98 2090.49,-1566.71 2090.61,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2094.11,-1558.15 2090.76,-1548.1 2087.11,-1558.05 2094.11,-1558.15" stroke="lightgrey"/>
   </g>
   <!-- 1766 -->
   <g class="node" id="node113">
@@ -3453,29 +2688,14 @@
     <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
     <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
-   <g class="key">
-    <defs>
-     <filter height="1" id="solid" width="1" x="0" y="0">
-      <feFlood flood-color="#808285" result="bg"/>
-      <feMorphology operator="dilate" radius="2"/>
-      <feMerge>
-       <feMergeNode in="bg"/>
-       <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-     </filter>
-    </defs>
-    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2091.0" y="-1435.0">
-     互质树
-    </text>
-   </g>
   </g>
   <!-- 1719&#45;&gt;1766 -->
   <g class="edge" id="edge112">
    <title>
     1719-&gt;1766
    </title>
-   <path d="M2091,-1511.7C2091,-1503.98 2091,-1494.71 2091,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2094.5,-1486.1 2091,-1476.1 2087.5,-1486.1 2094.5,-1486.1" stroke="gray"/>
+   <path d="M2091,-1511.7C2091,-1503.98 2091,-1494.71 2091,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2094.5,-1486.1 2091,-1476.1 2087.5,-1486.1 2094.5,-1486.1" stroke="lightgrey"/>
   </g>
   <!-- 814 -->
   <g class="node" id="node115">
@@ -3496,8 +2716,8 @@
    <title>
     剪枝-&gt;814
    </title>
-   <path d="M2164.54,-1799.7C2173.8,-1791.05 2185.16,-1780.45 2195.26,-1771.03" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2197.75,-1773.49 2202.67,-1764.1 2192.98,-1768.37 2197.75,-1773.49" stroke="gray"/>
+   <path d="M2164.54,-1799.7C2173.8,-1791.05 2185.16,-1780.45 2195.26,-1771.03" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2197.75,-1773.49 2202.67,-1764.1 2192.98,-1768.37 2197.75,-1773.49" stroke="lightgrey"/>
   </g>
   <!-- 865 -->
   <g class="node" id="node116">
@@ -3518,8 +2738,8 @@
    <title>
     814-&gt;865
    </title>
-   <path d="M2232.12,-1727.7C2237.36,-1719.56 2243.7,-1709.69 2249.48,-1700.7" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2252.54,-1702.41 2255,-1692.1 2246.65,-1698.62 2252.54,-1702.41" stroke="gray"/>
+   <path d="M2232.12,-1727.7C2237.36,-1719.56 2243.7,-1709.69 2249.48,-1700.7" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2252.54,-1702.41 2255,-1692.1 2246.65,-1698.62 2252.54,-1702.41" stroke="lightgrey"/>
   </g>
   <!-- 1110 -->
   <g class="node" id="node117">
@@ -3540,8 +2760,8 @@
    <title>
     865-&gt;1110
    </title>
-   <path d="M2266.74,-1655.7C2267.07,-1647.98 2267.47,-1638.71 2267.84,-1630.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2271.34,-1630.25 2268.27,-1620.1 2264.34,-1629.95 2271.34,-1630.25" stroke="gray"/>
+   <path d="M2266.74,-1655.7C2267.07,-1647.98 2267.47,-1638.71 2267.84,-1630.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2271.34,-1630.25 2268.27,-1620.1 2264.34,-1629.95 2271.34,-1630.25" stroke="lightgrey"/>
   </g>
   <!-- 1325 -->
   <g class="node" id="node118">
@@ -3562,8 +2782,8 @@
    <title>
     1110-&gt;1325
    </title>
-   <path d="M2269.99,-1583.7C2270.43,-1575.98 2270.96,-1566.71 2271.45,-1558.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2274.95,-1558.29 2272.02,-1548.1 2267.96,-1557.89 2274.95,-1558.29" stroke="gray"/>
+   <path d="M2269.99,-1583.7C2270.43,-1575.98 2270.96,-1566.71 2271.45,-1558.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2274.95,-1558.29 2272.02,-1548.1 2267.96,-1557.89 2274.95,-1558.29" stroke="lightgrey"/>
   </g>
   <!-- 1339 -->
   <g class="node" id="node119">
@@ -3584,8 +2804,736 @@
    <title>
     1325-&gt;1339
    </title>
-   <path d="M2273,-1511.7C2273,-1503.98 2273,-1494.71 2273,-1486.11" fill="none" stroke="gray"/>
-   <polygon fill="gray" points="2276.5,-1486.1 2273,-1476.1 2269.5,-1486.1 2276.5,-1486.1" stroke="gray"/>
+   <path d="M2273,-1511.7C2273,-1503.98 2273,-1494.71 2273,-1486.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="2276.5,-1486.1 2273,-1476.1 2269.5,-1486.1 2276.5,-1486.1" stroke="lightgrey"/>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1723.0">
+    基础
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1651.0">
+    基础
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="165.0" y="-1579.0">
+    基础
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="130.0" y="-1507.0">
+    一行代码
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="128.0" y="-1435.0">
+    深度结合递归好题
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="124.0" y="-1363.0">
+    分情况
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="117.0" y="-1291.0">
+    交换左右
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1219.0">
+    中序遍历递增
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1147.0">
+    深度与直径
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1075.0">
+    算总值
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-1003.0">
+    每一步检查
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-931.0">
+    每一步检查
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-859.0">
+    经典题队列实现
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-787.0">
+    队列实现
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-715.0">
+    Hash
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-643.0">
+    记录次小值
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-571.0">
+    记录次小值
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-139.0">
+    克隆节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="-67.0">
+    克隆节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="103.0" y="5.0">
+    克隆节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="344.0" y="-1723.0">
+    搜索有序树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="332.0" y="-1651.0">
+    中序遍历递增
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="318.0" y="-1579.0">
+    中序遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="311.0" y="-1507.0">
+    中序遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="311.0" y="-1291.0">
+    二叉搜索树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="312.0" y="-1219.0">
+    二叉搜索树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1723.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1507.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1435.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1363.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-1075.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-787.0">
+    z字形树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-715.0">
+    最深叶子节点和
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="539.0" y="-643.0">
+    奇偶树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="746.0" y="-1651.0">
+    暴力遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="775.0" y="-1507.0">
+    二分
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="772.0" y="-1219.0">
+    二叉搜索树删除元素
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="772.0" y="-787.0">
+    最大二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1435.0">
+    祖父节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1363.0">
+    部分路径
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1291.0">
+    左右交替
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="999.0" y="-1219.0">
+    判断路径伪回文
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1305.0" y="-1723.0">
+    经典解法
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1721.0" y="-1507.0">
+    二维数组
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1363.0">
+    寻找目标点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1291.0">
+    路径长度
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1219.0">
+    邻近节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1147.0">
+    安装摄像头
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1924.0" y="-1075.0">
+    垂直遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2090.0" y="-1579.0">
+    翻转指向
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2091.0" y="-1507.0">
+    重构树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2091.0" y="-1435.0">
+    互质树
+   </text>
   </g>
  </g>
 </svg>
