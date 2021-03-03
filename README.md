@@ -19,6 +19,9 @@
 #### 链表路线图
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg">
 
+#### 并查集路线图
+<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_union_find.svg">
+
 #### Codeforces路线图
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg">
 
