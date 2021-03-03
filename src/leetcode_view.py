@@ -7,7 +7,7 @@ import datamap
 import leetcode
 from svgpathtools import svg2paths
 
-finish_icon_svg = '''
+svg_icon_finish = '''
 </g>
 <g transform="translate(208, -108) scale(0.3)">
 <circle fill="#4CAF50" cx="24" cy="24" r="21"/>
