@@ -14,7 +14,7 @@ def get_module_problem_count(m):
     return c
 
 def generate_codeforces(code, file, out_name):
-    m = datamap.DataMap(util.get_map_content(file))
+    m = datamap.DataMap(util.get_file_content(util.get_map(file)))
     g = Digraph('stones', encoding='utf-8')
 
     for n in m.nodes:
