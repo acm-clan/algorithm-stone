@@ -10,19 +10,19 @@
 
 > Tip:点击svg文件中的题目，可以跳转到题目页面。
 
-#### 动态规划路线图
+#### 动态规划路线图（进度40%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_dp.svg">
 
-#### Tree路线图
+#### Tree路线图（进度100%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg">
 
-#### 链表路线图
+#### 链表路线图（进度10%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg">
 
-#### 并查集路线图
+#### 并查集路线图（进度10%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_union_find.svg">
 
-#### Codeforces路线图
+#### Codeforces路线图（进度1%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg">
 
 
