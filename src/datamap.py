@@ -115,8 +115,8 @@ class DataMap:
         pos = self.consume_problems(pos, node)
         if pos < 0:
             return pos
-
-        self.nodes.append(node)
+        if node.name != "未分类":
+            self.nodes.append(node)
         return pos
 
     def parse(self):
