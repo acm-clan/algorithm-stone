@@ -79,7 +79,7 @@ class LeetcodeView:
         # add solution
         flask = self.leet.check_flask(title)
         if flask != "":
-            url = "./user/%s" % flask
+            url = "../user/%s" % flask
             t = BeautifulSoup(svg_icon_flask % (str(x0-13), str(y2-9), url), "xml").select_one("g")
             n.append(t)
 
