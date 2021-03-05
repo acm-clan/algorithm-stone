@@ -1009,6 +1009,20 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="294.0" y="-1435.0">
+    简单删除
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="301.0" y="-1363.0">
     简单删除
    </text>

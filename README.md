@@ -44,13 +44,13 @@ BFS搜索 breadth-first-search
 DFS搜索 depth-first-search  
 设计题 design  
 分治算法 divide-and-conquer  
-动态规划 `dynamic-programming` —— dansen  
+动态规划 `dynamic-programming` —— `dansen`  
 几何题 geometry  
 图论 graph  
 贪心算法 greedy  
 Hash表 hash-table  
 堆算法 heap  
-链表 linked-list  
+链表 `linked-list` —— `chocolate`  
 数学题 math  
 最小最大值 minimax  
 排序Map ordered-map  
@@ -65,7 +65,7 @@ Hash表 hash-table
 栈 stack  
 字符串 string  
 拓扑排序 topological-sort  
-树 tree  
+树 `tree` —— `dansen`  
 Trie树 trie  
 双指针 two-pointers  
 并查集 union-find  

@@ -54,8 +54,7 @@ class LeetcodeView:
 
     def post_process_problem_node(self, graph, n):
         title = n.title.get_text()
-        if not self.leet.check_finish(title):
-            return
+        
         # get positions
         points = n.g.polygon['points'].split()
         p0 = points[0].split(",")
@@ -73,6 +72,7 @@ class LeetcodeView:
         x2 = float(p2[0])
         y2 = float(p2[1])
         pro = self.m.problem_map[title]
+        # add key text
         if 'key' in pro.tags:
             key_node = BeautifulSoup(svg_text_key % (str((x1+x0)/2), str(y2+5), pro.tags['key']), "xml").select_one("g")
             graph.append(key_node)
@@ -100,7 +100,8 @@ class LeetcodeView:
         self.leetcode_add_finish_icon(path)
 
     def generate_leetcode(self, leet, file, slug, out_name):
-        m = datamap.DataMap(util.get_file_content(util.get_map(file)))
+        c = util.get_file_content(util.get_map(file))
+        m = datamap.DataMap(c)
         self.m = m
         g = Digraph('stones', encoding='utf-8')
 
