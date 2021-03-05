@@ -448,6 +448,10 @@
      </text>
     </a>
    </g>
+   <g transform="translate(180.0, -1266.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
+    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
   </g>
   <!-- 121&#45;&gt;303 -->
   <g class="edge" id="edge4">
@@ -469,6 +473,10 @@
       304. 二维区域和检索 - 矩阵不可变
      </text>
     </a>
+   </g>
+   <g transform="translate(192.0, -1194.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
+    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 303&#45;&gt;304 -->
@@ -647,6 +655,10 @@
       264. 丑数 II
      </text>
     </a>
+   </g>
+   <g transform="translate(293.5, -978.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4CAF50" r="21"/>
+    <polygon fill="#CCFF90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 1770&#45;&gt;264 -->
@@ -3718,7 +3730,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="100.0" y="-1147.0">
-    D前缀和
+    二维前缀和
    </text>
   </g>
   <g class="key">
@@ -3760,7 +3772,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="262.0" y="-931.0">
-    循环序列
+    斐波拉契数列的变种
    </text>
   </g>
   <g class="key">
