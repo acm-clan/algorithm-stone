@@ -80,7 +80,8 @@ class LeetcodeView:
         flask = self.leet.check_flask(title)
         if flask != "":
             url = "../user/leetcode/%s" % flask
-            t = BeautifulSoup(svg_icon_flask % (str(x0-13), str(y2-9), url), "xml").select_one("g")
+            text = svg_icon_flask % (str(x0-13), str(y2-9), url)
+            t = BeautifulSoup(text, "xml").select_one("g")
             n.append(t)
 
     def leetcode_add_finish_icon(self, path):
