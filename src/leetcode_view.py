@@ -79,7 +79,7 @@ class LeetcodeView:
         # add solution
         flask = self.leet.check_flask(title)
         if flask != "":
-            url = "../user/leetcode/%s" % flask
+            url = "https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/%s" % flask
             text = svg_icon_flask % (str(x0-13), str(y2-9), url)
             t = BeautifulSoup(text, "xml").select_one("g")
             n.append(t)
