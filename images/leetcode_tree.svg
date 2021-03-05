@@ -3023,6 +3023,34 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="263.5" y="-787.0">
+    中序遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="263.5" y="-715.0">
+    前序遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="263.5" y="-643.0">
     二叉搜索树
    </text>
@@ -3052,6 +3080,34 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="511.5" y="-1075.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="511.5" y="-1003.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="497.5" y="-931.0">
     层次遍历
    </text>
   </g>
@@ -3107,8 +3163,92 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-643.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-571.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-499.0">
+    层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-427.0">
     层次遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-355.0">
+    完全二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-283.0">
+    完全二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="490.5" y="-211.0">
+    z字形树
    </text>
   </g>
   <g class="key">
@@ -3177,6 +3317,20 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="722.5" y="-931.0">
+    动态规划
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="726.5" y="-859.0">
     二分
    </text>
@@ -3191,8 +3345,106 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-787.0">
+    前序中序构造经典题
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-715.0">
+    中序后序构造经典题
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-643.0">
+    前序后序构造经典题
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-571.0">
     二叉搜索树删除元素
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-499.0">
+    最大二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-355.0">
+    构造完整二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-283.0">
+    最大二叉树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="711.5" y="-211.0">
+    最大二叉树
    </text>
   </g>
   <g class="key">
@@ -3235,6 +3487,34 @@
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="924.5" y="-931.0">
     前缀和
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="938.5" y="-859.0">
+    叶子到根
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="938.5" y="-787.0">
+    叶子到根
    </text>
   </g>
   <g class="key">
@@ -3345,6 +3625,76 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1148.5" y="-787.0">
+    经典解法
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1148.5" y="-715.0">
+    翻转二叉树等价
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1148.5" y="-643.0">
+    前序遍历与翻转
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1149.5" y="-571.0">
+    父子节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1149.5" y="-499.0">
+    算总值
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1149.5" y="-427.0">
     克隆节点
    </text>
@@ -3389,6 +3739,104 @@
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1553.5" y="-859.0">
     二维数组
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1548.5" y="-787.0">
+    二维数组
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1547.5" y="-715.0">
+    先序遍历
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1752.5" y="-1075.0">
+    一样数字的路径
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1753.5" y="-1003.0">
+    距离与差值
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1753.5" y="-931.0">
+    分硬币
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1752.5" y="-859.0">
+    最近的叶子节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1753.5" y="-787.0">
+    路径和
    </text>
   </g>
   <g class="key">
@@ -3471,6 +3919,34 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1898.5" y="-1075.0">
+    删掉图的一条边
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1925.5" y="-1003.0">
+    删掉图的一条边
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1925.5" y="-931.0">
     翻转指向
    </text>
@@ -3501,6 +3977,62 @@
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1925.5" y="-787.0">
     互质树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2101.5" y="-1003.0">
+    最大深度的子树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2104.5" y="-931.0">
+    剪掉节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2107.5" y="-859.0">
+    删除叶子节点
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#CCFF90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="2107.5" y="-787.0">
+    分割求值
    </text>
   </g>
  </g>
