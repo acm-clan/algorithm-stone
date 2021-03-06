@@ -1,7 +1,7 @@
 [Codeforces]
 
 [-基础题]
-1A 4A 5A 6A
+1A 4A 5A 6A 750A 784E 785A 802M 855A 1157B
 
 [-Maths]
 409H 
