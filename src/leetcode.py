@@ -25,11 +25,16 @@ def is_int(s):
 class Leetcode:
     def __init__(self):
         self.dict = self.init_db()
-        self.finished = []
+        self.finishes = []
+        self.flasks = []
         # read user
         p = util.get_root("user", "leetcode")
         entries = os.listdir(p)
-        self.finished = entries
+        for k in entries:
+            if k.endswith(".cpp"):
+                self.finishes.append(k)
+            elif k.endswith(".md"):
+                self.flasks.append(k)
 
     def init_db(self):
         d = SqliteDict(util.get_db('leetcode.sqlite'), autocommit=True)
@@ -38,10 +43,28 @@ class Leetcode:
     def close_db(self):
         self.dict.close()
 
+    def get_tag_problems(self, tag):
+        problems = self.get_all_problems()
+        datas = [] 
+        for k in problems:
+            try:
+                j = json.loads(problems[k])
+                tags = j['data']['question']['topicTags']
+                paid_only = j['data']['question']['paid_only']
+                if len(tags) > 0:
+                    for t in tags:
+                        if t['slug'] == tag and paid_only == False:
+                            datas.append(j)
+                            break
+            except Exception as e:
+                print("unknow key:", k, e)
+                pass
+        return datas
+
     def get_all_problems(self):
         d = {}
         for k, v in self.dict.iteritems():
-            if k.startswith("leetcode_"):
+            if k.startswith("leetcode_") and k[9].isdigit():
                 d[k] = v
         return d
 
@@ -62,10 +85,16 @@ class Leetcode:
         return j['data']['question']['difficulty']
 
     def check_finish(self, id):
-        for k in self.finished:
+        for k in self.finishes:
             if k.startswith(id+"."):
                 return True
         return False
+
+    def check_flask(self, id):
+        for k in self.flasks:
+            if k.startswith(id+"."):
+                return k
+        return ""
 
     def get_problem(self, id):
         content = self.get_problem_content(id)

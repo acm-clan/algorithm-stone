@@ -1,8 +1,8 @@
 
 class Problem:
-    def __init__(self, id, types):
+    def __init__(self, id, tags):
         self.id = id
-        self.types = types
+        self.tags = tags
 
 class DataMapNode:
     def __init__(self, name, problems, is_root, parent):
@@ -22,6 +22,7 @@ class DataMap:
         self.data = data
         self.nodes = []
         self.last_root_name = ""
+        self.problem_map = {}
         self.parse()
 
     def consume_key(self, pos):
@@ -48,34 +49,35 @@ class DataMap:
                 return t, pos
             pos += 1
 
-    def consome_problem_types(self, pos):
-        types = {}
+    def consome_problem_tags(self, pos):
+        tags = {}
         while True:
             key, pos = self.consume_key(pos)
             if key == "":
                 break
             value, pos = self.consume_value(pos)
-            types[key] = value
-        return pos, types
+            tags[key] = value
+        return pos, tags
 
     def consume_problems(self, pos, node):
         length = len(self.data)
         p = ""
 
-        types = {}
+        tags = {}
 
         while pos < length:
             c = self.data[pos]
             if c == '[':
                 return pos
             elif c == '(':
-                pos, types = self.consome_problem_types(pos)
+                pos, tags = self.consome_problem_tags(pos)
             elif (c >= '0' and c <= '9') or c.isalpha():
                 p += c
             elif len(p) > 0:
                 # print("add problem:", p)
-                pb = Problem(p, types)
+                pb = Problem(p, tags)
                 node.problems.append(pb)
+                self.problem_map[p] = pb
                 p = ""
             pos += 1
         return pos
@@ -113,8 +115,8 @@ class DataMap:
         pos = self.consume_problems(pos, node)
         if pos < 0:
             return pos
-
-        self.nodes.append(node)
+        if node.name != "未分类":
+            self.nodes.append(node)
         return pos
 
     def parse(self):

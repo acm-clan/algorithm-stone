@@ -146,4 +146,4 @@ color_whitesmoke = 'whitesmoke'
 color_yellow = 'yellow'
 color_yellowgreen = 'yellowgreen'
 
-color_arrow = color_gray
+color_arrow = color_lightgrey

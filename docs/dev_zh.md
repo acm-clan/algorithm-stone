@@ -70,3 +70,22 @@ map文件中对于主模块是[xxx]，对于子模块是[-xxx]，然后子模块
 #### 如何参与该项目
 
 #### query工具使用说明
+在根目录输入：
+``` shell
+python3 src/query.py
+```
+
+可以看到查询命令
+
+查询tree的所有题目可以输入：
+```
+leetcode tag tree
+```
+
+查询tree的所有简单题目可以输入：
+```
+leetcode tag tree easy
+```
+
+query命令非常方便查询不同tag的题目id
+
