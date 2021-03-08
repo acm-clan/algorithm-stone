@@ -10,8 +10,8 @@
 pip install -r requirements.txt
 ```
 
-4 安装graphviz-4.6.1，记得添加到PATH中  
-5 在根目录执行  
+4 Install graphviz-4.6.1，add the bin directory to system PATH environments.  
+5 execute the command in the root directory
 ```shell
 python src/main.py
 ```
