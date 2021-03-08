@@ -62,7 +62,6 @@ class DataMap:
     def consume_problems(self, pos, node):
         length = len(self.data)
         p = ""
-
         tags = {}
 
         while pos < length:
@@ -74,7 +73,6 @@ class DataMap:
             elif (c >= '0' and c <= '9') or c.isalpha():
                 p += c
             elif len(p) > 0:
-                # print("add problem:", p)
                 pb = Problem(p, tags)
                 node.problems.append(pb)
                 self.problem_map[p] = pb
