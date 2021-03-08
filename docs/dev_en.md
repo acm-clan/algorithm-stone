@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-###### Linux开发（Ubuntu)
+###### Linux development（Ubuntu)
 1 安装python3.9和pip3，请自行google如何安装  
 2 安装python库，执行如下命令  
 ```shell
