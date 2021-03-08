@@ -79,6 +79,7 @@ class DataMap:
                 node.problems.append(pb)
                 self.problem_map[p] = pb
                 p = ""
+                tags = {}
             pos += 1
         return pos
 

@@ -3829,20 +3829,6 @@
      </feMerge>
     </filter>
    </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="262.0" y="-1003.0">
-    循环序列
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="262.0" y="-931.0">
     斐波拉契数列的变种
    </text>
@@ -3872,20 +3858,6 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="411.0" y="-1219.0">
-    修正边界
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="411.0" y="-1147.0">
     修正边界
    </text>
   </g>
@@ -3942,146 +3914,6 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-1003.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-931.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-859.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-787.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-715.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-643.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-571.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-499.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-427.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-355.0">
-    经典铺地板
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-283.0">
     经典铺地板
    </text>
   </g>
