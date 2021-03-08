@@ -43,8 +43,8 @@ class DataMap:
         t = ""
         while pos < length:
             c = self.data[pos]
-            if c.isalpha():
-                t += c
+            if c.isalnum():
+                t += c 
             elif len(t) > 0:
                 return t, pos
             pos += 1
