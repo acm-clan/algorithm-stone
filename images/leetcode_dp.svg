@@ -944,6 +944,14 @@
     <circle cx="24" cy="24" fill="#4caf50" r="21"/>
     <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
+   <g transform="translate(585.5, -1161.0) scale(0.01)">
+    <symbol id="flask" viewBox="0 0 448 512">
+     <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" fill="#1389fd"/>
+    </symbol>
+    <a href="https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/91.解码方法.md">
+     <use href="#flask"/>
+    </a>
+   </g>
   </g>
   <!-- 63&#45;&gt;91 -->
   <g class="edge" id="edge25">
@@ -964,6 +972,18 @@
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="566" y="-1094.9">
       576. 出界的路径数
      </text>
+    </a>
+   </g>
+   <g transform="translate(616.0, -1122.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+   <g transform="translate(611.0, -1089.0) scale(0.01)">
+    <symbol id="flask" viewBox="0 0 448 512">
+     <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" fill="#1389fd"/>
+    </symbol>
+    <a href="https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/576.出界的路径数.md">
+     <use href="#flask"/>
     </a>
    </g>
   </g>
@@ -988,6 +1008,18 @@
      </text>
     </a>
    </g>
+   <g transform="translate(634.0, -1050.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+   <g transform="translate(629.0, -1017.0) scale(0.01)">
+    <symbol id="flask" viewBox="0 0 448 512">
+     <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" fill="#1389fd"/>
+    </symbol>
+    <a href="https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/790.多米诺和托米诺平铺.md">
+     <use href="#flask"/>
+    </a>
+   </g>
   </g>
   <!-- 576&#45;&gt;790 -->
   <g class="edge" id="edge27">
@@ -1010,6 +1042,18 @@
      </text>
     </a>
    </g>
+   <g transform="translate(610.0, -978.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+   <g transform="translate(605.0, -945.0) scale(0.01)">
+    <symbol id="flask" viewBox="0 0 448 512">
+     <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" fill="#1389fd"/>
+    </symbol>
+    <a href="https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/935.骑士拨号器.md">
+     <use href="#flask"/>
+    </a>
+   </g>
   </g>
   <!-- 790&#45;&gt;935 -->
   <g class="edge" id="edge28">
@@ -1030,6 +1074,18 @@
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="566" y="-878.9">
       1155. 掷骰子的N种方法
      </text>
+    </a>
+   </g>
+   <g transform="translate(630.0, -906.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+   <g transform="translate(625.0, -873.0) scale(0.01)">
+    <symbol id="flask" viewBox="0 0 448 512">
+     <path d="M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z" fill="#1389fd"/>
+    </symbol>
+    <a href="https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/1155.掷骰子的n种方法.md">
+     <use href="#flask"/>
     </a>
    </g>
   </g>
@@ -3770,7 +3826,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="100.0" y="-1147.0">
-    二维前缀和
+    2维前缀和
    </text>
   </g>
   <g class="key">
@@ -3784,20 +3840,6 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="262.0" y="-1075.0">
-    循环序列
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="262.0" y="-1003.0">
     循环序列
    </text>
   </g>
@@ -3853,20 +3895,6 @@
      </feMerge>
     </filter>
    </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="411.0" y="-1147.0">
-    修正边界
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="411.0" y="-1075.0">
     记忆路径
    </text>
@@ -3882,7 +3910,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="556.0" y="-1147.0">
-    多种情况处理
+    合法数字
    </text>
   </g>
   <g class="key">
@@ -3896,7 +3924,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-1075.0">
-    多种情况处理
+    三维DP入门
    </text>
   </g>
   <g class="key">
@@ -3910,21 +3938,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-1003.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-931.0">
-    多种情况处理
+    经典铺地板
    </text>
   </g>
   <g class="key">
@@ -3938,119 +3952,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-859.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-787.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-715.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-643.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-571.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-499.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-427.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-355.0">
-    多种情况处理
-   </text>
-  </g>
-  <g class="key">
-   <defs>
-    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
-     <feFlood flood-color="#ccff90" result="bg"/>
-     <feMerge>
-      <feMergeNode in="bg"/>
-      <feMergeNode in="SourceGraphic"/>
-     </feMerge>
-    </filter>
-   </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="566.0" y="-283.0">
-    多种情况处理
+    投色子
    </text>
   </g>
   <g class="key">

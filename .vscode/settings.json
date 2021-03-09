@@ -8,6 +8,7 @@
         "xstring": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "string": "cpp"
     }
 }
