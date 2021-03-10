@@ -14,12 +14,7 @@ class CodeforcesView(platform_view.PlatformView):
     def __init__(self, cf):
         self.cf = cf
         self.m = None
-
-    def get_module_problem_count(self, m):
-        c = 0
-        for n in m.nodes:
-            c += len(n.problems)
-        return c
+        self.slug = "codeforces"
 
     def check_finish(self, title):
         return self.cf.check_finish(title)
@@ -92,7 +87,6 @@ class CodeforcesView(platform_view.PlatformView):
 
                 g.node(name=idstr, label=title, target="_parent", href=href, 
                         color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
-                    
 
                 if len(last) > 0:
                     g.edge(last, idstr, color=theme.color_arrow)

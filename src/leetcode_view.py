@@ -13,6 +13,7 @@ class LeetcodeView(platform_view.PlatformView):
     def __init__(self, leet):
         self.leet = leet
         self.m = None
+        self.slug = "leetcode"
 
     def check_finish(self, title):
         return self.leet.check_finish(title)
@@ -22,12 +23,6 @@ class LeetcodeView(platform_view.PlatformView):
 
     def check_flask(self, title):
         return self.leet.check_flask(title)
-
-    def get_module_problem_count(self, m):
-        c = 0
-        for n in m.nodes:
-            c += len(n.problems)
-        return c
 
     def leetcode_add_finish_icon(self, path):
         c = util.get_file_content(path)

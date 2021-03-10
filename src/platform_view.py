@@ -42,6 +42,9 @@ svg_icon_flask = '''
 '''
 
 class PlatformView(object):
+    def __init__(self):
+        self.slug = ""
+
     def check_finish(self, title):
         return False
 
@@ -50,6 +53,12 @@ class PlatformView(object):
 
     def check_flask(self, id):
         return False
+
+    def get_module_problem_count(self, m):
+        c = 0
+        for n in m.nodes:
+            c += len(n.problems)
+        return c
 
     def post_process_problem_node(self, graph, n):
         title = n.title.get_text()
@@ -80,7 +89,7 @@ class PlatformView(object):
         # flask = self.leet.check_flask(title)
         flask = self.check_flask(title)
         if flask != "":
-            url = "https://github.com/acm-clan/algorithm-stone/blob/main/user/leetcode/%s" % flask
+            url = "https://github.com/acm-clan/algorithm-stone/blob/main/user/%s/%s" % (self.slug, flask)
             text = svg_icon_flask % (str(x0-13), str(y2-9), url)
             t = BeautifulSoup(text, "xml").select_one("g")
             n.append(t)
