@@ -25,21 +25,11 @@ class CodeforcesView(platform_view.PlatformView):
     def check_flask(self, title):
         return self.cf.check_flask(title)
 
-    def leetcode_add_finish_icon(self, path):
-        c = util.get_file_content(path)
-        b = BeautifulSoup(c, "xml")
-        nodes = b.select("g.node")
-        graph = b.select_one("g.graph")
-        for n in nodes:
-            title = n.title.get_text()
-            if not re.match("[0-9]+[A-Za-z]+", title):
-                continue
-            self.post_process_problem_node(graph, n)
-        content = b.prettify()
-        util.save_file_content(path, content)
+    def is_valid_title(self, title):
+        return re.match("[0-9]+[A-Za-z]+", title) != None
 
     def post_process(self, path):
-        self.leetcode_add_finish_icon(path)
+        self.add_finish_icon(path)
 
     def generate_codeforces(self, code, file, out_name):
         m = datamap.DataMap(util.get_file_content(util.get_map(file)))

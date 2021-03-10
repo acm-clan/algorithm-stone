@@ -24,21 +24,11 @@ class LeetcodeView(platform_view.PlatformView):
     def check_flask(self, title):
         return self.leet.check_flask(title)
 
-    def leetcode_add_finish_icon(self, path):
-        c = util.get_file_content(path)
-        b = BeautifulSoup(c, "xml")
-        nodes = b.select("g.node")
-        graph = b.select_one("g.graph")
-        for n in nodes:
-            title = n.title.get_text()
-            if not title.isdigit():
-                continue
-            self.post_process_problem_node(graph, n)
-        content = b.prettify()
-        util.save_file_content(path, content)
+    def is_valid_title(self, title):
+        return title.isdigit()
 
     def post_process(self, path):
-        self.leetcode_add_finish_icon(path)
+        self.add_finish_icon(path)
 
     def generate_leetcode(self, leet, file, slug, out_name):
         c = util.get_file_content(util.get_map(file))

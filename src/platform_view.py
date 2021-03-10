@@ -54,11 +54,36 @@ class PlatformView(object):
     def check_flask(self, id):
         return False
 
+    def is_valid_title(self, title):
+        return title.isdigit()
+
     def get_module_problem_count(self, m):
         c = 0
         for n in m.nodes:
             c += len(n.problems)
         return c
+    
+    def resize_svg(self, svg):
+        viewBox = svg["viewBox"]
+        f = viewBox.split()
+        f[3] = str(float(f[3])+50)
+        svg["viewBox"] = " ".join(f)
+        svg["height"] = str(int(svg["height"][:-2])+50)+"pt"
+
+    def add_finish_icon(self, path):
+        c = util.get_file_content(path)
+        b = BeautifulSoup(c, "xml")
+        svg = b.select_one("svg")
+        self.resize_svg(svg)
+        nodes = b.select("g.node")
+        graph = b.select_one("g.graph")
+        for n in nodes:
+            title = n.title.get_text()
+            if not self.is_valid_title(title):
+                continue
+            self.post_process_problem_node(graph, n)
+        content = b.prettify()
+        util.save_file_content(path, content)
 
     def post_process_problem_node(self, graph, n):
         title = n.title.get_text()
