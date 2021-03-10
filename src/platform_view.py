@@ -66,8 +66,10 @@ class PlatformView(object):
     def resize_svg(self, svg):
         viewBox = svg["viewBox"]
         f = viewBox.split()
+        f[2] = str(float(f[2])+50)
         f[3] = str(float(f[3])+50)
         svg["viewBox"] = " ".join(f)
+        svg["width"] = str(int(svg["width"][:-2])+50)+"pt"
         svg["height"] = str(int(svg["height"][:-2])+50)+"pt"
 
     def add_finish_icon(self, path):
