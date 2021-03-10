@@ -166,6 +166,7 @@ def process():
     leet.update_db()
     view.generate_leetcode(leet, "leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     view.generate_leetcode(leet, "leetcode-tree.txt", "tree", "leetcode_tree")
+    view.generate_leetcode(leet, "leetcode-mini.txt", "", "leetcode_mini")
     view.generate_leetcode(leet, "leetcode-linked-list.txt", "linked-list", "leetcode_linked_list")
     view.generate_leetcode(leet, "leetcode-union-find.txt", "union-find", "leetcode_union_find")
     leet.close_db()

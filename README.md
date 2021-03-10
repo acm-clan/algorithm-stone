@@ -12,6 +12,9 @@
 
 ### Leetcode路线图合集
 
+#### 小众题路线图（进度10%）
+<img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_mini.svg">
+
 #### Tree路线图（进度100%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_tree.svg">
 
