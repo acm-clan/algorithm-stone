@@ -33,7 +33,7 @@
 详细的开发说明参考：[开发文档](https://github.com/acm-clan/algorithm-stone/blob/main/docs/dev_zh.md)
 
 ### Leetcode规划模块
-以下是Leetcode所有模块，每个模块由一个人专门处理。  
+以下是Leetcode所有模块，按照题目数量进行排序。  
 
 | 中文名称 | 英文名称 | 题目数量 | 整理人 |
 | ---- | ---- | ---- | ---- |
