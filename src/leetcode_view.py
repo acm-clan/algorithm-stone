@@ -89,8 +89,6 @@ class LeetcodeView(platform_view.PlatformView):
                 slug = problem['data']['question']['questionTitleSlug']
 
                 # 题目节点
-                is_finished = leet.check_finish(idstr)
-
                 g.node(name=idstr, label=title, target="_parent", href="https://leetcode-cn.com/problems/"+slug, 
                         color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
 

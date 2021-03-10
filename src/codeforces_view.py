@@ -37,7 +37,7 @@ class CodeforcesView(platform_view.PlatformView):
         graph = b.select_one("g.graph")
         for n in nodes:
             title = n.title.get_text()
-            if not re.match("[0-9]+[A-Fa-f]+", title):
+            if not re.match("[0-9]+[A-Za-z]+", title):
                 continue
             self.post_process_problem_node(graph, n)
         content = b.prettify()
@@ -88,15 +88,11 @@ class CodeforcesView(platform_view.PlatformView):
                     print("unknown level:", level)
 
                 # 题目节点
-                is_finished = code.check_finish(idstr)
                 href = "https://codeforces.com/problemset/problem/%d/%s" % (problem['contestId'], problem['index'])
 
-                if is_finished:
-                    g.node(name=idstr, label=title, target="_parent", href=href, 
+                g.node(name=idstr, label=title, target="_parent", href=href, 
                         color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
-                else:
-                    g.node(name=idstr, label=title, target="_parent", href=href, 
-                        color=color, fontname="Microsoft YaHei", fontsize='12', shape='box')
+                    
 
                 if len(last) > 0:
                     g.edge(last, idstr, color=theme.color_arrow)
