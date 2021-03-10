@@ -62,7 +62,7 @@
 |图论| graph  | 43 | |
 |堆算法| heap  |43  | |
 |设计题| design  | 47 | |
-|链表| `linked-list` | 51 |`chocolate` |
+|链表| `linked-list` | 51 |`chocolate` `dansen` |
 |回溯算法| backtracking  | 61 | |
 |位运算| bit-manipulation  | 66 | |
 |栈| stack  | 66 | |
