@@ -25,14 +25,14 @@ def is_int(s):
 class Leetcode:
     def __init__(self):
         self.dict = self.init_db()
-        self.finishes = []
+        self.finished = []
         self.flasks = []
         # read user
         p = util.get_root("user", "leetcode")
         entries = os.listdir(p)
         for k in entries:
             if k.endswith(".cpp"):
-                self.finishes.append(k)
+                self.finished.append(k)
             elif k.endswith(".md"):
                 self.flasks.append(k)
 
@@ -85,7 +85,7 @@ class Leetcode:
         return j['data']['question']['difficulty']
 
     def check_finish(self, id):
-        for k in self.finishes:
+        for k in self.finished:
             if k.startswith(id+"."):
                 return True
         return False

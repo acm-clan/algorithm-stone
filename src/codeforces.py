@@ -19,15 +19,27 @@ class PageProblemInfo:
 class Codeforces:
     def __init__(self):
         self.dict = self.init_db()
+
         self.finished = []
+        self.flasks = []
         # read user
         p = util.get_root("user", "codeforces")
         entries = os.listdir(p)
-        self.finished = entries
+        for k in entries:
+            if k.endswith(".cpp"):
+                self.finished.append(k)
+            elif k.endswith(".md"):
+                self.flasks.append(k)
 
     def init_db(self):
         d = SqliteDict(util.get_db('codeforces.sqlite'), autocommit=True)
         return d
+
+    def check_flask(self, id):
+        for k in self.flasks:
+            if k.startswith(id+"."):
+                return k
+        return ""
 
     def save_problem_meta(self, id, str):
         self.dict["codeforces_problem_meta_%s" % id] = str
