@@ -1,6 +1,6 @@
 # 算法·进阶石（algorithm-stone）—— 进击的每一步！
 
-<p align='center'>
+<p align='left'>
 <a href="https://github.com/acm-clan/algorithm-stone" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub"></a>
 </p>
 
