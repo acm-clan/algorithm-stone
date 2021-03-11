@@ -1,5 +1,9 @@
 # 算法·进阶石（algorithm-stone）—— 进击的每一步！
 
+<p align='center'>
+<a href="https://github.com/acm-clan/algorithm-stone" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub"></a>
+</p>
+
 本项目是公众号《ACM算法日常》整理的一个算法学习路线图。
 
 ### 使用说明：
