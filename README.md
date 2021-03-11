@@ -1,13 +1,7 @@
 # 算法·进阶石（algorithm-stone）—— 进击的每一步！
 
 <p align='left'>
-<a href="https://github.com/acm-clan/algorithm-stone" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub"></a>
-
-
-<a href="https://www.zhihu.com/people/acm-clan" target="_blank"><img src="https://img.shields.io/badge/知乎-@ACM算法日常-000000.svg?style=flat-square&logo=Zhihu"></a>
-
-<a href="https://oss.v8cloud.cn/markdown/72eeefe8497133dd56bbe3c56c794278.png" target="_blank"><img src="https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat"></a>
-
+<a href="https://github.com/acm-clan/algorithm-stone" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/stars/acm-clan/algorithm-stone?label=Stars&style=flat-square&logo=GitHub"></a>    <a href="https://www.zhihu.com/people/acm-clan" target="_blank"><img src="https://img.shields.io/badge/知乎-@ACM算法日常-000000.svg?style=flat-square&logo=Zhihu"></a>    <a href="https://oss.v8cloud.cn/markdown/72eeefe8497133dd56bbe3c56c794278.png" target="_blank"><img src="https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat"></a>
 </p>
 
 本项目是公众号《ACM算法日常》整理的一个算法学习路线图。
