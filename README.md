@@ -6,8 +6,9 @@
 
 <a href="https://www.zhihu.com/people/acm-clan" target="_blank"><img src="https://img.shields.io/badge/知乎-@acm-clan-000000.svg?style=flat-square&logo=Zhihu"></a>
 
-<a href="https://i.loli.net/2020/10/10/MhRTyUKfXZOlQYN.jpg" target="_blank"><img src="https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat"></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/公众号-@ACM算法日常-000000.svg?style=flat-square&logo=WeChat"></a>
 
+</p>
 
 本项目是公众号《ACM算法日常》整理的一个算法学习路线图。
 
