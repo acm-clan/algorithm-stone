@@ -40,41 +40,41 @@
 
 | 中文名称 | 英文名称 | 题目数量 | 整理人 |
 | ---- | ---- | ---- | ---- |
-|[拒绝采样](https://leetcode.com/tag/rejection-sampling)| rejection-sampling| 2 | |  
-|[蓄水池采样](https://leetcode.com/tag/reservoir-sampling)| reservoir-sampling | 2 | |  
-|[记忆](https://leetcode.com/tag/memoization)| memoization | 3 | |  
-|[扫描线](https://leetcode.com/tag/line-sweep)| line-sweep | 4 | |  
-|[拓扑排序](https://leetcode.com/tag/topological-sort)| topological-sort | 4 | |  
-|[二分查找树](https://leetcode.com/tag/binary-search-tree)| binary-search-tree | 5 | |  
-|[树状数组](https://leetcode.com/tag/binary-indexed-tree)| binary-indexed-tree | 6 | |  
-|[随机数](https://leetcode.com/tag/random)| random  | 6 | |
-|[智商题](https://leetcode.com/tag/brainteaser)| brainteaser  | 7 | |
-|[最小最大值](https://leetcode.com/tag/minimax)| minimax  | 7 | |
-|[队列](https://leetcode.com/tag/queue)| queue  | 10 | |
-|[几何题](https://leetcode.com/tag/geometry)| geometry  | 12 | |
-|[排序Map](https://leetcode.com/tag/ordered-map)| ordered-map  | 13 | |
-|[线段树](https://leetcode.com/tag/segment-tree)| segment-tree  | 15 | |
-|[Trie树](https://leetcode.com/tag/trie)| trie  | 17 | |
-|[滑动窗口](https://leetcode.com/tag/sliding-window)| sliding-window  | 25 | |
-|[分治算法](https://leetcode.com/tag/divide-and-conquer)| divide-and-conquer  | 28 | |
-|[并查集](https://leetcode.com/tag/union-find)| union-find  |  29  | |
-|[递归](https://leetcode.com/tag/recursion)| recursion  | 40 | |
-|[图论](https://leetcode.com/tag/graph)| graph  | 43 | |
-|[堆算法](https://leetcode.com/tag/heap)| heap  |43  | |
-|[设计题](https://leetcode.com/tag/design)| design  | 47 | |
-|[链表](https://leetcode.com/tag/linked-list)| `linked-list` | 51 |`chocolate` `dansen` |
-|[回溯算法](https://leetcode.com/tag/backtracking)| backtracking  | 61 | |
-|[位运算](https://leetcode.com/tag/bit-manipulation)| bit-manipulation  | 66 | |
-|[栈](https://leetcode.com/tag/stack)| stack  | 66 | |
-|[排序](https://leetcode.com/tag/sort)| sort  |68  | |
-|[双指针](https://leetcode.com/tag/two-pointers)| two-pointers  | 73 | |
-|[BFS搜索](https://leetcode.com/tag/breadth-first-search)| breadth-first-search  | 76 | |
-|[二分查找](https://leetcode.com/tag/binary-search)| binary-search  | 97 | |
-|[Hash表](https://leetcode.com/tag/hash-table)| hash-table  | 121 | |
-|[贪心算法](https://leetcode.com/tag/greedy)| greedy  | 128 | |
-|[DFS搜索](https://leetcode.com/tag/depth-first-search)| depth-first-search  | 137 | |
-|[树](https://leetcode.com/tag/tree)| `tree`  | 142 |`dansen` |
-|[数学题](https://leetcode.com/tag/math)| math  | 191 | |
-|[字符串](https://leetcode.com/tag/string)| string  | 209 | |
-|[动态规划](https://leetcode.com/tag/dynamic-programming)| `dynamic-programming` | 240 |`dansen` |
-|[数组](https://leetcode.com/tag/array)| array|310  | |
+|[拒绝采样](https://leetcode-cn.com/tag/rejection-sampling)| rejection-sampling| 2 | |  
+|[蓄水池采样](https://leetcode-cn.com/tag/reservoir-sampling)| reservoir-sampling | 2 | |  
+|[记忆](https://leetcode-cn.com/tag/memoization)| memoization | 3 | |  
+|[扫描线](https://leetcode-cn.com/tag/line-sweep)| line-sweep | 4 | |  
+|[拓扑排序](https://leetcode-cn.com/tag/topological-sort)| topological-sort | 4 | |  
+|[二分查找树](https://leetcode-cn.com/tag/binary-search-tree)| binary-search-tree | 5 | |  
+|[树状数组](https://leetcode-cn.com/tag/binary-indexed-tree)| binary-indexed-tree | 6 | |  
+|[随机数](https://leetcode-cn.com/tag/random)| random  | 6 | |
+|[智商题](https://leetcode-cn.com/tag/brainteaser)| brainteaser  | 7 | |
+|[最小最大值](https://leetcode-cn.com/tag/minimax)| minimax  | 7 | |
+|[队列](https://leetcode-cn.com/tag/queue)| queue  | 10 | |
+|[几何题](https://leetcode-cn.com/tag/geometry)| geometry  | 12 | |
+|[排序Map](https://leetcode-cn.com/tag/ordered-map)| ordered-map  | 13 | |
+|[线段树](https://leetcode-cn.com/tag/segment-tree)| segment-tree  | 15 | |
+|[Trie树](https://leetcode-cn.com/tag/trie)| trie  | 17 | |
+|[滑动窗口](https://leetcode-cn.com/tag/sliding-window)| sliding-window  | 25 | |
+|[分治算法](https://leetcode-cn.com/tag/divide-and-conquer)| divide-and-conquer  | 28 | |
+|[并查集](https://leetcode-cn.com/tag/union-find)| union-find  |  29  | |
+|[递归](https://leetcode-cn.com/tag/recursion)| recursion  | 40 | |
+|[图论](https://leetcode-cn.com/tag/graph)| graph  | 43 | |
+|[堆算法](https://leetcode-cn.com/tag/heap)| heap  |43  | |
+|[设计题](https://leetcode-cn.com/tag/design)| design  | 47 | |
+|[链表](https://leetcode-cn.com/tag/linked-list)| `linked-list` | 51 |`chocolate` `dansen` |
+|[回溯算法](https://leetcode-cn.com/tag/backtracking)| backtracking  | 61 | |
+|[位运算](https://leetcode-cn.com/tag/bit-manipulation)| bit-manipulation  | 66 | |
+|[栈](https://leetcode-cn.com/tag/stack)| stack  | 66 | |
+|[排序](https://leetcode-cn.com/tag/sort)| sort  |68  | |
+|[双指针](https://leetcode-cn.com/tag/two-pointers)| two-pointers  | 73 | |
+|[BFS搜索](https://leetcode-cn.com/tag/breadth-first-search)| breadth-first-search  | 76 | |
+|[二分查找](https://leetcode-cn.com/tag/binary-search)| binary-search  | 97 | |
+|[Hash表](https://leetcode-cn.com/tag/hash-table)| hash-table  | 121 | |
+|[贪心算法](https://leetcode-cn.com/tag/greedy)| greedy  | 128 | |
+|[DFS搜索](https://leetcode-cn.com/tag/depth-first-search)| depth-first-search  | 137 | |
+|[树](https://leetcode-cn.com/tag/tree)| `tree`  | 142 |`dansen` |
+|[数学题](https://leetcode-cn.com/tag/math)| math  | 191 | |
+|[字符串](https://leetcode-cn.com/tag/string)| string  | 209 | |
+|[动态规划](https://leetcode-cn.com/tag/dynamic-programming)| `dynamic-programming` | 240 |`dansen` |
+|[数组](https://leetcode-cn.com/tag/array)| array|310  | |
