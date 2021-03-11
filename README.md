@@ -41,7 +41,7 @@
 | 中文名称 | 英文名称 | 题目数量 | 整理人 |
 | ---- | ---- | ---- | ---- |
 |拒绝采样| rejection-sampling| 2 | |  
-|储藏采样| reservoir-sampling | 2 | |  
+|蓄水池采样| reservoir-sampling | 2 | |  
 |记忆| memoization | 3 | |  
 |扫描线| line-sweep | 4 | |  
 |拓扑排序| topological-sort | 4 | |  
