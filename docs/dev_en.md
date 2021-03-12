@@ -10,14 +10,14 @@
 pip install -r requirements.txt
 ```
 
-4 安装graphviz-4.6.1，记得添加到PATH中  
-5 在根目录执行  
+4 Install graphviz-4.6.1，add the bin directory to system PATH environments.  
+5 execute the command in the root directory
 ```shell
 python src/main.py
 ```
 
-###### Linux开发（Ubuntu)
-1 安装python3.9和pip3，请自行google如何安装  
+###### Linux development（Ubuntu)
+1 Install python3.9 and pip3，Please google how to do it  
 2 安装python库，执行如下命令  
 ```shell
 pip3 install -r requirements.txt

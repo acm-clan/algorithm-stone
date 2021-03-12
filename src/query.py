@@ -6,7 +6,9 @@ leet = leetcode.Leetcode()
 
 def show_menu():
     print("1 help: show help")
-    print("2 leetcode tag")
+    print("2 leetcode tag 显示所有的tag")
+    print("3 leetcode tag [tree|dynamic-programming|...] 显示tag所有题目")
+    print("4 leetcode tag [tree|dynamic-programming|...] [easy|medium|hard] 显示tag指定难度所有题目")
 
 def get_problem_id(data):
     id = data['data']['question']['questionId']
@@ -27,7 +29,19 @@ def check_leetcode_tags():
             all_tags.append(t['slug'])
     all_tags = list(dict.fromkeys(all_tags))
     all_tags.sort()
-    print('\n'.join([str(item)+" "+str(len(leet.get_tag_problems(item))) for item in all_tags]))
+
+    d = {}
+
+    for item in all_tags:
+        d[item] = len(leet.get_tag_problems(item))
+    sorted(d, key=d.get)
+
+    items = []
+    
+    for k in sorted(d, key=d.get):
+        items.append(str(k)+" "+str(d[k]))
+
+    print('\n'.join(items))
     print("--------------tags end-------------")
 
 def check_leetcode_tag(s):
