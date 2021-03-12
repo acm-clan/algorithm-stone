@@ -73,7 +73,9 @@ class Codeforces:
                 new_index = 'B'
             elif new_index == 'F':
                 new_index = 'C'
-            return self.get_db_problem("%d%s"%(int(new_id)-1, new_index))
+            r = self.get_db_problem("%d%s"%(int(new_id)-1, new_index))
+            if r == None:
+                return None
         
         return json.loads(v)
 
