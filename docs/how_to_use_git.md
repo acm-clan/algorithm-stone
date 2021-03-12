@@ -1,3 +1,5 @@
+# 用颜值超高的github desktop参与开源项目
+
 现在写程序基本上离不开github，每种语言如C/C++、Java、Python还是golang等都会将很多库开源在github上面，本篇文章就和大家聊聊如何使用git的基本操作，来参与github上的开源项目。很多童鞋喜欢直接使用git命令，但是对于新手，我更推荐github desktop客户端来操作git项目，下面一起来看看这个颜值超高的客户端App吧。
 
   

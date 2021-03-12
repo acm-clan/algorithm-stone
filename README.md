@@ -15,8 +15,8 @@
 > Tip:点击svg文件中的题目，可以跳转到题目页面。
 
 ### 新手入门教程
-[新手入门git](docs/how_to_use_git.md)  
-[新手入门vscode](docs/how_to_use_vscode.md)  
+[新手入门git - 用颜值超高的github desktop参与开源项目](docs/how_to_use_git.md)  
+[新手入门vscode - 如何将宇宙最强vscode打造为刷题神器](docs/how_to_use_vscode.md)  
 
 ### Leetcode路线图合集
 
