@@ -9,6 +9,9 @@
         "deque": "cpp",
         "queue": "cpp",
         "xiosbase": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xtree": "cpp"
     }
 }
