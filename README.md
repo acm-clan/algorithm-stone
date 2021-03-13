@@ -71,7 +71,7 @@
 |[并查集](https://leetcode-cn.com/tag/union-find)| union-find  |  29  | | 0% |
 |[递归](https://leetcode-cn.com/tag/recursion)| recursion  | 40 | | 0% |
 |[图论](https://leetcode-cn.com/tag/graph)| graph  | 43 | | 0% |
-|[堆算法](https://leetcode-cn.com/tag/heap)| heap  |43  | | 0% |
+|[堆](https://leetcode-cn.com/tag/heap)| heap  |43  | | 0% |
 |[设计题](https://leetcode-cn.com/tag/design)| design  | 47 | | 0% |
 |[链表](https://leetcode-cn.com/tag/linked-list)| `linked-list` | 51 |`chocolate` `dansen` | 10% |
 |[回溯算法](https://leetcode-cn.com/tag/backtracking)| backtracking  | 61 | | 0% |
