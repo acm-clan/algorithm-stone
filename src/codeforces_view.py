@@ -55,7 +55,10 @@ class CodeforcesView(platform_view.PlatformView):
             # add problem
             last = ""
             for p in n.problems:
-                problem = code.get_db_problem(p.id)
+                problem = code.get_db_problem(p.id, False)
+                if not problem:
+                    print("problem not exist "+p.id)
+                    continue
                 title = problem['name']
                 level = code.get_level(problem)
 

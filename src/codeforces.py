@@ -60,8 +60,11 @@ class Codeforces:
                 return True
         return False
 
-    def get_db_problem(self, id):
+    def get_db_problem(self, id, double):
         v = self.dict.get("codeforces_problem_%s" % id)
+
+        if v == None and double:
+            return None
 
         if v == None:
             # 尝试读取小一号的
@@ -73,10 +76,11 @@ class Codeforces:
                 new_index = 'B'
             elif new_index == 'F':
                 new_index = 'C'
-            r = self.get_db_problem("%d%s"%(int(new_id)-1, new_index))
+            r = self.get_db_problem("%d%s"%(int(new_id)-1, new_index), True)
             if r == None:
                 return None
-        
+        if v == None:
+            return v
         return json.loads(v)
 
     def save_db_problem(self, id, data):
@@ -110,7 +114,7 @@ class Codeforces:
         return probleams
 
     def check_problem(self, id, cid, index):
-        if self.get_db_problem(id) != None:
+        if self.get_db_problem(id, False) != None:
             return
         url = "https://codeforces.com/problemset/problem/%s/%s" % (cid, index)
         
