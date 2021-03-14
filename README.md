@@ -38,7 +38,7 @@
 #### 小众题路线图（进度10%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_mini.svg">
 
-### Codeforces路线图（进度1%）
+### Codeforces Div.3 Div.2路线图（进度1%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/codeforces.svg">
 
 
