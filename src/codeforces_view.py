@@ -96,5 +96,5 @@ def process():
     cf = codeforces.Codeforces()
     cf.update_db()
     view = CodeforcesView(cf)
-    view.generate_codeforces(cf, "codeforces.txt", "codeforces")
+    view.generate_codeforces(cf, "codeforces/codeforces.txt", "codeforces")
     cf.close_db()
