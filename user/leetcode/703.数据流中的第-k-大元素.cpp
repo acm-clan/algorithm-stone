@@ -3,22 +3,28 @@
  *
  * [703] 数据流中的第 K 大元素
  */
+#include <vector>
+#include <queue>
+using namespace std;
 
 // @lc code=start
 class KthLargest {
 public:
-    vector<int> n;
-    int target = 0;
-    int v = 0;
+    priority_queue<int, vector<int>, greater<int>> q;
+    int k;
     KthLargest(int k, vector<int>& nums) {
-        target = k;
-        n = nums;
-        std::sort(n.begin(), n.end());
-        v = n[k-1];
+        this->k = k;
+        for (auto& x: nums) {
+            add(x);
+        }
     }
     
     int add(int val) {
-        if(val <)
+        q.push(val);
+        if (q.size() > k) {
+            q.pop();
+        }
+        return q.top();
     }
 };
 
