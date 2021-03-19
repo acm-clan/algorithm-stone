@@ -25,8 +25,18 @@ class DataMap:
         self.problem_map = {}
         self.parse()
 
+    def consume_blank(self, pos):
+        length = len(self.data)
+        while pos < length:
+            c = self.data[pos]
+            if c.strip():
+                return pos
+            pos += 1
+        return pos
+
     def consume_key(self, pos):
         length = len(self.data)
+        # pos = self.consume_blank(pos)
         t = ""
         while pos < length:
             c = self.data[pos]
@@ -43,8 +53,9 @@ class DataMap:
         t = ""
         while pos < length:
             c = self.data[pos]
+            # if c.isalnum() or (c >= '\u4E00' and c <= '\u9FFF'):
             if c.isalnum():
-                t += c 
+                t += c
             elif len(t) > 0:
                 return t, pos
             pos += 1
