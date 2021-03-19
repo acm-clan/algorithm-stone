@@ -1,3 +1,7 @@
+import zhon
+from zhon import hanzi
+
+legal_punctuation = [':', '-']
 
 class Problem:
     def __init__(self, id, tags):
@@ -53,8 +57,7 @@ class DataMap:
         t = ""
         while pos < length:
             c = self.data[pos]
-            # if c.isalnum() or (c >= '\u4E00' and c <= '\u9FFF'):
-            if c.isalnum():
+            if c.isalnum() or (c in hanzi.punctuation) or (c in legal_punctuation):
                 t += c
             elif len(t) > 0:
                 return t, pos
