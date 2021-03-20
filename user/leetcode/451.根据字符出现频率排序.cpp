@@ -5,7 +5,10 @@
  */
 #include <queue>
 #include <map>
+#include <stdlib.h>
+#include <string.h>
 #include <string>
+#include <iostream>
 using namespace std;
 
 
@@ -17,7 +20,7 @@ public:
         int count;
     };
     string frequencySort(string s) {
-        char t[128];
+        int t[128];
         memset(t, 0, sizeof(t));
         for(auto & c: s){
             t[c]++;
@@ -26,6 +29,7 @@ public:
             return a.second < b.second;
         };
         priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> q(cmp);
+        // 注意这里不能使用i<sizeof(t)
         for(int i=0; i<128; i++){
             if(t[i] > 0){
                 q.emplace(i, t[i]);
@@ -34,14 +38,12 @@ public:
         string v;
         while(q.size()){
             auto top = q.top();
-            for(int i=0; i<top.second; i++){
-                v += (char)top.first;
-            }
-            
+            v.append(top.second, (char)top.first);
             q.pop();
         }
         return v;
     }
 };
+
 // @lc code=end
 
