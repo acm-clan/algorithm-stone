@@ -8,3 +8,5 @@ sqlitedict == 1.7.0
 beautifulsoup4 == 4.9.3
 svgpathtools == 1.4.1
 lxml == 4.6.2
+zhon == 1.1.5
+

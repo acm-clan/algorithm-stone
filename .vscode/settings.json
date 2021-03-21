@@ -12,6 +12,11 @@
         "string": "cpp",
         "initializer_list": "cpp",
         "type_traits": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "xlocale": "cpp",
+        "system_error": "cpp",
+        "xlocnum": "cpp",
+        "xtr1common": "cpp",
+        "xstddef": "cpp"
     }
 }

@@ -1,3 +1,7 @@
+import zhon
+from zhon import hanzi
+
+legal_punctuation = [':', '-']
 
 class Problem:
     def __init__(self, id, tags):
@@ -25,8 +29,18 @@ class DataMap:
         self.problem_map = {}
         self.parse()
 
+    def consume_blank(self, pos):
+        length = len(self.data)
+        while pos < length:
+            c = self.data[pos]
+            if c.strip():
+                return pos
+            pos += 1
+        return pos
+
     def consume_key(self, pos):
         length = len(self.data)
+        # pos = self.consume_blank(pos)
         t = ""
         while pos < length:
             c = self.data[pos]
@@ -43,8 +57,8 @@ class DataMap:
         t = ""
         while pos < length:
             c = self.data[pos]
-            if c.isalnum():
-                t += c 
+            if c.isalnum() or (c in hanzi.punctuation) or (c in legal_punctuation):
+                t += c
             elif len(t) > 0:
                 return t, pos
             pos += 1
