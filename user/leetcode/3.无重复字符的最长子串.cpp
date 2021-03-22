@@ -20,21 +20,21 @@ public:
     {
         if (s.size() == 0)
             return 0;
-        unordered_set<char> lookup;
+        unordered_set<char> hash;
         int m = 0;
         int left = 0;
 
         for (int i = 0; i < s.size(); i++) {
             // 存在就删除到存在的元素处
-            while (lookup.find(s[i]) != lookup.end()) {
-                lookup.erase(s[left]);
+            while (hash.find(s[i]) != hash.end()) {
+                hash.erase(s[left]);
                 left++;
             }
 
             // 更新最长区间
             m = max(m, i - left + 1);
             // 插入新元素
-            lookup.insert(s[i]);
+            hash.insert(s[i]);
         }
 
         return m;
