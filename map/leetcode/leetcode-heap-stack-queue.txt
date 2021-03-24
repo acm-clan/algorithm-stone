@@ -23,10 +23,6 @@
 373(key=带附加信息的第K大元素)
 692(key=hash与优先级队列)
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 [-堆与Dijkstra算法]
 743
 787
