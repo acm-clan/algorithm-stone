@@ -1,5 +1,6 @@
 # pylint: disable = W0201
 from manimlib import *
+sys.path.insert(0,'.')
 from algomanim.algoscene import AlgoScene
 from algomanim.algolist import AlgoList
 
