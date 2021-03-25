@@ -19,7 +19,19 @@ class MonotonicStack(Scene):
         self.wait(5)
 
     def construct(self):
-        self.show([73, 74, 75, 71, 69, 72, 76, 73], UP*3)
+        # self.show([73, 74, 75, 71, 69, 72, 76, 73], UP*3)
         # 
+        arr = Vector([73, 74, 75, 71, 69, 72, 76, 73])
+        res = Vector([0, 0, 0, 0, 0, 0, 0, 0])
+        indexes = Stack()
+        for i in range(len(arr)):
+            while !indexes.empty() and arr[i] > arr[indexes.top()]:
+                index = indexes.top()
+                indexes.pop()
+                res[index] = i - index
+            indexes.push(i)
+        res.light()
+
+
         
 
