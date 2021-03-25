@@ -1,3 +1,8 @@
 0x01 https://leetcode-cn.com/circle/article/2Xxlw3/ [leetcode动态规划题目总结]
 0x02 https://github.com/labuladong/fucking-algorithm [刷算法全靠套路，认准 labuladong 就够了]
 0x03 http://svgicons.sparkk.fr/ [svg矢量图标]
+0x04 https://github.com/jennyzzt/AlgoManim [算法动画]
+0x05 https://www.youtube.com/c/BukanCaraCepat/videos [算法动画]
+0x06 https://www.reddit.com/search/?q=manim%20sort%20 [算法动画]
+
+
