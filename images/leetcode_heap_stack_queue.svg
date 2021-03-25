@@ -1565,102 +1565,98 @@
    <path d="M1386.5,-1079.7C1386.5,-1071.98 1386.5,-1062.71 1386.5,-1054.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1390,-1054.1 1386.5,-1044.1 1383,-1054.1 1390,-1054.1" stroke="lightgrey"/>
   </g>
-  <!-- 42 -->
-  <g class="node" id="node65">
-   <title>
-    42
-   </title>
-   <g id="a_node65">
-    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/trapping-rain-water" xlink:title="42. 接雨水">
-     <polygon fill="none" points="1423,-972 1350,-972 1350,-936 1423,-936 1423,-972" stroke="red"/>
-     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-950.9">
-      42. 接雨水
-     </text>
-    </a>
-   </g>
-   <g transform="translate(1415.0, -978.0) scale(0.3)">
-    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
-    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
-   </g>
-  </g>
-  <!-- 503&#45;&gt;42 -->
-  <g class="edge" id="edge64">
-   <title>
-    503-&gt;42
-   </title>
-   <path d="M1386.5,-1007.7C1386.5,-999.98 1386.5,-990.71 1386.5,-982.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="1390,-982.1 1386.5,-972.1 1383,-982.1 1390,-982.1" stroke="lightgrey"/>
-  </g>
   <!-- 456 -->
-  <g class="node" id="node66">
+  <g class="node" id="node65">
    <title>
     456
    </title>
-   <g id="a_node66">
+   <g id="a_node65">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/132-pattern" xlink:title="456. 132模式">
-     <polygon fill="none" points="1430.5,-900 1342.5,-900 1342.5,-864 1430.5,-864 1430.5,-900" stroke="orange"/>
-     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-878.9">
+     <polygon fill="none" points="1430.5,-972 1342.5,-972 1342.5,-936 1430.5,-936 1430.5,-972" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-950.9">
       456. 132模式
      </text>
     </a>
    </g>
-   <g transform="translate(1422.5, -906.0) scale(0.3)">
+   <g transform="translate(1422.5, -978.0) scale(0.3)">
     <circle cx="24" cy="24" fill="#4caf50" r="21"/>
     <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
-  <!-- 42&#45;&gt;456 -->
-  <g class="edge" id="edge65">
+  <!-- 503&#45;&gt;456 -->
+  <g class="edge" id="edge64">
    <title>
-    42-&gt;456
+    503-&gt;456
    </title>
-   <path d="M1386.5,-935.7C1386.5,-927.98 1386.5,-918.71 1386.5,-910.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="1390,-910.1 1386.5,-900.1 1383,-910.1 1390,-910.1" stroke="lightgrey"/>
+   <path d="M1386.5,-1007.7C1386.5,-999.98 1386.5,-990.71 1386.5,-982.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-982.1 1386.5,-972.1 1383,-982.1 1390,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 402 -->
-  <g class="node" id="node67">
+  <g class="node" id="node66">
    <title>
     402
    </title>
-   <g id="a_node67">
+   <g id="a_node66">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-k-digits" xlink:title="402. 移掉K位数字">
-     <polygon fill="none" points="1442,-828 1331,-828 1331,-792 1442,-792 1442,-828" stroke="orange"/>
-     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-806.9">
+     <polygon fill="none" points="1442,-900 1331,-900 1331,-864 1442,-864 1442,-900" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-878.9">
       402. 移掉K位数字
      </text>
     </a>
    </g>
   </g>
   <!-- 456&#45;&gt;402 -->
-  <g class="edge" id="edge66">
+  <g class="edge" id="edge65">
    <title>
     456-&gt;402
    </title>
-   <path d="M1386.5,-863.7C1386.5,-855.98 1386.5,-846.71 1386.5,-838.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="1390,-838.1 1386.5,-828.1 1383,-838.1 1390,-838.1" stroke="lightgrey"/>
+   <path d="M1386.5,-935.7C1386.5,-927.98 1386.5,-918.71 1386.5,-910.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-910.1 1386.5,-900.1 1383,-910.1 1390,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 316 -->
-  <g class="node" id="node68">
+  <g class="node" id="node67">
    <title>
     316
    </title>
-   <g id="a_node68">
+   <g id="a_node67">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-duplicate-letters" xlink:title="316. 去除重复字母">
-     <polygon fill="none" points="1444.5,-756 1328.5,-756 1328.5,-720 1444.5,-720 1444.5,-756" stroke="orange"/>
-     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-734.9">
+     <polygon fill="none" points="1444.5,-828 1328.5,-828 1328.5,-792 1444.5,-792 1444.5,-828" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-806.9">
       316. 去除重复字母
      </text>
     </a>
    </g>
-   <g transform="translate(1436.5, -762.0) scale(0.3)">
+   <g transform="translate(1436.5, -834.0) scale(0.3)">
     <circle cx="24" cy="24" fill="#4caf50" r="21"/>
     <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 402&#45;&gt;316 -->
-  <g class="edge" id="edge67">
+  <g class="edge" id="edge66">
    <title>
     402-&gt;316
+   </title>
+   <path d="M1386.5,-863.7C1386.5,-855.98 1386.5,-846.71 1386.5,-838.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-838.1 1386.5,-828.1 1383,-838.1 1390,-838.1" stroke="lightgrey"/>
+  </g>
+  <!-- 1081 -->
+  <g class="node" id="node68">
+   <title>
+    1081
+   </title>
+   <g id="a_node68">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters" xlink:title="1081. 不同字符的最小子序列">
+     <polygon fill="none" points="1471.5,-756 1301.5,-756 1301.5,-720 1471.5,-720 1471.5,-756" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-734.9">
+      1081. 不同字符的最小子序列
+     </text>
+    </a>
+   </g>
+  </g>
+  <!-- 316&#45;&gt;1081 -->
+  <g class="edge" id="edge67">
+   <title>
+    316-&gt;1081
    </title>
    <path d="M1386.5,-791.7C1386.5,-783.98 1386.5,-774.71 1386.5,-766.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1390,-766.1 1386.5,-756.1 1383,-766.1 1390,-766.1" stroke="lightgrey"/>
@@ -1679,32 +1675,36 @@
     </a>
    </g>
   </g>
-  <!-- 316&#45;&gt;321 -->
+  <!-- 1081&#45;&gt;321 -->
   <g class="edge" id="edge68">
    <title>
-    316-&gt;321
+    1081-&gt;321
    </title>
    <path d="M1386.5,-719.7C1386.5,-711.98 1386.5,-702.71 1386.5,-694.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1390,-694.1 1386.5,-684.1 1383,-694.1 1390,-694.1" stroke="lightgrey"/>
   </g>
-  <!-- 1081 -->
+  <!-- 42 -->
   <g class="node" id="node70">
    <title>
-    1081
+    42
    </title>
    <g id="a_node70">
-    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters" xlink:title="1081. 不同字符的最小子序列">
-     <polygon fill="none" points="1471.5,-612 1301.5,-612 1301.5,-576 1471.5,-576 1471.5,-612" stroke="orange"/>
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/trapping-rain-water" xlink:title="42. 接雨水">
+     <polygon fill="none" points="1423,-612 1350,-612 1350,-576 1423,-576 1423,-612" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-590.9">
-      1081. 不同字符的最小子序列
+      42. 接雨水
      </text>
     </a>
    </g>
+   <g transform="translate(1415.0, -618.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
   </g>
-  <!-- 321&#45;&gt;1081 -->
+  <!-- 321&#45;&gt;42 -->
   <g class="edge" id="edge69">
    <title>
-    321-&gt;1081
+    321-&gt;42
    </title>
    <path d="M1386.5,-647.7C1386.5,-639.98 1386.5,-630.71 1386.5,-622.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1390,-622.1 1386.5,-612.1 1383,-622.1 1390,-622.1" stroke="lightgrey"/>
@@ -2237,7 +2237,7 @@
      </feMerge>
     </filter>
    </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-859.0">
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-931.0">
     单调栈
    </text>
   </g>
@@ -2251,7 +2251,7 @@
      </feMerge>
     </filter>
    </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-571.0">
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-715.0">
     同316
    </text>
   </g>
