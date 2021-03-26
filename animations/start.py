@@ -1,8 +1,12 @@
 from manimlib import *
 sys.path.insert(0, './')
-from src.algo_vector import *
+sys.path.insert(0, './src')
+from algo_vector import *
 
 class MonotonicStack(Scene):
+    CONFIG = {
+            "camera_class": ThreeDCamera,
+        }
     def show(self, arr, offset):
         list_of_squares = [Square().scale(0.6) for i in arr]
         squares = VGroup(*list_of_squares)
@@ -31,8 +35,9 @@ class MonotonicStack(Scene):
         #         res[index] = i - index
         #     indexes.push(i)
         # res.light()
-        # self.add(arr)
-        # self.play(ShowCreation(arr))
+        self.add(arr)
+        self.play(ShowCreation(arr))
+        self.wait(5)
 
 
         
