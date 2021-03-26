@@ -5,7 +5,12 @@ from algo_vector import *
 from algo_stack import *
 
 class MonotonicStack(Scene):
+    def scale(self, s):
+        self.camera.frame.set_width(self.camera.frame.get_width()/s)
+        self.camera.frame.set_height(self.camera.frame.get_height()/s)
+
     def construct(self):
+        self.scale(1)
         arr = AlgoVector(self, [73, 74, 75, 71, 69, 72, 76, 73])
         arr.to_edge(edge=UP)
 
