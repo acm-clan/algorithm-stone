@@ -1,4 +1,6 @@
 from manimlib import *
+sys.path.insert(0, './')
+from src.algo_vector import *
 
 class MonotonicStack(Scene):
     def show(self, arr, offset):
@@ -7,9 +9,7 @@ class MonotonicStack(Scene):
         squares.arrange(buff=0.)
         squares.shift(offset)
 
-        self.play(
-            ShowCreation(squares)
-        )
+        self.play(ShowCreation(squares))
 
         nums = [Text(str(i), font_size=20) for i in arr]
         for i in range(len(arr)):
@@ -21,16 +21,18 @@ class MonotonicStack(Scene):
     def construct(self):
         # self.show([73, 74, 75, 71, 69, 72, 76, 73], UP*3)
         # 
-        arr = Vector([73, 74, 75, 71, 69, 72, 76, 73])
-        res = Vector([0, 0, 0, 0, 0, 0, 0, 0])
-        indexes = Stack()
-        for i in range(len(arr)):
-            while !indexes.empty() and arr[i] > arr[indexes.top()]:
-                index = indexes.top()
-                indexes.pop()
-                res[index] = i - index
-            indexes.push(i)
-        res.light()
+        arr = AlgoVector([73, 74, 75, 71, 69, 72, 76, 73])
+        # res = Vector([0, 0, 0, 0, 0, 0, 0, 0])
+        # indexes = Stack()
+        # for i in range(len(arr)):
+        #     while !indexes.empty() and arr[i] > arr[indexes.top()]:
+        #         index = indexes.top()
+        #         indexes.pop()
+        #         res[index] = i - index
+        #     indexes.push(i)
+        # res.light()
+        # self.add(arr)
+        # self.play(ShowCreation(arr))
 
 
         
