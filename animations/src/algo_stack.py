@@ -2,22 +2,38 @@ from manimlib import *
 from algo_node import *
 
 class AlgoStack(VGroup):
-    def __init__(self, datas, **kwargs):
+    def __init__(self, scene, datas, **kwargs):
+        self.scene = scene
         self.datas = datas
         super().__init__(**kwargs)
+        # add base line
+        line = Line(start=UP, end=DOWN)
+        self.add(line)
+        self.base_line = line
+        # add node
+        self.nodes = []
         for k in datas:
-            self.add(AlgoNode(str(k)))
+            n = AlgoNode(str(k))
+            self.add(n)
+            self.nodes.append(n)
         self.arrange()
 
     def push(self, data):
-        self.add(AlgoNode(str(data)))
+        n = AlgoNode(str(data))
+        self.add(n)
         self.datas.append(data)
+        self.nodes.append(n)
         self.arrange()
+        print("stack push size:", len(self.datas))
 
     def pop(self):
-        self.remove(self.submobjects[len(self.submobjects)-1])
+        p = self.nodes[len(self.nodes)-1]
+        # self.scene.play(FadeOut(p))
+        self.remove(p)
         del self.datas[-1]
+        del self.nodes[-1]
         self.arrange()
+        print("stack pop size:", len(self.datas))
 
     def empty(self):
         return len(self.datas) == 0

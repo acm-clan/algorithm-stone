@@ -6,20 +6,23 @@ from algo_stack import *
 
 class MonotonicStack(Scene):
     def construct(self):
-        arr = AlgoVector([73, 74, 75, 71, 69, 72, 76, 73])
+        arr = AlgoVector(self, [73, 74, 75, 71, 69, 72, 76, 73])
         arr.to_edge(edge=UP)
 
-        res = AlgoVector([0, 0, 0, 0, 0, 0, 0, 0])
+        res = AlgoVector(self, [0, 0, 0, 0, 0, 0, 0, 0])
         res.next_to(arr, direction=DOWN)
 
-        stack = AlgoStack([])
+        stack = AlgoStack(self, [])
 
         self.add(arr, res, stack)
         self.play(ShowCreation(arr))
         self.play(ShowCreation(res))
         self.play(ShowCreation(stack))
 
+        arrow = arr.add_arrow()
+
         for i in range(arr.size()):
+            arr.move_arrow(arrow, i)
             while not stack.empty() and arr.get_node_data(i) > arr.get_node_data(stack.top_data()):
                 index = stack.top_data()
                 stack.pop()
