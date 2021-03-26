@@ -1,7 +1,8 @@
 from manimlib import *
 from algo_node import *
+from algo_vgroup import *
 
-class AlgoVector(VGroup):
+class AlgoVector(AlgoVGroup):
     def __init__(self, datas=[], **kwargs):
         self.datas = datas
         super().__init__(**kwargs)
