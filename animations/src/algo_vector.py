@@ -18,4 +18,6 @@ class AlgoVector(VGroup):
     def set_node_data(self, index, data):
         self.datas[index] = data
         self.replace_submobject(index, AlgoNode(str(data)))
+        self.arrange()
+        
 
