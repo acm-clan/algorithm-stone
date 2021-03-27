@@ -28,8 +28,8 @@ class AlgoStack(VGroup):
 
     def pop(self):
         p = self.nodes[-1]
-        # self.play(ApplyMethod(p.shift, RIGHT*10))
         self.remove(p)
+        self.scene.play(FadeOut(p.copy()))
         del self.datas[-1]
         del self.nodes[-1]
         self.arrange()
