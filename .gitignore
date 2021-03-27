@@ -1,6 +1,7 @@
-
 *.pyc
 *.gv
 *.gv.pdf
 out/
 *.mp4
+__pycache__
+animations/videos
