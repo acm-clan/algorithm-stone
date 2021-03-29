@@ -17,13 +17,14 @@ class QuickSort(AlgoScene):
     def add_span(self, arr, low, high):
         l = arr.submobjects[low].get_bounding_box_point(DOWN)
         h = arr.submobjects[high].get_bounding_box_point(DOWN)
-        local color = self.rand_color()
+        color = self.rand_color()
         span = Line(l, h, color=color)
         delta = DOWN*self.partition_time*0.3
         span.shift(delta)
         span_left = Line(l, l+delta, color=color)
         span_right = Line(h, h+delta, color=color)
         self.play(ShowCreation(span), ShowCreation(span_left), ShowCreation(span_right))
+        self.wait()
 
     def partition(self, arr, low, high):
         self.partition_time += 1
@@ -31,7 +32,9 @@ class QuickSort(AlgoScene):
         self.add_span(arr, low, high)
         anchor = arr.get(high)
         # 高亮锚点
-        arr.submobjects[high].set_color(BLUE)
+        anchro_obj = arr.submobjects[high]
+        anchro_obj.set_color(BLUE)
+        print("set highlight color", arr.get(high))
 
         i = low - 1
         for j in range(low, high):
@@ -41,6 +44,10 @@ class QuickSort(AlgoScene):
                 arr.swap(i, j)
                 self.wait()
         self.show_message("交换%d %d"%(i+1, high))
+
+        # 压暗锚点
+        anchro_obj.set_color(GREY_A)
+        print("set dark color", arr.get(high))
         arr.swap(i+1, high)
         self.wait()
         return i+1
@@ -63,6 +70,7 @@ class QuickSort(AlgoScene):
             arr.set_sub(i, str(i))
 
         self.play(ShowCreation(arr))
+        self.wait()
         self.quick_sort(arr, 0, arr.size()-1)
         self.show_message("完成快速排序，谢谢观看！")
         self.finish()
