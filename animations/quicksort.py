@@ -38,15 +38,15 @@ class QuickSort(AlgoScene):
         m = None
         if arr.get(a) > arr.get(b):
             t = Text(">", font_size=self.DefaultFontSize, color=YELLOW)
-            m = self.create_serif_font("比锚点大，不需要移动", font_size=12)
+            m = self.create_serif_font("不需要移动", font_size=12)
         else:
             t = Text("<=", font_size=self.DefaultFontSize, color=YELLOW)
-            m = self.create_serif_font("比锚点小，交换放左边", font_size=12)
+            m = self.create_serif_font("交换放左边", font_size=12)
         t.shift(DOWN/2)
         m.next_to(cb)
-        self.add(t)
-        self.play(Write(m))
-        self.wait(2)
+        self.add(t, m)
+        self.play(ShowCreation(m))
+        self.wait(1)
         self.play(FadeOut(ca), FadeOut(cb), FadeOut(t), FadeOut(m))
 
     def partition(self, arr, low, high):
@@ -66,7 +66,6 @@ class QuickSort(AlgoScene):
                 arr.move_arrow(self.low_arrow, i)
                 self.show_message("交换%d和%d"%(arr.get(i), arr.get(j)))
                 arr.swap(i, j)
-                self.wait()
         self.show_message("交换%d和%d"%(arr.get(i+1), arr.get(high)))
 
         # 压暗锚点
@@ -82,21 +81,16 @@ class QuickSort(AlgoScene):
         self.quick_sort(arr, low, p-1)
         self.quick_sort(arr, p+1, high)
 
-    def one_word(self):
-        w = self.create_serif_font("一句话：比锚点小的放左边")
-        self.play(Write(w))
-        self.wait()
-
     def construct(self):
         self.scale(1)
         
         title = self.create_serif_font("ACM算法日常")
         self.play(FadeIn(title))
         
-        self.play(ApplyMethod(title.scale, 0.2))
+        self.play(ApplyMethod(title.scale, 0.3))
         self.play(ApplyMethod(title.to_edge, DL))
 
-        logo = ImageMobject("assets/logo.jpg").scale(0.05)
+        logo = ImageMobject("assets/logo.jpg").scale(0.08)
         logo.next_to(title, direction=LEFT)
         logo.shift(RIGHT*0.2)
         self.play(FadeIn(logo))

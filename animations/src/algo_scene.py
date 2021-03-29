@@ -5,9 +5,9 @@ from datetime import datetime
 class AlgoScene(Scene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.DefaultFontName = "Microsoft YaHei"
         self.DefaultFontName = "Source Han Sans CN, Segoe UI"
         self.DefaultFontName = "Source Han Serif CN"
+        self.DefaultFontName = "Microsoft YaHei"
         self.DefaultSerifFontName = "Source Han Serif CN"
         self.DefaultSansSerifFontName = "Source Han Sans CN"
         self.DefaultMonoFontName = "Consolas"
