@@ -32,7 +32,8 @@ class QuickSort(AlgoScene):
     def compare(self, arr, a, b):
         ca = arr.submobjects[a].copy()
         cb = arr.submobjects[b].copy()
-        self.play(ApplyMethod(ca.move_to, ORIGIN+LEFT),ApplyMethod(cb.move_to, ORIGIN+RIGHT))
+        self.play(ApplyMethod(ca.move_to, ORIGIN+DOWN/2+LEFT),
+        ApplyMethod(cb.move_to, ORIGIN+DOWN/2+RIGHT))
         t = None
         m = None
         if arr.get(a) > arr.get(b):
@@ -41,9 +42,10 @@ class QuickSort(AlgoScene):
         else:
             t = Text("<=", font_size=self.DefaultFontSize, color=YELLOW)
             m = self.create_serif_font("比锚点小，交换放左边", font_size=12)
+        t.shift(DOWN/2)
         m.next_to(cb)
         self.add(t)
-        self.play(ShowCreation(m))
+        self.play(Write(m))
         self.wait(2)
         self.play(FadeOut(ca), FadeOut(cb), FadeOut(t), FadeOut(m))
 
@@ -80,15 +82,30 @@ class QuickSort(AlgoScene):
         self.quick_sort(arr, low, p-1)
         self.quick_sort(arr, p+1, high)
 
+    def one_word(self):
+        w = self.create_serif_font("一句话：比锚点小的放左边")
+        self.play(Write(w))
+        self.wait()
+
     def construct(self):
         self.scale(1)
+        
+        title = self.create_serif_font("ACM算法日常")
+        self.play(FadeIn(title))
+        
+        self.play(ApplyMethod(title.scale, 0.2))
+        self.play(ApplyMethod(title.to_edge, DL))
+
+        logo = ImageMobject("assets/logo.jpg").scale(0.05)
+        logo.next_to(title, direction=LEFT)
+        logo.shift(RIGHT*0.2)
+        self.play(FadeIn(logo))
+
         self.init_message("快速排序")
         self.datas = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)
-        # for i in range(arr.size()):
-        #     arr.set_sub(i, str(i))
 
         self.play(ShowCreation(arr))
         self.low_arrow = arr.add_arrow(0)
@@ -98,5 +115,9 @@ class QuickSort(AlgoScene):
 
         self.wait()
         self.quick_sort(arr, 0, arr.size()-1)
+        # 
+        self.show_message("一句话记忆：比锚点小的放左边")
+        self.wait(5)
+
         self.show_message("完成快速排序，谢谢观看！")
         self.finish()
