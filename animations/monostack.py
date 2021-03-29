@@ -30,13 +30,13 @@ class MonotonicStack(Scene):
         self.play(FadeOut(b))
         
     def show_message(self, msg):
-        m = Text(msg, font_size=24, font='微软雅黑').shift(DOWN*1.5)
+        m = Text(msg, font_size=self.DefaultFontSize, font=self.DefaultFontName).shift(DOWN*1.5)
         self.play(Transform(self.message, m))
 
     def construct(self):
         self.scale(1)
         self.datas = [73, 74, 75, 71, 69, 72, 76, 73]
-        self.message = Text("单调栈", font_size=24, font='微软雅黑').shift(DOWN*1.5)
+        self.message = Text("单调栈", font_size=self.DefaultFontSize, font=self.DefaultFontName).shift(DOWN*1.5)
         self.play(Write(self.message))
 
         arr = AlgoVector(self, self.datas)
@@ -62,11 +62,11 @@ class MonotonicStack(Scene):
             if not stack.empty():
                 self.compare(arr, i, stack.top_data())
 
-            while not stack.empty() and arr.get_node_data(i) > arr.get_node_data(stack.top_data()):
+            while not stack.empty() and arr.get(i) > arr.get(stack.top_data()):
                 index = stack.top_data()
                 stack.pop()
                 self.wait()
-                res.set_node_data(index, i - index)
+                res.set(index, i - index)
                 res.next_to(arr, direction=DOWN)
                 self.wait()
                 if not stack.empty():
