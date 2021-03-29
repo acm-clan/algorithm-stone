@@ -9,26 +9,6 @@ class QuickSort(Scene):
         self.camera.frame.set_width(self.camera.frame.get_width()/s)
         self.camera.frame.set_height(self.camera.frame.get_height()/s)
 
-    def compare(self, arr, indexa, indexb):
-        # 比较二者
-        a = arr.submobjects[indexa].copy()
-        self.play(ApplyMethod(a.move_to, UP*1.3+LEFT/2))
-
-        b = arr.submobjects[indexb].copy()
-        self.play(ApplyMethod(b.move_to, UP*1.3+RIGHT/2))
-
-        va = self.datas[indexa]
-        vb = self.datas[indexb]
-
-        if va > vb:
-            self.show_message("%d比栈顶%d大，%d出栈, %d入栈" % (va, vb, vb, va))
-        else:
-            self.show_message("%d比栈顶%d小，%d入栈" % (va, vb, va))
-
-        self.wait()
-        self.play(FadeOut(a))
-        self.play(FadeOut(b))
-        
     def show_message(self, msg):
         m = Text(msg, font_size=24, font='微软雅黑').shift(DOWN*1.5)
         self.play(Transform(self.message, m))
@@ -68,5 +48,5 @@ class QuickSort(Scene):
 
         self.play(ShowCreation(arr))
         self.quick_sort(arr, 0, arr.size()-1)
-        # self.show_message("完成快速排序，谢谢观看！")
+        self.show_message("完成快速排序，谢谢观看！")
         self.wait(5)
