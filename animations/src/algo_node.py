@@ -5,7 +5,7 @@ from manimlib import *
 class AlgoNode(VGroup):
     def __init__(self, text, **kwargs):
         super().__init__(**kwargs)
-        self.text_obj = Text(text, font_size=20, font="Consolas")
+        self.text_obj = Text(text, font_size=12, font="Consolas")
         self.text_sub_obj = Text("", font_size=12, font="Consolas")
         self.rect_obj = Square().scale(0.3)
         self.text_sub_obj.shift(DR/4).set_color(RED)

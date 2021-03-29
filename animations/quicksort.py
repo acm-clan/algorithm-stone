@@ -11,6 +11,7 @@ class QuickSort(AlgoScene):
         self.partition_time = 0
         self.low_arrow = None
         self.current_arrow = None
+        random.seed(1)
 
     def scale(self, s):
         self.camera.frame.set_width(self.camera.frame.get_width()/s)
@@ -31,6 +32,20 @@ class QuickSort(AlgoScene):
     def compare(self, arr, a, b):
         ca = arr.submobjects[a].copy()
         cb = arr.submobjects[b].copy()
+        self.play(ApplyMethod(ca.move_to, ORIGIN+LEFT),ApplyMethod(cb.move_to, ORIGIN+RIGHT))
+        t = None
+        m = None
+        if arr.get(a) > arr.get(b):
+            t = Text(">", font_size=self.DefaultFontSize, color=YELLOW)
+            m = self.create_serif_font("比锚点大，不需要移动", font_size=12)
+        else:
+            t = Text("<=", font_size=self.DefaultFontSize, color=YELLOW)
+            m = self.create_serif_font("比锚点小，交换放左边", font_size=12)
+        m.next_to(cb)
+        self.add(t)
+        self.play(ShowCreation(m))
+        self.wait(2)
+        self.play(FadeOut(ca), FadeOut(cb), FadeOut(t), FadeOut(m))
 
     def partition(self, arr, low, high):
         self.partition_time += 1
@@ -43,13 +58,14 @@ class QuickSort(AlgoScene):
 
         for j in range(low, high):
             arr.move_arrow(self.current_arrow, j)
+            self.compare(arr, j, high)
             if arr.get(j) <= anchor:
                 i += 1
                 arr.move_arrow(self.low_arrow, i)
-                self.show_message("交换%d %d"%(i, j))
+                self.show_message("交换%d和%d"%(arr.get(i), arr.get(j)))
                 arr.swap(i, j)
                 self.wait()
-        self.show_message("交换%d %d"%(i+1, high))
+        self.show_message("交换%d和%d"%(arr.get(i+1), arr.get(high)))
 
         # 压暗锚点
         arr.swap(i+1, high)
@@ -71,8 +87,8 @@ class QuickSort(AlgoScene):
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)
-        for i in range(arr.size()):
-            arr.set_sub(i, str(i))
+        # for i in range(arr.size()):
+        #     arr.set_sub(i, str(i))
 
         self.play(ShowCreation(arr))
         self.low_arrow = arr.add_arrow(0)
