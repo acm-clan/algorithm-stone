@@ -4,7 +4,7 @@ sys.path.insert(0, './src')
 from algo_stack import *
 from algo_vector import *
 
-class MonotonicStack(Scene):
+class QuickSort(Scene):
     def scale(self, s):
         self.camera.frame.set_width(self.camera.frame.get_width()/s)
         self.camera.frame.set_height(self.camera.frame.get_height()/s)
@@ -33,10 +33,32 @@ class MonotonicStack(Scene):
         m = Text(msg, font_size=24, font='微软雅黑').shift(DOWN*1.5)
         self.play(Transform(self.message, m))
 
+    def partition(self, arr, low, high):
+        anchor = arr.get(high)
+        i = low - 1
+        for j in range(low, high):
+            if arr.get(j) <= anchor:
+                i += 1
+                self.show_message("交换%d %d"%(i, j))
+                arr.swap(i, j)
+                self.wait()
+        self.show_message("交换%d %d"%(i+1, high))
+        arr.swap(i+1, high)
+        self.wait()
+        return i+1
+
+    def quick_sort(self, arr, low, high):
+        if low >= high:
+            return
+        p = self.partition(arr, low, high)
+        print("partion:", p, low, p-1, p+1, high)
+        self.quick_sort(arr, low, p-1)
+        self.quick_sort(arr, p+1, high)
+
     def construct(self):
         self.scale(1)
-        self.datas = [73, 74, 75, 71, 69, 72, 76, 73]
-        self.message = Text("单调栈", font_size=24, font='微软雅黑').shift(DOWN*1.5)
+        self.datas = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]
+        self.message = Text("快速排序", font_size=24, font='微软雅黑').shift(DOWN*1.5)
         self.play(Write(self.message))
 
         arr = AlgoVector(self, self.datas)
@@ -44,35 +66,7 @@ class MonotonicStack(Scene):
         for i in range(arr.size()):
             arr.set_sub(i, str(i))
 
-        res = AlgoVector(self, [0, 0, 0, 0, 0, 0, 0, 0])
-        res.next_to(arr, direction=DOWN)
-        res.set_color("#666666")
-
-        stack = AlgoStack(self, [])
-
         self.play(ShowCreation(arr))
-        self.play(ShowCreation(res))
-        self.play(ShowCreation(stack))
-
-        arrow = arr.add_arrow()
-
-        for i in range(arr.size()):
-            arr.move_arrow(arrow, i)
-            
-            if not stack.empty():
-                self.compare(arr, i, stack.top_data())
-
-            while not stack.empty() and arr.get(i) > arr.get(stack.top_data()):
-                index = stack.top_data()
-                stack.pop()
-                self.wait()
-                res.set(index, i - index)
-                res.next_to(arr, direction=DOWN)
-                self.wait()
-                if not stack.empty():
-                    self.compare(arr, i, stack.top_data())
-
-            stack.push(i)
-            self.wait()
-        self.show_message("完成单调栈，谢谢观看！")
+        self.quick_sort(arr, 0, arr.size()-1)
+        # self.show_message("完成快速排序，谢谢观看！")
         self.wait(5)
