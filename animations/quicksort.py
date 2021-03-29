@@ -3,15 +3,12 @@ sys.path.insert(0, './')
 sys.path.insert(0, './src')
 from algo_stack import *
 from algo_vector import *
+from algo_scene import *
 
-class QuickSort(Scene):
+class QuickSort(AlgoScene):
     def scale(self, s):
         self.camera.frame.set_width(self.camera.frame.get_width()/s)
         self.camera.frame.set_height(self.camera.frame.get_height()/s)
-
-    def show_message(self, msg):
-        m = Text(msg, font_size=24, font='微软雅黑').shift(DOWN*1.5)
-        self.play(Transform(self.message, m))
 
     def partition(self, arr, low, high):
         anchor = arr.get(high)
@@ -37,9 +34,8 @@ class QuickSort(Scene):
 
     def construct(self):
         self.scale(1)
+        self.init_message("快速排序")
         self.datas = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]
-        self.message = Text("快速排序", font_size=24, font='微软雅黑').shift(DOWN*1.5)
-        self.play(Write(self.message))
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)
