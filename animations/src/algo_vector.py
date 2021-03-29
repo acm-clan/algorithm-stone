@@ -46,7 +46,6 @@ class AlgoVector(AlgoVGroup):
         self.arrange()
 
     def swap(self, i, j):
-        print("交换", i, self.datas[i], j, self.datas[j])
         # data
         self.datas[i], self.datas[j] = self.datas[j], self.datas[i]
         # obj
