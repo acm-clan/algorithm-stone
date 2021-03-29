@@ -57,6 +57,7 @@ class QuickSort(AlgoScene):
         # 高亮锚点
         self.play(ApplyMethod(arr.submobjects[high].set_color, BLUE))
         i = low - 1
+        arr.move_arrow(self.low_arrow, low)
 
         for j in range(low, high):
             arr.move_arrow(self.current_arrow, j)
@@ -96,7 +97,7 @@ class QuickSort(AlgoScene):
         self.play(FadeIn(logo))
 
         self.init_message("快速排序")
-        self.datas = [13, 19, 9, 5, 12, 8, 7, 4, 21, 2, 6, 11]
+        self.datas = [13, 19, 5, 12, 8, 7, 4, 21, 6, 11]
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)
