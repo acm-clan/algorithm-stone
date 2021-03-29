@@ -29,7 +29,8 @@ class QuickSort(AlgoScene):
         self.wait()
 
     def compare(self, arr, a, b):
-        ca = 
+        ca = arr.submobjects[a].copy()
+        cb = arr.submobjects[b].copy()
 
     def partition(self, arr, low, high):
         self.partition_time += 1
@@ -41,13 +42,13 @@ class QuickSort(AlgoScene):
         i = low - 1
 
         for j in range(low, high):
+            arr.move_arrow(self.current_arrow, j)
             if arr.get(j) <= anchor:
                 i += 1
                 arr.move_arrow(self.low_arrow, i)
                 self.show_message("交换%d %d"%(i, j))
                 arr.swap(i, j)
                 self.wait()
-            arr.move_arrow(self.current_arrow, j)
         self.show_message("交换%d %d"%(i+1, high))
 
         # 压暗锚点
