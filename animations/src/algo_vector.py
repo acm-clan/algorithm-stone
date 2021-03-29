@@ -20,10 +20,11 @@ class AlgoVector(AlgoVGroup):
         node = self.submobjects[index]
         node.set_sub(sub_value)
 
-    def add_arrow(self):
+    def add_arrow(self, index = 0):
         arrow = Arrow(start=UP, end=DOWN).scale(0.2).set_color(BLUE)
         self.arrows.append(arrow)
         self.add(arrow)
+        self.move_arrow(arrow, index)
         return arrow
 
     def clear_arrows(self):

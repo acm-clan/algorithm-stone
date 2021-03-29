@@ -22,7 +22,7 @@ class AlgoScene(Scene):
         self.play(Transform(self.message, m))
 
     def rand_color(self):
-        r = lambda: random.randint(0,255)
+        r = lambda: random.randint(100, 255)+100
         return '#%02X%02X%02X' % (r(),r(),r())
 
     def finish(self):
