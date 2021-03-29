@@ -14,11 +14,11 @@ class AlgoScene(Scene):
         random.seed(datetime.now())
 
     def init_message(self, msg):
-        self.message = Text(msg, font_size=self.DefaultFontSize, font=self.DefaultFontName).shift(DOWN*1.5)
+        self.message = Text(msg, font_size=self.DefaultFontSize, font=self.DefaultFontName).to_edge(DOWN).shift(UP)
         self.play(Write(self.message))
 
     def show_message(self, msg):
-        m = Text(msg, font_size=self.DefaultFontSize, font=self.DefaultFontName).shift(DOWN*1.5)
+        m = Text(msg, font_size=self.DefaultFontSize, font=self.DefaultFontName).to_edge(DOWN).shift(UP)
         self.play(Transform(self.message, m))
 
     def rand_color(self):
