@@ -32,9 +32,7 @@ class QuickSort(AlgoScene):
         self.add_span(arr, low, high)
         anchor = arr.get(high)
         # 高亮锚点
-        anchro_obj = arr.submobjects[high]
-        anchro_obj.set_color(BLUE)
-        print("set highlight color", arr.get(high))
+        self.play(ApplyMethod(arr.submobjects[high].set_color, BLUE))
 
         i = low - 1
         for j in range(low, high):
@@ -46,9 +44,8 @@ class QuickSort(AlgoScene):
         self.show_message("交换%d %d"%(i+1, high))
 
         # 压暗锚点
-        anchro_obj.set_color(GREY_A)
-        print("set dark color", arr.get(high))
         arr.swap(i+1, high)
+        self.play(ApplyMethod(arr.submobjects[i+1].set_color, GREY))
         self.wait()
         return i+1
 
