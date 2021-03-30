@@ -47,9 +47,11 @@ class AlgoVector(AlgoVGroup):
         self.arrange()
 
     def swap(self, i, j):
+        if i == j:
+            return
         # data
         self.datas[i], self.datas[j] = self.datas[j], self.datas[i]
         # obj
-        self.scene.add_sound("swap", gain=-20)
         self.scene.play(Swap(self[i], self[j]))
+        self.scene.add_sound("swap", gain=0)
         self.submobjects[i], self.submobjects[j] = self.submobjects[j], self.submobjects[i]

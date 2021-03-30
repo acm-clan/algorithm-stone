@@ -54,4 +54,4 @@ camera_qualities:
   ultra_high:
     resolution: "3840x2160"
     frame_rate: 60
-  default_quality: "medium"
+  default_quality: "high"

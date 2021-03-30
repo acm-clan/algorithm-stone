@@ -42,7 +42,7 @@ class QuickSort(AlgoScene):
         self.add(t, m)
         self.play(ShowCreation(m))
         self.wait(1)
-        self.play(FadeOut(ca), FadeOut(cb), FadeOut(t), FadeOut(m))
+        self.play(FadeOut(ca, run_time=0.2), FadeOut(cb, run_time=0.2), FadeOut(t, run_time=0.2), FadeOut(m, run_time=0.2))
 
     def partition(self, arr, low, high):
         self.partition_time += 1
@@ -60,12 +60,14 @@ class QuickSort(AlgoScene):
             if arr.get(j) <= anchor:
                 i += 1
                 arr.move_arrow(self.low_arrow, i)
-                self.show_message("交换%d和%d"%(arr.get(i), arr.get(j)))
-                arr.swap(i, j)
-        self.show_message("交换%d和%d"%(arr.get(i+1), arr.get(high)))
+                if i != j:
+                    self.show_message("交换%d和%d"%(arr.get(i), arr.get(j)))
+                    arr.swap(i, j)
 
-        # 压暗锚点
-        arr.swap(i+1, high)
+        if i+1 != high:
+            self.show_message("最后将锚点%d放到%d"%(arr.get(high), arr.get(i+1)))
+            # 压暗锚点
+            arr.swap(i+1, high)
         self.play(ApplyMethod(arr.submobjects[i+1].set_color, GREY))
         self.wait()
         return i+1
@@ -94,7 +96,7 @@ class QuickSort(AlgoScene):
         self.play(FadeIn(logo))
 
         self.init_message("快速排序")
-        self.datas = [13, 5, 12, 8]
+        self.datas = [13, 19, 5, 12, 8, 7, 4, 21, 6, 11]
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)
