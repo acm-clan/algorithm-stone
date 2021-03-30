@@ -1,9 +1,4 @@
-from manimlib import *
-sys.path.insert(0, './')
-sys.path.insert(0, './src')
-from algo_stack import *
-from algo_vector import *
-from algo_scene import *
+from manim_imports_ext import *
 
 class QuickSort(AlgoScene):
     def __init__(self, **kwargs):

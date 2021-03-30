@@ -15,10 +15,10 @@
     Leetcode-链表
    </title>
    <g id="a_node1">
-    <a target="_parent" xlink:href="https://leetcode-cn.com/tag/linked-list" xlink:title="Leetcode-链表(24)">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/tag/linked-list" xlink:title="Leetcode-链表(25)">
      <polygon fill="orangered" points="393.5,-540 254.5,-540 254.5,-504 393.5,-504 393.5,-540" stroke="lightgrey"/>
      <text fill="white" font-family="Microsoft YaHei" font-size="14.00" text-anchor="middle" x="324" y="-518.3">
-      Leetcode-链表(24)
+      Leetcode-链表(25)
      </text>
     </a>
    </g>
@@ -48,7 +48,7 @@
    </title>
    <polygon fill="lightslategray" points="196.5,-468 117.5,-468 117.5,-432 196.5,-432 196.5,-468" stroke="lightgrey"/>
    <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="157" y="-446.9">
-    反转链表(3)
+    反转链表(4)
    </text>
   </g>
   <!-- Leetcode&#45;链表&#45;&gt;反转链表 -->
@@ -60,7 +60,7 @@
    <polygon fill="lightgrey" points="207.14,-468.22 196.57,-467.59 204.44,-474.68 207.14,-468.22" stroke="lightgrey"/>
   </g>
   <!-- 构建新链表 -->
-  <g class="node" id="node8">
+  <g class="node" id="node9">
    <title>
     构建新链表
    </title>
@@ -70,7 +70,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;链表&#45;&gt;构建新链表 -->
-  <g class="edge" id="edge7">
+  <g class="edge" id="edge8">
    <title>
     Leetcode-链表-&gt;构建新链表
    </title>
@@ -78,7 +78,7 @@
    <polygon fill="lightgrey" points="287.83,-473.42 278.66,-468.1 282.51,-477.97 287.83,-473.42" stroke="lightgrey"/>
   </g>
   <!-- 链表和其他算法 -->
-  <g class="node" id="node13">
+  <g class="node" id="node14">
    <title>
     链表和其他算法
    </title>
@@ -88,7 +88,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;链表&#45;&gt;链表和其他算法 -->
-  <g class="edge" id="edge12">
+  <g class="edge" id="edge13">
    <title>
     Leetcode-链表-&gt;链表和其他算法
    </title>
@@ -96,7 +96,7 @@
    <polygon fill="lightgrey" points="367.52,-477.88 371.61,-468.1 362.31,-473.2 367.52,-477.88" stroke="lightgrey"/>
   </g>
   <!-- 快慢指针 -->
-  <g class="node" id="node19">
+  <g class="node" id="node20">
    <title>
     快慢指针
    </title>
@@ -106,7 +106,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;链表&#45;&gt;快慢指针 -->
-  <g class="edge" id="edge18">
+  <g class="edge" id="edge19">
    <title>
     Leetcode-链表-&gt;快慢指针
    </title>
@@ -114,7 +114,7 @@
    <polygon fill="lightgrey" points="475.13,-471.55 483.4,-464.93 472.8,-464.95 475.13,-471.55" stroke="lightgrey"/>
   </g>
   <!-- 删除链表 -->
-  <g class="node" id="node26">
+  <g class="node" id="node27">
    <title>
     删除链表
    </title>
@@ -124,7 +124,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;链表&#45;&gt;删除链表 -->
-  <g class="edge" id="edge25">
+  <g class="edge" id="edge26">
    <title>
     Leetcode-链表-&gt;删除链表
    </title>
@@ -243,12 +243,38 @@
    <path d="M80,-287.7C80,-279.98 80,-270.71 80,-262.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="83.5,-262.1 80,-252.1 76.5,-262.1 83.5,-262.1" stroke="lightgrey"/>
   </g>
+  <!-- 25 -->
+  <g class="node" id="node8">
+   <title>
+    25
+   </title>
+   <g id="a_node8">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group" xlink:title="25. K 个一组翻转链表">
+     <polygon fill="none" points="146,-180 14,-180 14,-144 146,-144 146,-180" stroke="red"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="80" y="-158.9">
+      25. K 个一组翻转链表
+     </text>
+    </a>
+   </g>
+   <g transform="translate(138.0, -186.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 92&#45;&gt;25 -->
+  <g class="edge" id="edge7">
+   <title>
+    92-&gt;25
+   </title>
+   <path d="M80,-215.7C80,-207.98 80,-198.71 80,-190.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="83.5,-190.1 80,-180.1 76.5,-190.1 83.5,-190.1" stroke="lightgrey"/>
+  </g>
   <!-- 2 -->
-  <g class="node" id="node9">
+  <g class="node" id="node10">
    <title>
     2
    </title>
-   <g id="a_node9">
+   <g id="a_node10">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/add-two-numbers" xlink:title="2. 两数相加">
      <polygon fill="none" points="298,-396 220,-396 220,-360 298,-360 298,-396" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="259" y="-374.9">
@@ -258,7 +284,7 @@
    </g>
   </g>
   <!-- 构建新链表&#45;&gt;2 -->
-  <g class="edge" id="edge8">
+  <g class="edge" id="edge9">
    <title>
     构建新链表-&gt;2
    </title>
@@ -266,11 +292,11 @@
    <polygon fill="lightgrey" points="264.43,-405.83 260.22,-396.1 257.44,-406.33 264.43,-405.83" stroke="lightgrey"/>
   </g>
   <!-- 445 -->
-  <g class="node" id="node10">
+  <g class="node" id="node11">
    <title>
     445
    </title>
-   <g id="a_node10">
+   <g id="a_node11">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/add-two-numbers-ii" xlink:title="445. 两数相加 II">
      <polygon fill="none" points="279.5,-324 176.5,-324 176.5,-288 279.5,-288 279.5,-324" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="228" y="-302.9">
@@ -284,7 +310,7 @@
    </g>
   </g>
   <!-- 2&#45;&gt;445 -->
-  <g class="edge" id="edge9">
+  <g class="edge" id="edge10">
    <title>
     2-&gt;445
    </title>
@@ -292,11 +318,11 @@
    <polygon fill="lightgrey" points="242.82,-331.83 235.57,-324.1 236.42,-334.67 242.82,-331.83" stroke="lightgrey"/>
   </g>
   <!-- 86 -->
-  <g class="node" id="node11">
+  <g class="node" id="node12">
    <title>
     86
    </title>
-   <g id="a_node11">
+   <g id="a_node12">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/partition-list" xlink:title="86. 分隔链表">
      <polygon fill="none" points="270.5,-252 185.5,-252 185.5,-216 270.5,-216 270.5,-252" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="228" y="-230.9">
@@ -310,7 +336,7 @@
    </g>
   </g>
   <!-- 445&#45;&gt;86 -->
-  <g class="edge" id="edge10">
+  <g class="edge" id="edge11">
    <title>
     445-&gt;86
    </title>
@@ -318,11 +344,11 @@
    <polygon fill="lightgrey" points="231.5,-262.1 228,-252.1 224.5,-262.1 231.5,-262.1" stroke="lightgrey"/>
   </g>
   <!-- 1669 -->
-  <g class="node" id="node12">
+  <g class="node" id="node13">
    <title>
     1669
    </title>
-   <g id="a_node12">
+   <g id="a_node13">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/merge-in-between-linked-lists" xlink:title="1669. 合并两个链表">
      <polygon fill="none" points="289,-180 167,-180 167,-144 289,-144 289,-180" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="228" y="-158.9">
@@ -336,7 +362,7 @@
    </g>
   </g>
   <!-- 86&#45;&gt;1669 -->
-  <g class="edge" id="edge11">
+  <g class="edge" id="edge12">
    <title>
     86-&gt;1669
    </title>
@@ -344,11 +370,11 @@
    <polygon fill="lightgrey" points="231.5,-190.1 228,-180.1 224.5,-190.1 231.5,-190.1" stroke="lightgrey"/>
   </g>
   <!-- 1290 -->
-  <g class="node" id="node14">
+  <g class="node" id="node15">
    <title>
     1290
    </title>
-   <g id="a_node14">
+   <g id="a_node15">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer" xlink:title="1290. 二进制链表转整数">
      <polygon fill="none" points="462,-396 316,-396 316,-360 462,-360 462,-396" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="389" y="-374.9">
@@ -362,7 +388,7 @@
    </g>
   </g>
   <!-- 链表和其他算法&#45;&gt;1290 -->
-  <g class="edge" id="edge13">
+  <g class="edge" id="edge14">
    <title>
     链表和其他算法-&gt;1290
    </title>
@@ -370,11 +396,11 @@
    <polygon fill="lightgrey" points="391.72,-406.2 388.51,-396.1 384.73,-406 391.72,-406.2" stroke="lightgrey"/>
   </g>
   <!-- 1019 -->
-  <g class="node" id="node15">
+  <g class="node" id="node16">
    <title>
     1019
    </title>
-   <g id="a_node15">
+   <g id="a_node16">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/next-greater-node-in-linked-list" xlink:title="1019. 链表中的下一个更大节点">
      <polygon fill="none" points="480,-324 298,-324 298,-288 480,-288 480,-324" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="389" y="-302.9">
@@ -388,7 +414,7 @@
    </g>
   </g>
   <!-- 1290&#45;&gt;1019 -->
-  <g class="edge" id="edge14">
+  <g class="edge" id="edge15">
    <title>
     1290-&gt;1019
    </title>
@@ -396,37 +422,37 @@
    <polygon fill="lightgrey" points="392.5,-334.1 389,-324.1 385.5,-334.1 392.5,-334.1" stroke="lightgrey"/>
   </g>
   <!-- 147 -->
-  <g class="node" id="node16">
+  <g class="node" id="node17">
    <title>
     147
    </title>
-   <g id="a_node16">
+   <g id="a_node17">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/insertion-sort-list" xlink:title="147. 对链表进行插入排序">
-     <polygon fill="none" points="460,-252 308,-252 308,-216 460,-216 460,-252" stroke="orange"/>
-     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="384" y="-230.9">
+     <polygon fill="none" points="464,-252 312,-252 312,-216 464,-216 464,-252" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="388" y="-230.9">
       147. 对链表进行插入排序
      </text>
     </a>
    </g>
-   <g transform="translate(452.0, -258.0) scale(0.3)">
+   <g transform="translate(456.0, -258.0) scale(0.3)">
     <circle cx="24" cy="24" fill="#4caf50" r="21"/>
     <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 1019&#45;&gt;147 -->
-  <g class="edge" id="edge15">
+  <g class="edge" id="edge16">
    <title>
     1019-&gt;147
    </title>
-   <path d="M387.76,-287.7C387.21,-279.98 386.55,-270.71 385.94,-262.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="389.43,-261.83 385.22,-252.1 382.44,-262.33 389.43,-261.83" stroke="lightgrey"/>
+   <path d="M388.75,-287.7C388.64,-279.98 388.51,-270.71 388.39,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="391.89,-262.05 388.24,-252.1 384.89,-262.15 391.89,-262.05" stroke="lightgrey"/>
   </g>
   <!-- 148 -->
-  <g class="node" id="node17">
+  <g class="node" id="node18">
    <title>
     148
    </title>
-   <g id="a_node17">
+   <g id="a_node18">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/sort-list" xlink:title="148. 排序链表">
      <polygon fill="none" points="425,-180 333,-180 333,-144 425,-144 425,-180" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="379" y="-158.9">
@@ -440,19 +466,19 @@
    </g>
   </g>
   <!-- 147&#45;&gt;148 -->
-  <g class="edge" id="edge16">
+  <g class="edge" id="edge17">
    <title>
     147-&gt;148
    </title>
-   <path d="M382.76,-215.7C382.21,-207.98 381.55,-198.71 380.94,-190.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="384.43,-189.83 380.22,-180.1 377.44,-190.33 384.43,-189.83" stroke="lightgrey"/>
+   <path d="M385.78,-215.7C384.78,-207.98 383.59,-198.71 382.49,-190.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="385.95,-189.58 381.2,-180.1 379,-190.47 385.95,-189.58" stroke="lightgrey"/>
   </g>
   <!-- 138 -->
-  <g class="node" id="node18">
+  <g class="node" id="node19">
    <title>
     138
    </title>
-   <g id="a_node18">
+   <g id="a_node19">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/copy-list-with-random-pointer" xlink:title="138. 复制带随机指针的链表">
      <polygon fill="none" points="453,-108 289,-108 289,-72 453,-72 453,-108" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="371" y="-86.9">
@@ -466,7 +492,7 @@
    </g>
   </g>
   <!-- 148&#45;&gt;138 -->
-  <g class="edge" id="edge17">
+  <g class="edge" id="edge18">
    <title>
     148-&gt;138
    </title>
@@ -474,11 +500,11 @@
    <polygon fill="lightgrey" points="377.57,-117.64 372.95,-108.1 370.61,-118.44 377.57,-117.64" stroke="lightgrey"/>
   </g>
   <!-- 876 -->
-  <g class="node" id="node20">
+  <g class="node" id="node21">
    <title>
     876
    </title>
-   <g id="a_node20">
+   <g id="a_node21">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/middle-of-the-linked-list" xlink:title="876. 链表的中间结点">
      <polygon fill="none" points="608,-396 480,-396 480,-360 608,-360 608,-396" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-374.9">
@@ -492,7 +518,7 @@
    </g>
   </g>
   <!-- 快慢指针&#45;&gt;876 -->
-  <g class="edge" id="edge19">
+  <g class="edge" id="edge20">
    <title>
     快慢指针-&gt;876
    </title>
@@ -500,11 +526,11 @@
    <polygon fill="lightgrey" points="539.35,-406.69 538.87,-396.1 532.64,-404.68 539.35,-406.69" stroke="lightgrey"/>
   </g>
   <!-- 141 -->
-  <g class="node" id="node21">
+  <g class="node" id="node22">
    <title>
     141
    </title>
-   <g id="a_node21">
+   <g id="a_node22">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/linked-list-cycle" xlink:title="141. 环形链表">
      <polygon fill="none" points="590,-324 498,-324 498,-288 590,-288 590,-324" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-302.9">
@@ -518,7 +544,7 @@
    </g>
   </g>
   <!-- 876&#45;&gt;141 -->
-  <g class="edge" id="edge20">
+  <g class="edge" id="edge21">
    <title>
     876-&gt;141
    </title>
@@ -526,11 +552,11 @@
    <polygon fill="lightgrey" points="547.5,-334.1 544,-324.1 540.5,-334.1 547.5,-334.1" stroke="lightgrey"/>
   </g>
   <!-- 61 -->
-  <g class="node" id="node22">
+  <g class="node" id="node23">
    <title>
     61
    </title>
-   <g id="a_node22">
+   <g id="a_node23">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/rotate-list" xlink:title="61. 旋转链表">
      <polygon fill="none" points="586.5,-252 501.5,-252 501.5,-216 586.5,-216 586.5,-252" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-230.9">
@@ -544,7 +570,7 @@
    </g>
   </g>
   <!-- 141&#45;&gt;61 -->
-  <g class="edge" id="edge21">
+  <g class="edge" id="edge22">
    <title>
     141-&gt;61
    </title>
@@ -552,11 +578,11 @@
    <polygon fill="lightgrey" points="547.5,-262.1 544,-252.1 540.5,-262.1 547.5,-262.1" stroke="lightgrey"/>
   </g>
   <!-- 19 -->
-  <g class="node" id="node23">
+  <g class="node" id="node24">
    <title>
     19
    </title>
-   <g id="a_node23">
+   <g id="a_node24">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list" xlink:title="19. 删除链表的倒数第 N 个结点">
      <polygon fill="none" points="637,-180 451,-180 451,-144 637,-144 637,-180" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-158.9">
@@ -570,7 +596,7 @@
    </g>
   </g>
   <!-- 61&#45;&gt;19 -->
-  <g class="edge" id="edge22">
+  <g class="edge" id="edge23">
    <title>
     61-&gt;19
    </title>
@@ -578,11 +604,11 @@
    <polygon fill="lightgrey" points="547.5,-190.1 544,-180.1 540.5,-190.1 547.5,-190.1" stroke="lightgrey"/>
   </g>
   <!-- 1721 -->
-  <g class="node" id="node24">
+  <g class="node" id="node25">
    <title>
     1721
    </title>
-   <g id="a_node24">
+   <g id="a_node25">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/swapping-nodes-in-a-linked-list" xlink:title="1721. 交换链表中的节点">
      <polygon fill="none" points="617,-108 471,-108 471,-72 617,-72 617,-108" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-86.9">
@@ -596,7 +622,7 @@
    </g>
   </g>
   <!-- 19&#45;&gt;1721 -->
-  <g class="edge" id="edge23">
+  <g class="edge" id="edge24">
    <title>
     19-&gt;1721
    </title>
@@ -604,11 +630,11 @@
    <polygon fill="lightgrey" points="547.5,-118.1 544,-108.1 540.5,-118.1 547.5,-118.1" stroke="lightgrey"/>
   </g>
   <!-- 142 -->
-  <g class="node" id="node25">
+  <g class="node" id="node26">
    <title>
     142
    </title>
-   <g id="a_node25">
+   <g id="a_node26">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/linked-list-cycle-ii" xlink:title="142. 环形链表 II">
      <polygon fill="none" points="595.5,-36 492.5,-36 492.5,0 595.5,0 595.5,-36" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="544" y="-14.9">
@@ -630,7 +656,7 @@
    </g>
   </g>
   <!-- 1721&#45;&gt;142 -->
-  <g class="edge" id="edge24">
+  <g class="edge" id="edge25">
    <title>
     1721-&gt;142
    </title>
@@ -638,11 +664,11 @@
    <polygon fill="lightgrey" points="547.5,-46.1 544,-36.1 540.5,-46.1 547.5,-46.1" stroke="lightgrey"/>
   </g>
   <!-- 237 -->
-  <g class="node" id="node27">
+  <g class="node" id="node28">
    <title>
     237
    </title>
-   <g id="a_node27">
+   <g id="a_node28">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/delete-node-in-a-linked-list" xlink:title="237. 删除链表中的节点">
      <polygon fill="none" points="796,-396 656,-396 656,-360 796,-360 796,-396" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="726" y="-374.9">
@@ -652,7 +678,7 @@
    </g>
   </g>
   <!-- 删除链表&#45;&gt;237 -->
-  <g class="edge" id="edge26">
+  <g class="edge" id="edge27">
    <title>
     删除链表-&gt;237
    </title>
@@ -660,11 +686,11 @@
    <polygon fill="lightgrey" points="704.93,-405.72 709.38,-396.1 699.91,-400.84 704.93,-405.72" stroke="lightgrey"/>
   </g>
   <!-- 203 -->
-  <g class="node" id="node28">
+  <g class="node" id="node29">
    <title>
     203
    </title>
-   <g id="a_node28">
+   <g id="a_node29">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-linked-list-elements" xlink:title="203. 移除链表元素">
      <polygon fill="none" points="798,-324 682,-324 682,-288 798,-288 798,-324" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="740" y="-302.9">
@@ -678,7 +704,7 @@
    </g>
   </g>
   <!-- 237&#45;&gt;203 -->
-  <g class="edge" id="edge27">
+  <g class="edge" id="edge28">
    <title>
     237-&gt;203
    </title>
@@ -686,11 +712,11 @@
    <polygon fill="lightgrey" points="738.05,-334.6 736.58,-324.1 731.19,-333.22 738.05,-334.6" stroke="lightgrey"/>
   </g>
   <!-- 83 -->
-  <g class="node" id="node29">
+  <g class="node" id="node30">
    <title>
     83
    </title>
-   <g id="a_node29">
+   <g id="a_node30">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list" xlink:title="83. 删除排序链表中的重复元素">
      <polygon fill="none" points="837.5,-252 656.5,-252 656.5,-216 837.5,-216 837.5,-252" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="747" y="-230.9">
@@ -704,7 +730,7 @@
    </g>
   </g>
   <!-- 203&#45;&gt;83 -->
-  <g class="edge" id="edge28">
+  <g class="edge" id="edge29">
    <title>
     203-&gt;83
    </title>
@@ -712,11 +738,11 @@
    <polygon fill="lightgrey" points="747.78,-262.4 745.29,-252.1 740.81,-261.71 747.78,-262.4" stroke="lightgrey"/>
   </g>
   <!-- 82 -->
-  <g class="node" id="node30">
+  <g class="node" id="node31">
    <title>
     82
    </title>
-   <g id="a_node30">
+   <g id="a_node31">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii" xlink:title="82. 删除排序链表中的重复元素 II">
      <polygon fill="none" points="850,-180 658,-180 658,-144 850,-144 850,-180" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="754" y="-158.9">
@@ -730,7 +756,7 @@
    </g>
   </g>
   <!-- 83&#45;&gt;82 -->
-  <g class="edge" id="edge29">
+  <g class="edge" id="edge30">
    <title>
     83-&gt;82
    </title>
@@ -738,11 +764,11 @@
    <polygon fill="lightgrey" points="754.78,-190.4 752.29,-180.1 747.81,-189.71 754.78,-190.4" stroke="lightgrey"/>
   </g>
   <!-- 1171 -->
-  <g class="node" id="node31">
+  <g class="node" id="node32">
    <title>
     1171
    </title>
-   <g id="a_node31">
+   <g id="a_node32">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list" xlink:title="1171. 从链表中删去总和值为零的连续节点">
      <polygon fill="none" points="877,-108 635,-108 635,-72 877,-72 877,-108" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="756" y="-86.9">
@@ -752,7 +778,7 @@
    </g>
   </g>
   <!-- 82&#45;&gt;1171 -->
-  <g class="edge" id="edge30">
+  <g class="edge" id="edge31">
    <title>
     82-&gt;1171
    </title>
@@ -811,7 +837,7 @@
      </feMerge>
     </filter>
    </defs>
-   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="384.0" y="-211.0">
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="388.0" y="-211.0">
     插入排序
    </text>
   </g>

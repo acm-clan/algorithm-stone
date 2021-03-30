@@ -17,6 +17,15 @@
             "request": "launch",
             "program": "src/main.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "animation",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/animations",
+            "module": "manimlib",
+            "args": ["quicksort.py", "-w"]
         }
     ]
 }

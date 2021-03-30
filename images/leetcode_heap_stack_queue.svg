@@ -15,10 +15,10 @@
     Leetcode-堆栈队列
    </title>
    <g id="a_node1">
-    <a target="_parent" xlink:href="https://leetcode-cn.com/tag/" xlink:title="Leetcode-堆栈队列(67)">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/tag/" xlink:title="Leetcode-堆栈队列(72)">
      <polygon fill="orangered" points="913.5,-1332 745.5,-1332 745.5,-1296 913.5,-1296 913.5,-1332" stroke="lightgrey"/>
      <text fill="white" font-family="Microsoft YaHei" font-size="14.00" text-anchor="middle" x="829.5" y="-1310.3">
-      Leetcode-堆栈队列(67)
+      Leetcode-堆栈队列(72)
      </text>
     </a>
    </g>
@@ -28,8 +28,8 @@
    <title>
     堆
    </title>
-   <polygon fill="lightslategray" points="164.5,-1260 110.5,-1260 110.5,-1224 164.5,-1224 164.5,-1260" stroke="lightgrey"/>
-   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="137.5" y="-1238.9">
+   <polygon fill="lightslategray" points="125.5,-1260 71.5,-1260 71.5,-1224 125.5,-1224 125.5,-1260" stroke="lightgrey"/>
+   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="98.5" y="-1238.9">
     堆(17)
    </text>
   </g>
@@ -38,16 +38,16 @@
    <title>
     Leetcode-堆栈队列-&gt;堆
    </title>
-   <path d="M745.34,-1309.53C625.99,-1303.75 401,-1289.74 211.5,-1260 199.41,-1258.1 186.36,-1255.35 174.64,-1252.6" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="175.27,-1249.16 164.73,-1250.22 173.64,-1255.96 175.27,-1249.16" stroke="lightgrey"/>
+   <path d="M745.09,-1305.34C634.46,-1295.25 434.4,-1276.81 263.5,-1260 219.67,-1255.69 169.31,-1250.46 135.88,-1246.95" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="135.96,-1243.44 125.65,-1245.87 135.22,-1250.4 135.96,-1243.44" stroke="lightgrey"/>
   </g>
   <!-- 双堆合作 -->
   <g class="node" id="node20">
    <title>
     双堆合作
    </title>
-   <polygon fill="lightslategray" points="300,-1260 221,-1260 221,-1224 300,-1224 300,-1260" stroke="lightgrey"/>
-   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="260.5" y="-1238.9">
+   <polygon fill="lightslategray" points="352,-1260 273,-1260 273,-1224 352,-1224 352,-1260" stroke="lightgrey"/>
+   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="312.5" y="-1238.9">
     双堆合作(1)
    </text>
   </g>
@@ -56,24 +56,24 @@
    <title>
     Leetcode-堆栈队列-&gt;双堆合作
    </title>
-   <path d="M745.14,-1307.35C644.92,-1299.66 473.16,-1284.04 327.5,-1260 321.77,-1259.05 315.83,-1257.95 309.95,-1256.76" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="310.66,-1253.34 300.15,-1254.7 309.22,-1260.19 310.66,-1253.34" stroke="lightgrey"/>
+   <path d="M745.47,-1303.24C662.02,-1292.89 530.71,-1275.88 417.5,-1260 399.36,-1257.45 379.62,-1254.56 362.15,-1251.88" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="362.57,-1248.41 352.16,-1250.34 361.51,-1255.32 362.57,-1248.41" stroke="lightgrey"/>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;双堆合作 -->
-  <g class="edge" id="edge79">
+  <g class="edge" id="edge84">
    <title>
     Leetcode-堆栈队列-&gt;双堆合作
    </title>
-   <path d="M745.3,-1306.33C648.44,-1298.32 485,-1283.03 345.5,-1260 334.05,-1258.11 321.73,-1255.58 310.07,-1253.04" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="310.56,-1249.56 300.04,-1250.83 309.05,-1256.4 310.56,-1249.56" stroke="lightgrey"/>
+   <path d="M745.29,-1301.45C665.49,-1291 542.42,-1275 435.5,-1260 411.53,-1256.64 384.75,-1252.66 362.23,-1249.39" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="362.6,-1245.91 352.21,-1247.95 361.61,-1252.84 362.6,-1245.91" stroke="lightgrey"/>
   </g>
   <!-- 堆与Dijkstra算法 -->
   <g class="node" id="node22">
    <title>
     堆与Dijkstra算法
    </title>
-   <polygon fill="lightslategray" points="467.5,-1260 345.5,-1260 345.5,-1224 467.5,-1224 467.5,-1260" stroke="lightgrey"/>
-   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="406.5" y="-1238.9">
+   <polygon fill="lightslategray" points="557.5,-1260 435.5,-1260 435.5,-1224 557.5,-1224 557.5,-1260" stroke="lightgrey"/>
+   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="496.5" y="-1238.9">
     堆与Dijkstra算法(2)
    </text>
   </g>
@@ -82,16 +82,16 @@
    <title>
     Leetcode-堆栈队列-&gt;堆与Dijkstra算法
    </title>
-   <path d="M745.42,-1299.09C667.18,-1286.14 551.86,-1267.05 477.96,-1254.83" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="478.25,-1251.33 467.81,-1253.15 477.11,-1258.23 478.25,-1251.33" stroke="lightgrey"/>
+   <path d="M748.46,-1295.97C693.21,-1284.35 620.73,-1269.11 567.7,-1257.97" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="568.2,-1254.5 557.7,-1255.86 566.76,-1261.35 568.2,-1254.5" stroke="lightgrey"/>
   </g>
   <!-- 队列 -->
   <g class="node" id="node25">
    <title>
     队列
    </title>
-   <polygon fill="lightslategray" points="594,-1260 539,-1260 539,-1224 594,-1224 594,-1260" stroke="lightgrey"/>
-   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="566.5" y="-1238.9">
+   <polygon fill="lightslategray" points="663,-1260 608,-1260 608,-1224 663,-1224 663,-1260" stroke="lightgrey"/>
+   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="635.5" y="-1238.9">
     队列(8)
    </text>
   </g>
@@ -100,16 +100,16 @@
    <title>
     Leetcode-堆栈队列-&gt;队列
    </title>
-   <path d="M765.5,-1295.97C714.93,-1282.51 646.09,-1264.18 604.06,-1253" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="604.79,-1249.57 594.23,-1250.38 602.99,-1256.33 604.79,-1249.57" stroke="lightgrey"/>
+   <path d="M782.04,-1295.88C748.34,-1283.71 703.72,-1267.62 672.61,-1256.39" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="673.61,-1253.03 663.01,-1252.93 671.23,-1259.61 673.61,-1253.03" stroke="lightgrey"/>
   </g>
   <!-- 滑动窗口 -->
   <g class="node" id="node34">
    <title>
     滑动窗口
    </title>
-   <polygon fill="lightslategray" points="755,-1260 676,-1260 676,-1224 755,-1224 755,-1260" stroke="lightgrey"/>
-   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="715.5" y="-1238.9">
+   <polygon fill="lightslategray" points="776,-1260 697,-1260 697,-1224 776,-1224 776,-1260" stroke="lightgrey"/>
+   <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="736.5" y="-1238.9">
     滑动窗口(1)
    </text>
   </g>
@@ -118,8 +118,8 @@
    <title>
     Leetcode-堆栈队列-&gt;滑动窗口
    </title>
-   <path d="M801.61,-1295.88C786.71,-1286.72 768.17,-1275.34 752.12,-1265.48" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="753.85,-1262.44 743.49,-1260.19 750.19,-1268.41 753.85,-1262.44" stroke="lightgrey"/>
+   <path d="M806.51,-1295.7C794.69,-1286.8 780.11,-1275.82 767.32,-1266.2" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="769.32,-1263.32 759.22,-1260.1 765.11,-1268.91 769.32,-1263.32" stroke="lightgrey"/>
   </g>
   <!-- 栈 -->
   <g class="node" id="node36">
@@ -128,7 +128,7 @@
    </title>
    <polygon fill="lightslategray" points="856.5,-1260 802.5,-1260 802.5,-1224 856.5,-1224 856.5,-1260" stroke="lightgrey"/>
    <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="829.5" y="-1238.9">
-    栈(12)
+    栈(14)
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈 -->
@@ -140,7 +140,7 @@
    <polygon fill="lightgrey" points="833,-1270.1 829.5,-1260.1 826,-1270.1 833,-1270.1" stroke="lightgrey"/>
   </g>
   <!-- 栈与嵌套 -->
-  <g class="node" id="node49">
+  <g class="node" id="node51">
    <title>
     栈与嵌套
    </title>
@@ -150,7 +150,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈与嵌套 -->
-  <g class="edge" id="edge48">
+  <g class="edge" id="edge50">
    <title>
     Leetcode-堆栈队列-&gt;栈与嵌套
    </title>
@@ -158,7 +158,7 @@
    <polygon fill="lightgrey" points="910.98,-1268.33 917.77,-1260.19 907.39,-1262.32 910.98,-1268.33" stroke="lightgrey"/>
   </g>
   <!-- 栈与表达式 -->
-  <g class="node" id="node53">
+  <g class="node" id="node55">
    <title>
     栈与表达式
    </title>
@@ -168,7 +168,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈与表达式 -->
-  <g class="edge" id="edge52">
+  <g class="edge" id="edge54">
    <title>
     Leetcode-堆栈队列-&gt;栈与表达式
    </title>
@@ -176,7 +176,7 @@
    <polygon fill="lightgrey" points="1043.84,-1260.84 1052.63,-1254.94 1042.07,-1254.07 1043.84,-1260.84" stroke="lightgrey"/>
   </g>
   <!-- 栈与路径 -->
-  <g class="node" id="node62">
+  <g class="node" id="node64">
    <title>
     栈与路径
    </title>
@@ -186,7 +186,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈与路径 -->
-  <g class="edge" id="edge61">
+  <g class="edge" id="edge63">
    <title>
     Leetcode-堆栈队列-&gt;栈与路径
    </title>
@@ -194,17 +194,17 @@
    <polygon fill="lightgrey" points="1191.53,-1256.28 1200.68,-1250.94 1190.2,-1249.41 1191.53,-1256.28" stroke="lightgrey"/>
   </g>
   <!-- 单调栈 -->
-  <g class="node" id="node64">
+  <g class="node" id="node66">
    <title>
     单调栈
    </title>
    <polygon fill="lightslategray" points="1397.5,-1260 1323.5,-1260 1323.5,-1224 1397.5,-1224 1397.5,-1260" stroke="lightgrey"/>
    <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1360.5" y="-1238.9">
-    单调栈(11)
+    单调栈(14)
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;单调栈 -->
-  <g class="edge" id="edge63">
+  <g class="edge" id="edge65">
    <title>
     Leetcode-堆栈队列-&gt;单调栈
    </title>
@@ -212,7 +212,7 @@
    <polygon fill="lightgrey" points="1314.35,-1258.33 1323.3,-1252.66 1312.77,-1251.51 1314.35,-1258.33" stroke="lightgrey"/>
   </g>
   <!-- 栈与平衡 -->
-  <g class="node" id="node76">
+  <g class="node" id="node81">
    <title>
     栈与平衡
    </title>
@@ -222,7 +222,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈与平衡 -->
-  <g class="edge" id="edge75">
+  <g class="edge" id="edge80">
    <title>
     Leetcode-堆栈队列-&gt;栈与平衡
    </title>
@@ -230,7 +230,7 @@
    <polygon fill="lightgrey" points="1444.67,-1257.01 1453.8,-1251.64 1443.31,-1250.14 1444.67,-1257.01" stroke="lightgrey"/>
   </g>
   <!-- 栈与贪心 -->
-  <g class="node" id="node78">
+  <g class="node" id="node83">
    <title>
     栈与贪心
    </title>
@@ -240,7 +240,7 @@
    </text>
   </g>
   <!-- Leetcode&#45;堆栈队列&#45;&gt;栈与贪心 -->
-  <g class="edge" id="edge77">
+  <g class="edge" id="edge82">
    <title>
     Leetcode-堆栈队列-&gt;栈与贪心
    </title>
@@ -270,8 +270,8 @@
    <title>
     堆-&gt;1046
    </title>
-   <path d="M125.63,-1223.7C120,-1215.47 113.15,-1205.48 106.93,-1196.42" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="109.77,-1194.37 101.23,-1188.1 104,-1198.33 109.77,-1194.37" stroke="lightgrey"/>
+   <path d="M96.28,-1223.7C95.28,-1215.98 94.09,-1206.71 92.99,-1198.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="96.45,-1197.58 91.7,-1188.1 89.5,-1198.47 96.45,-1197.58" stroke="lightgrey"/>
   </g>
   <!-- 355 -->
   <g class="node" id="node4">
@@ -720,16 +720,16 @@
    <title>
     双堆合作-&gt;295
    </title>
-   <path d="M252.11,-1223.7C250.21,-1215.98 248.66,-1206.71 247.78,-1198.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="251.27,-1197.82 247.05,-1188.1 244.28,-1198.33 251.27,-1197.82" stroke="lightgrey"/>
+   <path d="M291.26,-1223.7C283.04,-1215.39 273.89,-1205.28 266.26,-1196.14" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="268.77,-1193.67 259.75,-1188.1 263.33,-1198.08 268.77,-1193.67" stroke="lightgrey"/>
   </g>
   <!-- 双堆合作&#45;&gt;295 -->
-  <g class="edge" id="edge80">
+  <g class="edge" id="edge85">
    <title>
     双堆合作-&gt;295
    </title>
-   <path d="M263.94,-1223.7C263.64,-1215.98 262.54,-1206.71 260.97,-1198.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="264.34,-1197.16 258.84,-1188.1 257.5,-1198.61 264.34,-1197.16" stroke="lightgrey"/>
+   <path d="M303.09,-1223.7C296.39,-1215.14 287.29,-1204.66 278.49,-1195.3" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="281.01,-1192.87 271.54,-1188.1 275.97,-1197.73 281.01,-1192.87" stroke="lightgrey"/>
   </g>
   <!-- 743 -->
   <g class="node" id="node23">
@@ -754,8 +754,8 @@
    <title>
     堆与Dijkstra算法-&gt;743
    </title>
-   <path d="M402.54,-1223.7C400.78,-1215.98 398.66,-1206.71 396.7,-1198.11" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="400.05,-1197.07 394.41,-1188.1 393.23,-1198.63 400.05,-1197.07" stroke="lightgrey"/>
+   <path d="M470.57,-1223.88C456.84,-1214.81 439.79,-1203.55 424.96,-1193.76" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="426.8,-1190.78 416.53,-1188.19 422.95,-1196.62 426.8,-1190.78" stroke="lightgrey"/>
   </g>
   <!-- 787 -->
   <g class="node" id="node24">
@@ -806,8 +806,8 @@
    <title>
     队列-&gt;933
    </title>
-   <path d="M557.6,-1223.7C553.5,-1215.73 548.55,-1206.1 544.01,-1197.26" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="546.98,-1195.4 539.3,-1188.1 540.76,-1198.6 546.98,-1195.4" stroke="lightgrey"/>
+   <path d="M609.81,-1223.88C596.21,-1214.81 579.33,-1203.55 564.64,-1193.76" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="566.55,-1190.82 556.28,-1188.19 562.66,-1196.65 566.55,-1190.82" stroke="lightgrey"/>
   </g>
   <!-- 622 -->
   <g class="node" id="node27">
@@ -1022,8 +1022,8 @@
    <title>
     滑动窗口-&gt;3
    </title>
-   <path d="M708.58,-1223.7C705.43,-1215.81 701.62,-1206.3 698.12,-1197.55" fill="none" stroke="lightgrey"/>
-   <polygon fill="lightgrey" points="701.31,-1196.09 694.34,-1188.1 694.81,-1198.69 701.31,-1196.09" stroke="lightgrey"/>
+   <path d="M724.39,-1223.7C718.63,-1215.47 711.64,-1205.48 705.29,-1196.42" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="708.08,-1194.29 699.47,-1188.1 702.34,-1198.3 708.08,-1194.29" stroke="lightgrey"/>
   </g>
   <!-- 20 -->
   <g class="node" id="node37">
@@ -1305,12 +1305,64 @@
    <path d="M829.5,-431.7C829.5,-423.98 829.5,-414.71 829.5,-406.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="833,-406.1 829.5,-396.1 826,-406.1 833,-406.1" stroke="lightgrey"/>
   </g>
-  <!-- 341 -->
+  <!-- 1003 -->
+  <g class="node" id="node49">
+   <title>
+    1003
+   </title>
+   <g id="a_node49">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/check-if-word-is-valid-after-substitutions" xlink:title="1003. 检查替换后的词是否有效">
+     <polygon fill="none" points="920.5,-324 738.5,-324 738.5,-288 920.5,-288 920.5,-324" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="829.5" y="-302.9">
+      1003. 检查替换后的词是否有效
+     </text>
+    </a>
+   </g>
+   <g transform="translate(912.5, -330.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 1598&#45;&gt;1003 -->
+  <g class="edge" id="edge48">
+   <title>
+    1598-&gt;1003
+   </title>
+   <path d="M829.5,-359.7C829.5,-351.98 829.5,-342.71 829.5,-334.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="833,-334.1 829.5,-324.1 826,-334.1 833,-334.1" stroke="lightgrey"/>
+  </g>
+  <!-- 1190 -->
   <g class="node" id="node50">
+   <title>
+    1190
+   </title>
+   <g id="a_node50">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses" xlink:title="1190. 反转每对括号间的子串">
+     <polygon fill="none" points="914.5,-252 744.5,-252 744.5,-216 914.5,-216 914.5,-252" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="829.5" y="-230.9">
+      1190. 反转每对括号间的子串
+     </text>
+    </a>
+   </g>
+   <g transform="translate(906.5, -258.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 1003&#45;&gt;1190 -->
+  <g class="edge" id="edge49">
+   <title>
+    1003-&gt;1190
+   </title>
+   <path d="M829.5,-287.7C829.5,-279.98 829.5,-270.71 829.5,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="833,-262.1 829.5,-252.1 826,-262.1 833,-262.1" stroke="lightgrey"/>
+  </g>
+  <!-- 341 -->
+  <g class="node" id="node52">
    <title>
     341
    </title>
-   <g id="a_node50">
+   <g id="a_node52">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/flatten-nested-list-iterator" xlink:title="341. 扁平化嵌套列表迭代器">
      <polygon fill="none" points="1060.5,-1188 896.5,-1188 896.5,-1152 1060.5,-1152 1060.5,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="978.5" y="-1166.9">
@@ -1324,7 +1376,7 @@
    </g>
   </g>
   <!-- 栈与嵌套&#45;&gt;341 -->
-  <g class="edge" id="edge49">
+  <g class="edge" id="edge51">
    <title>
     栈与嵌套-&gt;341
    </title>
@@ -1332,11 +1384,11 @@
    <polygon fill="lightgrey" points="969.71,-1198.65 970.68,-1188.1 963.34,-1195.74 969.71,-1198.65" stroke="lightgrey"/>
   </g>
   <!-- 385 -->
-  <g class="node" id="node51">
+  <g class="node" id="node53">
    <title>
     385
    </title>
-   <g id="a_node51">
+   <g id="a_node53">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/mini-parser" xlink:title="385. 迷你语法分析器">
      <polygon fill="none" points="1042.5,-1116 914.5,-1116 914.5,-1080 1042.5,-1080 1042.5,-1116" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="978.5" y="-1094.9">
@@ -1350,7 +1402,7 @@
    </g>
   </g>
   <!-- 341&#45;&gt;385 -->
-  <g class="edge" id="edge50">
+  <g class="edge" id="edge52">
    <title>
     341-&gt;385
    </title>
@@ -1358,11 +1410,11 @@
    <polygon fill="lightgrey" points="982,-1126.1 978.5,-1116.1 975,-1126.1 982,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 636 -->
-  <g class="node" id="node52">
+  <g class="node" id="node54">
    <title>
     636
    </title>
-   <g id="a_node52">
+   <g id="a_node54">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/exclusive-time-of-functions" xlink:title="636. 函数的独占时间">
      <polygon fill="none" points="1042.5,-1044 914.5,-1044 914.5,-1008 1042.5,-1008 1042.5,-1044" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="978.5" y="-1022.9">
@@ -1376,7 +1428,7 @@
    </g>
   </g>
   <!-- 385&#45;&gt;636 -->
-  <g class="edge" id="edge51">
+  <g class="edge" id="edge53">
    <title>
     385-&gt;636
    </title>
@@ -1384,11 +1436,11 @@
    <polygon fill="lightgrey" points="982,-1054.1 978.5,-1044.1 975,-1054.1 982,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 150 -->
-  <g class="node" id="node54">
+  <g class="node" id="node56">
    <title>
     150
    </title>
-   <g id="a_node54">
+   <g id="a_node56">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/evaluate-reverse-polish-notation" xlink:title="150. 逆波兰表达式求值">
      <polygon fill="none" points="1218.5,-1188 1078.5,-1188 1078.5,-1152 1218.5,-1152 1218.5,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-1166.9">
@@ -1402,7 +1454,7 @@
    </g>
   </g>
   <!-- 栈与表达式&#45;&gt;150 -->
-  <g class="edge" id="edge53">
+  <g class="edge" id="edge55">
    <title>
     栈与表达式-&gt;150
    </title>
@@ -1410,11 +1462,11 @@
    <polygon fill="lightgrey" points="1133.32,-1198.28 1136.28,-1188.1 1127.62,-1194.21 1133.32,-1198.28" stroke="lightgrey"/>
   </g>
   <!-- 224 -->
-  <g class="node" id="node55">
+  <g class="node" id="node57">
    <title>
     224
    </title>
-   <g id="a_node55">
+   <g id="a_node57">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/basic-calculator" xlink:title="224. 基本计算器">
      <polygon fill="none" points="1200.5,-1116 1096.5,-1116 1096.5,-1080 1200.5,-1080 1200.5,-1116" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-1094.9">
@@ -1424,7 +1476,7 @@
    </g>
   </g>
   <!-- 150&#45;&gt;224 -->
-  <g class="edge" id="edge54">
+  <g class="edge" id="edge56">
    <title>
     150-&gt;224
    </title>
@@ -1432,11 +1484,11 @@
    <polygon fill="lightgrey" points="1152,-1126.1 1148.5,-1116.1 1145,-1126.1 1152,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 227 -->
-  <g class="node" id="node56">
+  <g class="node" id="node58">
    <title>
     227
    </title>
-   <g id="a_node56">
+   <g id="a_node58">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/basic-calculator-ii" xlink:title="227. 基本计算器 II">
      <polygon fill="none" points="1206,-1044 1091,-1044 1091,-1008 1206,-1008 1206,-1044" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-1022.9">
@@ -1450,7 +1502,7 @@
    </g>
   </g>
   <!-- 224&#45;&gt;227 -->
-  <g class="edge" id="edge55">
+  <g class="edge" id="edge57">
    <title>
     224-&gt;227
    </title>
@@ -1458,11 +1510,11 @@
    <polygon fill="lightgrey" points="1152,-1054.1 1148.5,-1044.1 1145,-1054.1 1152,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 772 -->
-  <g class="node" id="node57">
+  <g class="node" id="node59">
    <title>
     772
    </title>
-   <g id="a_node57">
+   <g id="a_node59">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/basic-calculator-iii" xlink:title="772. 基本计算器 III">
      <polygon fill="none" points="1208,-972 1089,-972 1089,-936 1208,-936 1208,-972" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-950.9">
@@ -1472,7 +1524,7 @@
    </g>
   </g>
   <!-- 227&#45;&gt;772 -->
-  <g class="edge" id="edge56">
+  <g class="edge" id="edge58">
    <title>
     227-&gt;772
    </title>
@@ -1480,11 +1532,11 @@
    <polygon fill="lightgrey" points="1152,-982.1 1148.5,-972.1 1145,-982.1 1152,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 770 -->
-  <g class="node" id="node58">
+  <g class="node" id="node60">
    <title>
     770
    </title>
-   <g id="a_node58">
+   <g id="a_node60">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/basic-calculator-iv" xlink:title="770. 基本计算器 IV">
      <polygon fill="none" points="1208,-900 1089,-900 1089,-864 1208,-864 1208,-900" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-878.9">
@@ -1494,7 +1546,7 @@
    </g>
   </g>
   <!-- 772&#45;&gt;770 -->
-  <g class="edge" id="edge57">
+  <g class="edge" id="edge59">
    <title>
     772-&gt;770
    </title>
@@ -1502,11 +1554,11 @@
    <polygon fill="lightgrey" points="1152,-910.1 1148.5,-900.1 1145,-910.1 1152,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 394 -->
-  <g class="node" id="node59">
+  <g class="node" id="node61">
    <title>
     394
    </title>
-   <g id="a_node59">
+   <g id="a_node61">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/decode-string" xlink:title="394. 字符串解码">
      <polygon fill="none" points="1200.5,-828 1096.5,-828 1096.5,-792 1200.5,-792 1200.5,-828" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-806.9">
@@ -1520,7 +1572,7 @@
    </g>
   </g>
   <!-- 770&#45;&gt;394 -->
-  <g class="edge" id="edge58">
+  <g class="edge" id="edge60">
    <title>
     770-&gt;394
    </title>
@@ -1528,11 +1580,11 @@
    <polygon fill="lightgrey" points="1152,-838.1 1148.5,-828.1 1145,-838.1 1152,-838.1" stroke="lightgrey"/>
   </g>
   <!-- 856 -->
-  <g class="node" id="node60">
+  <g class="node" id="node62">
    <title>
     856
    </title>
-   <g id="a_node60">
+   <g id="a_node62">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/score-of-parentheses" xlink:title="856. 括号的分数">
      <polygon fill="none" points="1200.5,-756 1096.5,-756 1096.5,-720 1200.5,-720 1200.5,-756" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-734.9">
@@ -1546,7 +1598,7 @@
    </g>
   </g>
   <!-- 394&#45;&gt;856 -->
-  <g class="edge" id="edge59">
+  <g class="edge" id="edge61">
    <title>
     394-&gt;856
    </title>
@@ -1554,11 +1606,11 @@
    <polygon fill="lightgrey" points="1152,-766.1 1148.5,-756.1 1145,-766.1 1152,-766.1" stroke="lightgrey"/>
   </g>
   <!-- 880 -->
-  <g class="node" id="node61">
+  <g class="node" id="node63">
    <title>
     880
    </title>
-   <g id="a_node61">
+   <g id="a_node63">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/decoded-string-at-index" xlink:title="880. 索引处的解码字符串">
      <polygon fill="none" points="1224.5,-684 1072.5,-684 1072.5,-648 1224.5,-648 1224.5,-684" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1148.5" y="-662.9">
@@ -1572,7 +1624,7 @@
    </g>
   </g>
   <!-- 856&#45;&gt;880 -->
-  <g class="edge" id="edge60">
+  <g class="edge" id="edge62">
    <title>
     856-&gt;880
    </title>
@@ -1580,11 +1632,11 @@
    <polygon fill="lightgrey" points="1152,-694.1 1148.5,-684.1 1145,-694.1 1152,-694.1" stroke="lightgrey"/>
   </g>
   <!-- 71 -->
-  <g class="node" id="node63">
+  <g class="node" id="node65">
    <title>
     71
    </title>
-   <g id="a_node63">
+   <g id="a_node65">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/simplify-path" xlink:title="71. 简化路径">
      <polygon fill="none" points="1322,-1188 1237,-1188 1237,-1152 1322,-1152 1322,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1279.5" y="-1166.9">
@@ -1598,7 +1650,7 @@
    </g>
   </g>
   <!-- 栈与路径&#45;&gt;71 -->
-  <g class="edge" id="edge62">
+  <g class="edge" id="edge64">
    <title>
     栈与路径-&gt;71
    </title>
@@ -1606,11 +1658,11 @@
    <polygon fill="lightgrey" points="1268.16,-1198.54 1269.97,-1188.1 1262.05,-1195.14 1268.16,-1198.54" stroke="lightgrey"/>
   </g>
   <!-- 739 -->
-  <g class="node" id="node65">
+  <g class="node" id="node67">
    <title>
     739
    </title>
-   <g id="a_node65">
+   <g id="a_node67">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/daily-temperatures" xlink:title="739. 每日温度">
      <polygon fill="none" points="1432.5,-1188 1340.5,-1188 1340.5,-1152 1432.5,-1152 1432.5,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-1166.9">
@@ -1632,7 +1684,7 @@
    </g>
   </g>
   <!-- 单调栈&#45;&gt;739 -->
-  <g class="edge" id="edge64">
+  <g class="edge" id="edge66">
    <title>
     单调栈-&gt;739
    </title>
@@ -1640,11 +1692,11 @@
    <polygon fill="lightgrey" points="1379.95,-1198.7 1380.15,-1188.1 1373.38,-1196.26 1379.95,-1198.7" stroke="lightgrey"/>
   </g>
   <!-- 496 -->
-  <g class="node" id="node66">
+  <g class="node" id="node68">
    <title>
     496
    </title>
-   <g id="a_node66">
+   <g id="a_node68">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/next-greater-element-i" xlink:title="496. 下一个更大元素 I">
      <polygon fill="none" points="1454,-1116 1319,-1116 1319,-1080 1454,-1080 1454,-1116" stroke="greenyellow"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-1094.9">
@@ -1658,7 +1710,7 @@
    </g>
   </g>
   <!-- 739&#45;&gt;496 -->
-  <g class="edge" id="edge65">
+  <g class="edge" id="edge67">
    <title>
     739-&gt;496
    </title>
@@ -1666,11 +1718,11 @@
    <polygon fill="lightgrey" points="1390,-1126.1 1386.5,-1116.1 1383,-1126.1 1390,-1126.1" stroke="lightgrey"/>
   </g>
   <!-- 503 -->
-  <g class="node" id="node67">
+  <g class="node" id="node69">
    <title>
     503
    </title>
-   <g id="a_node67">
+   <g id="a_node69">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/next-greater-element-ii" xlink:title="503. 下一个更大元素 II">
      <polygon fill="none" points="1456,-1044 1317,-1044 1317,-1008 1456,-1008 1456,-1044" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-1022.9">
@@ -1680,7 +1732,7 @@
    </g>
   </g>
   <!-- 496&#45;&gt;503 -->
-  <g class="edge" id="edge66">
+  <g class="edge" id="edge68">
    <title>
     496-&gt;503
    </title>
@@ -1688,11 +1740,11 @@
    <polygon fill="lightgrey" points="1390,-1054.1 1386.5,-1044.1 1383,-1054.1 1390,-1054.1" stroke="lightgrey"/>
   </g>
   <!-- 456 -->
-  <g class="node" id="node68">
+  <g class="node" id="node70">
    <title>
     456
    </title>
-   <g id="a_node68">
+   <g id="a_node70">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/132-pattern" xlink:title="456. 132模式">
      <polygon fill="none" points="1430.5,-972 1342.5,-972 1342.5,-936 1430.5,-936 1430.5,-972" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-950.9">
@@ -1706,7 +1758,7 @@
    </g>
   </g>
   <!-- 503&#45;&gt;456 -->
-  <g class="edge" id="edge67">
+  <g class="edge" id="edge69">
    <title>
     503-&gt;456
    </title>
@@ -1714,11 +1766,11 @@
    <polygon fill="lightgrey" points="1390,-982.1 1386.5,-972.1 1383,-982.1 1390,-982.1" stroke="lightgrey"/>
   </g>
   <!-- 402 -->
-  <g class="node" id="node69">
+  <g class="node" id="node71">
    <title>
     402
    </title>
-   <g id="a_node69">
+   <g id="a_node71">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-k-digits" xlink:title="402. 移掉K位数字">
      <polygon fill="none" points="1442,-900 1331,-900 1331,-864 1442,-864 1442,-900" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-878.9">
@@ -1728,7 +1780,7 @@
    </g>
   </g>
   <!-- 456&#45;&gt;402 -->
-  <g class="edge" id="edge68">
+  <g class="edge" id="edge70">
    <title>
     456-&gt;402
    </title>
@@ -1736,11 +1788,11 @@
    <polygon fill="lightgrey" points="1390,-910.1 1386.5,-900.1 1383,-910.1 1390,-910.1" stroke="lightgrey"/>
   </g>
   <!-- 316 -->
-  <g class="node" id="node70">
+  <g class="node" id="node72">
    <title>
     316
    </title>
-   <g id="a_node70">
+   <g id="a_node72">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/remove-duplicate-letters" xlink:title="316. 去除重复字母">
      <polygon fill="none" points="1444.5,-828 1328.5,-828 1328.5,-792 1444.5,-792 1444.5,-828" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-806.9">
@@ -1754,7 +1806,7 @@
    </g>
   </g>
   <!-- 402&#45;&gt;316 -->
-  <g class="edge" id="edge69">
+  <g class="edge" id="edge71">
    <title>
     402-&gt;316
    </title>
@@ -1762,11 +1814,11 @@
    <polygon fill="lightgrey" points="1390,-838.1 1386.5,-828.1 1383,-838.1 1390,-838.1" stroke="lightgrey"/>
   </g>
   <!-- 901 -->
-  <g class="node" id="node71">
+  <g class="node" id="node73">
    <title>
     901
    </title>
-   <g id="a_node71">
+   <g id="a_node73">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/online-stock-span" xlink:title="901. 股票价格跨度">
      <polygon fill="none" points="1444.5,-756 1328.5,-756 1328.5,-720 1444.5,-720 1444.5,-756" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-734.9">
@@ -1780,7 +1832,7 @@
    </g>
   </g>
   <!-- 316&#45;&gt;901 -->
-  <g class="edge" id="edge70">
+  <g class="edge" id="edge72">
    <title>
     316-&gt;901
    </title>
@@ -1788,11 +1840,11 @@
    <polygon fill="lightgrey" points="1390,-766.1 1386.5,-756.1 1383,-766.1 1390,-766.1" stroke="lightgrey"/>
   </g>
   <!-- 1081 -->
-  <g class="node" id="node72">
+  <g class="node" id="node74">
    <title>
     1081
    </title>
-   <g id="a_node72">
+   <g id="a_node74">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters" xlink:title="1081. 不同字符的最小子序列">
      <polygon fill="none" points="1471.5,-684 1301.5,-684 1301.5,-648 1471.5,-648 1471.5,-684" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-662.9">
@@ -1802,7 +1854,7 @@
    </g>
   </g>
   <!-- 901&#45;&gt;1081 -->
-  <g class="edge" id="edge71">
+  <g class="edge" id="edge73">
    <title>
     901-&gt;1081
    </title>
@@ -1810,11 +1862,11 @@
    <polygon fill="lightgrey" points="1390,-694.1 1386.5,-684.1 1383,-694.1 1390,-694.1" stroke="lightgrey"/>
   </g>
   <!-- 321 -->
-  <g class="node" id="node73">
+  <g class="node" id="node75">
    <title>
     321
    </title>
-   <g id="a_node73">
+   <g id="a_node75">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/create-maximum-number" xlink:title="321. 拼接最大数">
      <polygon fill="none" points="1438.5,-612 1334.5,-612 1334.5,-576 1438.5,-576 1438.5,-612" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-590.9">
@@ -1824,7 +1876,7 @@
    </g>
   </g>
   <!-- 1081&#45;&gt;321 -->
-  <g class="edge" id="edge72">
+  <g class="edge" id="edge74">
    <title>
     1081-&gt;321
    </title>
@@ -1832,11 +1884,11 @@
    <polygon fill="lightgrey" points="1390,-622.1 1386.5,-612.1 1383,-622.1 1390,-622.1" stroke="lightgrey"/>
   </g>
   <!-- 42 -->
-  <g class="node" id="node74">
+  <g class="node" id="node76">
    <title>
     42
    </title>
-   <g id="a_node74">
+   <g id="a_node76">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/trapping-rain-water" xlink:title="42. 接雨水">
      <polygon fill="none" points="1423,-540 1350,-540 1350,-504 1423,-504 1423,-540" stroke="red"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-518.9">
@@ -1850,7 +1902,7 @@
    </g>
   </g>
   <!-- 321&#45;&gt;42 -->
-  <g class="edge" id="edge73">
+  <g class="edge" id="edge75">
    <title>
     321-&gt;42
    </title>
@@ -1858,11 +1910,11 @@
    <polygon fill="lightgrey" points="1390,-550.1 1386.5,-540.1 1383,-550.1 1390,-550.1" stroke="lightgrey"/>
   </g>
   <!-- 907 -->
-  <g class="node" id="node75">
+  <g class="node" id="node77">
    <title>
     907
    </title>
-   <g id="a_node75">
+   <g id="a_node77">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/sum-of-subarray-minimums" xlink:title="907. 子数组的最小值之和">
      <polygon fill="none" points="1462.5,-468 1310.5,-468 1310.5,-432 1462.5,-432 1462.5,-468" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-446.9">
@@ -1876,19 +1928,97 @@
    </g>
   </g>
   <!-- 42&#45;&gt;907 -->
-  <g class="edge" id="edge74">
+  <g class="edge" id="edge76">
    <title>
     42-&gt;907
    </title>
    <path d="M1386.5,-503.7C1386.5,-495.98 1386.5,-486.71 1386.5,-478.11" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1390,-478.1 1386.5,-468.1 1383,-478.1 1390,-478.1" stroke="lightgrey"/>
   </g>
+  <!-- 1019 -->
+  <g class="node" id="node78">
+   <title>
+    1019
+   </title>
+   <g id="a_node78">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/next-greater-node-in-linked-list" xlink:title="1019. 链表中的下一个更大节点">
+     <polygon fill="none" points="1477.5,-396 1295.5,-396 1295.5,-360 1477.5,-360 1477.5,-396" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-374.9">
+      1019. 链表中的下一个更大节点
+     </text>
+    </a>
+   </g>
+   <g transform="translate(1469.5, -402.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 907&#45;&gt;1019 -->
+  <g class="edge" id="edge77">
+   <title>
+    907-&gt;1019
+   </title>
+   <path d="M1386.5,-431.7C1386.5,-423.98 1386.5,-414.71 1386.5,-406.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-406.1 1386.5,-396.1 1383,-406.1 1390,-406.1" stroke="lightgrey"/>
+  </g>
+  <!-- 1124 -->
+  <g class="node" id="node79">
+   <title>
+    1124
+   </title>
+   <g id="a_node79">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/longest-well-performing-interval" xlink:title="1124. 表现良好的最长时间段">
+     <polygon fill="none" points="1471.5,-324 1301.5,-324 1301.5,-288 1471.5,-288 1471.5,-324" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-302.9">
+      1124. 表现良好的最长时间段
+     </text>
+    </a>
+   </g>
+   <g transform="translate(1463.5, -330.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 1019&#45;&gt;1124 -->
+  <g class="edge" id="edge78">
+   <title>
+    1019-&gt;1124
+   </title>
+   <path d="M1386.5,-359.7C1386.5,-351.98 1386.5,-342.71 1386.5,-334.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-334.1 1386.5,-324.1 1383,-334.1 1390,-334.1" stroke="lightgrey"/>
+  </g>
+  <!-- 1130 -->
+  <g class="node" id="node80">
+   <title>
+    1130
+   </title>
+   <g id="a_node80">
+    <a target="_parent" xlink:href="https://leetcode-cn.com/problems/minimum-cost-tree-from-leaf-values" xlink:title="1130. 叶值的最小代价生成树">
+     <polygon fill="none" points="1471.5,-252 1301.5,-252 1301.5,-216 1471.5,-216 1471.5,-252" stroke="orange"/>
+     <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1386.5" y="-230.9">
+      1130. 叶值的最小代价生成树
+     </text>
+    </a>
+   </g>
+   <g transform="translate(1463.5, -258.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
+  </g>
+  <!-- 1124&#45;&gt;1130 -->
+  <g class="edge" id="edge79">
+   <title>
+    1124-&gt;1130
+   </title>
+   <path d="M1386.5,-287.7C1386.5,-279.98 1386.5,-270.71 1386.5,-262.11" fill="none" stroke="lightgrey"/>
+   <polygon fill="lightgrey" points="1390,-262.1 1386.5,-252.1 1383,-262.1 1390,-262.1" stroke="lightgrey"/>
+  </g>
   <!-- 921 -->
-  <g class="node" id="node77">
+  <g class="node" id="node82">
    <title>
     921
    </title>
-   <g id="a_node77">
+   <g id="a_node82">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid" xlink:title="921. 使括号有效的最少添加">
      <polygon fill="none" points="1614.5,-1188 1450.5,-1188 1450.5,-1152 1614.5,-1152 1614.5,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1532.5" y="-1166.9">
@@ -1902,7 +2032,7 @@
    </g>
   </g>
   <!-- 栈与平衡&#45;&gt;921 -->
-  <g class="edge" id="edge76">
+  <g class="edge" id="edge81">
    <title>
     栈与平衡-&gt;921
    </title>
@@ -1910,11 +2040,11 @@
    <polygon fill="lightgrey" points="1521.16,-1198.54 1522.97,-1188.1 1515.05,-1195.14 1521.16,-1198.54" stroke="lightgrey"/>
   </g>
   <!-- 946 -->
-  <g class="node" id="node79">
+  <g class="node" id="node84">
    <title>
     946
    </title>
-   <g id="a_node79">
+   <g id="a_node84">
     <a target="_parent" xlink:href="https://leetcode-cn.com/problems/validate-stack-sequences" xlink:title="946. 验证栈序列">
      <polygon fill="none" points="1736.5,-1188 1632.5,-1188 1632.5,-1152 1736.5,-1152 1736.5,-1188" stroke="orange"/>
      <text font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1684.5" y="-1166.9">
@@ -1928,7 +2058,7 @@
    </g>
   </g>
   <!-- 栈与贪心&#45;&gt;946 -->
-  <g class="edge" id="edge78">
+  <g class="edge" id="edge83">
    <title>
     栈与贪心-&gt;946
    </title>
@@ -2323,6 +2453,34 @@
      </feMerge>
     </filter>
    </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="829.5" y="-283.0">
+    多元素出栈
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="829.5" y="-211.0">
+    字符串翻转
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="978.5" y="-1147.0">
     嵌套
    </text>
@@ -2563,6 +2721,48 @@
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-427.0">
     单调栈
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-355.0">
+    单调栈列表
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-283.0">
+    单调栈与前缀和
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1386.5" y="-211.0">
+    单调栈与树
    </text>
   </g>
  </g>
