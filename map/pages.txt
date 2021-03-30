@@ -4,5 +4,5 @@
 0x04 https://github.com/jennyzzt/AlgoManim [算法动画]
 0x05 https://www.youtube.com/c/BukanCaraCepat/videos [算法动画]
 0x06 https://www.reddit.com/search/?q=manim%20sort%20 [算法动画]
-
+0x07 https://github.com/llimllib/pymag-trees/ [树形绘制]
 

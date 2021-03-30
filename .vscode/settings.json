@@ -19,6 +19,7 @@
         "xtr1common": "cpp",
         "xstddef": "cpp",
         "unordered_set": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "iostream": "cpp"
     }
 }

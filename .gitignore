@@ -5,3 +5,4 @@ out/
 *.mp4
 __pycache__
 animations/videos
+templates/a.exe
