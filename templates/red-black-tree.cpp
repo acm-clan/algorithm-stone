@@ -77,84 +77,83 @@ private:
             root = p;
             return;
         }
-        
-        Node* gp = p->GrandParent();
-        Node* fa = p->parent;
+
+        Node* grand = p->GrandParent();
+        Node* parent = p->parent;
         Node* y = p->left_tree;
 
-        fa->right_tree = y;
+        parent->right_tree = y;
 
         if (y != NIL)
-            y->parent = fa;
-        p->left_tree = fa;
-        fa->parent = p;
+            y->parent = parent;
+        p->left_tree = parent;
+        parent->parent = p;
 
-        if (root == fa)
+        if (root == parent)
             root = p;
-        p->parent = gp;
+        p->parent = grand;
 
-        if (gp != nullptr) {
-            if (gp->left_tree == fa)
-                gp->left_tree = p;
+        if (grand != nullptr) {
+            if (grand->left_tree == parent)
+                grand->left_tree = p;
             else
-                gp->right_tree = p;
+                grand->right_tree = p;
         }
     }
 
-    void inorder(Node* p)
+    void InOrder(Node* p)
     {
         if (p == NIL)
             return;
 
         if (p->left_tree)
-            inorder(p->left_tree);
+            InOrder(p->left_tree);
 
         cout << p->value << " ";
 
         if (p->right_tree)
-            inorder(p->right_tree);
+            InOrder(p->right_tree);
     }
 
-    string outputColor(bool color)
+    string OutputColor(bool color)
     {
         return color ? "BLACK" : "RED";
     }
 
-    Node* getSmallestChild(Node* p)
+    Node* GetSmallestChild(Node* p)
     {
         if (p->left_tree == NIL)
             return p;
-        return getSmallestChild(p->left_tree);
+        return GetSmallestChild(p->left_tree);
     }
 
-    bool delete_child(Node* p, int data)
+    bool DeleteChild(Node* p, int data)
     {
         if (p->value > data) {
             if (p->left_tree == NIL) {
                 return false;
             }
-            return delete_child(p->left_tree, data);
+            return DeleteChild(p->left_tree, data);
         } else if (p->value < data) {
             if (p->right_tree == NIL) {
                 return false;
             }
-            return delete_child(p->right_tree, data);
+            return DeleteChild(p->right_tree, data);
         } else if (p->value == data) {
             if (p->right_tree == NIL) {
-                delete_one_child(p);
+                DeleteOneChild(p);
                 return true;
             }
-            Node* smallest = getSmallestChild(p->right_tree);
+            Node* smallest = GetSmallestChild(p->right_tree);
             swap(p->value, smallest->value);
-            delete_one_child(smallest);
-
+            DeleteOneChild(smallest);
             return true;
         } else {
             return false;
         }
     }
 
-    void delete_one_child(Node* p)
+    void DeleteOneChild(Node* p)
     {
         Node* child = p->left_tree == NIL ? p->right_tree : p->left_tree;
         if (p->parent == nullptr && p->left_tree == NIL && p->right_tree == NIL) {
@@ -182,13 +181,13 @@ private:
             if (child->color == RED) {
                 child->color = BLACK;
             } else
-                delete_case(child);
+                DeleteCase(child);
         }
 
         delete p;
     }
 
-    void delete_case(Node* p)
+    void DeleteCase(Node* p)
     {
         if (p->parent == nullptr) {
             p->color = BLACK;
@@ -198,16 +197,14 @@ private:
             p->parent->color = RED;
             p->sibling()->color = BLACK;
             if (p == p->parent->left_tree)
-                //RotateLeft(p->sibling());
                 RotateLeft(p->parent);
             else
-                //RotateRight(p->sibling());
                 RotateRight(p->parent);
         }
         if (p->parent->color == BLACK && p->sibling()->color == BLACK
             && p->sibling()->left_tree->color == BLACK && p->sibling()->right_tree->color == BLACK) {
             p->sibling()->color = RED;
-            delete_case(p->parent);
+            DeleteCase(p->parent);
         } else if (p->parent->color == RED && p->sibling()->color == BLACK
             && p->sibling()->left_tree->color == BLACK && p->sibling()->right_tree->color == BLACK) {
             p->sibling()->color = RED;
@@ -238,34 +235,34 @@ private:
         }
     }
 
-    void insert(Node* p, int data)
+    void Insert(Node* p, int data)
     {
         if (p->value >= data) {
             if (p->left_tree != NIL)
-                insert(p->left_tree, data);
+                Insert(p->left_tree, data);
             else {
                 Node* tmp = new Node();
                 tmp->value = data;
                 tmp->left_tree = tmp->right_tree = NIL;
                 tmp->parent = p;
                 p->left_tree = tmp;
-                insert_case(tmp);
+                InsertCase(tmp);
             }
         } else {
             if (p->right_tree != NIL)
-                insert(p->right_tree, data);
+                Insert(p->right_tree, data);
             else {
                 Node* tmp = new Node();
                 tmp->value = data;
                 tmp->left_tree = tmp->right_tree = NIL;
                 tmp->parent = p;
                 p->right_tree = tmp;
-                insert_case(tmp);
+                InsertCase(tmp);
             }
         }
     }
 
-    void insert_case(Node* p)
+    void InsertCase(Node* p)
     {
         if (p->parent == nullptr) {
             root = p;
@@ -276,7 +273,7 @@ private:
             if (p->Uncle()->color == RED) {
                 p->parent->color = p->Uncle()->color = BLACK;
                 p->GrandParent()->color = RED;
-                insert_case(p->GrandParent());
+                InsertCase(p->GrandParent());
             } else {
                 if (p->parent->right_tree == p && p->GrandParent()->left_tree == p->parent) {
                     RotateLeft(p);
@@ -326,15 +323,15 @@ public:
         delete NIL;
     }
 
-    void inorder()
+    void InOrder()
     {
         if (root == nullptr)
             return;
-        inorder(root);
+        InOrder(root);
         cout << endl;
     }
 
-    void insert(int x)
+    void Insert(int x)
     {
         if (root == nullptr) {
             root = new Node();
@@ -342,13 +339,13 @@ public:
             root->left_tree = root->right_tree = NIL;
             root->value = x;
         } else {
-            insert(root, x);
+            Insert(root, x);
         }
     }
 
-    bool delete_value(int data)
+    bool DeleteValue(int data)
     {
-        return delete_child(root, data);
+        return DeleteChild(root, data);
     }
 
 private:
@@ -359,8 +356,8 @@ int main()
 {
     RBTree b;
     for (int i = 0; i < 10; i++) {
-        b.insert(rand() % 100);
+        b.Insert(rand() % 100);
     }
-    b.inorder();
+    b.InOrder();
     return 0;
 }
