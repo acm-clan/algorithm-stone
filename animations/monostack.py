@@ -1,10 +1,6 @@
-from manimlib import *
-sys.path.insert(0, './')
-sys.path.insert(0, './src')
-from algo_stack import *
-from algo_vector import *
+from manim_imports_ext import *
 
-class MonotonicStack(Scene):
+class MonotonicStack(AlgoScene):
     def scale(self, s):
         self.camera.frame.set_width(self.camera.frame.get_width()/s)
         self.camera.frame.set_height(self.camera.frame.get_height()/s)
