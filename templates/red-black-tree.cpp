@@ -237,18 +237,22 @@ private:
 
     void Insert(Node* p, int data)
     {
-        if (p->value >= data) {
+        if (data <= p->value) {
+            // 放在左边
             if (p->left_tree != NIL)
                 Insert(p->left_tree, data);
             else {
+                // 左边不存在，创建一个新的节点
                 Node* tmp = new Node();
                 tmp->value = data;
                 tmp->left_tree = tmp->right_tree = NIL;
                 tmp->parent = p;
                 p->left_tree = tmp;
+                // 开始旋转
                 InsertCase(tmp);
             }
         } else {
+            // 放在右边
             if (p->right_tree != NIL)
                 Insert(p->right_tree, data);
             else {
@@ -262,6 +266,14 @@ private:
         }
     }
 
+/*
+1 节点是红色或黑色
+2 根是黑色
+3 所有叶子都是黑色（叶子是NIL节点）
+4 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）
+5 从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点。
+*/
+
     void InsertCase(Node* p)
     {
         if (p->parent == nullptr) {
@@ -270,11 +282,14 @@ private:
             return;
         }
         if (p->parent->color == RED) {
+            // 父节点是红色，需要处理
             if (p->Uncle()->color == RED) {
+                // 叔叔也是红色
                 p->parent->color = p->Uncle()->color = BLACK;
                 p->GrandParent()->color = RED;
                 InsertCase(p->GrandParent());
             } else {
+                // 叔叔节点是黑色，分为四种情况
                 if (p->parent->right_tree == p && p->GrandParent()->left_tree == p->parent) {
                     RotateLeft(p);
                     p->color = BLACK;
@@ -349,7 +364,8 @@ public:
     }
 
 private:
-    Node *root, *NIL;
+    Node *root;
+    Node *NIL;
 };
 
 int main()
