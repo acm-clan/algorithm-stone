@@ -82,6 +82,8 @@ class QuickSort(AlgoScene):
         
         title = self.create_serif_font("ACM算法日常")
         self.play(FadeIn(title))
+
+        self.add_sound("bg")
         
         self.play(ApplyMethod(title.scale, 0.3))
         self.play(ApplyMethod(title.to_edge, DL))
@@ -92,7 +94,7 @@ class QuickSort(AlgoScene):
         self.play(FadeIn(logo))
 
         self.init_message("快速排序")
-        self.datas = [13, 19, 5, 12, 8, 7, 4, 21, 6, 11]
+        self.datas = [13, 5, 12, 8]
 
         arr = AlgoVector(self, self.datas)
         arr.to_edge(edge=UP)

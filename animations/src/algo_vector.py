@@ -50,5 +50,6 @@ class AlgoVector(AlgoVGroup):
         # data
         self.datas[i], self.datas[j] = self.datas[j], self.datas[i]
         # obj
+        self.scene.add_sound("swap", gain=-20)
         self.scene.play(Swap(self[i], self[j]))
         self.submobjects[i], self.submobjects[j] = self.submobjects[j], self.submobjects[i]
