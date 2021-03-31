@@ -1,19 +1,18 @@
 from manimlib import *
-
-
+import algo_config
 
 class AlgoNode(VGroup):
     def __init__(self, text, **kwargs):
         super().__init__(**kwargs)
-        self.text_obj = Text(text, font_size=12, font="Consolas")
-        self.text_sub_obj = Text("", font_size=12, font="Consolas")
+        self.text_obj = Text(text, font="Consolas").scale(0.3)
+        self.text_sub_obj = Text("", font="Consolas").scale(0.3)
         self.rect_obj = Square().scale(0.3)
         self.text_sub_obj.shift(DR/4).set_color(RED)
         self.add(self.text_obj, self.rect_obj, self.text_sub_obj)
 
     def set_text(self, text):
         self.remove(self.text_obj)
-        self.text_obj = Text(text, font_size=20, font="Consolas")
+        self.text_obj = Text(text, font="Consolas").scale(0.3)
         self.add(self.text_obj)
 
     def get_text(self):
@@ -21,7 +20,7 @@ class AlgoNode(VGroup):
 
     def set_sub(self, sub_val):
         self.remove(self.text_sub_obj)
-        self.text_sub_obj = Text(sub_val, font_size=12, font="Consolas")
+        self.text_sub_obj = Text(sub_val, font="Consolas").scale(0.3)
         self.add(self.text_sub_obj)
         self.text_sub_obj.move_to(self.text_obj)
         self.text_sub_obj.shift(DR/4).set_color(RED)

@@ -32,11 +32,11 @@ class QuickSort(AlgoScene):
         t = None
         m = None
         if arr.get(a) > arr.get(b):
-            t = Text(">", font_size=self.DefaultFontSize, color=YELLOW)
-            m = self.create_serif_font("不需要移动", font_size=12)
+            t = Text(">", color=YELLOW).scale(0.5)
+            m = self.create_serif_font("不需要移动").scale(0.5)
         else:
-            t = Text("<=", font_size=self.DefaultFontSize, color=YELLOW)
-            m = self.create_serif_font("交换放左边", font_size=12)
+            t = Text("<=", color=YELLOW).scale(0.5)
+            m = self.create_serif_font("交换放左边").scale(0.5)
         t.shift(DOWN/2)
         m.next_to(cb)
         self.add(t, m)
