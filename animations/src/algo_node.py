@@ -1,5 +1,4 @@
 from manimlib import *
-import algo_config
 
 class AlgoNode(VGroup):
     def __init__(self, text, **kwargs):

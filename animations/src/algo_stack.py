@@ -1,5 +1,5 @@
 from manimlib import *
-from algo_node import *
+from . import *
 
 class AlgoStack(VGroup):
     def __init__(self, scene, datas, **kwargs):

@@ -1,7 +1,6 @@
 from manimlib import *
-from algo_node import *
-from algo_vgroup import *
-
+from .algo_vgroup import *
+from .algo_node import *
 
 class AlgoVector(AlgoVGroup):
     def __init__(self, scene, datas=[], **kwargs):

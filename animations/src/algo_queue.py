@@ -1,6 +1,6 @@
 from manimlib import *
-from algo_node import *
-from algo_vgroup import *
+from .algo_node import *
+from .algo_vgroup import *
 
 class AlgoQueue(AlgoVGroup):
     def __init__(self, datas=[], **kwargs):

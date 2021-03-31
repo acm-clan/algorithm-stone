@@ -1,11 +1,8 @@
 from manimlib import *
-
-sys.path.insert(0, './')
-sys.path.insert(0, './src')
-
-from algo_stack import *
-from algo_vector import *
-from algo_scene import *
-from algo_node import *
-from algo_vgroup import *
+from src.algo_config import *
+from src.algo_stack import *
+from src.algo_vector import *
+from src.algo_scene import *
+from src.algo_node import *
+from src.algo_vgroup import *
 

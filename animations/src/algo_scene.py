@@ -1,7 +1,7 @@
 ﻿from manimlib import *
 import random
 from datetime import datetime
-from algo_config import *
+from .algo_config import *
 
 class AlgoScene(Scene):
     def __init__(self, **kwargs):
