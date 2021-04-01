@@ -39,14 +39,14 @@ class AlgoLogo(VGroup):
         text.shift(UP*1.2)
         self.add(text)
 
-        vertices = np.array([
-            np.array([-3.5, -3.75, 0]),
-            np.array([-3.25, -4.25, 0]),
-            np.array([-3.5, -4.75, 0]),
-            np.array([3.5, -4.75, 0]),
-            np.array([3.25, -4.25, 0]),
-            np.array([3.5, -3.75, 0]),
-        ])
+        vertices = [
+            [-3.5, -3.75, 0],
+            [-3.25, -4.25, 0],
+            [-3.5, -4.75, 0],
+            [3.5, -4.75, 0],
+            [3.25, -4.25, 0],
+            [3.5, -3.75, 0],
+        ]
         
         back_flag = Polygon(*vertices, fill_color="#4386f7", fill_opacity = 1, stroke_width=0)
         back_flag.shift(UP*3.25)
