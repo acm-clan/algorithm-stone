@@ -6,6 +6,24 @@ class AlgoLogo(VMobject):
 
     def init_points(self):
         start = ORIGIN
-        self.vertices = get_quadratic_approximation_of_cubic(start, start+RIGHT*1+UP, start+RIGHT*2+UP, start+RIGHT*3)
-        self.set_points(self.vertices)
+        vertices = np.array([np.array([3., -1., 0.]), np.array([0.0, 0., 0.]), np.array([-3., -1., 0.])])
+
+        v = get_quadratic_approximation_of_cubic(
+            [-3, -1, 0], 
+            [-3.06, -3.51, 0], 
+            [-2.14, -5.19, 0], 
+            [0, -6.5, 0],
+        )
+
+        v2 = get_quadratic_approximation_of_cubic(
+            [0, -6.5, 0],
+            [2.14, -5.19, 0], 
+            [3.06, -3.51, 0], 
+            [3, -1, 0], 
+            )
+            
+        vertices = np.concatenate((vertices, v, v2))
+
+        self.set_points(vertices)
         self.close_path()
+        self.center()
