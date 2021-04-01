@@ -5,4 +5,5 @@ from src.algo_vector import *
 from src.algo_scene import *
 from src.algo_node import *
 from src.algo_vgroup import *
+from src.algo_logo import *
 
