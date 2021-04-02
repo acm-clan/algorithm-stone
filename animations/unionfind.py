@@ -25,32 +25,33 @@ class UnionFind(AlgoScene):
         self.dim.center()
         self.dim.shift(LEFT*3+UP)
         self.play(ShowCreation(self.dim))
-        self.show_message("这是输入矩阵，有4个市编号0-3")
+        self.show_message("这是关系对称矩阵，有%d个市"%(self.data.shape[0]))
 
         for i in range(self.data.shape[0]):
             for j in range(i, self.data.shape[1]):
                 obj = self.dim.submobjects[i*self.data.shape[0]+j]
                 self.play(obj.set_color, BLUE, run_time=0.3)
-        self.show_message("宽高都是4，表示相互之间是否连通")
+        self.show_message("宽高都是%d 1表示连通 0表示不连通"%(self.data.shape[0]))
 
         obj = self.dim.submobjects[0*self.data.shape[0]+1]
         self.play(obj.set_color, RED, run_time=0.3)
-        self.show_message("比如[0][1]表示城市0和1之间连通")
+        self.show_message("比如[0][1]为1表示城市0和1之间连通")
 
     def find(self, i):
-        print("find:", i, self.group[i])
         if self.group[i] != i:
             self.group[i] = self.find(self.group[i])
-            print("find assign:", i, "->", self.group[i])
         return self.group[i]
 
     def union(self, group, i, j):
         gi = self.find(i)
         gj = self.find(j)
         self.group[gi] = self.group[gj]
-        print("union:", gi, gj, "->", self.group[gi])
+        self.show_message("%d和%d连通"%(i, j))
+        self.show_message("%d的根节点为%d %d的根节点%d"%(i, gi, j, gj))
+        self.show_message("根节点%d指向根节点%d"%(gi, gj))
         self.graph.remove_edge(gi, gi)
         self.graph.add_edge(gi, gj)
+        self.show_message("%d和%d合并在一个图中，根节点有且只有一个%d"%(i, j, gj), delay=3)
 
     def create_group(self):
         groups = VGroup()
@@ -63,6 +64,7 @@ class UnionFind(AlgoScene):
         self.groups = groups
 
     def create_network(self):
+        self.show_message("通过关系矩阵我们可以得到图", 2)
         nodes = []
         edges = []
         for i in range(self.data.shape[0]):
@@ -76,7 +78,13 @@ class UnionFind(AlgoScene):
         graph = AlgoGraph(self, nodes, edges)
         graph.shift(RIGHT*2+UP)
         self.graph = graph
-        self.add(graph)
+        self.play(ShowCreation(graph))
+
+        for i in range(self.data.shape[0]):
+            for j in range(i+1, self.data.shape[1]):
+                if self.data[i][j] == 1:
+                    graph.remove_edge(i, j)
+        self.show_message("并查集中每个节点初始状态都指向自己", 2)
 
     def explain_union(self):
         # union is edge
@@ -97,41 +105,12 @@ class UnionFind(AlgoScene):
                 if self.data[i][j] == 1:
                     self.union(self.group, i, j)
 
-        self.wait()
-
-    def old(self):
-        persons = VGroup()
-        for i in range(self.data.shape[0]):
-            s = Square(1).add(Text(str(i)))
-            persons.add(s)
-        persons.arrange()
-        self.add(persons)
-        persons.shift(RIGHT*2)
-
-        self.create_group()
-
-        for i in range(self.data.shape[0]):
-            for j in range(i+1, self.data.shape[1]):
-                if self.data[i][j] == 1:
-                    # i -> j
-                    self.union(self.group, i, j)
-
-        print("----------------------")
+        # 遍历每个元素
         c = 0
         for i in range(self.data.shape[0]):
             if self.group[i] == i:
-                c+=1
-            print(i, "->", self.find(i))
+                c += 1
         
-        print("group count:", c)
+        self.show_message("省份的数量为%d"%(c))
 
-    def show_words(self):
-        self.show_message("每个集合都是一个图结构")
         self.wait()
-        self.show_message("显然有2个图")
-        self.wait()
-        self.show_message("如何从程序角度知道只有2个图？")
-        self.wait()
-
-        
-        

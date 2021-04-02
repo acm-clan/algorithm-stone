@@ -7,6 +7,7 @@ class AlgoGraph(AlgoVGroup):
     def __init__(self, scene, nodes=[], edges=[], **kwargs):
         self.nodes = nodes
         self.arrows = {}
+        self.node_objs = {}
         self.scene = scene
         super().__init__(**kwargs)
         
@@ -16,17 +17,11 @@ class AlgoGraph(AlgoVGroup):
             n = AlgoNode(str(k))
             p = self.get_node_pos(k)
             n.shift(p)
+            self.node_objs[k] = n
             self.add(n)
 
         for k in edges:
-            if k[0] == k[1]:
-                a = Arrow(self.get_node_pos(k[0]), self.get_node_pos(k[1])+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
-                self.arrows[(k[0], k[1])] = a
-                self.add(a)
-            else:
-                a = Arrow(self.get_node_pos(k[0]), self.get_node_pos(k[1]))
-                self.add(a)
-                self.arrows[(k[0], k[1])] = a
+            self.add_edge_internal(k[0], k[1])
 
         self.center()
 
@@ -51,9 +46,34 @@ class AlgoGraph(AlgoVGroup):
             self.scene.play(FadeOut(k, run_time=0.3))
         self.arrows = []
 
+    def add_edge_internal(self, i, j):
+        if i == j:
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j)+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
+            self.arrows[(i, j)] = a
+            self.add(a)
+        else:
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j))
+            self.add(a)
+            self.arrows[(i, j)] = a
+
     def add_edge(self, i, j):
-        pass
+        ni = self.node_objs[i]
+        nj = self.node_objs[j]
+        if i == j:
+            a = Arrow(ni.get_center(), nj.get_center()+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
+            self.arrows[(i, j)] = a
+            self.add(a)
+            self.scene.play(FadeIn(a), run_time=0.3)
+        else:
+            a = Arrow(ni.get_center(), nj.get_center())
+            self.add(a)
+            self.arrows[(i, j)] = a
+            self.scene.play(FadeIn(a), run_time=0.3)
 
     def remove_edge(self, i, j):
-        pass
+        print("remove edge:", i, j)
+        a = self.arrows[(i, j)]
+        self.remove(a)
+        self.scene.play(FadeOut(a))
+        del  self.arrows[(i, j)]
 

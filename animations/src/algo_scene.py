@@ -34,12 +34,13 @@ class AlgoScene(Scene):
         self.message = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP*0.5)
         self.play(Write(self.message))
 
-    def show_message(self, msg):
+    def show_message(self, msg, delay=2):
         m = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP*0.5)
         self.play(Transform(self.message, m))
         self.remove(self.message)
         self.message = m
         self.add(self.message)
+        self.wait(delay)
 
     def rand_color(self):
         r = lambda: random.randint(100, 255)+100
