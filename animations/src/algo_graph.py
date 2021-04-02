@@ -47,6 +47,10 @@ class AlgoGraph(AlgoVGroup):
     def clear_edges(self):
         self.g.clear_edges()
 
+        for k in self.arrows:
+            self.scene.play(FadeOut(k, run_time=0.3))
+        self.arrows = []
+
     def add_edge(self, i, j):
         pass
 
