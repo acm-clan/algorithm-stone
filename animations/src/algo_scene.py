@@ -31,12 +31,15 @@ class AlgoScene(Scene):
         return Text(msg, font=AlgoSerifFontName, color=color)
 
     def init_message(self, msg):
-        self.message = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP)
+        self.message = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP*0.5)
         self.play(Write(self.message))
 
     def show_message(self, msg):
-        m = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP)
+        m = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP*0.5)
         self.play(Transform(self.message, m))
+        self.remove(self.message)
+        self.message = m
+        self.add(self.message)
 
     def rand_color(self):
         r = lambda: random.randint(100, 255)+100

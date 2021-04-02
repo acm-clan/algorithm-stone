@@ -19,12 +19,23 @@ class UnionFind(AlgoScene):
         self.dim = VGroup()
         for i in range(self.data.shape[0]):
             for j in range(self.data.shape[1]):
-                s = Square(1).add(Text(str(self.data[i][j])).scale(0.3))
+                s = Square(0.8).add(Text(str(self.data[i][j])).scale(0.3))
                 s.shift(DOWN*i + RIGHT*j)
                 self.dim.add(s)
         self.dim.center()
-        self.dim.shift(LEFT*3)
-        self.add(self.dim)
+        self.dim.shift(LEFT*3+UP)
+        self.play(ShowCreation(self.dim))
+        self.show_message("这是输入矩阵，有4个市编号0-3")
+
+        for i in range(self.data.shape[0]):
+            for j in range(i, self.data.shape[1]):
+                obj = self.dim.submobjects[i*self.data.shape[0]+j]
+                self.play(obj.set_color, BLUE, run_time=0.3)
+        self.show_message("宽高都是4，表示相互之间是否连通")
+
+        obj = self.dim.submobjects[0*self.data.shape[0]+1]
+        self.play(obj.set_color, RED, run_time=0.3)
+        self.show_message("比如[0][1]表示城市0和1之间连通")
 
     def find(self, i):
         print("find:", i, self.group[i])
@@ -63,7 +74,7 @@ class UnionFind(AlgoScene):
                     edges.append((i, j))
 
         graph = AlgoGraph(self, nodes, edges)
-        graph.shift(RIGHT*2)
+        graph.shift(RIGHT*2+UP)
         self.graph = graph
         self.add(graph)
 
@@ -75,8 +86,8 @@ class UnionFind(AlgoScene):
         self.show_message("find是查找元素所在图的根节点")
 
     def construct(self):
-        # self.init_message("并查集")
-        # self.start_logo()
+        self.start_logo()
+        self.init_message("并查集")
         self.create_area()
         # 从area创建网络
         self.create_network()
