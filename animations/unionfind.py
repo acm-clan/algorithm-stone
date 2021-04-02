@@ -19,7 +19,7 @@ class UnionFind(AlgoScene):
         self.dim = VGroup()
         for i in range(self.data.shape[0]):
             for j in range(self.data.shape[1]):
-                s = Square(1).add(Text(str(self.data[i][j])))
+                s = Square(1).add(Text(str(self.data[i][j])).scale(0.3))
                 s.shift(DOWN*i + RIGHT*j)
                 self.dim.add(s)
         self.dim.center()
