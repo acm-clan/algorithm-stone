@@ -6,7 +6,7 @@ from .algo_node import *
 class AlgoGraph(AlgoVGroup):
     def __init__(self, scene, nodes=[], edges=[], **kwargs):
         self.nodes = nodes
-        self.arrows = []
+        self.arrows = {}
         self.scene = scene
         super().__init__(**kwargs)
         
@@ -21,9 +21,12 @@ class AlgoGraph(AlgoVGroup):
         for k in edges:
             if k[0] == k[1]:
                 a = Arrow(self.get_node_pos(k[0]), self.get_node_pos(k[1])+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
+                self.arrows[(k[0], k[1])] = a
                 self.add(a)
             else:
-                self.add(Arrow(self.get_node_pos(k[0]), self.get_node_pos(k[1])))
+                a = Arrow(self.get_node_pos(k[0]), self.get_node_pos(k[1]))
+                self.add(a)
+                self.arrows[(k[0], k[1])] = a
 
         self.center()
 
@@ -41,9 +44,12 @@ class AlgoGraph(AlgoVGroup):
         ratio = 60
         return [p[0]/ratio, p[1]/ratio, 0]
 
+    def clear_edges(self):
+        self.g.clear_edges()
+
     def add_edge(self, i, j):
         pass
-    
+
     def remove_edge(self, i, j):
         pass
 
