@@ -25,21 +25,21 @@ public:
     }
 
     int findCircleNum(vector<vector<int>>& isConnected) {
-        int count = isConnected.size();
-        vector<int> group(count);
+        int size = isConnected.size();
+        vector<int> group(size);
 
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < size; i++) {
             group[i] = i;
         }
-        for (int i = 0; i < count; i++) {
-            for (int j = i + 1; j < count; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
                 if (isConnected[i][j] == 1) {
                     Union(group, i, j);
                 }
             }
         }
         int circles = 0;
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < size; i++) {
             if (group[i] == i) {
                 circles++;
             }

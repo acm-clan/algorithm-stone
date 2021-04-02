@@ -1,11 +1,16 @@
 from manimlib import *
 
 class AlgoNode(VGroup):
-    def __init__(self, text, **kwargs):
+    def __init__(self, text, is_circle=False, **kwargs):
         super().__init__(**kwargs)
         self.text_obj = Text(text, font="Consolas").scale(0.3)
         self.text_sub_obj = Text("", font="Consolas").scale(0.3)
-        self.rect_obj = Square().scale(0.3)
+
+        if is_circle:
+            self.rect_obj = Circle().scale(0.3)
+        else:
+            self.rect_obj = Square().scale(0.3)
+
         self.text_sub_obj.shift(DR/4).set_color(RED)
         self.add(self.text_obj, self.rect_obj, self.text_sub_obj)
 

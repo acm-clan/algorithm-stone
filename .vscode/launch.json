@@ -25,6 +25,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
+            // "args": ["unionfind.py", "-w"]
             "args": ["test_scene.py", "-w"]
         }
     ]
