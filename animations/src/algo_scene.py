@@ -28,7 +28,7 @@ class AlgoScene(Scene):
         self.play(group.to_edge, DL, run_time=1)
 
     def create_serif_font(self, msg, color=WHITE):
-        return Text(msg, font=Algo_Serif_FontName, color=color)
+        return Text(msg, font=AlgoSerifFontName, color=color)
 
     def init_message(self, msg):
         self.message = Text(msg, font=AlgoFontName).scale(0.5).to_edge(DOWN).shift(UP)

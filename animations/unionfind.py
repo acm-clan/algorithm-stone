@@ -38,6 +38,8 @@ class UnionFind(AlgoScene):
         gj = self.find(j)
         self.group[gi] = self.group[gj]
         print("union:", gi, gj, "->", self.group[gi])
+        self.graph.remove_edge(gi, gi)
+        self.graph.add_edge(gi, gj)
 
     def create_group(self):
         groups = VGroup()
@@ -49,12 +51,44 @@ class UnionFind(AlgoScene):
         groups.shift(RIGHT*2+UP*2)
         self.groups = groups
 
+    def create_network(self):
+        nodes = []
+        edges = []
+        for i in range(self.data.shape[0]):
+            nodes.append(i)
+
+        for i in range(self.data.shape[0]):
+            for j in range(i, self.data.shape[1]):
+                if self.data[i][j] == 1:
+                    edges.append((i, j))
+
+        graph = AlgoGraph(self, nodes, edges)
+        graph.shift(RIGHT*2)
+        self.graph = graph
+        self.add(graph)
+
+    def explain_union(self):
+        # union is edge
+        self.show_message("union是合并2个图，执行后只会有一个根节点，其中一个图根节点指向另外一个图的根节点")
+
+    def explain_find(self):
+        self.show_message("find是查找元素所在图的根节点")
+
     def construct(self):
+        # self.init_message("并查集")
         # self.start_logo()
         self.create_area()
         # 从area创建网络
+        self.create_network()
+        # 从网络开始union
+        for i in range(self.data.shape[0]):
+            for j in range(i+1, self.data.shape[1]):
+                if self.data[i][j] == 1:
+                    self.union(self.group, i, j)
 
-        # create person
+        self.wait()
+
+    def old(self):
         persons = VGroup()
         for i in range(self.data.shape[0]):
             s = Square(1).add(Text(str(i)))
@@ -80,6 +114,12 @@ class UnionFind(AlgoScene):
         
         print("group count:", c)
 
+    def show_words(self):
+        self.show_message("每个集合都是一个图结构")
+        self.wait()
+        self.show_message("显然有2个图")
+        self.wait()
+        self.show_message("如何从程序角度知道只有2个图？")
         self.wait()
 
         
