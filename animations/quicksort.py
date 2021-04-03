@@ -81,19 +81,11 @@ class QuickSort(AlgoScene):
 
     def construct(self):
         self.scale(1)
-        
-        title = self.create_serif_font("ACM算法日常")
-        self.play(FadeIn(title))
-
         self.add_sound("bg")
-        
-        self.play(ApplyMethod(title.scale, 0.3))
-        self.play(ApplyMethod(title.to_edge, DL))
+        # logo
+        self.start_logo()
 
-        logo = ImageMobject("assets/logo.jpg").scale(0.08)
-        logo.next_to(title, direction=LEFT)
-        logo.shift(RIGHT*0.2)
-        self.play(FadeIn(logo))
+        # content
 
         self.init_message("快速排序")
         self.datas = [13, 19, 5, 12, 8, 7, 4, 21, 6, 11]

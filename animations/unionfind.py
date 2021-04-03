@@ -25,13 +25,13 @@ class UnionFind(AlgoScene):
         self.dim.center()
         self.dim.shift(LEFT*3+UP)
         self.play(ShowCreation(self.dim))
-        self.show_message("这是关系对称矩阵，有%d个市"%(self.data.shape[0]))
+        self.show_message("这是对称矩阵，有%d个市"%(self.data.shape[0]))
 
         for i in range(self.data.shape[0]):
             for j in range(i, self.data.shape[1]):
                 obj = self.dim.submobjects[i*self.data.shape[0]+j]
                 self.play(obj.set_color, BLUE, run_time=0.3)
-        self.show_message("宽高都是%d，1表示连通，0表示不连通"%(self.data.shape[0]), delay=4)
+        self.show_message("1表示连通，0表示不连通", delay=4)
 
         obj = self.dim.submobjects[0*self.data.shape[0]+1]
         # self.play(obj.set_color, RED, run_time=0.3)
@@ -75,7 +75,7 @@ class UnionFind(AlgoScene):
         self.groups = groups
 
     def create_network(self):
-        self.show_message("通过关系矩阵我们可以得到图", 2)
+        self.show_message("通过对称矩阵我们可以得到图", 2)
         nodes = []
         edges = []
         for i in range(self.data.shape[0]):
@@ -100,16 +100,10 @@ class UnionFind(AlgoScene):
                 if self.data[i][j] == 1:
                     graph.remove_edge(i, j)
                     
-        self.show_message("并查集中每个节点初始状态都指向自己", 2)
-
-    def explain_union(self):
-        # union is edge
-        self.show_message("union是合并2个图，执行后只会有一个根节点，其中一个图根节点指向另外一个图的根节点")
-
-    def explain_find(self):
-        self.show_message("find是查找元素所在图的根节点")
+        self.show_message("每个节点初始状态都指向自己", 2)
 
     def construct(self):
+        self.add_sound("bg2")
         self.start_logo()
         m = self.init_message("并查集")
         leet = Text("LeetCode 547.省份数量", color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
@@ -130,7 +124,7 @@ class UnionFind(AlgoScene):
             if self.group[i] == i:
                 c += 1
         
-        self.show_message("遍历所有节点，根节点指向自己的省份的数量为%d"%(c))
+        self.show_message("遍历，根节点指向自己的节点数量为%d"%(c))
         self.show_message("完成并查集，谢谢观看！")
 
         self.wait()
