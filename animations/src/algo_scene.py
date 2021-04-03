@@ -31,12 +31,12 @@ class AlgoScene(Scene):
         return Text(msg, font=AlgoSerifFontName, color=color)
 
     def init_message(self, msg):
-        self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, stroke_color=None).scale(0.4).to_edge(DOWN).shift(UP*0.5)
+        self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, stroke_color=None).scale(0.4).to_edge(DOWN).shift(UP)
         self.play(Write(self.subtitle_message))
         return self.subtitle_message
 
     def show_message(self, msg, delay=3):
-        m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, stroke_color=None).scale(0.4).to_edge(DOWN).shift(UP*0.5)
+        m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, stroke_color=None).scale(0.4).to_edge(DOWN).shift(UP)
         self.play(Transform(self.subtitle_message, m), run_time=0.5)
         self.wait(delay)
 
