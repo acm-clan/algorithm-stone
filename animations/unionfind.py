@@ -34,8 +34,11 @@ class UnionFind(AlgoScene):
         self.show_message("宽高都是%d，1表示连通，0表示不连通"%(self.data.shape[0]), delay=4)
 
         obj = self.dim.submobjects[0*self.data.shape[0]+1]
-        self.play(obj.set_color, RED, run_time=0.3)
+        # self.play(obj.set_color, RED, run_time=0.3)
         self.show_message("比如[0][1]为1表示城市0和1之间连通")
+        self.play(FocusOn(obj, color=RED))
+        self.play(Indicate(obj))
+        self.wait()
 
     def find(self, i):
         if self.group[i] != i:
