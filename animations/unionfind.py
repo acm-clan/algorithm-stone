@@ -31,7 +31,7 @@ class UnionFind(AlgoScene):
             for j in range(i, self.data.shape[1]):
                 obj = self.dim.submobjects[i*self.data.shape[0]+j]
                 self.play(obj.set_color, BLUE, run_time=0.3)
-        self.show_message("宽高都是%d 1表示连通 0表示不连通"%(self.data.shape[0]))
+        self.show_message("宽高都是%d，1表示连通，0表示不连通"%(self.data.shape[0]), delay=4)
 
         obj = self.dim.submobjects[0*self.data.shape[0]+1]
         self.play(obj.set_color, RED, run_time=0.3)
@@ -45,11 +45,19 @@ class UnionFind(AlgoScene):
     def union(self, group, i, j):
         gi = self.find(i)
         gj = self.find(j)
+
+        obj = self.dim.submobjects[i*self.data.shape[0]+j]
+        self.play(obj.set_color, RED, run_time=0.3)
+
         self.group[gi] = self.group[gj]
         self.show_message("%d和%d连通"%(i, j))
-        self.show_message("%d的根节点为%d %d的根节点%d"%(i, gi, j, gj))
+        self.show_message("%d的根节点为%d，%d的根节点%d"%(i, gi, j, gj))
         self.show_message("根节点%d指向根节点%d"%(gi, gj))
         self.graph.remove_edge(gi, gi)
+
+        n = self.graph.get_node(gi)
+        self.play(n.set_color, WHITE, run_time=0.5)
+
         self.graph.add_edge(gi, gj)
         self.show_message("%d和%d合并在一个图中，根节点有且只有一个%d"%(i, j, gj), delay=3)
 
@@ -81,9 +89,14 @@ class UnionFind(AlgoScene):
         self.play(ShowCreation(graph))
 
         for i in range(self.data.shape[0]):
+            n = self.graph.get_node(i)
+            self.play(n.set_color, GREEN, run_time=0.1)
+
+        for i in range(self.data.shape[0]):
             for j in range(i+1, self.data.shape[1]):
                 if self.data[i][j] == 1:
                     graph.remove_edge(i, j)
+                    
         self.show_message("并查集中每个节点初始状态都指向自己", 2)
 
     def explain_union(self):
@@ -95,7 +108,10 @@ class UnionFind(AlgoScene):
 
     def construct(self):
         self.start_logo()
-        self.init_message("并查集")
+        m = self.init_message("并查集")
+        leet = Text("LeetCode 547.省份数量", color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
+        self.play(ShowCreation(leet))
+        
         self.create_area()
         # 从area创建网络
         self.create_network()
@@ -111,6 +127,7 @@ class UnionFind(AlgoScene):
             if self.group[i] == i:
                 c += 1
         
-        self.show_message("省份的数量为%d"%(c))
+        self.show_message("遍历所有节点，根节点指向自己的省份的数量为%d"%(c))
+        self.show_message("完成并查集，谢谢观看！")
 
         self.wait()

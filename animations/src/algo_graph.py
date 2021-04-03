@@ -48,11 +48,11 @@ class AlgoGraph(AlgoVGroup):
 
     def add_edge_internal(self, i, j):
         if i == j:
-            a = Arrow(self.get_node_pos(i), self.get_node_pos(j)+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j)+RIGHT*0.1, path_arc=np.pi*1.5, thickness=0.03).scale(0.5)
             self.arrows[(i, j)] = a
             self.add(a)
         else:
-            a = Arrow(self.get_node_pos(i), self.get_node_pos(j))
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j), thickness=0.03)
             self.add(a)
             self.arrows[(i, j)] = a
 
@@ -60,20 +60,21 @@ class AlgoGraph(AlgoVGroup):
         ni = self.node_objs[i]
         nj = self.node_objs[j]
         if i == j:
-            a = Arrow(ni.get_center(), nj.get_center()+RIGHT*0.1, path_arc=np.pi*1.5).scale(0.5)
+            a = Arrow(ni.get_center(), nj.get_center()+RIGHT*0.1, path_arc=np.pi*1.5, thickness=0.03).scale(0.5)
             self.arrows[(i, j)] = a
             self.add(a)
             self.scene.play(FadeIn(a), run_time=0.3)
         else:
-            a = Arrow(ni.get_center(), nj.get_center())
+            a = Arrow(ni.get_center(), nj.get_center(), thickness=0.03)
             self.add(a)
             self.arrows[(i, j)] = a
             self.scene.play(FadeIn(a), run_time=0.3)
 
     def remove_edge(self, i, j):
-        print("remove edge:", i, j)
         a = self.arrows[(i, j)]
         self.remove(a)
         self.scene.play(FadeOut(a))
         del  self.arrows[(i, j)]
 
+    def get_node(self, i):
+        return self.node_objs[i]
