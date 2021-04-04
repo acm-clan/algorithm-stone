@@ -13,34 +13,39 @@ using namespace std;
 // @lc code=start
 class Solution {
 public:
-    int Find(vector<int>& group, int index) {
-        if (group[index] != index) {
-            group[index] = Find(group, group[index]);
+    // 寻找树根
+    int Find(vector<int>& root, int index) {
+        if (root[index] != index) {
+            root[index] = Find(root, root[index]);
         }
-        return group[index];
+        return root[index];
     }
 
-    void Union(vector<int>& group, int index1, int index2) {
-        group[Find(group, index1)] = Find(group, index2);
+    // 将一个根节点指向另一个根节点
+    void Union(vector<int>& root, int index1, int index2) {
+        root[Find(root, index1)] = Find(root, index2);
     }
 
     int findCircleNum(vector<vector<int>>& isConnected) {
         int size = isConnected.size();
-        vector<int> group(size);
+        vector<int> root(size);
 
+        // 初始指向自己
         for (int i = 0; i < size; i++) {
-            group[i] = i;
+            root[i] = i;
         }
+        //合并集合
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (isConnected[i][j] == 1) {
-                    Union(group, i, j);
+                    Union(root, i, j);
                 }
             }
         }
+        //计算树的个数
         int circles = 0;
         for (int i = 0; i < size; i++) {
-            if (group[i] == i) {
+            if (root[i] == i) {
                 circles++;
             }
         }
