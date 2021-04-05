@@ -7,4 +7,5 @@ from src.algo_node import *
 from src.algo_vgroup import *
 from src.algo_logo import *
 from src.algo_graph import *
+from src.algo_avatar import *
 
