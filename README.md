@@ -30,6 +30,9 @@
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_union_find.svg"> -->
 
 #### 堆栈队列路线图（进度100%）
+[算法动画秒懂并查集](https://mp.weixin.qq.com/s/rF5bohHf3XfstGkjBawBuw)
+[动画解说单调栈](https://mp.weixin.qq.com/s/XsYD1lkiILcMcd3_vRws7A)
+[滑动窗口入门](https://mp.weixin.qq.com/s/InpmYAfeesc7MHMCV50b-Q)
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_heap_stack_queue.svg">
 
 #### 链表路线图（进度90%）
