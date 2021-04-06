@@ -98,4 +98,5 @@ def process():
     view.generate_leetcode(leet, "leetcode/leetcode-linked-list.txt", "linked-list", "leetcode_linked_list")
     view.generate_leetcode(leet, "leetcode/leetcode-union-find.txt", "union-find", "leetcode_union_find")
     view.generate_leetcode(leet, "leetcode/leetcode-heap-stack-queue.txt", "", "leetcode_heap_stack_queue")
+    view.generate_leetcode(leet, "leetcode/leetcode-geometry.txt", "geometry", "leetcode_geometry")
     leet.close_db()
