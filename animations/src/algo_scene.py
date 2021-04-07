@@ -9,6 +9,10 @@ class AlgoScene(Scene):
         super().__init__(**kwargs)
         random.seed(datetime.now())
 
+    def show_sticky_label(text):
+        leet = Text(text, color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
+        self.play(ShowCreation(leet))
+
     def start_logo(self):
         text = VGroup(
             Text("ACM", font=AlgoFontName, color="#1fa0cf").scale(0.5),
