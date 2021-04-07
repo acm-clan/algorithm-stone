@@ -40,8 +40,10 @@ class AlgoScene(Scene):
         return self.subtitle_message
 
     def show_message(self, msg, delay=3):
+        self.remove(self.subtitle_message)
         m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, stroke_color=None).scale(0.4).to_edge(DOWN).shift(UP)
-        self.play(Transform(self.subtitle_message, m), run_time=0.5)
+        self.subtitle_message = m
+        self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
         self.wait(delay)
 
     def rand_color(self):

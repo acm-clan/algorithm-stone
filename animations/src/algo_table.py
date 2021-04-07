@@ -15,6 +15,6 @@ class AlgoTable(AlgoVGroup):
                     v.add(Text(c).scale(0.3))
                 else:
                     v.add(c)
-        v.arrange_in_grid(n_rows=objs.shape[0])
+        v.arrange_in_grid(n_rows=objs.shape[0], h_buff=0.2, v_buff=0.2)
 
 
