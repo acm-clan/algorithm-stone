@@ -12,19 +12,13 @@ class SegmentTree(AlgoScene):
             self.group.append(i)
 
     def show_diff(self):
-        kw = {
-            "tex_to_color_map": {
-                
-            }
-        }
+        s = AlgoTable(self, np.array([
+            ["",       "区间求和",  "区间最大值",  "区间修改",    "单点修改"],
+            ["前缀和", AlgoCheckmark(), AlgoExmark(), AlgoExmark(), AlgoExmark(),],
+            ["树状数组", AlgoCheckmark(), AlgoCheckmark(), AlgoExmark(), AlgoCheckmark(),],
+            ["线段树", AlgoCheckmark(), AlgoCheckmark(), AlgoCheckmark(), AlgoCheckmark(),],
+        ], dtype=object))
 
-        s = VGroup(
-            Tex("前缀和：数组不变，区间求和", **kw),
-            Tex("树状数组：用于区间求和，单点修改", **kw),
-            Tex("线段树：用于区间求和，区间最大值，区间修改，单点修改等", **kw),
-        )
-
-        s.arrange(DOWN, buff=LARGE_BUFF)
         self.add(s)
 
     def construct(self):
@@ -34,4 +28,4 @@ class SegmentTree(AlgoScene):
         # self.show_sticky_label("LeetCode 307.区域检索-数组可修改")
         self.show_diff()
 
-        self.wait()
+        self.wait(11)
