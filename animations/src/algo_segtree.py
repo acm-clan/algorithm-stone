@@ -42,10 +42,10 @@ class AlgoSegTree(AlgoVGroup):
 
     def hide_all(self):
         for k in self.node_objs:
-            self.node_objs[k].set_opacity(0.0)
+            self.remove(self.node_objs[k])
 
         for k in self.arrows:
-            self.arrows[k].set_opacity(0.0)
+            self.remove(self.arrows[k])
 
     def show_node(self, id):
         n = self.get_node(id)

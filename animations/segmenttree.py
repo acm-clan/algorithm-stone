@@ -122,8 +122,8 @@ class SegmentTreeBuild(AlgoScene):
         self.tree = AlgoSegTree(self, self.datas)
         self.tree.shift(UP)
         self.add(self.tree)
-        # self.tree.hide_all()
-        # self.travel(self.tree.root)
+        self.tree.hide_all()
+        self.travel(self.tree.root)
         # self.play(ShowCreation(tree))
         # self.play(tree.to_edge, RIGHT)
 
