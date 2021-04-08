@@ -120,14 +120,16 @@ class SegmentTreeBuild(AlgoScene):
 
         # self.show_message("后序创建二叉树")
         self.tree = AlgoSegTree(self, self.datas)
-        self.tree.hide_all()
-        self.travel(self.tree.root)
+        self.tree.shift(UP)
+        self.add(self.tree)
+        # self.tree.hide_all()
+        # self.travel(self.tree.root)
         # self.play(ShowCreation(tree))
         # self.play(tree.to_edge, RIGHT)
 
         # add image
-        image = ImageMobject("assets/segment-tree-build.png")
-        self.play(ShowCreation(image))
+        # image = ImageMobject("assets/segment-tree-build.png")
+        # self.play(ShowCreation(image))
 
     def construct(self):
         self.init_message("构造线段树")
