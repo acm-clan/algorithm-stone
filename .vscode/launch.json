@@ -25,7 +25,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
-            "args": ["segmenttree.py", "-w"]
+            "args": ["segmenttree.py", "SegmentTreeBuild", "-w"]
             // "args": ["test_scene.py", "-w"]
         }
     ]

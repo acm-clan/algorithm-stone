@@ -3,36 +3,81 @@ import networkx as nx
 from .algo_vgroup import *
 from .algo_node import *
 
+class AlgoSegTreeNode(object):
+    def __init__(self, id, l, r, v, left=None, right=None):
+        self.l = l
+        self.r = r
+        self.v = v
+        self.id = id
+        self.left = left
+        self.right = right
+
 class AlgoSegTree(AlgoVGroup):
     def __init__(self, scene, datas = [], **kwargs):
         self.datas = datas
         self.arrows = {}
         self.node_objs = {}
         self.scene = scene
-        super().__init__(**kwargs)
         
-        self.init_networkx(nodes, edges)
+        self.edges = []
+        self.nodes = []
+        
+        super().__init__(**kwargs)
 
-        for k in nodes:
-            n = AlgoNode(str(k))
-            p = self.get_node_pos(k)
+        self.root = self.build(datas, 0, len(datas)-1)
+        
+        self.init_networkx(self.nodes, self.edges)
+
+        for k in self.nodes:
+            n = AlgoNode(str(k["data"]))
+            p = self.get_node_pos(k["id"])
             n.shift(p)
-            self.node_objs[k] = n
+            self.node_objs[k["id"]] = n
             self.add(n)
 
-        for k in edges:
+        for k in self.edges:
             self.add_edge_internal(k[0], k[1])
 
         self.center()
 
+    def hide_all(self):
+        for k in self.node_objs:
+            self.node_objs[k].set_opacity(0.0)
+
+        for k in self.arrows:
+            self.arrows[k].set_opacity(0.0)
+
+    def show_node(self, id):
+        n = self.get_node(id)
+        self.scene.play(FadeIn(n))
+
+    def show_edge(self, i, j):
+        a = self.arrows[(i, j)]
+        self.scene.play(FadeIn(a))
+
+    def build(self, datas, l, r):
+        if l == r:
+            id = len(self.nodes)
+            self.nodes.append({"id":id, "data":datas[l]})
+            return AlgoSegTreeNode(id, l, r, datas[l])
+        m = math.floor((l+r)/2)
+        left = self.build(datas, l, m)
+        right = self.build(datas, m+1, r)
+
+        val = left.v+right.v
+        id = len(self.nodes)
+        self.edges.append([id, left.id])
+        self.edges.append([id, right.id])
+        self.nodes.append({"id":id, "data":val})
+        return AlgoSegTreeNode(id, l, r, val, left, right)
+
     def init_networkx(self, nodes, edges):
         self.g = nx.Graph()
-        for k in nodes:
-            self.g.add_node(k)
-        for k in edges:
+        for k in reversed(nodes):
+            self.g.add_node(k["id"])
+        for k in reversed(edges):
             self.g.add_edge(*k)
-        self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot')
-        # self.pos_infos = nx.random_layout(self.g, center=(0, 0), dim=2)
+        self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot', args='-Grankdir="TB"')
         
     def get_node_pos(self, k):
         p = self.pos_infos[k]
