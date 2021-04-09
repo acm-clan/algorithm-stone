@@ -98,8 +98,9 @@ class SegmentTreeWhatIs(AlgoScene):
 class SegmentTreeBuild(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.datas = np.random.randint(100, size=8)
-        print(self.datas)
+        # self.datas = np.random.randint(100, size=8)
+        self.datas = np.arange(6)
+        print("datas:", self.datas)
 
     def travel(self, n:AlgoSegTreeNode):
         if n.l == n.r:
@@ -114,28 +115,35 @@ class SegmentTreeBuild(AlgoScene):
         self.tree.show_edge(n.id, n.right.id)
 
     def build_segment_tree(self):
-        # array = AlgoVector(self, self.datas)
-        # self.play(ShowCreation(array))
-        # self.play(array.to_edge, UP)
+        array = AlgoVector(self, self.datas)
+        self.play(ShowCreation(array))
+        self.play(array.to_edge, UP)
+        self.array = array
 
-        # self.show_message("后序创建二叉树")
+        self.show_message("后序创建二叉树")
         self.tree = AlgoSegTree(self, self.datas)
         self.tree.shift(UP)
         self.add(self.tree)
         self.tree.hide_all()
         self.travel(self.tree.root)
-        # self.play(ShowCreation(tree))
-        # self.play(tree.to_edge, RIGHT)
 
         # add image
-        # image = ImageMobject("assets/segment-tree-build.png")
-        # self.play(ShowCreation(image))
+        image = ImageMobject("assets/segment-tree-build.png")
+        self.play(ShowCreation(image))
 
     def construct(self):
         self.init_message("构造线段树")
         self.build_segment_tree()
         # 
-        self.wait()
+        self.show_message("当我们学会创建线段树之后，我们就基本明白了线段树是什么")
+        self.show_message("接下来，让我们看看如何单点更新元素")
+
+        # 3 -> 7
+        new_node = AlgoNode("7")
+        self.play(ShowCreation(new_node))
+        self.play(new_node.next_to, self.array.get_node(3), DOWN)
+
+        self.wait(10)
 
 class MainScene(Scene):
     def construct(self):

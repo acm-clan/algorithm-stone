@@ -40,6 +40,9 @@ class AlgoVector(AlgoVGroup):
     def get(self, index):
         return self.datas[index]
 
+    def get_node(self, index):
+        return self.submobjects[index]
+
     def set(self, index, data):
         self.datas[index] = data
         self.replace_submobject(index, AlgoNode(str(data)))

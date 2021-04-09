@@ -2,6 +2,7 @@ from manimlib import *
 import networkx as nx
 from .algo_vgroup import *
 from .algo_node import *
+import queue
 
 class AlgoSegTreeNode(object):
     def __init__(self, id, l, r, v, left=None, right=None):
@@ -24,7 +25,9 @@ class AlgoSegTree(AlgoVGroup):
         
         super().__init__(**kwargs)
 
+        self.build_id = 0
         self.root = self.build(datas, 0, len(datas)-1)
+        self.travel_to_nodes(self.root)
         
         self.init_networkx(self.nodes, self.edges)
 
@@ -39,6 +42,25 @@ class AlgoSegTree(AlgoVGroup):
             self.add_edge_internal(k[0], k[1])
 
         self.center()
+
+    def get_build_id(self):
+        self.build_id += 1
+        return self.build_id
+
+    def travel_to_nodes(self, root):
+        q = []
+        q.append(root)
+
+        while len(q)>0:
+            p = q.pop(0)
+            self.nodes.append({"id":p.id, "data": p.v})
+
+            if p.left:
+                self.edges.append([p.id, p.left.id])
+                q.append(p.left)
+            if p.right:
+                self.edges.append([p.id, p.right.id])
+                q.append(p.right)
 
     def hide_all(self):
         for k in self.node_objs:
@@ -57,25 +79,19 @@ class AlgoSegTree(AlgoVGroup):
 
     def build(self, datas, l, r):
         if l == r:
-            id = len(self.nodes)
-            self.nodes.append({"id":id, "data":datas[l]})
-            return AlgoSegTreeNode(id, l, r, datas[l])
+            return AlgoSegTreeNode(self.get_build_id(), l, r, datas[l])
         m = math.floor((l+r)/2)
         left = self.build(datas, l, m)
         right = self.build(datas, m+1, r)
-
         val = left.v+right.v
-        id = len(self.nodes)
-        self.edges.append([id, left.id])
-        self.edges.append([id, right.id])
-        self.nodes.append({"id":id, "data":val})
-        return AlgoSegTreeNode(id, l, r, val, left, right)
+        return AlgoSegTreeNode(self.get_build_id(), l, r, val, left, right)
 
     def init_networkx(self, nodes, edges):
+        print("networkx:", nodes, edges)
         self.g = nx.Graph()
-        for k in reversed(nodes):
+        for k in nodes:
             self.g.add_node(k["id"])
-        for k in reversed(edges):
+        for k in edges:
             self.g.add_edge(*k)
         self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot', args='-Grankdir="TB"')
         
