@@ -95,12 +95,16 @@ class SegmentTreeWhatIs(AlgoScene):
         # 
         self.wait()
 
-class SegmentTreeBuild(AlgoScene):
+class SegmentTreeBase(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # self.datas = np.random.randint(100, size=8)
         self.datas = np.arange(6)
         print("datas:", self.datas)
+
+class SegmentTreeBuild(SegmentTreeBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
     def travel(self, n:AlgoSegTreeNode):
         if n.l == n.r:
@@ -131,6 +135,22 @@ class SegmentTreeBuild(AlgoScene):
         image = ImageMobject("assets/segment-tree-build.png")
         self.play(ShowCreation(image))
 
+    def find_element(self, node, val, new_val):
+        if node.l==node.r and node.v == val:
+            n = self.tree.get_node(node.id)
+            self.play(n.set_color, RED)
+            self.show_message("修改元素")
+            n.set_text(str(new_val))
+            n.v = new_val
+            return
+        self.find_element(node.l, val, new_val)
+        self.find_element(node.r, val, new_val)
+        node.v = node.l.v + node.r.v
+        n = self.tree.get_node(node.id)
+        n.set_text(str(node.v))
+        self.show_message("更新节点")
+        self.play(FocusOn(n))
+
     def construct(self):
         self.init_message("构造线段树")
         self.build_segment_tree()
@@ -142,10 +162,95 @@ class SegmentTreeBuild(AlgoScene):
         new_node = AlgoNode("7")
         self.play(ShowCreation(new_node))
         self.play(new_node.next_to, self.array.get_node(3), DOWN)
-
+        self.show_message("首先是找到元素")
+        self.find_element(self.tree.root, 3, 7)
         self.wait(10)
 
-class MainScene(Scene):
+class SegmentTreeUpdate(SegmentTreeBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def build_segment_tree(self):
+        self.tree = AlgoSegTree(self, self.datas)
+        self.tree.shift(UP)
+        self.add(self.tree)
+
+    def find_element(self, node, val, new_val):
+        if node.l==node.r and node.v == val:
+            n = self.tree.get_node(node.id)
+            self.play(n.set_color, RED)
+            self.show_message("修改元素")
+            n.set_text(str(new_val))
+            n.v = new_val
+            return
+        self.find_element(node.l, val, new_val)
+        self.find_element(node.r, val, new_val)
+        node.v = node.l.v + node.r.v
+        n = self.tree.get_node(node.id)
+        n.set_text(str(node.v))
+        self.show_message("更新节点")
+        self.play(FocusOn(n))
+
+    def construct(self):
+        self.init_message("构造线段树")
+        self.build_segment_tree()
+        # 
+        self.show_message("当我们学会创建线段树之后，我们就基本明白了线段树是什么")
+        self.show_message("接下来，让我们看看如何单点更新元素")
+
+        # 3 -> 7
+        new_node = AlgoNode("7")
+        self.play(ShowCreation(new_node))
+        self.play(new_node.next_to, self.array.get_node(3), DOWN)
+        self.show_message("首先是找到元素")
+        self.find_element(self.tree.root, 3, 7)
+        self.wait(10)
+
+class SegmentTreeQuery(SegmentTreeBase):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def build_segment_tree(self):
+        self.show_message("后序创建二叉树")
+        self.tree = AlgoSegTree(self, self.datas)
+        self.tree.shift(UP)
+        self.add(self.tree)
+        self.tree.hide_all()
+        self.travel(self.tree.root)
+
+    def find_element(self, node, val, new_val):
+        if node.l==node.r and node.v == val:
+            n = self.tree.get_node(node.id)
+            self.play(n.set_color, RED)
+            self.show_message("修改元素")
+            n.set_text(str(new_val))
+            n.v = new_val
+            return
+        self.find_element(node.l, val, new_val)
+        self.find_element(node.r, val, new_val)
+        node.v = node.l.v + node.r.v
+        n = self.tree.get_node(node.id)
+        n.set_text(str(node.v))
+        self.show_message("更新节点")
+        self.play(FocusOn(n))
+
+    def construct(self):
+        self.init_message("构造线段树")
+        self.build_segment_tree()
+        # 
+        self.show_message("再来看看如何查询线段树")
+
+        self.show_message("比如查询区间[2,2]")
+
+        
+        self.wait(10)
+
+
+class MainScene(AlgoScene):
     def construct(self):
         SegmentTreeWhatIs().construct()
         SegmentTreeBuild().construct()
+        SegmentTreeUpdate().construct()
+        SegmentTreeQuery().construct()
+
+        self.finish()
