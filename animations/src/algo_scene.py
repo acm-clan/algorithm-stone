@@ -56,14 +56,14 @@ class AlgoScene(Scene):
     def create_serif_font(self, msg, color=WHITE):
         return Text(msg, font=AlgoSerifFontName, color=color)
 
-    def init_message(self, msg, delay=0):
+    def init_message(self, msg, delay=3):
         self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
             stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
         self.play(Write(self.subtitle_message))
         self.wait(delay)
         return self.subtitle_message
 
-    def init_messaged(self, msg, delay=3):
+    def init_messaged(self, msg, delay=0):
         return self.init_message(msg, delay=delay)
 
     def show_message(self, msg, delay=3):

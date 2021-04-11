@@ -67,7 +67,7 @@ class SegmentTreeWhatIs(AlgoScene):
     def construct(self):
         self.start_logo(animate=False)
 
-        self.init_messaged("线段树是一棵树，从数组进行构造")
+        self.init_message("线段树是一棵树，从数组进行构造")
 
         array = AlgoVector(self, self.datas)
         array.shift(UP)

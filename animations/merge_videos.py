@@ -11,8 +11,8 @@ if __name__ == "__main__":
     videos = ["SegmentTreeDiffScene", "SegmentTreeWhatIs", "SegmentTreeBuild", "SegmentTreeUpdate", "SegmentTreeQuery"]
     bg = "E:/Sources/acm-clan/audio/bg003.mp3"
 
-    # for k in videos:
-    #     subprocess.call(['python3', '-m', 'manimlib', 'segmenttree.py', k, '-w'])
+    for k in videos:
+        subprocess.call(['python3', '-m', 'manimlib', 'segmenttree.py', k, '-w'])
 
     os.chdir(dir)
     file_content = "\n".join(["file '"+k+".mp4'" for k in videos])
@@ -20,10 +20,11 @@ if __name__ == "__main__":
     with open("filelist.txt", "w") as text_file:
         text_file.write(file_content)
     
-    subprocess.call(['ffmpeg', '-y', '-f', 'concat', '-i', 'filelist.txt', '-c', 'copy', 'segment.mp4'])
-    subprocess.call(['ffmpeg', '-y', '-i', 'segment.mp4', '-stream_loop', '-1', '-i', bg, '-shortest', '-c:v', 'copy', '-c:a', 'aac', 'output.mp4'])
+    subprocess.call(['ffmpeg', '-y', '-f', 'concat', '-i', 'filelist.txt', '-c', 'copy', 'output.mp4'])
+    subprocess.call(['ffmpeg', '-y', '-i', 'output.mp4', '-stream_loop', '-1', '-i', bg, '-shortest', '-c:v', 'copy', '-c:a', 'aac', 'segment.mp4'])
 
-    # ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental output.mp4
+    os.remove("output.mp4")
+    os.remove("filelist.txt")
 
     print("merge ok.")
 
