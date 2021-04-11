@@ -86,7 +86,6 @@ class AlgoSegTree(AlgoVGroup):
         return AlgoSegTreeNode(self.get_build_id(), l, r, val, left, right)
 
     def init_networkx(self, nodes, edges):
-        print("networkx:", nodes, edges)
         self.g = nx.Graph()
         for k in nodes:
             self.g.add_node(k["id"])
@@ -107,25 +106,30 @@ class AlgoSegTree(AlgoVGroup):
         self.arrows = []
 
     def add_edge_internal(self, i, j):
+        color = "#6e6e6c"
         if i == j:
-            a = Arrow(self.get_node_pos(i), self.get_node_pos(j)+RIGHT*0.1, path_arc=np.pi*1.5, thickness=0.03).scale(0.5)
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j)+RIGHT*0.1, 
+                path_arc=np.pi*1.5, thickness=0.03, color=color).scale(0.5)
             self.arrows[(i, j)] = a
+            a.set_color(color)
             self.add(a)
         else:
-            a = Arrow(self.get_node_pos(i), self.get_node_pos(j), thickness=0.03)
+            a = Arrow(self.get_node_pos(i), self.get_node_pos(j), thickness=0.03, color=color)
             self.add(a)
+            a.set_color(color)
             self.arrows[(i, j)] = a
 
     def add_edge(self, i, j):
+        color = "#6e6e6c"
         ni = self.node_objs[i]
         nj = self.node_objs[j]
         if i == j:
-            a = Arrow(ni.get_center(), nj.get_center()+RIGHT*0.1, path_arc=np.pi*1.5, thickness=0.03).scale(0.5)
+            a = Arrow(ni.get_center(), nj.get_center()+RIGHT*0.1, path_arc=np.pi*1.5, thickness=0.03, color=color).scale(0.5)
             self.arrows[(i, j)] = a
             self.add(a)
             self.scene.play(FadeIn(a), run_time=0.3)
         else:
-            a = Arrow(ni.get_center(), nj.get_center(), thickness=0.03)
+            a = Arrow(ni.get_center(), nj.get_center(), thickness=0.03, color=color)
             self.add(a)
             self.arrows[(i, j)] = a
             self.scene.play(FadeIn(a), run_time=0.3)
