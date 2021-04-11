@@ -3,6 +3,17 @@ from manim_imports_ext import *
 
 # 307.区域检索-数组可修改
 
+class SegmentTreePreface(AlgoScene):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def construct(self):
+        group = self.start_logo(stay=True)
+        self.play(group.shift, UP)
+        text = Text("线段树").set_color("#333").scale(0.3)
+        self.add(text)
+        self.wait(100)
+
 class SegmentTreeDiffScene(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -52,7 +63,6 @@ class SegmentTreeDiffScene(AlgoScene):
         self.play(tree.to_edge, RIGHT)
 
     def construct(self):
-        self.camera.background_rgba = [1, 1, 1, 0.5]
         self.start_logo()
         self.init_message("线段树")
         self.show_diff()

@@ -13,7 +13,7 @@ class AlgoScene(Scene):
         leet = Text(text, color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
         self.play(ShowCreation(leet))
 
-    def start_logo(self, animate=True):
+    def start_logo(self, animate=True, stay=False):
         self.camera.background_rgba = [1, 1, 1, 0.5]
         v = self.create_six_background()
         self.add(v)
@@ -45,13 +45,15 @@ class AlgoScene(Scene):
         else:
             group.arrange()
 
-        if animate:
-            self.play(group.scale, 0.3, run_time=1.5, rate_func=smooth)
-            self.wait(0.3)
-            self.play(group.to_edge, DL, run_time=1, rate_func=smooth)
-        else:
-            group.scale(0.3)
-            group.to_edge(DL)
+        if not stay:
+            if animate:
+                self.play(group.scale, 0.3, run_time=1.5, rate_func=smooth)
+                self.wait(0.3)
+                self.play(group.to_edge, DL, run_time=1, rate_func=smooth)
+            else:
+                group.scale(0.3)
+                group.to_edge(DL)
+        return group
 
     def create_serif_font(self, msg, color=WHITE):
         return Text(msg, font=AlgoSerifFontName, color=color)
