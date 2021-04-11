@@ -117,3 +117,9 @@ class AlgoScene(Scene):
                     for point in points]
 
         return points
+
+    def finish_scene(self, msg):
+        self.show_messaged(msg)
+        # add image
+        code = ImageMobject("assets/code3.png").scale(0.3)
+        self.play(ShowCreation(code))

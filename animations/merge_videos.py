@@ -7,12 +7,15 @@ import subprocess
 
 if __name__ == "__main__":
     dir = "videos"
-    os.chdir(dir)
 
-    str = ["SegmentTreeDiffScene", "SegmentTreeWhatIs", "SegmentTreeBuild"]
+    videos = ["SegmentTreeDiffScene", "SegmentTreeWhatIs", "SegmentTreeBuild", "SegmentTreeUpdate", "SegmentTreeQuery"]
     bg = "../acm-clan/audio/bg2.mp3"
 
-    file_content = "\n".join(["file '"+k+".mp4'" for k in str])
+    for k in videos:
+        subprocess.call(['python3', '-m', 'manimlib', 'segmenttree.py', k, '-w'])
+
+    os.chdir(dir)
+    file_content = "\n".join(["file '"+k+".mp4'" for k in videos])
 
     with open("filelist.txt", "w") as text_file:
         text_file.write(file_content)
