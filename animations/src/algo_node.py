@@ -16,8 +16,10 @@ class AlgoNode(VGroup):
         self.add(self.text_obj, self.rect_obj, self.text_sub_obj)
 
     def set_text(self, text):
+        c = self.text_obj.get_center()
         self.remove(self.text_obj)
         self.text_obj = Text(text, font="Consolas").scale(0.3)
+        self.text_obj.shift(c)
         self.add(self.text_obj)
 
     def get_text(self):

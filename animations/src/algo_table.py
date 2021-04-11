@@ -12,7 +12,7 @@ class AlgoTable(AlgoVGroup):
         for row in objs:
             for c in row:
                 if isinstance(c, str):
-                    v.add(Text(c).scale(0.3))
+                    v.add(Text(c).set_color(BLACK).scale(0.3))
                 else:
                     v.add(c)
         v.arrange_in_grid(n_rows=objs.shape[0], h_buff=0.2, v_buff=0.2)

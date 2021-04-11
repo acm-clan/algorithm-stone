@@ -25,8 +25,16 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
-            "args": ["segmenttree.py", "SegmentTreeBuild", ""]
-            // "args": ["test_scene.py", "-w"]
+            // "args": ["segmenttree.py", "SegmentTreeQuery", ""]
+            "args": ["test_scene.py", ""]
+        },
+        {
+            "name": "merge",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/animations",
+            "program": "merge_videos.py",
         }
     ]
 }

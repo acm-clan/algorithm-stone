@@ -9,7 +9,7 @@ directories:
   raster_images: ""
   vector_images: ""
   # If you want to use sounds, manim will look here to find it.
-  sounds: "E:\\Sources\\acm-clan\\videos"
+  sounds: "E:\\Sources\\acm-clan\\audio"
   # Manim often generates tex_files or other kinds of serialized data
   # to keep from having to generate the same thing too many times.  By
   # default, these will be stored at tempfile.gettempdir(), e.g. this might

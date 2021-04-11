@@ -1,6 +1,7 @@
 graphviz
 networkx
 pygraphviz
+ffmpeg-python
 
 # 安装64位的graphviz，stable_windows_10_cmake_Release_x64_graphviz-install-2.46.0-win64.exe
 # python3 -m pip install --global-option=build_ext --global-option="-IC:\Program Files\Graphviz\include" --global-option="-LC:\Program Files\Graphviz\lib" pygraphviz

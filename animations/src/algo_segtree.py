@@ -28,7 +28,6 @@ class AlgoSegTree(AlgoVGroup):
         self.build_id = 0
         self.root = self.build(datas, 0, len(datas)-1)
         self.travel_to_nodes(self.root)
-        
         self.init_networkx(self.nodes, self.edges)
 
         for k in self.nodes:
@@ -136,6 +135,9 @@ class AlgoSegTree(AlgoVGroup):
         self.remove(a)
         self.scene.play(FadeOut(a))
         del  self.arrows[(i, j)]
+
+    def get_edge(self, i, j):
+        return self.arrows[(i, j)]
 
     def get_node(self, i):
         return self.node_objs[i]
