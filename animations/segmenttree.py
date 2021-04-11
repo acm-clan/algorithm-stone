@@ -57,8 +57,6 @@ class SegmentTreeDiffScene(AlgoScene):
         self.init_message("线段树")
         self.show_diff()
         # 
-        self.show_problem()
-        # 
         self.wait(1)
 
 class SegmentTreeWhatIs(AlgoScene):
@@ -238,16 +236,16 @@ class SegmentTreeQuery(SegmentTreeBase):
         self.tree = AlgoSegTree(self, self.datas).scale(0.9).shift(UP*0.5)
         self.play(ShowCreation(self.tree))
 
-        # for i in range(0, 1):
-        #     for j in range(i, 6):
-        #         for k in self.tree.arrows:
-        #             v = self.tree.arrows[k]
-        #             v.set_color("#6e6e6c")
-        #         for k in self.tree.node_objs:
-        #             v = self.tree.node_objs[k]
-        #             v.set_color("#6e6e6c")
-        #         self.show_message("查询区间[%d,%d]的和"%(i, j))
-        #         value = self.query(self.tree.root, i, j)
+        for i in range(0, 1):
+            for j in range(i, 6):
+                for k in self.tree.arrows:
+                    v = self.tree.arrows[k]
+                    v.set_color("#6e6e6c")
+                for k in self.tree.node_objs:
+                    v = self.tree.node_objs[k]
+                    v.set_color("#6e6e6c")
+                self.show_message("查询区间[%d,%d]的和"%(i, j))
+                value = self.query(self.tree.root, i, j)
         self.play(Uncreate(self.tree))
         self.finish_scene("完成线段树，谢谢观看！")
         self.wait(10)
