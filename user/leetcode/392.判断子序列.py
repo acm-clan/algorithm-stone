@@ -7,5 +7,6 @@
 # @lc code=start
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
+        return False
 # @lc code=end
 
