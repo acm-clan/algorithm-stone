@@ -254,6 +254,124 @@ public:
         }
     }
 
+    void transplant(RBTreeNode * u, RBTreeNode * v){
+        if(u->p == nil){
+            root = v;
+        }else{
+            u->p->replaceChild(u, v);
+        }
+    }
+
+    void deleteFixUp(RBTreeNode * x){
+        while(x != root && x->color == BLACK){
+            if(x == x->p->left){
+                auto w = x->p->right;
+                if(w->color == RED){
+                    w->color = BLACK;
+                    x->p->color = RED;
+                    leftRotate(x->p);
+                    w = x->p->right;
+                }
+                if(w->left->color == BLACK && w->right->color == BLACK){
+                    w->color = RED;
+                    x->p = x;
+                }else{
+                    if(w->right->color == BLACK){
+                        w->left->color = BLACK;
+                        w->color = RED;
+                        rightRotate(x->p);
+                        w = x->p->right;
+                    }
+                    w->color = x->p->color;
+                    x->p->color = BLACK;
+                    w->right->color = BLACK;
+                    leftRotate(x->p);
+                    x = root;
+                }
+            }else{
+                auto w = x->p->left;
+                if(w->color == RED){
+                    w->color = BLACK;
+                    x->p->color = RED;
+                    rightRotate(x->p);
+                    w = x->p->left;
+                }
+                if(w->right->color == BLACK && w->left->color == BLACK){
+                    w->color = RED;
+                    x->p = x;
+                }else{
+                    if(w->left->color == BLACK){
+                        w->right->color = BLACK;
+                        w->color = RED;
+                        leftRotate(x->p);
+                        w = x->p->left;
+                    }
+                    w->color = x->p->color;
+                    x->p->color = BLACK;
+                    w->left->color = BLACK;
+                    rightRotate(x->p);
+                    x = root;
+                }
+            }
+        }
+        x->color = BLACK;
+    }
+
+    RBTreeNode * treeMaxmum(RBTreeNode * x){
+        auto p = x;
+        while(p != nil){
+            p = p->right;
+        }
+        return p;
+    }
+
+    RBTreeNode * treeMinimum(RBTreeNode * x){
+        auto p = x;
+        while(p != nil){
+            p = p->left;
+        }
+        return p;
+    }
+
+    void deleteInternal(RBTreeNode * z){
+        auto y = z;
+        auto origin_color = y->color;
+        RBTreeNode * x = nullptr;
+
+        if(z->left == nil){
+            x = z->right;
+            transplant(z, z->right);
+        }else if(z->right == nil){
+            x = z->left;
+            transplant(z, z->left);
+        }else{
+            y = treeMinimum(z->right);
+            origin_color = y->color;
+            x = y->right;
+            if(y->p == z){
+                x->p = y;
+            }else{
+                transplant(y, y->right);
+                y->right = z->right;
+                y->right->p = y;
+            }
+            transplant(z, y);
+            y->left = z->left;
+            y->left->p = y;
+            y->color = z->color;
+        }
+        if(origin_color == BLACK){
+            deleteFixUp(x);
+        }
+    }
+
+    void remove(int k){
+        auto z = getInternal(root, k);
+        if(z){
+            deleteInternal(z);
+        }
+    }
+
 private:
     RBTreeNode* root = nullptr;
     RBTreeNode* nil = nullptr;
@@ -265,6 +383,14 @@ int main()
 {
     RBTree t;
     int n = 40;
+    for(int i=1; i<=n; i++){
+        t.set(i, i);
+    }
+
+    for(int i=1; i<=n; i++){
+        t.remove(i);
+    }
+
     for(int i=1; i<=n; i++){
         t.set(i, i);
     }
