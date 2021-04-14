@@ -77,33 +77,47 @@ public:
 
     void leftRotate(RBTreeNode* x)
     {
-        // n左移，n的右孩子r成为根节点，r的左孩子成为n的右孩子，其他不动
-        // 看起来就像是n左移了
+        // x左移，x的右孩子y成为根节点，y的左孩子成为x的右孩子，其他不动
+        // 看起来就像是x左移了
         auto y = x->right;
+
+        // 1 x的右节点变化
         x->right = y->left;
+
+        // 更新left的父节点
         if(y->left != nil){
             y->left->p = x;
         }
+
+        // 2 根节点变化，更换根节点
         y->p = x->p;
 
+        // 如果x是根节点，将root设置为y
         if(x->p == nil){
             root = y;
         }else{
+            // 改变孩子节点
             x->p->replaceChild(x, y);
         }
 
+        // 3 y的左孩子
         y->left = x;
         x->p = y;
     }
+    
     void rightRotate(RBTreeNode* x)
     {
-        // n右移，n的左孩子l成为根节点，l的右孩子成为n的左孩子，其他不动
-        // 看起来就像是n右移了
+        // x右移，x的左孩子y成为根节点，y的右孩子成为x的左孩子，其他不动
+        // 看起来就像是x右移了
         auto y = x->left;
+
         x->left = y->right;
+
+        // 更新right的父节点
         if(y->right != nil){
             y->right->p = x;
         }
+
         y->p = x->p;
 
         if(x->p == nil){
@@ -190,6 +204,7 @@ public:
                     z->p->p->color = RED;
                     z = z->p->p;
                 } else {
+                    // case 2 3
                     // 父亲是红色，叔叔是黑色
                     if (z->isRight()){
                         // z在右边就左旋，z指向父节点
