@@ -39,6 +39,20 @@ public:
             p = NIL;
         }
 
+        void setLeft(RBTreeNode * n){
+            if(n == nullptr){
+                printf("wrong left\n");
+            }
+            this->left = n;
+        }
+
+        void setRight(RBTreeNode * n){
+            if(n == nullptr){
+                printf("wrong left\n");
+            }
+            right = n;
+        }
+
         bool isLeft(){
             return this == p->left;
         }
@@ -54,9 +68,9 @@ public:
         void replaceChild(RBTreeNode* n, RBTreeNode* new_node)
         {
             if (n == left) {
-                left = new_node;
+                setLeft(new_node);
             } else {
-                right = new_node;
+                setRight(new_node);
             }
             new_node->p = this;
         }
@@ -66,9 +80,9 @@ public:
             if (y == NIL) {
                 t->root = z;
             } else if (z->k < y->k) {
-                y->left = z;
+                y->setLeft(z);
             } else {
-                y->right = z;
+                y->setRight(z);
             }
         }
 
@@ -103,7 +117,7 @@ public:
         transplant(x, y);
 
         // 3 y的左孩子
-        y->left = x;
+        y->setLeft(x);
         x->p = y;
     }
     
@@ -113,7 +127,7 @@ public:
         // 看起来就像是x右移了
         auto y = x->left;
 
-        x->left = y->right;
+        x->setLeft(y->right);
 
         // 更新right的父节点
         if(y->right != nil){
@@ -285,7 +299,7 @@ public:
                         printf("delete left case 3\n");
                         w->left->color = BLACK;
                         w->color = RED;
-                        rightRotate(x->p);
+                        rightRotate(w);
                         w = x->p->right;
                     }
 
@@ -314,7 +328,7 @@ public:
                         printf("delete right case 3\n");
                         w->right->color = BLACK;
                         w->color = RED;
-                        leftRotate(x->p);
+                        leftRotate(w);
                         w = x->p->left;
                     }
 
@@ -369,7 +383,7 @@ public:
                 y->right->p = y;
             }
             transplant(z, y);
-            y->left = z->left;
+            y->setLeft(z->left);
             y->left->p = y;
             y->color = z->color;
         }
@@ -392,10 +406,10 @@ private:
 
 RBTree::RBTreeNode* RBTree::RBTreeNode::NIL = new RBTree::RBTreeNode(0, 0, RBTree::BLACK);
 
-int main()
+int main2()
 {
     RBTree t;
-    int n = 50;
+    int n = 100;
     
     for(int i=1; i<=n; i++){
         printf("set %d %d\n", i, i);
@@ -418,22 +432,21 @@ int main()
     return 0;
 }
 
-int main2()
+int main()
 {
     RBTree t;
-    int i, count = 100;
+    int i, count = 1000;
     int key;
 
     srand(time(NULL));
     for (i = 1; i <= count; ++i) {
         key = rand() % count;
         t.set(key, i);
+    }
 
-        t.get(key);
-
-        if (!(i % 10)) {
-            t.remove(key);
-        }
+    for (i = 1; i <= count; ++i) {
+        key = rand() % count;
+        t.remove(key);
     }
 
     return 0;
