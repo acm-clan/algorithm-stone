@@ -6,3 +6,4 @@ out/
 __pycache__
 animations/videos
 templates/a.exe
+user/.DS_Store
