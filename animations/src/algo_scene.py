@@ -13,7 +13,7 @@ class AlgoScene(Scene):
         leet = Text(text, color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
         self.play(ShowCreation(leet))
 
-    def start_logo(self, animate=True, stay=False):
+    def start_logo(self, animate=True, stay=False, subtitle=""):
         self.camera.background_rgba = [1, 1, 1, 0.5]
         v = self.create_six_background()
         self.add(v)

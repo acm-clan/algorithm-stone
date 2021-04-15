@@ -51,14 +51,14 @@ public:
             return isLeft() ? p->right : p->left;
         }
 
-        void replaceChild(RBTreeNode* n, RBTreeNode* new_node)
+        void replaceChild(RBTreeNode* u, RBTreeNode* v)
         {
-            if (n == left) {
-                left = new_node;
+            if (u == left) {
+                left = v;
             } else {
-                right = new_node;
+                right = v;
             }
-            new_node->p = this;
+            v->p = this;
         }
 
         void addChild(RBTree* t, RBTreeNode* z)
@@ -150,7 +150,7 @@ public:
         return v ? v->v : -1;
     }
 
-    void insert(RBTreeNode* n, RBTreeNode* z)
+    void insert(RBTreeNode* z)
     {
         auto y = nil;
         auto x = root;
@@ -166,14 +166,14 @@ public:
 
         z->p = y;
         y->addChild(this, z);
-        insert_fixup(z);
+        insertFixup(z);
     }
 
     /*
     1 父子节点之间不能出现两个连续的红节点
     2 任何一个节点向下遍历到其子孙的叶子节点，所经过的黑节点个数必须相等
     */
-    void insert_fixup(RBTreeNode* z)
+    void insertFixup(RBTreeNode* z)
     {
         // 处理父节点是红色，父子同为红色冲突了
         while (z->p->color == RED) {
@@ -234,7 +234,7 @@ public:
             root = new RBTreeNode(k, v, BLACK);
         } else {
             auto z = new RBTreeNode(k, v, RED);
-            insert(root, z);
+            insert(z);
         }
     }
 
@@ -309,7 +309,7 @@ public:
     RBTreeNode* treeMaxmum(RBTreeNode* x)
     {
         auto p = x;
-        while (p != nil) {
+        while (p->right != nil) {
             p = p->right;
         }
         return p;
