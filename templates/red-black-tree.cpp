@@ -264,7 +264,6 @@ public:
                     x = x->p;
                 } else {
                     if (w->right->color == BLACK) {
-                        // printf("delete left case 3\n");
                         w->left->color = BLACK;
                         w->color = RED;
                         rightRotate(w);
