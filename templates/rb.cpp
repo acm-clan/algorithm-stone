@@ -68,9 +68,9 @@ public:
         void replaceChild(RBTreeNode* n, RBTreeNode* new_node)
         {
             if (n == left) {
-                setLeft(new_node);
+                left = new_node;
             } else {
-                setRight(new_node);
+                right = new_node;
             }
             new_node->p = this;
         }
@@ -80,9 +80,9 @@ public:
             if (y == NIL) {
                 t->root = z;
             } else if (z->k < y->k) {
-                y->setLeft(z);
+                y->left = z;
             } else {
-                y->setRight(z);
+                y->right =z;
             }
         }
 
@@ -117,7 +117,7 @@ public:
         transplant(x, y);
 
         // 3 y的左孩子
-        y->setLeft(x);
+        y->left = x;
         x->p = y;
     }
     
@@ -127,7 +127,7 @@ public:
         // 看起来就像是x右移了
         auto y = x->left;
 
-        x->setLeft(y->right);
+        x->left = y->right;
 
         // 更新right的父节点
         if(y->right != nil){
@@ -144,7 +144,7 @@ public:
 
     RBTreeNode* getInternal(RBTreeNode* n, int k)
     {
-        if (!n) {
+        if (!n || n == nil) {
             return nullptr;
         }
         if (n->k == k) {
@@ -209,7 +209,7 @@ public:
                 auto y = z->p->brother();
                 // case 1
                 if (y->color == RED) {
-                    printf("insert left case 1\n");
+                    // printf("insert left case 1\n");
                     // 父亲和叔叔都是红色，把他们都变成黑色
                     z->p->color = BLACK;
                     y->color = BLACK;
@@ -220,13 +220,13 @@ public:
                     // case 2 3
                     // 父亲是红色，叔叔是黑色
                     if (z->isRight()){
-                        printf("insert left case 2\n");
+                        // printf("insert left case 2\n");
                         // z在右边就左旋，z指向父节点
                         z = z->p;
                         // 左旋父节点
                         leftRotate(z);
                     }
-                    printf("insert left case 3\n");
+                    // printf("insert left case 3\n");
                     // 父亲设置为黑色
                     z->p->color = BLACK;
                     // 把祖父变成红色
@@ -238,19 +238,19 @@ public:
                 auto y = z->p->brother();
                 // case 1
                 if (y->color == RED) {
-                    printf("insert right case 1\n");
+                    // printf("insert right case 1\n");
                     z->p->color = BLACK;
                     y->color = BLACK;
                     z->p->p->color = RED;
                     z = z->p->p;
                 } else {
                     if (z->isLeft()){
-                        printf("insert right case 2\n");
+                        // printf("insert right case 2\n");
                         z = z->p;
                         rightRotate(z);
                     }
                     
-                    printf("insert right case 3\n");
+                    // printf("insert right case 3\n");
                     z->p->color = BLACK;
                     z->p->p->color = RED;
                     leftRotate(z->p->p);
@@ -284,26 +284,26 @@ public:
             if(x->isLeft()){
                 auto w = x->brother();
                 if(w->color == RED){
-                    printf("delete left case 1\n");
+                    // printf("delete left case 1\n");
                     w->color = BLACK;
                     x->p->color = RED;
                     leftRotate(x->p);
                     w = x->p->right;
                 }
                 if(w->left->color == BLACK && w->right->color == BLACK){
-                    printf("delete left case 2\n");
+                    // printf("delete left case 2\n");
                     w->color = RED;
                     x = x->p;
                 }else{
                     if(w->right->color == BLACK){
-                        printf("delete left case 3\n");
+                        // printf("delete left case 3\n");
                         w->left->color = BLACK;
                         w->color = RED;
                         rightRotate(w);
                         w = x->p->right;
                     }
 
-                    printf("delete left case 4\n");
+                    // printf("delete left case 4\n");
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->right->color = BLACK;
@@ -313,26 +313,26 @@ public:
             }else{
                 auto w = x->p->left;
                 if(w->color == RED){
-                    printf("delete right case 1\n");
+                    // printf("delete right case 1\n");
                     w->color = BLACK;
                     x->p->color = RED;
                     rightRotate(x->p);
                     w = x->p->left;
                 }
                 if(w->right->color == BLACK && w->left->color == BLACK){
-                    printf("delete right case 2\n");
+                    // printf("delete right case 2\n");
                     w->color = RED;
                     x = x->p;
                 }else{
                     if(w->left->color == BLACK){
-                        printf("delete right case 3\n");
+                        // printf("delete right case 3\n");
                         w->right->color = BLACK;
                         w->color = RED;
                         leftRotate(w);
                         w = x->p->left;
                     }
 
-                    printf("delete right case 4\n");
+                    // printf("delete right case 4\n");
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->left->color = BLACK;
@@ -383,7 +383,7 @@ public:
                 y->right->p = y;
             }
             transplant(z, y);
-            y->setLeft(z->left);
+            y->left = z->left;
             y->left->p = y;
             y->color = z->color;
         }
@@ -435,7 +435,7 @@ int main2()
 int main()
 {
     RBTree t;
-    int i, count = 1000;
+    int i, count = 1000000;
     int key;
 
     srand(time(NULL));
@@ -452,5 +452,6 @@ int main()
     return 0;
 }
 
+// 0 
 // 1 replaceChild没有设置parent
-// 
+// 2 导论翻译错误

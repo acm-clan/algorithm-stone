@@ -1,379 +1,384 @@
+#include <algorithm>
 #include <iostream>
+#include <queue>
+#include <vector>
 using namespace std;
 
-enum RBNodeColor{
-    BLACK = 1,
-    RED = 0
-};
-
-struct Node {
-    int value;
-    RBNodeColor color;
-    Node *left_tree, *right_tree, *parent;
-
-    Node(): value(0), color(RED), left_tree(nullptr), right_tree(nullptr), parent(nullptr)
-    {
-    }
-
-    Node* GrandParent()
-    {
-        if (parent == nullptr) {
-            return nullptr;
-        }
-        return parent->parent;
-    }
-
-    Node* Uncle()
-    {
-        if (GrandParent() == nullptr) {
-            return nullptr;
-        }
-        if (parent == GrandParent()->right_tree)
-            return GrandParent()->left_tree;
-        else
-            return GrandParent()->right_tree;
-    }
-
-    Node* sibling()
-    {
-        if (parent->left_tree == this)
-            return parent->right_tree;
-        else
-            return parent->left_tree;
-    }
-};
+#include <time.h>
 
 class RBTree {
 private:
-    void RotateRight(Node* p)
-    {
-        Node* gp = p->GrandParent();
-        Node* parent = p->parent;
-        Node* y = p->right_tree;
+    enum Color {
+        RED,
+        BLACK
+    };
+    enum Direction {
+        LEFT,
+        RIGHT
+    };
 
-        parent->left_tree = y;
+public:
+    struct RBTreeNode {
+        int k = 0;
+        int v = 0;
+        RBTreeNode* p = nullptr;
+        RBTreeNode* left = nullptr;
+        RBTreeNode* right = nullptr;
+        Color color = RED;
 
-        if (y != NIL)
-            y->parent = parent;
-
-        p->right_tree = parent;
-        parent->parent = p;
-
-        if (root == parent)
-            root = p;
-        p->parent = gp;
-
-        if (gp != nullptr) {
-            if (gp->left_tree == parent)
-                gp->left_tree = p;
-            else
-                gp->right_tree = p;
-        }
-    }
-
-    void RotateLeft(Node* p)
-    {
-        if (p->parent == nullptr) {
-            root = p;
-            return;
+        RBTreeNode(int k, int v, Color color)
+            : k(k)
+            , v(v)
+            , color(color)
+        {
+            left = NIL;
+            right = NIL;
+            p = NIL;
         }
 
-        Node* grand = p->GrandParent();
-        Node* parent = p->parent;
-        Node* y = p->left_tree;
-
-        parent->right_tree = y;
-
-        if (y != NIL)
-            y->parent = parent;
-        p->left_tree = parent;
-        parent->parent = p;
-
-        if (root == parent)
-            root = p;
-        p->parent = grand;
-
-        if (grand != nullptr) {
-            if (grand->left_tree == parent)
-                grand->left_tree = p;
-            else
-                grand->right_tree = p;
-        }
-    }
-
-    void InOrder(Node* p)
-    {
-        if (p == NIL)
-            return;
-
-        if (p->left_tree)
-            InOrder(p->left_tree);
-
-        cout << p->value << " ";
-
-        if (p->right_tree)
-            InOrder(p->right_tree);
-    }
-
-    string OutputColor(bool color)
-    {
-        return color ? "BLACK" : "RED";
-    }
-
-    Node* GetSmallestChild(Node* p)
-    {
-        if (p->left_tree == NIL)
-            return p;
-        return GetSmallestChild(p->left_tree);
-    }
-
-    bool DeleteChild(Node* p, int data)
-    {
-        if (p->value > data) {
-            if (p->left_tree == NIL) {
-                return false;
-            }
-            return DeleteChild(p->left_tree, data);
-        } else if (p->value < data) {
-            if (p->right_tree == NIL) {
-                return false;
-            }
-            return DeleteChild(p->right_tree, data);
-        } else if (p->value == data) {
-            if (p->right_tree == NIL) {
-                DeleteOneChild(p);
-                return true;
-            }
-            Node* smallest = GetSmallestChild(p->right_tree);
-            swap(p->value, smallest->value);
-            DeleteOneChild(smallest);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    void DeleteOneChild(Node* p)
-    {
-        Node* child = p->left_tree == NIL ? p->right_tree : p->left_tree;
-        if (p->parent == nullptr && p->left_tree == NIL && p->right_tree == NIL) {
-            p = nullptr;
-            root = p;
-            return;
+        bool isLeft(){
+            return this == p->left;
         }
 
-        if (p->parent == nullptr) {
-            delete p;
-            child->parent = nullptr;
-            root = child;
-            root->color = BLACK;
-            return;
+        bool isRight(){
+            return this == p->right;
         }
 
-        if (p->parent->left_tree == p) {
-            p->parent->left_tree = child;
-        } else {
-            p->parent->right_tree = child;
-        }
-        child->parent = p->parent;
-
-        if (p->color == BLACK) {
-            if (child->color == RED) {
-                child->color = BLACK;
-            } else
-                DeleteCase(child);
+        RBTreeNode * brother(){
+            return isLeft()?p->right:p->left;
         }
 
-        delete p;
-    }
-
-    void DeleteCase(Node* p)
-    {
-        if (p->parent == nullptr) {
-            p->color = BLACK;
-            return;
-        }
-        if (p->sibling()->color == RED) {
-            p->parent->color = RED;
-            p->sibling()->color = BLACK;
-            if (p == p->parent->left_tree)
-                RotateLeft(p->parent);
-            else
-                RotateRight(p->parent);
-        }
-        if (p->parent->color == BLACK && p->sibling()->color == BLACK
-            && p->sibling()->left_tree->color == BLACK && p->sibling()->right_tree->color == BLACK) {
-            p->sibling()->color = RED;
-            DeleteCase(p->parent);
-        } else if (p->parent->color == RED && p->sibling()->color == BLACK
-            && p->sibling()->left_tree->color == BLACK && p->sibling()->right_tree->color == BLACK) {
-            p->sibling()->color = RED;
-            p->parent->color = BLACK;
-        } else {
-            if (p->sibling()->color == BLACK) {
-                if (p == p->parent->left_tree && p->sibling()->left_tree->color == RED
-                    && p->sibling()->right_tree->color == BLACK) {
-                    p->sibling()->color = RED;
-                    p->sibling()->left_tree->color = BLACK;
-                    RotateRight(p->sibling()->left_tree);
-                } else if (p == p->parent->right_tree && p->sibling()->left_tree->color == BLACK
-                    && p->sibling()->right_tree->color == RED) {
-                    p->sibling()->color = RED;
-                    p->sibling()->right_tree->color = BLACK;
-                    RotateLeft(p->sibling()->right_tree);
-                }
-            }
-            p->sibling()->color = p->parent->color;
-            p->parent->color = BLACK;
-            if (p == p->parent->left_tree) {
-                p->sibling()->right_tree->color = BLACK;
-                RotateLeft(p->sibling());
+        void replaceChild(RBTreeNode* n, RBTreeNode* new_node)
+        {
+            if (n == left) {
+                left = new_node;
             } else {
-                p->sibling()->left_tree->color = BLACK;
-                RotateRight(p->sibling());
+                right = new_node;
             }
+            new_node->p = this;
         }
-    }
 
-    void Insert(Node* p, int data)
-    {
-        if (data <= p->value) {
-            // 放在左边
-            if (p->left_tree != NIL)
-                Insert(p->left_tree, data);
-            else {
-                // 左边不存在，创建一个新的节点
-                Node* tmp = new Node();
-                tmp->value = data;
-                tmp->left_tree = tmp->right_tree = NIL;
-                tmp->parent = p;
-                p->left_tree = tmp;
-                // 开始旋转
-                InsertCase(tmp);
-            }
-        } else {
-            // 放在右边
-            if (p->right_tree != NIL)
-                Insert(p->right_tree, data);
-            else {
-                Node* tmp = new Node();
-                tmp->value = data;
-                tmp->left_tree = tmp->right_tree = NIL;
-                tmp->parent = p;
-                p->right_tree = tmp;
-                InsertCase(tmp);
-            }
-        }
-    }
-
-/*
-1 节点是红色或黑色
-2 根是黑色
-3 所有叶子都是黑色（叶子是NIL节点）
-4 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）
-5 从任一节点到其每个叶子的所有简单路径都包含相同数目的黑色节点。
-*/
-
-    void InsertCase(Node* p)
-    {
-        if (p->parent == nullptr) {
-            root = p;
-            p->color = BLACK;
-            return;
-        }
-        if (p->parent->color == RED) {
-            // 父节点是红色，需要处理
-            if (p->Uncle()->color == RED) {
-                // 叔叔也是红色
-                p->parent->color = p->Uncle()->color = BLACK;
-                p->GrandParent()->color = RED;
-                InsertCase(p->GrandParent());
+        void addChild(RBTree * t, RBTreeNode * z){
+            auto y = this;
+            if (y == NIL) {
+                t->root = z;
+            } else if (z->k < y->k) {
+                y->left = z;
             } else {
-                // 叔叔节点是黑色，分为四种情况
-                if (p->parent->right_tree == p && p->GrandParent()->left_tree == p->parent) {
-                    RotateLeft(p);
-                    p->color = BLACK;
-                    p->parent->color = RED;
-                    RotateRight(p);
-                } else if (p->parent->left_tree == p && p->GrandParent()->right_tree == p->parent) {
-                    RotateRight(p);
-                    p->color = BLACK;
-                    p->parent->color = RED;
-                    RotateLeft(p);
-                } else if (p->parent->left_tree == p && p->GrandParent()->left_tree == p->parent) {
-                    p->parent->color = BLACK;
-                    p->GrandParent()->color = RED;
-                    RotateRight(p->parent);
-                } else if (p->parent->right_tree == p && p->GrandParent()->right_tree == p->parent) {
-                    p->parent->color = BLACK;
-                    p->GrandParent()->color = RED;
-                    RotateLeft(p->parent);
-                }
+                y->right =z;
             }
         }
-    }
 
-    void DeleteTree(Node* p)
-    {
-        if (!p || p == NIL) {
-            return;
-        }
-        DeleteTree(p->left_tree);
-        DeleteTree(p->right_tree);
-        delete p;
-    }
+        static RBTreeNode* NIL;
+    };
 
 public:
     RBTree()
     {
-        NIL = new Node();
-        NIL->color = BLACK;
-        root = nullptr;
+        nil = RBTreeNode::NIL;
+        root = nil;
     }
 
-    ~RBTree()
+    void leftRotate(RBTreeNode* x)
     {
-        if (root)
-            DeleteTree(root);
-        delete NIL;
+        // x左移，x的右孩子y成为根节点，y的左孩子成为x的右孩子，其他不动
+        // 看起来就像是x左移了
+        auto y = x->right;
+
+        // 1 x的右节点变化
+        x->right = y->left;
+
+        // 更新left的父节点
+        if(y->left != nil){
+            y->left->p = x;
+        }
+
+        // 2 根节点变化，更换根节点
+        y->p = x->p;
+
+        // 如果x是根节点，将root设置为y
+        transplant(x, y);
+
+        // 3 y的左孩子
+        y->left = x;
+        x->p = y;
+    }
+    
+    void rightRotate(RBTreeNode* x)
+    {
+        // x右移，x的左孩子y成为根节点，y的右孩子成为x的左孩子，其他不动
+        // 看起来就像是x右移了
+        auto y = x->left;
+
+        x->left = y->right;
+
+        // 更新right的父节点
+        if(y->right != nil){
+            y->right->p = x;
+        }
+
+        y->p = x->p;
+
+        transplant(x, y);
+
+        y->right = x;
+        x->p = y;
     }
 
-    void InOrder()
+    RBTreeNode* getInternal(RBTreeNode* n, int k)
     {
-        if (root == nullptr)
-            return;
-        InOrder(root);
-        cout << endl;
+        if (!n || n == nil) {
+            return nullptr;
+        }
+        if (n->k == k) {
+            return n;
+        }
+        if (k < n->k) {
+            return getInternal(n->left, k);
+        }
+        return getInternal(n->right, k);
     }
 
-    void Insert(int x)
+    int get(int key)
     {
-        if (root == nullptr) {
-            root = new Node();
-            root->color = BLACK;
-            root->left_tree = root->right_tree = NIL;
-            root->value = x;
-        } else {
-            Insert(root, x);
+        // 普通的搜索
+        auto v = getInternal(root, key);
+        return v ? v->v : -1;
+    }
+
+    void insert(RBTreeNode* n, RBTreeNode* z)
+    {
+        auto y = nil;
+        auto x = root;
+        // 找到父节点
+        while (x != nil) {
+            y = x;
+            if (z->k < x->k) {
+                x = x->left;
+            } else {
+                x = x->right;
+            }
+        }
+
+        z->p = y;
+        y->addChild(this, z);
+        insert_fixup(z);
+    }
+
+    /*
+    1 父子节点之间不能出现两个连续的红节点
+    2 任何一个节点向下遍历到其子孙的叶子节点，所经过的黑节点个数必须相等
+    */
+    void insert_fixup(RBTreeNode* z)
+    {
+        // 处理父节点是红色，父子同为红色冲突了
+        while (z->p->color == RED) {
+            // 父节点在左边
+            if (z->p->isLeft()) {
+                // 找到叔叔
+                auto y = z->p->brother();
+                // case 1
+                if (y->color == RED) {
+                    // 父亲和叔叔都是红色，把他们都变成黑色
+                    z->p->color = BLACK;
+                    y->color = BLACK;
+                    // 把祖父变成红色
+                    z->p->p->color = RED;
+                    z = z->p->p;
+                } else {
+                    // case 2 3
+                    // 父亲是红色，叔叔是黑色
+                    if (z->isRight()){
+                        // z在右边就左旋，z指向父节点
+                        z = z->p;
+                        // 左旋父节点
+                        leftRotate(z);
+                    }
+                    // 父亲设置为黑色
+                    z->p->color = BLACK;
+                    // 把祖父变成红色
+                    z->p->p->color = RED;
+                    // 右旋祖父节点
+                    rightRotate(z->p->p);
+                }
+            }else{
+                auto y = z->p->brother();
+                // case 1
+                if (y->color == RED) {
+                    z->p->color = BLACK;
+                    y->color = BLACK;
+                    z->p->p->color = RED;
+                    z = z->p->p;
+                } else {
+                    if (z->isLeft()){
+                        z = z->p;
+                        rightRotate(z);
+                    }
+                    
+                    z->p->color = BLACK;
+                    z->p->p->color = RED;
+                    leftRotate(z->p->p);
+                }
+            }
+        }
+        root->color = BLACK;
+    }
+
+    void set(int k, int v)
+    {
+        if (root == nil) {
+            root = new RBTreeNode(k, v, BLACK);
+        }else{
+            auto z = new RBTreeNode(k, v, RED);
+            insert(root, z);
         }
     }
 
-    bool DeleteValue(int data)
-    {
-        return DeleteChild(root, data);
+    void transplant(RBTreeNode * u, RBTreeNode * v){
+        if(u->p == nil){
+            root = v;
+            root->p = nil;
+        }else{
+            u->p->replaceChild(u, v);
+        }
+    }
+
+    void deleteFixUp(RBTreeNode * x){
+        while(x != root && x->color == BLACK){
+            if(x->isLeft()){
+                auto w = x->brother();
+                if(w->color == RED){
+                    w->color = BLACK;
+                    x->p->color = RED;
+                    leftRotate(x->p);
+                    w = x->p->right;
+                }
+                if(w->left->color == BLACK && w->right->color == BLACK){
+                    w->color = RED;
+                    x = x->p;
+                }else{
+                    if(w->right->color == BLACK){
+                        // printf("delete left case 3\n");
+                        w->left->color = BLACK;
+                        w->color = RED;
+                        rightRotate(w);
+                        w = x->p->right;
+                    }
+
+                    w->color = x->p->color;
+                    x->p->color = BLACK;
+                    w->right->color = BLACK;
+                    leftRotate(x->p);
+                    x = root;
+                }
+            }else{
+                auto w = x->p->left;
+                if(w->color == RED){
+                    w->color = BLACK;
+                    x->p->color = RED;
+                    rightRotate(x->p);
+                    w = x->p->left;
+                }
+                if(w->right->color == BLACK && w->left->color == BLACK){
+                    w->color = RED;
+                    x = x->p;
+                }else{
+                    if(w->left->color == BLACK){
+                        w->right->color = BLACK;
+                        w->color = RED;
+                        leftRotate(w);
+                        w = x->p->left;
+                    }
+
+                    w->color = x->p->color;
+                    x->p->color = BLACK;
+                    w->left->color = BLACK;
+                    rightRotate(x->p);
+                    x = root;
+                }
+            }
+        }
+        x->color = BLACK;
+    }
+
+    RBTreeNode * treeMaxmum(RBTreeNode * x){
+        auto p = x;
+        while(p != nil){
+            p = p->right;
+        }
+        return p;
+    }
+
+    RBTreeNode * treeMinimum(RBTreeNode * x){
+        auto p = x;
+        while(p->left != nil){
+            p = p->left;
+        }
+        return p;
+    }
+
+    void deleteInternal(RBTreeNode * z){
+        auto y = z;
+        auto origin_color = y->color;
+        RBTreeNode * x = nullptr;
+
+        if(z->left == nil){
+            x = z->right;
+            transplant(z, z->right);
+        }else if(z->right == nil){
+            x = z->left;
+            transplant(z, z->left);
+        }else{
+            y = treeMinimum(z->right);
+            origin_color = y->color;
+            x = y->right;
+            if(y->p == z){
+                x->p = y;
+            }else{
+                transplant(y, y->right);
+                y->right = z->right;
+                y->right->p = y;
+            }
+            transplant(z, y);
+            y->left = z->left;
+            y->left->p = y;
+            y->color = z->color;
+        }
+        if(origin_color == BLACK){
+            deleteFixUp(x);
+        }
+    }
+
+    void remove(int k){
+        auto z = getInternal(root, k);
+        if(z){
+            deleteInternal(z);
+        }
     }
 
 private:
-    Node *root;
-    Node *NIL;
+    RBTreeNode* root = nullptr;
+    RBTreeNode* nil = nullptr;
 };
+
+RBTree::RBTreeNode* RBTree::RBTreeNode::NIL = new RBTree::RBTreeNode(0, 0, RBTree::BLACK);
 
 int main()
 {
-    RBTree b;
-    for (int i = 0; i < 10; i++) {
-        b.Insert(rand() % 100);
+    RBTree t;
+    int i, count = 1000000;
+    int key;
+
+    srand(time(NULL));
+    for (i = 1; i <= count; ++i) {
+        key = rand() % count;
+        t.set(key, i);
     }
-    b.InOrder();
+
+    for (i = 1; i <= count; ++i) {
+        key = rand() % count;
+        t.remove(key);
+    }
+
     return 0;
 }
