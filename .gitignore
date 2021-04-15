@@ -7,3 +7,5 @@ __pycache__
 animations/videos
 templates/a.exe
 user/.DS_Store
+templates/rb.exe
+.vscode/tasks.json

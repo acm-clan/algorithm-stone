@@ -4,6 +4,11 @@
 #include <vector>
 using namespace std;
 
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <string.h>
+
 class RBTree {
 private:
     enum Color {
@@ -53,6 +58,7 @@ public:
             } else {
                 right = new_node;
             }
+            new_node->p = this;
         }
 
         void addChild(RBTree * t, RBTreeNode * z){
@@ -73,6 +79,7 @@ public:
     RBTree()
     {
         nil = RBTreeNode::NIL;
+        root = nil;
     }
 
     void leftRotate(RBTreeNode* x)
@@ -93,12 +100,7 @@ public:
         y->p = x->p;
 
         // 如果x是根节点，将root设置为y
-        if(x->p == nil){
-            root = y;
-        }else{
-            // 改变孩子节点
-            x->p->replaceChild(x, y);
-        }
+        transplant(x, y);
 
         // 3 y的左孩子
         y->left = x;
@@ -120,11 +122,7 @@ public:
 
         y->p = x->p;
 
-        if(x->p == nil){
-            root = y;
-        }else{
-            x->p->replaceChild(x, y);
-        }
+        transplant(x, y);
 
         y->right = x;
         x->p = y;
@@ -180,7 +178,7 @@ public:
     }
 
     void dump(RBTreeNode * n){
-        dumpInternal(n, 1);
+        //dumpInternal(n, 1);
     }
 
     /*
@@ -197,6 +195,7 @@ public:
                 auto y = z->p->brother();
                 // case 1
                 if (y->color == RED) {
+                    printf("insert left case 1\n");
                     // 父亲和叔叔都是红色，把他们都变成黑色
                     z->p->color = BLACK;
                     y->color = BLACK;
@@ -207,11 +206,13 @@ public:
                     // case 2 3
                     // 父亲是红色，叔叔是黑色
                     if (z->isRight()){
+                        printf("insert left case 2\n");
                         // z在右边就左旋，z指向父节点
                         z = z->p;
                         // 左旋父节点
                         leftRotate(z);
                     }
+                    printf("insert left case 3\n");
                     // 父亲设置为黑色
                     z->p->color = BLACK;
                     // 把祖父变成红色
@@ -223,16 +224,19 @@ public:
                 auto y = z->p->brother();
                 // case 1
                 if (y->color == RED) {
+                    printf("insert right case 1\n");
                     z->p->color = BLACK;
                     y->color = BLACK;
                     z->p->p->color = RED;
                     z = z->p->p;
                 } else {
                     if (z->isLeft()){
+                        printf("insert right case 2\n");
                         z = z->p;
                         rightRotate(z);
                     }
                     
+                    printf("insert right case 3\n");
                     z->p->color = BLACK;
                     z->p->p->color = RED;
                     leftRotate(z->p->p);
@@ -244,11 +248,9 @@ public:
 
     void set(int k, int v)
     {
-        if (!root) {
-            printf("set root %d %d\n", k, v);
+        if (root == nil) {
             root = new RBTreeNode(k, v, BLACK);
         }else{
-            printf("insert %d %d\n", k, v);
             auto z = new RBTreeNode(k, v, RED);
             insert(root, z);
         }
@@ -257,6 +259,7 @@ public:
     void transplant(RBTreeNode * u, RBTreeNode * v){
         if(u->p == nil){
             root = v;
+            root->p = nil;
         }else{
             u->p->replaceChild(u, v);
         }
@@ -264,24 +267,29 @@ public:
 
     void deleteFixUp(RBTreeNode * x){
         while(x != root && x->color == BLACK){
-            if(x == x->p->left){
-                auto w = x->p->right;
+            if(x->isLeft()){
+                auto w = x->brother();
                 if(w->color == RED){
+                    printf("delete left case 1\n");
                     w->color = BLACK;
                     x->p->color = RED;
                     leftRotate(x->p);
                     w = x->p->right;
                 }
                 if(w->left->color == BLACK && w->right->color == BLACK){
+                    printf("delete left case 2\n");
                     w->color = RED;
-                    x->p = x;
+                    x = x->p;
                 }else{
                     if(w->right->color == BLACK){
+                        printf("delete left case 3\n");
                         w->left->color = BLACK;
                         w->color = RED;
                         rightRotate(x->p);
                         w = x->p->right;
                     }
+
+                    printf("delete left case 4\n");
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->right->color = BLACK;
@@ -291,21 +299,26 @@ public:
             }else{
                 auto w = x->p->left;
                 if(w->color == RED){
+                    printf("delete right case 1\n");
                     w->color = BLACK;
                     x->p->color = RED;
                     rightRotate(x->p);
                     w = x->p->left;
                 }
                 if(w->right->color == BLACK && w->left->color == BLACK){
+                    printf("delete right case 2\n");
                     w->color = RED;
-                    x->p = x;
+                    x = x->p;
                 }else{
                     if(w->left->color == BLACK){
+                        printf("delete right case 3\n");
                         w->right->color = BLACK;
                         w->color = RED;
                         leftRotate(x->p);
                         w = x->p->left;
                     }
+
+                    printf("delete right case 4\n");
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->left->color = BLACK;
@@ -327,7 +340,7 @@ public:
 
     RBTreeNode * treeMinimum(RBTreeNode * x){
         auto p = x;
-        while(p != nil){
+        while(p->left != nil){
             p = p->left;
         }
         return p;
@@ -382,12 +395,15 @@ RBTree::RBTreeNode* RBTree::RBTreeNode::NIL = new RBTree::RBTreeNode(0, 0, RBTre
 int main()
 {
     RBTree t;
-    int n = 40;
+    int n = 50;
+    
     for(int i=1; i<=n; i++){
-        t.set(i, i);
+        printf("set %d %d\n", i, i);
+        t.set(rand() % n, i);
     }
 
     for(int i=1; i<=n; i++){
+        printf("remove %d\n", i);
         t.remove(i);
     }
 
@@ -401,3 +417,27 @@ int main()
     
     return 0;
 }
+
+int main2()
+{
+    RBTree t;
+    int i, count = 100;
+    int key;
+
+    srand(time(NULL));
+    for (i = 1; i <= count; ++i) {
+        key = rand() % count;
+        t.set(key, i);
+
+        t.get(key);
+
+        if (!(i % 10)) {
+            t.remove(key);
+        }
+    }
+
+    return 0;
+}
+
+// 1 replaceChild没有设置parent
+// 
