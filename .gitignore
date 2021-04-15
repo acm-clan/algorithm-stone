@@ -9,3 +9,5 @@ templates/a.exe
 user/.DS_Store
 templates/rb.exe
 .vscode/tasks.json
+templates/.vscode/tasks.json
+templates/red-black-tree.exe

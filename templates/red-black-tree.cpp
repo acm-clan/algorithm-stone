@@ -375,18 +375,17 @@ RBTree::RBTreeNode* RBTree::RBTreeNode::NIL = new RBTree::RBTreeNode(0, 0, RBTre
 int main()
 {
     RBTree t;
-    int i, count = 1000000;
+    int i, count = 5;
     int key;
 
     srand(time(NULL));
-    for (i = 1; i <= count; ++i) {
-        key = rand() % count;
-        t.set(key, i);
+    int arr[] = {2, 8, 4, 9, 1};
+    for (i = 0; i < count; ++i) {
+        t.set(arr[i], i);
     }
 
-    for (i = 1; i <= count; ++i) {
-        key = rand() % count;
-        t.remove(key);
+    for (i = 0; i < count; ++i) {
+        t.remove(arr[i]);
     }
 
     return 0;

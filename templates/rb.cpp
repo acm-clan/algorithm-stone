@@ -186,7 +186,6 @@ public:
         z->p = y;
         y->addChild(this, z);
         insert_fixup(z);
-        dump(y);
     }
 
     void dumpInternal(RBTreeNode* n, int d)
@@ -195,14 +194,14 @@ public:
             return;
         for (int i = 0; i < d; i++)
             printf("--");
-        printf("%d(%d %d)\n", n->v, n->k, n->v);
+        printf("%d(%d %d)\n", n->k, n->k, n->v);
         dumpInternal(n->left, d + 1);
         dumpInternal(n->right, d + 1);
     }
 
     void dump(RBTreeNode* n)
     {
-        //dumpInternal(n, 1);
+        dumpInternal(n, 1);
     }
 
     /*
@@ -278,6 +277,8 @@ public:
             auto z = new RBTreeNode(k, v, RED);
             insert(root, z);
         }
+
+        dump(root);
     }
 
     void transplant(RBTreeNode* u, RBTreeNode* v)
@@ -451,18 +452,17 @@ int main2()
 int main()
 {
     RBTree t;
-    int i, count = 1000000;
+    int i, count = 3;
     int key;
 
     srand(time(NULL));
-    for (i = 1; i <= count; ++i) {
-        key = rand() % count;
-        t.set(key, i);
+    int arr[] = {2, 8, 4, 9, 1};
+    for (i = 0; i < count; ++i) {
+        t.set(arr[i], i);
     }
 
-    for (i = 1; i <= count; ++i) {
-        key = rand() % count;
-        t.remove(key);
+    for (i = 0; i < count; ++i) {
+        t.remove(arr[i]);
     }
 
     return 0;

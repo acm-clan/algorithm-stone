@@ -20,6 +20,8 @@
         "xstddef": "cpp",
         "unordered_set": "cpp",
         "stack": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "list": "cpp",
+        "xmemory": "cpp"
     }
 }

@@ -23,9 +23,13 @@ class RedBlackTreeRotate(AlgoScene):
 
     def construct(self):
         tree = AlgoRBTree(self)
-        for i in range(40):
+        n = 1000
+        random.seed(3)
+        arr = np.random.choice(n, size=n, replace=False)
+        print(arr)
+        for i in arr:
             tree.set(i, i)
-        for i in range(40):
+        for i in arr:
             tree.remove(i)
         self.wait()
 

@@ -15,7 +15,7 @@ class AlgoRBTreeNode(object):
         self.p = nil
         self.left = nil
         self.right = nil
-        self.obj = AlgoNode(str(k))
+        # self.obj = AlgoNode(str(k))
 
     def addChild(self, t, z):
         y = self
@@ -30,13 +30,13 @@ class AlgoRBTreeNode(object):
         return self == self.p.left
 
     def isRight(self):
-        return not self.isLeft()
+        return self == self.p.right
 
     def brother(self):
         if self.isLeft():
-            return self.right
+            return self.p.right
         else:
-            return self.left
+            return self.p.left
 
     def replaceChild(self, u, v):
         if u == self.left:
@@ -63,7 +63,7 @@ class AlgoRBTree(AlgoVGroup):
 
         # add nil to the scene
         
-        self.add(self.root.obj)
+        # self.add(self.root.obj)
 
         self.center()
 
@@ -110,6 +110,19 @@ class AlgoRBTree(AlgoVGroup):
                     z.p.color = BLACK
                     z.p.p.color = RED
                     self.leftRotate(z.p.p)
+        self.root.color = BLACK
+
+    def dumpInternal(self, n, d):
+        if (not n):
+            return
+        for _ in range(d):
+            print("--", end='')
+        print("%d(%d %d)"%(n.k, n.k, n.v))
+        self.dumpInternal(n.left, d + 1)
+        self.dumpInternal(n.right, d + 1)
+
+    def dump(self, n):
+        self.dumpInternal(n, 1)
 
     def leftRotate(self, x):
         y = x.right
@@ -139,11 +152,13 @@ class AlgoRBTree(AlgoVGroup):
             u.p.replaceChild(u, v)
 
     def set(self, k, v):
+        print("set ", k, v)
         if self.root == nil:
             self.root = AlgoRBTreeNode(self.get_node_id(), k, v, BLACK)
         else:
             z = AlgoRBTreeNode(self.get_node_id(), k, v, RED)
             self.insert(z)
+        # self.dump(self.root)
 
     def getInternal(self, n, k):
         if not n or n == nil:
@@ -236,6 +251,7 @@ class AlgoRBTree(AlgoVGroup):
         x.color = BLACK
 
     def remove(self, k):
+        print("remove ", k)
         z = self.getInternal(self.root, k)
         if z:
             self.deleteInternal(z)
