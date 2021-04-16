@@ -206,6 +206,33 @@ class AlgoRBTree(AlgoVGroup):
         self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot', args='-Grankdir="TB"')
         return self.pos_infos
 
+    def calc_tree_data(self, root):
+        q = []
+        q.append(root)
+        nodes = []
+        edges = []
+
+        while len(q)>0:
+            p = q.pop(0)
+            nodes.append(DataNode(p.id, p.k, p.v))
+
+            if p.left:
+                self.check_node(p.left)
+                self.check_edge(p, p.left)
+                edges.append([p.id, p.left.id])
+                q.append(p.left)
+            if p.right:
+                self.check_node(p.right)
+                self.check_edge(p, p.right)
+                edges.append([p.id, p.right.id])
+                q.append(p.right)
+
+        return nodes, edges
+
+    def check_edge(self, x, y):
+        if (x.id, y.id) not in self.edge_objs:
+            self.add_edge(x, y)
+
     def update_nodes(self):
         # 数据层
         nodes, edges = self.calc_tree_data(self.root)
@@ -240,10 +267,10 @@ class AlgoRBTree(AlgoVGroup):
             z = AlgoRBTreeNode(self, self.get_node_id(), k, v, RED)
             self.insert(z)
         # add node
-        # self.add_node(z)
+        self.add_node(z)
         # # update new node
-        # self.update_nodes()
-    
+        self.update_nodes()
+      
     def add_node(self, z):
         n = AlgoNode(str(z.k))
         self.node_objs[z.id] = n
@@ -366,32 +393,9 @@ class AlgoRBTree(AlgoVGroup):
         self.node_id += 1
         return self.node_id
 
-    def calc_tree_data(self, root):
-        q = []
-        q.append(root)
-        nodes = []
-        edges = []
-
-        while len(q)>0:
-            p = q.pop(0)
-            nodes.append(DataNode(p.id, p.k, p.v))
-
-            if p.left and not p.left.isNil():
-                edges.append([p.id, p.left.id])
-                q.append(p.left)
-            if p.right and not p.right.isNil():
-                edges.append([p.id, p.right.id])
-                q.append(p.right)
-
-            if p.isLeaf():
-                l = p.id+10000
-                r = p.id+20000
-                nodes.append(DataNode(l, 0, 0))
-                nodes.append(DataNode(r, 0, 0))
-                edges.append([p.id, l])
-                edges.append([p.id, r])
-
-        return nodes, edges
+    def check_node(self, p):
+        if p.id not in self.node_objs:
+            self.add_node(p)
 
     def hide_all(self):
         for k in self.node_objs:
