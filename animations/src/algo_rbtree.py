@@ -219,12 +219,12 @@ class AlgoRBTree(AlgoVGroup):
             if p.left:
                 self.check_node(p.left)
                 self.check_edge(p, p.left)
-                edges.append([p.id, p.left.id])
+                edges.append((p.id, p.left.id))
                 q.append(p.left)
             if p.right:
                 self.check_node(p.right)
                 self.check_edge(p, p.right)
-                edges.append([p.id, p.right.id])
+                edges.append((p.id, p.right.id))
                 q.append(p.right)
 
         return nodes, edges
@@ -236,10 +236,8 @@ class AlgoRBTree(AlgoVGroup):
     def update_nodes(self):
         # 数据层
         nodes, edges = self.calc_tree_data(self.root)
-        print(nodes, edges)
         # layout
         pos_infos = self.calc_networkx(nodes, edges)
-        print(pos_infos)
         # 
         self.move_nodes(pos_infos, nodes, edges)
         # 构造树
@@ -248,10 +246,20 @@ class AlgoRBTree(AlgoVGroup):
         self.nodes = nodes
         self.edges = edges
 
+        # remove unused nodes
+        print("node size:", len(self.node_objs))
+
         for k in self.nodes:
             n = self.get_node(k.id)
             p = self.get_node_pos(k.id)
             n.move_to(p)
+        
+        keys = list(self.edge_objs.keys())
+        for k in keys:
+            if k not in self.edges:
+                e = self.edge_objs[k]
+                self.remove(e)
+                del self.edge_objs[k]
 
         for k in self.edges:
             e = self.get_edge(*k)
