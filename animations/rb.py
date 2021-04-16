@@ -17,6 +17,28 @@ class RedBlackTreeWhatIs(AlgoScene):
     def construct(self):
         self.wait()
 
+class RedBlackTreeInsert(AlgoScene):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+    
+    def construct(self):
+        tree = AlgoRBTree(self)
+        max_value = 100
+        n = 10
+        random.seed(3)
+        arr = np.random.choice(max_value, size=n, replace=False)
+        print(arr)
+        for i in arr:
+            tree.set(i, i)
+        self.wait()
+
+class RedBlackTreeDelete(AlgoScene):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def construct(self):
+        pass
+
 class RedBlackTreeRotate(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

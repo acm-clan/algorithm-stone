@@ -15,7 +15,7 @@ class AlgoRBTreeNode(object):
         self.p = nil
         self.left = nil
         self.right = nil
-        # self.obj = AlgoNode(str(k))
+        self.obj = AlgoNode(str(k))
 
     def addChild(self, t, z):
         y = self
@@ -152,7 +152,6 @@ class AlgoRBTree(AlgoVGroup):
             u.p.replaceChild(u, v)
 
     def set(self, k, v):
-        print("set ", k, v)
         if self.root == nil:
             self.root = AlgoRBTreeNode(self.get_node_id(), k, v, BLACK)
         else:
