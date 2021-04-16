@@ -8,6 +8,7 @@ class AlgoScene(Scene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         random.seed(datetime.now())
+        self.camera.background_rgba = [1, 1, 1, 0.5]
 
     def show_sticky_label(text):
         leet = Text(text, color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)

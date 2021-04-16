@@ -30,7 +30,9 @@ class RedBlackTreeInsert(AlgoScene):
         print(arr)
         for i in arr:
             tree.set(i, i)
-        self.wait()
+        tree.center()
+        # self.play(ShowCreation(tree))
+        # self.wait(10)
 
 class RedBlackTreeDelete(AlgoScene):
     def __init__(self, **kwargs):
