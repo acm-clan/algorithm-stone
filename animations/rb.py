@@ -23,16 +23,17 @@ class RedBlackTreeInsert(AlgoScene):
     
     def construct(self):
         tree = AlgoRBTree(self)
+        self.add(tree)
         max_value = 100
-        n = 10
+        n = 4
         random.seed(3)
         arr = np.random.choice(max_value, size=n, replace=False)
         print(arr)
+        tree.shift(UP*2)
         for i in arr:
             tree.set(i, i)
-        tree.center()
-        self.play(ShowCreation(tree))
-        self.wait(10)
+            # tree.center()
+        # tree.center()
 
 class RedBlackTreeDelete(AlgoScene):
     def __init__(self, **kwargs):

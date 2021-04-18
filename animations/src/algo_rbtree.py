@@ -22,7 +22,6 @@ class AlgoRBTreeNode(object):
         self.p = t.nil()
         self.left = t.nil()
         self.right = t.nil()
-        # self.obj = AlgoNode(str(k))
 
     def addChild(self, t, z):
         y = self
@@ -247,25 +246,40 @@ class AlgoRBTree(AlgoVGroup):
         self.edges = edges
 
         # remove unused nodes
-        print("node size:", len(self.node_objs))
+        keys = list(self.node_objs.keys())
+        for k in keys:
+            if k not in [x.id for x in self.nodes]:
+                o = self.node_objs[k]
+                self.remove(o)
+                self.scene.remove(o)
+                del self.node_objs[k]
 
+        node_animations = []
         for k in self.nodes:
             n = self.get_node(k.id)
             p = self.get_node_pos(k.id)
-            n.move_to(p)
-        
+            node_animations.append(ApplyMethod(n.move_to, p))
+
+        # remove edges
         keys = list(self.edge_objs.keys())
         for k in keys:
             if k not in self.edges:
                 e = self.edge_objs[k]
                 self.remove(e)
+                self.scene.remove(e)
                 del self.edge_objs[k]
 
+        animations = []
         for k in self.edges:
             e = self.get_edge(*k)
             p1 = np.array(self.get_node_pos(k[0]))
             p2 = np.array(self.get_node_pos(k[1]))
-            e.put_start_and_end_on(p1, p2)
+            animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2))
+
+        center = ApplyMethod(self.center)
+        self.scene.play(*node_animations, *animations)
+        # self.scene.play(center)
+        self.scene.wait(2)
 
     def set(self, k, v):
         if self.root.isNil():
@@ -291,7 +305,7 @@ class AlgoRBTree(AlgoVGroup):
     def add_edge(self, n, t):
         if not n or not t:
             return
-        a = Arrow(ORIGIN, RIGHT)
+        a = Arrow(ORIGIN, RIGHT, buff=0.25)
         self.add(a)
         self.edge_objs[(n.id, t.id)] = a
 
@@ -391,7 +405,7 @@ class AlgoRBTree(AlgoVGroup):
                     x = self.root
         x.color = BLACK
 
-    def remove(self, k):
+    def delete(self, k):
         print("remove ", k)
         z = self.getInternal(self.root, k)
         if z:
