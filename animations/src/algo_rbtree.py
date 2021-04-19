@@ -8,14 +8,16 @@ import queue
 raw_nil = None
 
 class DataNode(object):
-    def __init__(self, id, k, v):
+    def __init__(self, id, k, v, raw):
         self.id = id
         self.k = k
         self.v = v
+        self.raw = raw
 
 class AlgoRBTreeNode(object):
     def __init__(self, t, id, k, v, color):
         self.id = id
+        self.tree = t
         self.k = k
         self.v = v
         self.color = color
@@ -75,6 +77,11 @@ class AlgoRBTreeNode(object):
         self.p = x
         t.add_edge(self.p, self)
 
+    def setColor(self, c):
+        self.color = c
+        n = self.tree.get_node(self.id)
+        n.set_color(c)
+
 class AlgoRBTree(AlgoVGroup):
     def __init__(self, scene, **kwargs):
         self.edge_objs = {}
@@ -112,39 +119,45 @@ class AlgoRBTree(AlgoVGroup):
                 x = x.right
         z.p = y
         y.addChild(self, z)
+
+        self.add_node(z)
+        self.scene.show_message("插入元素%d"%(z.k))
+        self.update_nodes()
+
         self.insertFixup(z)
+        self.update_nodes()
     
     def insertFixup(self, z:AlgoRBTreeNode):
         while z.p.color == RED:
             if z.p.isLeft():
                 y = z.p.brother()
                 if y.color == RED:
-                    z.p.color = BLACK
-                    y.color = BLACK
-                    z.p.p.color = RED
+                    z.p.setColor(BLACK)
+                    y.setColor(BLACK)
+                    z.p.p.setColor(RED)
                     z = z.p.p
                 else:
                     if z.isRight():
                         z = z.p
                         self.leftRotate(z)
-                    z.p.color = BLACK
-                    z.p.p.color = RED
+                    z.p.setColor(BLACK)
+                    z.p.p.setColor(RED)
                     self.rightRotate(z.p.p)
             else:
                 y = z.p.brother()
                 if y.color == RED:
-                    z.p.color = BLACK
-                    y.color = BLACK
-                    z.p.p.color = RED
+                    z.p.setColor(BLACK)
+                    y.setColor(BLACK)
+                    z.p.p.setColor(RED)
                     z = z.p.p
                 else:
                     if z.isLeft():
                         z = z.p
                         self.rightRotate(z)
-                    z.p.color = BLACK
-                    z.p.p.color = RED
+                    z.p.setColor(BLACK)
+                    z.p.p.setColor(RED)
                     self.leftRotate(z.p.p)
-        self.root.color = BLACK
+        self.root.setColor(BLACK)
 
     def dumpInternal(self, n, d):
         if (not n):
@@ -220,7 +233,7 @@ class AlgoRBTree(AlgoVGroup):
 
         while len(q)>0:
             p = q.pop(0)
-            nodes.append(DataNode(p.id, p.k, p.v))
+            nodes.append(DataNode(p.id, p.k, p.v, p))
 
             if p.left:
                 self.check_node(p.left)
@@ -265,6 +278,7 @@ class AlgoRBTree(AlgoVGroup):
         for k in self.nodes:
             n = self.get_node(k.id)
             p = self.get_node_pos(k.id)
+            n.set_color(k.raw.color)
             node_animations.append(ApplyMethod(n.move_to, p))
 
         # remove edges
@@ -283,25 +297,27 @@ class AlgoRBTree(AlgoVGroup):
             p2 = np.array(self.get_node_pos(k[1]))+UP*0.25
             animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2))
 
-        center = ApplyMethod(self.center)
         self.scene.play(*node_animations, *animations)
-        # self.scene.play(center)
         self.scene.wait(2)
 
     def set(self, k, v):
         if self.root.isNil():
             z = AlgoRBTreeNode(self, self.get_node_id(), k, v, BLACK)
             self.root = z
+            self.add_node(z)
+            self.update_nodes()
         else:
             z = AlgoRBTreeNode(self, self.get_node_id(), k, v, RED)
             self.insert(z)
-        # add node
-        self.add_node(z)
-        # # update new node
-        self.update_nodes()
       
     def add_node(self, z):
+        if z.id in self.node_objs:
+            return
         n = AlgoNode(str(z.k))
+        if z.isNil():
+            n.scale(0.5)
+
+        n.set_color(RED)
         self.node_objs[z.id] = n
         self.add(n)
         # add edges
@@ -371,53 +387,55 @@ class AlgoRBTree(AlgoVGroup):
             if (x.isLeft()):
                 w = x.brother()
                 if (w.color == RED):
-                    w.color = BLACK
-                    x.p.color = RED
+                    w.setColor(BLACK)
+                    x.p.setColor(RED)
                     self.leftRotate(x.p)
                     w = x.p.right
                 if (w.left.color == BLACK and w.right.color == BLACK):
-                    w.color = RED
+                    w.setColor(RED)
                     x = x.p
                 else:
                     if (w.right.color == BLACK):
-                        w.left.color = BLACK
-                        w.color = RED
+                        w.left.setColor(BLACK)
+                        w.setColor(RED)
                         self.rightRotate(w)
                         w = x.p.right
                     w.color = x.p.color
-                    x.p.color = BLACK
-                    w.right.color = BLACK
+                    x.p.setColor(BLACK)
+                    w.right.setColor(BLACK)
                     self.leftRotate(x.p)
                     x = self.root
             else:
                 w = x.p.left
                 if (w.color == RED):
-                    w.color = BLACK
-                    x.p.color = RED
+                    w.setColor(BLACK)
+                    x.p.setColor(RED)
                     self.rightRotate(x.p)
                     w = x.p.left
                 if (w.right.color == BLACK and w.left.color == BLACK):
-                    w.color = RED
+                    w.setColor(RED)
                     x = x.p
                 else:
                     if (w.left.color == BLACK):
-                        w.right.color = BLACK
-                        w.color = RED
+                        w.right.setColor(BLACK)
+                        w.setColor(RED)
                         self.leftRotate(w)
                         w = x.p.left
 
                     w.color = x.p.color
-                    x.p.color = BLACK
-                    w.left.color = BLACK
+                    x.p.setColor(BLACK)
+                    w.left.setColor(BLACK)
                     self.rightRotate(x.p)
                     x = self.root
-        x.color = BLACK
+        x.setColor(BLACK)
 
     def delete(self, k):
         print("remove ", k)
         z = self.getInternal(self.root, k)
         if z:
             self.deleteInternal(z)
+
+        self.update_nodes()
 
     def get_node_id(self):
         self.node_id += 1
