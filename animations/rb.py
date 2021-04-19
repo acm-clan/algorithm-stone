@@ -26,7 +26,7 @@ class RedBlackTreeInsert(AlgoScene):
         tree = AlgoRBTree(self)
         self.add(tree)
         max_value = 100
-        n = 4
+        n = 2
         random.seed(3)
         arr = np.random.choice(max_value, size=n, replace=False)
         arr = np.array([1,2,3,4,5])

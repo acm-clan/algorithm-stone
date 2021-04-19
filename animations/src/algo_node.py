@@ -9,12 +9,12 @@ class AlgoNode(VGroup):
         self.text_sub_obj = Text("", color=color, font="Consolas").scale(0.3)
 
         if is_circle:
-            self.rect_obj = Circle(color=color).scale(0.3)
+            self.outline_obj = Circle(color=color).scale(0.3)
         else:
-            self.rect_obj = Square(color=color).scale(0.3)
+            self.outline_obj = Square(color=color).scale(0.3)
 
         self.text_sub_obj.shift(DR/4).set_color(RED)
-        self.add(self.text_obj, self.rect_obj, self.text_sub_obj)
+        self.add(self.text_obj, self.outline_obj, self.text_sub_obj)
 
     def set_text(self, text):
         color = "#464445"
