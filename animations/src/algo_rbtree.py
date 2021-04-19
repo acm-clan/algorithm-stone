@@ -203,6 +203,13 @@ class AlgoRBTree(AlgoVGroup):
         for k in edges:
             self.g.add_edge(*k)
         self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot', args='-Grankdir="TB"')
+        points = self.pos_infos
+        x = [points[k][0] for k in points]
+        y = [points[k][1] for k in points]
+        c = (sum(x) / len(points), sum(y) / len(points))
+        for k in self.pos_infos:
+            self.pos_infos[k] = np.array(self.pos_infos[k])-np.array(c)
+
         return self.pos_infos
 
     def calc_tree_data(self, root):
@@ -272,8 +279,8 @@ class AlgoRBTree(AlgoVGroup):
         animations = []
         for k in self.edges:
             e = self.get_edge(*k)
-            p1 = np.array(self.get_node_pos(k[0]))
-            p2 = np.array(self.get_node_pos(k[1]))
+            p1 = np.array(self.get_node_pos(k[0]))+DOWN*0.25
+            p2 = np.array(self.get_node_pos(k[1]))+UP*0.25
             animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2))
 
         center = ApplyMethod(self.center)
@@ -305,7 +312,8 @@ class AlgoRBTree(AlgoVGroup):
     def add_edge(self, n, t):
         if not n or not t:
             return
-        a = Arrow(ORIGIN, RIGHT, buff=0.25)
+        a = Arrow(ORIGIN, ORIGIN, thickness=0.03, buff=1.25)
+        a.set_color(GREEN_C)
         self.add(a)
         self.edge_objs[(n.id, t.id)] = a
 
