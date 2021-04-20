@@ -69,7 +69,9 @@ class AlgoScene(Scene):
     def init_messaged(self, msg, delay=0):
         return self.init_message(msg, delay=delay)
 
-    def show_message(self, msg, delay=3):
+    def show_message(self, msg, delay=3, animate=True):
+        if not animate:
+            return
         self.remove(self.subtitle_message)
         m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
             stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
