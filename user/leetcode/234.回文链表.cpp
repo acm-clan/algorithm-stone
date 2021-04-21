@@ -17,6 +17,8 @@
  */
 class Solution {
 public:
+    //简单的做法为 把链表的值入栈，再出栈比对。
+    //时间复杂度O(n) 空间复杂度O(1)
     //前半部分 和 后半部分的值相等
     //反转后半部分（使用栈） 得到前半部分
     bool isPalindrome(ListNode* head) {
