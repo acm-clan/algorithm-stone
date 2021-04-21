@@ -54,7 +54,7 @@
 3. [滑动窗口入门](https://mp.weixin.qq.com/s/InpmYAfeesc7MHMCV50b-Q)  
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_heap_stack_queue.svg">
 
-#### 链表路线图（进度90%）
+#### 链表路线图（进度100%）
 <img src="https://raw.githubusercontent.com/acm-clan/algorithm-stone/main/images/leetcode_linked_list.svg">
 
 
@@ -95,7 +95,7 @@
 |[图论](https://leetcode-cn.com/tag/graph)| graph  | 43 | | 0% |
 |[堆](https://leetcode-cn.com/tag/heap)| heap  |43  |`dansen` | 100% |
 |[设计题](https://leetcode-cn.com/tag/design)| design  | 47 | | 0% |
-|[链表](https://leetcode-cn.com/tag/linked-list)| `linked-list` | 51 |`chocolate` `dansen` | 90% |
+|[链表](https://leetcode-cn.com/tag/linked-list)| `linked-list` | 51 |`chocolate` | 100% |
 |[回溯算法](https://leetcode-cn.com/tag/backtracking)| backtracking  | 61 | | 0% |
 |[位运算](https://leetcode-cn.com/tag/bit-manipulation)| bit-manipulation  | 66 | | 0% |
 |[栈](https://leetcode-cn.com/tag/stack)| stack  | 66 |`dansen` | 100% |

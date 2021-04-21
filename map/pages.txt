@@ -5,4 +5,5 @@
 0x05 https://www.youtube.com/c/BukanCaraCepat/videos [算法动画]
 0x06 https://www.reddit.com/search/?q=manim%20sort%20 [算法动画]
 0x07 https://github.com/llimllib/pymag-trees/ [树形绘制]
-
+0x08 https://www.youtube.com/watch?v=r6sGWTCMz2k [3b1b动画学习]
+0x09 https://www.youtube.com/watch?v=wTJI_WuZSwE [3b1b动画学习]
