@@ -156,7 +156,7 @@ class RedBlackTreeInsert(AlgoScene):
         print("--------------rand----------", seed)
         tree = self.tree
         max_value = 100
-        np.random.seed(1)
+        np.random.seed(seed)
         n = 8
         arr = np.random.choice(max_value, size=n, replace=False)
         print(arr)
