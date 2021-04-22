@@ -6,13 +6,18 @@ class RBPropertyPanel(AlgoVGroup):
     def __init__(self, scene, **kwargs):
         super().__init__(**kwargs)
 
-        arr = [Text("1 每个节点是红色或者黑色，包括叶子nil节点"),
-        Text("2 根节点是黑色"),
-        Text("3 叶子节点是黑色"),
-        Text("4 如果一个节点是红色，则其子节点都是黑色"),
-        Text("5 对于每一个节点，从该节点到叶子节点的所有路径上，黑色节点数量相同")]
-        self.add(arr)
-        self.arrange(direction=DOWN)
+        arr = [AlgoText("1 每个节点是红色或者黑色，包括叶子nil节点"),
+        AlgoText("2 根节点是黑色"),
+        AlgoText("3 叶子节点是黑色"),
+        AlgoText("4 如果一个节点是红色，则其子节点都是黑色"),
+        AlgoText("5 对于每一个节点，从该节点到叶子节点的所有路径上，黑色节点数量相同")]
+        text_group = VGroup()
+        text_group.add(*arr)
+        text_group.arrange(direction=DOWN)
+        self.add(text_group)
+
+        rect = SurroundingRectangle(text_group)
+        self.add(rect)
         self.center()
 
 class RedBlackTreePreface(AlgoScene):
@@ -42,6 +47,7 @@ class RedBlackTreeWhatIs(AlgoScene):
         tree.shift(UP*2)
         for i in arr:
             tree.set(i, i)
+
         # 
         self.show_message("红黑树是自平衡二叉查找树")
         self.show_message("左孩子的值大于根节点")
@@ -52,6 +58,8 @@ class RedBlackTreeWhatIs(AlgoScene):
         p = RBPropertyPanel(self)
         p.to_edge(RIGHT)
         self.play(ShowCreation(p))
+
+        self.snapshot()
 
         self.show_message("1 每个节点是红色或者黑色，包括叶子nil节点")
         self.show_message("2 根节点是黑色")

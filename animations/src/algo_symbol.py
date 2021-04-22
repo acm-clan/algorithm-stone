@@ -17,3 +17,12 @@ class AlgoExmark(TexText):
 
     def __init__(self, **kwargs):
         super().__init__("\\ding{55}")
+
+class AlgoText(Text):
+    CONFIG = {
+        "color": BLACK,
+    }
+
+    def __init__(self, text, **kwargs):
+        super().__init__(text, **kwargs)
+        self.scale(0.3)

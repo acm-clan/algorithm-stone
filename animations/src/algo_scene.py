@@ -1,6 +1,7 @@
 ﻿from manimlib import *
-import random
+from time import gmtime, strftime
 from datetime import datetime
+import random
 from .algo_config import *
 from .algo_logo import *
 
@@ -128,3 +129,10 @@ class AlgoScene(Scene):
         # add image
         code = ImageMobject("assets/code3.png").scale(0.3)
         self.play(ShowCreation(code))
+
+    def snapshot(self):
+        image = self.get_image()
+        v = random.random()
+        path = "algo_image_%s_%d.png"%(datetime.now().strftime('%Y%m%d%H%M%S'), int(v*1000000))
+        image.save(path)
+        print("snapshot:", path)

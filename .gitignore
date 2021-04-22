@@ -11,3 +11,4 @@ templates/rb.exe
 .vscode/tasks.json
 templates/.vscode/tasks.json
 templates/red-black-tree.exe
+algo_image*.png
