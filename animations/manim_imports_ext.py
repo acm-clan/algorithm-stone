@@ -9,7 +9,7 @@ from src.algo_logo import *
 from src.algo_graph import *
 from src.algo_avatar import *
 from src.algo_table import *
-from src.algo_symbol import *
+from src.algo_objects import *
 from src.algo_segtree import *
 from src.algo_rbtree import *
 
