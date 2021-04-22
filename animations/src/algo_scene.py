@@ -9,7 +9,7 @@ class AlgoScene(Scene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         random.seed(datetime.now())
-        self.camera.background_rgba = [1, 1, 1, 1]
+        self.camera.background_rgba = [1, 1, 1, 0.5]
         # remove
         from pathlib import Path
         for p in Path(".").glob("algo*.png"):
