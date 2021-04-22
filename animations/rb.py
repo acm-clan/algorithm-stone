@@ -115,12 +115,14 @@ class RedBlackTreeRotate(AlgoScene):
         self.show_message("插入和删除操作会破坏红黑树的5条性质")
         self.show_message("维护这5条性质是通过旋转来完成的")
         self.show_message("来看这3个节点的插入操作")
+        self.snapshot()
 
         tree.shift(UP*2)
         for i in arr:
             tree.set(i, i)
 
         self.show_message("节点3插入后，需要左旋达到平衡")
+        self.snapshot()
 
         self.show_message("如果节点换成是[3, 2, 1]")
         arr = [3, 2, 1]
@@ -129,6 +131,7 @@ class RedBlackTreeRotate(AlgoScene):
         self.play(Transform(v, v2))
         self.play(Uncreate(tree))
         self.remove(tree)
+        self.snapshot()
 
         tree = AlgoRBTree(self)
         tree.ctx.insert_message = True
@@ -140,6 +143,7 @@ class RedBlackTreeRotate(AlgoScene):
             tree.set(i, i)
 
         self.show_message("节点1插入后，需要右旋达到平衡")
+        self.snapshot()
 
         self.wait()
 
