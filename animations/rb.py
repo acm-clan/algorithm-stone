@@ -175,7 +175,7 @@ class RedBlackTreeInsert(AlgoScene):
         self.add(tree)
         self.tree = tree
 
-        for i in range(0, 10):
+        for i in range(100):
             self.rand(i)
 
 # 4 case
