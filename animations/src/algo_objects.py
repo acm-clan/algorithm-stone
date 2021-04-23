@@ -48,3 +48,17 @@ class AlgoPropertyPanel(AlgoVGroup):
     def light(self, index, color=BLACK):
         self.text_group.submobjects[index].set_color(color)
 
+class AlgoStdioFilter():
+    def __init__(self, c, cb):
+        self.cb = cb
+        self.c = c
+        import io
+
+        real_stdout = sys.stdout
+        fake_stdout = io.StringIO()
+        sys.stdout = fake_stdout
+        self.c()
+        output_string = fake_stdout.getvalue()
+        fake_stdout.close()
+        sys.stdout = real_stdout
+        self.cb(output_string)

@@ -1,4 +1,5 @@
 from manim_imports_ext import *
+import io
 
 # 红黑树的噩梦，可以结束了
 
@@ -152,39 +153,80 @@ class RedBlackTreeInsert(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def rand(self, seed):
-        print("--------------rand----------", seed)
-        tree = self.tree
+    def rand(self, seed, animate_index):
+        tree = AlgoRBTree(self)
+        self.add(tree)
+        tree.ctx.insert_message = False
+        tree.ctx.delete_message = False
+        tree.ctx.animate = False
         max_value = 100
         np.random.seed(seed)
         n = 8
         arr = np.random.choice(max_value, size=n, replace=False)
         print(arr)
         tree.shift(UP*2)
+        index = 0
         for i in arr:
+            if index >= animate_index:
+                tree.ctx.insert_message = True
+                tree.ctx.animate = True
             tree.set(i, i)
-        for i in arr:
-            tree.delete(i)
+            index += 1
+
+        self.play(FadeOut(tree))
     
     def construct(self):
         self.init_message("红黑树插入")
-        tree = AlgoRBTree(self)
-        tree.ctx.insert_message = False
-        tree.ctx.delete_message = False
-        tree.ctx.animate = False
-        self.add(tree)
-        self.tree = tree
+        # left case 
+        self.rand(5, 6)
 
-        for i in range(100):
-            self.rand(i)
+        # right case 1,2,3
+        self.rand(3, 6)
+
+        self.wait()
 
 # 4 case
 class RedBlackTreeDelete(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+    def rand(self, seed, count, animate_index):
+        print("--------------rand-------------", seed)
+        tree = AlgoRBTree(self)
+        self.add(tree)
+        tree.ctx.insert_message = False
+        tree.ctx.delete_message = False
+        tree.ctx.animate = False
+        max_value = 100
+        np.random.seed(seed)
+        n = count
+        arr = np.random.choice(max_value, size=n, replace=False)
+        print(arr)
+        tree.shift(UP*2)
+        index = 0
+
+        for i in arr:
+            tree.set(i, i)
+
+        np.random.shuffle(arr)
+        for i in arr:
+            if index >= animate_index:
+                tree.ctx.delete_message = True
+                tree.ctx.animate = True
+            tree.delete(i)
+            index += 1
+
+        self.play(FadeOut(tree))
+
     def construct(self):
-        pass
+        self.init_message("红黑树删除的4个case")
+        # left case 1,2,3,4
+        self.rand(560, 9, 3)
+
+        # right case 1,2,3,4
+        self.rand(18, 8, 2)
+        
+        self.wait()
 
 class RedBlackTreeEnd(AlgoScene):
     def __init__(self, **kwargs):
@@ -192,3 +234,5 @@ class RedBlackTreeEnd(AlgoScene):
 
     def construct(self):
         pass
+
+    
