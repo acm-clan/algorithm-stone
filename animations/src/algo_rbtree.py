@@ -145,7 +145,7 @@ class AlgoRBTree(AlgoVGroup):
                 self.scene.show_message("父节点在左边", animate=self.ctx.insert_message)
                 y = z.p.brother()
                 if y.color == RED:
-                    # print("left case 1")
+                    print("insert left case 1")
                     self.scene.show_message("插入case 1：叔叔节点存在并且为红色", animate=self.ctx.insert_message)
                     z.p.setColor(BLACK)
                     y.setColor(BLACK)
@@ -154,12 +154,12 @@ class AlgoRBTree(AlgoVGroup):
                     self.update_nodes()
                 else:
                     if z.isRight():
-                        # print("left case 2")
+                        print("insert left case 2")
                         self.scene.show_message("插入case 2：新节点在右边，左旋新节点再执行case 3", animate=self.ctx.insert_message)
                         z = z.p
                         self.leftRotate(z)
                         self.update_nodes()
-                    # print("left case 3")
+                    print("insert left case 3")
                     self.scene.show_message("插入case 3：设置父节点为黑色，祖父节点为红色，右旋祖父节点%d"%(z.p.p.k), animate=self.ctx.insert_message)
                     z.p.setColor(BLACK)
                     z.p.p.setColor(RED)
@@ -169,7 +169,7 @@ class AlgoRBTree(AlgoVGroup):
                 self.scene.show_message("父节点在右边", animate=self.ctx.insert_message)
                 y = z.p.brother()
                 if y.color == RED:
-                    # print("right case 1")
+                    print("insert right case 1")
                     self.scene.show_message("插入case 1：叔叔节点存在并且为红色", animate=self.ctx.insert_message)
                     z.p.setColor(BLACK)
                     y.setColor(BLACK)
@@ -178,12 +178,12 @@ class AlgoRBTree(AlgoVGroup):
                     self.update_nodes()
                 else:
                     if z.isLeft():
-                        # print("right case 2")
+                        print("insert right case 2")
                         self.scene.show_message("插入case 2：新节点在左边，右旋转再执行case 3", animate=self.ctx.insert_message)
                         z = z.p
                         self.rightRotate(z)
                         self.update_nodes()
-                    # print("right case 3")
+                    print("insert right case 3")
                     self.scene.show_message("插入case 3：设置父节点为黑色，祖父节点为红色，左旋祖父节点%d"%(z.p.p.k), animate=self.ctx.insert_message)
                     z.p.setColor(BLACK)
                     z.p.p.setColor(RED)
@@ -443,7 +443,7 @@ class AlgoRBTree(AlgoVGroup):
                 self.scene.show_message("替换节点在左边", animate=self.ctx.delete_message)
                 w = x.brother()
                 if (w.color == RED):
-                    print("left case 1")
+                    print("delete left case 1")
                     self.scene.show_message("删除case 1：兄弟节点是红色，设置兄弟节点为黑色，设置父节点为红色", animate=self.ctx.delete_message)
                     self.scene.show_message("左旋父节点%d"%(x.p.k), animate=self.ctx.delete_message)
                     w.setColor(BLACK)
@@ -452,13 +452,13 @@ class AlgoRBTree(AlgoVGroup):
                     w = x.p.right
                     self.update_nodes()
                 if (w.left.color == BLACK and w.right.color == BLACK):
-                    print("left case 2")
+                    print("delete left case 2")
                     self.scene.show_message("删除case 2：兄弟节点的子节点都是黑色，设置父节点为红色", animate=self.ctx.delete_message)
                     w.setColor(RED)
                     x = x.p
                 else:
                     if (w.right.color == BLACK):
-                        print("left case 3")
+                        print("delete left case 3")
                         self.scene.show_message("删除case 3：兄弟节点的右孩子为黑色，右旋兄弟节点", animate=self.ctx.delete_message)
                         self.scene.show_message("设置兄弟节点的左孩子为红色，兄弟节点为红色", animate=self.ctx.delete_message)
                         w.left.setColor(BLACK)
@@ -468,7 +468,7 @@ class AlgoRBTree(AlgoVGroup):
                         w = x.p.right
                         self.update_nodes()
 
-                    print("left case 4")
+                    print("delete left case 4")
                     self.scene.show_message("删除case 4：设置兄弟节点为父节点的颜色，父节点为黑色，兄弟节点右孩子黑色，左旋父节点", 
                         animate=self.ctx.delete_message)
                     w.color = x.p.color
@@ -481,7 +481,7 @@ class AlgoRBTree(AlgoVGroup):
                 self.scene.show_message("节点在右边", animate=self.ctx.delete_message)
                 w = x.p.left
                 if (w.color == RED):
-                    print("right case 1")
+                    print("delete right case 1")
                     self.scene.show_message("删除case 1：兄弟节点是红色，设置兄弟节点为黑色，设置父节点为红色", animate=self.ctx.delete_message)
                     self.scene.show_message("右旋父节点%d"%(x.p.k), animate=self.ctx.delete_message)
                     w.setColor(BLACK)
@@ -490,14 +490,14 @@ class AlgoRBTree(AlgoVGroup):
                     w = x.p.left
                     self.update_nodes()
                 if (w.right.color == BLACK and w.left.color == BLACK):
-                    print("right case 2")
+                    print("delete right case 2")
                     self.scene.show_message("删除case 2：兄弟节点的子节点都是黑色，设置父节点为红色", animate=self.ctx.delete_message)
                     w.setColor(RED)
                     x = x.p
                     self.update_nodes()
                 else:
                     if (w.left.color == BLACK):
-                        print("right case 3")
+                        print("delete right case 3")
                         self.scene.show_message("删除case 3：兄弟节点的左孩子为黑色，右旋兄弟节点", animate=self.ctx.delete_message)
                         self.scene.show_message("设置兄弟节点的右孩子为红色，兄弟节点为红色", animate=self.ctx.delete_message)
                         w.right.setColor(BLACK)
@@ -505,7 +505,7 @@ class AlgoRBTree(AlgoVGroup):
                         self.leftRotate(w)
                         w = x.p.left
                         self.update_nodes()
-                    print("right case 4")
+                    print("delete right case 4")
                     self.scene.show_message("删除case 4：设置兄弟节点为父节点的颜色，父节点为黑色，兄弟节点左孩子黑色，右旋父节点", animate=self.ctx.delete_message)
                     w.color = x.p.color
                     x.p.setColor(BLACK)
