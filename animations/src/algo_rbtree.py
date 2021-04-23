@@ -88,6 +88,7 @@ class AlgoRBTreeContext():
         self.animate = True
         self.insert_message = True
         self.delete_message = True
+        self.run_time = 1
 
 class AlgoRBTree(AlgoVGroup):
     def __init__(self, scene, **kwargs):
@@ -314,7 +315,7 @@ class AlgoRBTree(AlgoVGroup):
             p = self.get_node_pos(k.id)
             n.set_color(k.raw.color)
             if self.ctx.animate:
-                node_animations.append(ApplyMethod(n.move_to, p))
+                node_animations.append(ApplyMethod(n.move_to, p, run_time=self.ctx.run_time))
             else:
                 node_animations.append(ApplyMethod(n.move_to, p, run_time=0.01))
 
@@ -334,7 +335,7 @@ class AlgoRBTree(AlgoVGroup):
             p2 = np.array(self.get_node_pos(k[1]))+UP*0.25
 
             if self.ctx.animate:
-                animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2))
+                animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2, run_time=self.ctx.run_time))
             else:
                 animations.append(ApplyMethod(e.put_start_and_end_on, p1, p2, run_time=0.01))
 

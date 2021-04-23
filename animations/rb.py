@@ -232,7 +232,38 @@ class RedBlackTreeEnd(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def construct(self):
-        pass
+    def rand(self, seed, count):
+        tree = AlgoRBTree(self)
+        self.add(tree)
+        tree.ctx.insert_message = False
+        tree.ctx.delete_message = False
+        tree.ctx.animate = True
+        tree.ctx.run_time = 0.1
 
-    
+        max_value = count*2
+        np.random.seed(seed)
+        n = count
+        arr = np.random.choice(max_value, size=n, replace=False)
+        print(arr)
+        tree.shift(UP*2)
+
+        for i in arr:
+            print("insert:", i)
+            tree.set(i, i)
+
+        np.random.shuffle(arr)
+        for i in arr:
+            print("delete:", i)
+            tree.delete(i)
+            index += 1
+
+        self.play(FadeOut(tree))
+
+    def construct(self):
+        self.init_message("红黑树大型树结构变化")
+
+        self.show_message("在最后，让我们创建一个1000个节点的巨型树")
+        self.show_message("便于我们更加直观的了解红黑树是如何运作的")
+        self.rand(560, 100)
+        self.show_message("完成红黑树，谢谢观看！")
+        self.wait()
