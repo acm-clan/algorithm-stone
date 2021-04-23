@@ -228,6 +228,14 @@ class RedBlackTreeDelete(AlgoScene):
         
         self.wait()
 
+def memory():
+    import os
+    import psutil
+    pid = os.getpid()
+    py = psutil.Process(pid)
+    memoryUse = py.memory_info()[0]/2.**30  # memory use in GB...I think
+    return memoryUse
+
 class RedBlackTreeEnd(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -239,6 +247,7 @@ class RedBlackTreeEnd(AlgoScene):
         tree.ctx.delete_message = False
         tree.ctx.animate = True
         tree.ctx.run_time = 0.1
+        tree.ctx.wait_time = 0.1
 
         max_value = count*2
         np.random.seed(seed)
@@ -246,14 +255,16 @@ class RedBlackTreeEnd(AlgoScene):
         arr = np.random.choice(max_value, size=n, replace=False)
         print(arr)
         tree.shift(UP*2)
-
+        index = 1
         for i in arr:
-            print("insert:", i)
+            print("insert:", memory(), index, i)
             tree.set(i, i)
+            index += 1
 
         np.random.shuffle(arr)
+        index = 1
         for i in arr:
-            print("delete:", i)
+            print("delete:", index, i)
             tree.delete(i)
             index += 1
 

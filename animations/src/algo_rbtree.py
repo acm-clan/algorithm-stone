@@ -89,6 +89,7 @@ class AlgoRBTreeContext():
         self.insert_message = True
         self.delete_message = True
         self.run_time = 1
+        self.wait_time = 2
 
 class AlgoRBTree(AlgoVGroup):
     def __init__(self, scene, **kwargs):
@@ -244,15 +245,19 @@ class AlgoRBTree(AlgoVGroup):
 
     def calc_networkx(self, nodes, edges):
         self.g = nx.Graph()
+        print("1---", len(nodes), len(edges))
         for k in nodes:
             self.g.add_node(k.id)
         for k in edges:
             self.g.add_edge(*k)
+        print("2---", len(nodes), len(edges))
         self.pos_infos = nx.nx_agraph.graphviz_layout(self.g, prog='dot', args='-Grankdir="TB"')
+        print("3---", len(nodes), len(edges))
         points = self.pos_infos
         x = [points[k][0] for k in points]
         y = [points[k][1] for k in points]
         c = (sum(x) / len(points), sum(y) / len(points))
+        print("4---", len(nodes), len(edges))
         for k in self.pos_infos:
             self.pos_infos[k] = np.array(self.pos_infos[k])-np.array(c)
 
@@ -289,10 +294,13 @@ class AlgoRBTree(AlgoVGroup):
         if not self.ctx.animate:
             return
         # 数据层
+        print("calc_tree_data")
         nodes, edges = self.calc_tree_data(self.root)
         # layout
+        print("calc_networkx")
         pos_infos = self.calc_networkx(nodes, edges)
         # 
+        print("move_nodes")
         self.move_nodes(pos_infos, nodes, edges)
         # 构造树
 
@@ -342,7 +350,7 @@ class AlgoRBTree(AlgoVGroup):
         self.scene.play(*node_animations, *animations)
 
         if self.ctx.animate:
-            self.scene.wait(2)
+            self.scene.wait(self.ctx.wait_time)
 
     def set(self, k, v):
         if self.root.isNil():
