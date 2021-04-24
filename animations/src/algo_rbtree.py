@@ -5,8 +5,6 @@ from .algo_vgroup import *
 from .algo_node import *
 import queue
 
-raw_nil = None
-
 class DataNode(object):
     def __init__(self, id, k, v, raw):
         self.id = id
@@ -105,17 +103,17 @@ class AlgoRBTree(AlgoVGroup):
         super().__init__(**kwargs)
 
         self.node_id = 0
-        global raw_nil
-        raw_nil = AlgoRBTreeNode(self, 0, -1, 0, BLACK)
+        self.raw_nil = None
+        self.raw_nil = AlgoRBTreeNode(self, 0, -1, 0, BLACK)
         self.root = self.nil()
         # self.add_node(nil)
         self.center()
 
     def nil(self):
         id = self.get_node_id()
-        if raw_nil == None:
+        if self.raw_nil == None:
             return None
-        n = copy.copy(raw_nil)
+        n = copy.copy(self.raw_nil)
         n.id = id
         return n
 
@@ -354,6 +352,7 @@ class AlgoRBTree(AlgoVGroup):
 
     def set(self, k, v):
         if self.root.isNil():
+            self.scene.show_message("插入元素%d"%(k), animate=self.ctx.insert_message, delay=0)
             z = AlgoRBTreeNode(self, self.get_node_id(), k, v, BLACK)
             self.root = z
             self.add_node(z)
