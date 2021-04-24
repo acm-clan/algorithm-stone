@@ -28,25 +28,26 @@ class AlgoText(Text):
         super().__init__(text, **kwargs)
         self.scale(0.3)
 
-
 class AlgoPropertyPanel(AlgoVGroup):
-    def __init__(self, text_list, **kwargs):
+    def __init__(self, scene, text_list, **kwargs):
         super().__init__(**kwargs)
 
-        arr = [AlgoText(x, color=DARK_BROWN) for x in text_list]
+        arr = [AlgoText(x, color=GREY) for x in text_list]
+        self.scene = scene
 
         text_group = VGroup()
         text_group.add(*arr)
-        text_group.arrange(direction=DOWN, aligned_edge=LEFT, buff=SMALL_BUFF)
-        self.add(text_group)
+        text_group.arrange(direction=DOWN, aligned_edge=LEFT, buff=0.2)
+        
         self.text_group = text_group
 
-        rect = SurroundingRectangle(text_group)
+        rect = BackgroundRectangle(text_group, color=GREY_A, buff=0.5)
         self.rect = rect
         self.add(rect)
+        self.add(text_group)
 
     def light(self, index, color=BLACK):
-        self.text_group.submobjects[index].set_color(color)
+        self.scene.play(ApplyMethod(self.text_group.submobjects[index].set_color, color))
 
 class AlgoStdioFilter():
     def __init__(self, c, cb):

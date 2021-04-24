@@ -395,6 +395,13 @@ class AlgoRBTree(AlgoVGroup):
             return None
         return self.node_objs[id]
 
+    def get_nil_nodes(self):
+        n = []
+        for k in self.nodes:
+             if k.k == -1:
+                 n.append(self.get_node(k.id))
+        return n
+
     def get_edge(self, i, j):
         return self.edge_objs[(i, j)]
 

@@ -15,26 +15,43 @@ class RedBlackTreeWhatIs(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def compare_nodes(self, a, b):
+    def compare_nodes(self, a, b, cmp):
         left = a.copy()
         right = b.copy()
-        p = LEFT*3+UP*3
-        self.play(ApplyMethod(left.move_to, p+LEFT*0.5), ApplyMethod(right.move_to, p+RIGHT*0.5))
-        t = AlgoText("<").next_to(left)
+
+        p = LEFT*4+UP*3
+
+        self.play(ApplyMethod(left.move_to, p+LEFT*0.6), ApplyMethod(right.move_to, p+RIGHT*0.6), run_time=1)
+        t = AlgoText(cmp, color=RED).next_to(left).shift(LEFT*0.05)
         self.play(FadeIn(t))
-        self.play(FadeOut(left), FadeOut(right))
+        self.wait(2)
+        self.play(FadeOut(left), FadeOut(right), FadeOut(t))
 
     def hide_and_show(self, tree:AlgoRBTree, root):
         el = tree.get_edge(tree.root.id, tree.root.left.id)
         er = tree.get_edge(tree.root.id, tree.root.right.id)
-        self.play(FadeOut(root, remover=False), FadeOut(el, remover=False), FadeOut(er, remover=False))
-        self.show_message("左子树是二叉查找树")
-        self.show_message("右子树也是二叉查找树")
+        self.play(FadeOut(root), FadeOut(el), FadeOut(er))
         self.wait(2)
         self.play(FadeIn(root), FadeIn(el), FadeIn(er))
         self.wait()
 
+    def indicate_nils(self, tree):
+        nils = tree.get_nil_nodes()
+        self.indicate_nodes(tree, nils)
+        
+
+    def indicate_nodes(self, tree, nodes):
+        animations = []
+        for k in nodes:
+            a = ApplyWave(k)
+            b = CircleIndicate(k, color=RED)
+            animations.append(b)
+            animations.append(a)
+        self.play(*animations, run_time=2)
+
     def construct(self):
+        self.go_speed_up()
+        self.start_logo(subtitle="红黑树")
         self.init_message("红黑树的性质")
         tree = AlgoRBTree(self)
         tree.ctx.insert_message = False
@@ -49,17 +66,19 @@ class RedBlackTreeWhatIs(AlgoScene):
         tree.shift(UP*2)
         for i in arr:
             tree.set(i, i)
+        tree.ctx.animate = True
+        tree.update_nodes()
 
-        self.show_message("红黑树是自平衡二叉查找树")
+        self.show_message("红黑树是一种二叉查找树")
         root = tree.get_node(tree.root.id)
         left = tree.get_node(tree.root.left.id)
         right = tree.get_node(tree.root.right.id)
 
-        self.show_message("左孩子的值大于根节点")
-        self.compare_nodes(left, root)
+        self.show_message("左孩子的值小于根节点")
+        self.compare_nodes(left, root, "<")
 
-        self.show_message("右孩子的值小于根节点")
-        self.compare_nodes(root, right)
+        self.show_message("右孩子的值大于根节点")
+        self.compare_nodes(right, root, ">")
         
         self.show_message("左右子树分别为二叉查找树")
         self.hide_and_show(tree, root)
@@ -73,25 +92,36 @@ class RedBlackTreeWhatIs(AlgoScene):
             "4 如果一个节点是红色，则其子节点都是黑色",
             "5 对于每一个节点，从该节点到叶子节点的所有路径上，黑色节点数量相同",
         ]
-        panel = AlgoPropertyPanel(text_list)
-        panel.to_edge(UR)
+        
+        self.play(ApplyMethod(self.camera.frame.shift, RIGHT*3.0))
+        panel = AlgoPropertyPanel(self, text_list).scale(0.7)
+        panel.next_to(tree).shift(UP+LEFT*1.5)
         self.play(ShowCreation(panel))
 
         self.snapshot()
         
         self.show_message("1 每个节点是红色或者黑色，包括叶子nil节点")
         panel.light(0)
-
+        
         self.show_message("2 根节点是黑色")
+        root_node = tree.get_node(tree.root.id)
+        self.play(ApplyWave(root_node), CircleIndicate(root_node, color=RED, run_time=2))
         panel.light(1)
 
         self.show_message("3 叶子nil节点是黑色")
+        self.indicate_nils(tree)
         panel.light(2)
-
+        
         self.show_message("4 如果一个节点是红色，则其子节点都是黑色")
+        n = tree.root.right
+        l = n.left
+        r = n.right
+        self.indicate_nodes(tree, [tree.get_node(n.id), tree.get_node(l.id), tree.get_node(r.id)])
         panel.light(3)
 
+        self.reset_speed_up()
         self.show_message("5 对于每一个节点，从该节点到叶子节点的所有路径上，黑色节点数量相同")
+        self.show_message("如上树中根节点到所有叶子节点的黑色节点数量都是3")
         panel.light(4)
         
         self.wait()
@@ -246,8 +276,8 @@ class RedBlackTreeEnd(AlgoScene):
         tree.ctx.insert_message = False
         tree.ctx.delete_message = False
         tree.ctx.animate = True
-        tree.ctx.run_time = 0.1
-        tree.ctx.wait_time = 0.1
+        tree.ctx.run_time = 0.5
+        tree.ctx.wait_time = 0.5
 
         max_value = count*2
         np.random.seed(seed)
@@ -256,6 +286,7 @@ class RedBlackTreeEnd(AlgoScene):
         print(arr)
         tree.shift(UP*2)
         index = 1
+
         for i in arr:
             print("insert:", memory(), index, i)
             tree.set(i, i)
@@ -272,9 +303,22 @@ class RedBlackTreeEnd(AlgoScene):
 
     def construct(self):
         self.init_message("红黑树大型树结构变化")
-
-        self.show_message("在最后，让我们创建一个1000个节点的巨型树")
+        self.show_message("在最后，让我们创建一个20个节点的巨型树")
         self.show_message("便于我们更加直观的了解红黑树是如何运作的")
-        self.rand(560, 100)
+        self.camera.frame.shift(OUT*10)
+        self.rand(1, 20)
+
+
+
+
+
+
+
+
+
+
+
+
+        
         self.show_message("完成红黑树，谢谢观看！")
         self.wait()

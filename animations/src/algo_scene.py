@@ -20,12 +20,8 @@ class AlgoScene(Scene):
         self.play(ShowCreation(leet))
 
     def start_logo(self, animate=True, stay=False, subtitle=""):
-        self.camera.background_rgba = [1, 1, 1, 0.5]
         v = self.create_six_background()
         self.add(v)
-        
-        if animate:
-            self.play(ShowCreation(v))
         
         text = VGroup(
             Text("ACM", font=AlgoFontName, color="#1fa0cf").scale(0.5),
@@ -39,6 +35,12 @@ class AlgoScene(Scene):
 
         logo = AlgoLogo().scale(0.15).next_to(text, direction=LEFT)
         self.add(logo)
+
+        sub = None
+        if subtitle != "" and animate:
+            sub = Text(subtitle, font=AlgoFontName, color="#333").scale(0.5)
+            sub.next_to(text, direction=DOWN)
+            self.play(ShowCreation(sub))
 
         if animate:
             self.play(ShowCreation(logo))
@@ -59,6 +61,12 @@ class AlgoScene(Scene):
             else:
                 group.scale(0.3)
                 group.to_edge(DL)
+        if sub:
+            self.play(ApplyMethod(sub.shift, UP*1.5), run_time=1)
+            self.wait()
+            self.play(FadeOut(sub))
+
+        group.fix_in_frame()
         return group
 
     def create_serif_font(self, msg, color=WHITE):
@@ -67,6 +75,7 @@ class AlgoScene(Scene):
     def init_message(self, msg, delay=3):
         self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
             stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+        self.subtitle_message.fix_in_frame()
         self.play(Write(self.subtitle_message))
         self.wait(delay)
         return self.subtitle_message
@@ -80,6 +89,7 @@ class AlgoScene(Scene):
         self.remove(self.subtitle_message)
         m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
             stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+        m.fix_in_frame()
         self.subtitle_message = m
         self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
         self.wait(delay)
@@ -97,7 +107,7 @@ class AlgoScene(Scene):
     def create_six_background(self):
         v = VGroup()
 
-        for i in range(0, 9):
+        for i in range(0, 11):
             last = None
             for j in range(0, 21):
                 r = 0

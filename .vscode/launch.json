@@ -26,7 +26,7 @@
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
             // "args": ["segmenttree.py", "SegmentTreeQuery", ""]
-            "args": ["rb.py", "RedBlackTreeInsert", "-w"]
+            "args": ["rb.py", "RedBlackTreeWhatIs", ""]
         },
         {
             "name": "merge",
