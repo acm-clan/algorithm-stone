@@ -83,16 +83,23 @@ class AlgoScene(Scene):
     def init_messaged(self, msg, delay=0):
         return self.init_message(msg, delay=delay)
 
-    def show_message(self, msg, delay=3, animate=True):
+    def show_message(self, msg, delay=3, animate=True, tex=False, tex_map={}):
         if not animate:
             return
         self.remove(self.subtitle_message)
-        m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-            stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
-        m.fix_in_frame()
-        self.subtitle_message = m
-        self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
-        self.wait(delay)
+        if tex:
+            m = TexText(msg, color="#333", tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
+            m.fix_in_frame()
+            self.subtitle_message = m
+            self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
+            self.wait(delay)
+        else:
+            m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
+                stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+            m.fix_in_frame()
+            self.subtitle_message = m
+            self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
+            self.wait(delay)
 
     def show_messaged(self, msg, delay=0):
         self.show_message(msg, delay)

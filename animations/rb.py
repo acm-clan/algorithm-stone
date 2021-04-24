@@ -130,51 +130,69 @@ class RedBlackTreeRotate(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def construct(self):
-        self.init_message("红黑树的旋转")
+    def show_left(self):
         tree = AlgoRBTree(self)
-        tree.ctx.insert_message = True
+        tree.ctx.insert_message = False
         tree.ctx.delete_message = False
         tree.ctx.animate = True
         self.add(tree)
 
         arr = [1,2,3]
-        v = AlgoVector(self, arr)
-        self.play(ShowCreation(v))
-        self.play(v.to_edge, UP)
+        vector = AlgoVector(self, arr)
+        self.play(ShowCreation(vector))
 
-        self.show_message("插入和删除操作会破坏红黑树的5条性质")
-        self.show_message("维护这5条性质是通过旋转来完成的")
+        self.show_message("插入和删除操作会破坏红黑树的性质")
+        self.show_message("维护这些性质是通过旋转来完成的")
         self.show_message("来看这3个节点的插入操作")
-        self.snapshot()
+
+        self.play(vector.to_edge, UP)
 
         tree.shift(UP*2)
+        index = 0
+        
         for i in arr:
+            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY))
+            self.show_message("插入节点%d"%(i), delay=0.5)
             tree.set(i, i)
+            index += 1
 
-        self.show_message("节点3插入后，需要左旋达到平衡")
-        self.snapshot()
+        self.show_message("节点3插入后，需要左旋1达到平衡", tex=True, tex_map={"左旋": BLUE, "3":RED, "1":RED})
+        self.remove(tree, vector)
 
+    def show_right(self):
         self.show_message("如果节点换成是[3, 2, 1]")
         arr = [3, 2, 1]
-        v2 = AlgoVector(self, arr)
-        v2.to_edge(UP)
-        self.play(Transform(v, v2))
-        self.play(Uncreate(tree))
-        self.remove(tree)
-        self.snapshot()
+
+        vector = AlgoVector(self, arr)
+        self.play(ShowCreation(vector))
+        self.play(vector.to_edge, UP)
 
         tree = AlgoRBTree(self)
-        tree.ctx.insert_message = True
+        tree.ctx.insert_message = False
         tree.ctx.delete_message = False
         tree.ctx.animate = True
         self.add(tree)
         tree.shift(UP*2)
-        for i in arr:
-            tree.set(i, i)
 
-        self.show_message("节点1插入后，需要右旋达到平衡")
-        self.snapshot()
+        index = 0
+        for i in arr:
+            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY))
+            self.show_message("插入节点%d"%(i), delay=0.5)
+            tree.set(i, i)
+            index += 1
+
+        self.show_message("节点1插入后，需要右旋3达到平衡", tex=True, tex_map={"右旋": BLUE, "1":RED, "3":RED})
+
+    def construct(self):
+        # self.go_speed_up()
+        
+        self.start_logo(animate=False)
+        self.init_message("红黑树的旋转")
+
+        self.show_left()
+
+        self.reset_speed_up()
+        self.show_right()
 
         self.wait()
 
