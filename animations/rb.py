@@ -304,6 +304,8 @@ class RedBlackTreeEnd(AlgoScene):
         index = 1
 
         for i in arr:
+            if index == 82:
+                print("hi")
             print("insert:", memory(), index, i)
             tree.set(i, i)
             index += 1
@@ -318,11 +320,12 @@ class RedBlackTreeEnd(AlgoScene):
         self.play(FadeOut(tree))
 
     def construct(self):
+        self.go_speed_up()
         self.init_message("红黑树大型树结构变化")
         self.show_message("在最后，让我们创建一个20个节点的巨型树")
         self.show_message("便于我们更加直观的了解红黑树是如何运作的")
         self.camera.frame.shift(OUT*10)
-        self.rand(1, 20)
+        self.rand(1, 200)
 
 
 
