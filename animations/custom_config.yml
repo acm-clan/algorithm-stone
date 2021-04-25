@@ -15,7 +15,7 @@ directories:
   # default, these will be stored at tempfile.gettempdir(), e.g. this might
   # return whatever is at to the TMPDIR environment variable.  If you want to
   # specify them elsewhere,
-  temporary_storage: ""
+  temporary_storage: "E:\\Sources\\algorithm-stone\\animations\\storage"
 tex:
   executable: "xelatex -no-pdf"
   template_file: "ctex_template.tex" 
