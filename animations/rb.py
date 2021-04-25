@@ -98,8 +98,6 @@ class RedBlackTreeWhatIs(AlgoScene):
         panel.next_to(tree).shift(UP+LEFT*1.5)
         self.play(ShowCreation(panel))
 
-        self.snapshot()
-        
         self.show_message("1 每个节点是红色或者黑色，包括叶子nil节点")
         panel.light(0)
         
@@ -156,7 +154,7 @@ class RedBlackTreeRotate(AlgoScene):
             tree.set(i, i)
             index += 1
 
-        self.show_message("节点3插入后，需要左旋1达到平衡", tex=True, tex_map={"左旋": BLUE, "3":RED, "1":RED})
+        self.show_message("节点3插入后，需要左旋节点1达到平衡", tex=True, tex_map={"左旋": BLUE, "3":RED, "1":RED})
         self.remove(tree, vector)
 
     def show_right(self):
@@ -181,7 +179,7 @@ class RedBlackTreeRotate(AlgoScene):
             tree.set(i, i)
             index += 1
 
-        self.show_message("节点1插入后，需要右旋3达到平衡", tex=True, tex_map={"右旋": BLUE, "1":RED, "3":RED})
+        self.show_message("节点1插入后，需要右旋节点3达到平衡", tex=True, tex_map={"右旋": BLUE, "1":RED, "3":RED})
 
     def construct(self):
         # self.go_speed_up()
