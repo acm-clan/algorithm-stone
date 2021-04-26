@@ -25,7 +25,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
-            "args": ["rb.py", "RedBlackTreeEnd", "-w"]
+            "args": ["measure_scene.py", "", "-w"]
         },
         {
             "name": "merge",
