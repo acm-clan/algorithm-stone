@@ -152,6 +152,7 @@ class AlgoScene(Scene):
         self.play(ShowCreation(code))
 
     def snapshot(self):
+        self.update_frame()
         image = self.get_image()
         v = random.random()
         path = "algo_image_%s_%d.png"%(datetime.now().strftime('%Y%m%d%H%M%S'), int(v*1000000))
