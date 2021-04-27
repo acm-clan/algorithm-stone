@@ -36,6 +36,7 @@ class RedBlackTreeWhatIs(AlgoScene):
         self.wait()
 
     def indicate_nils(self, tree):
+        self.reset_speed_up()
         nils = tree.get_nil_nodes()
         self.indicate_nodes(tree, nils)
         
@@ -47,9 +48,10 @@ class RedBlackTreeWhatIs(AlgoScene):
             b = CircleIndicate(k, color=RED)
             animations.append(b)
             animations.append(a)
-        self.play(*animations, run_time=2)
+        self.play(*animations, run_time=1.5)
 
     def construct(self):
+        self.go_speed_up()
         self.start_logo(subtitle="红黑树")
         self.init_message("红黑树的性质")
         tree = AlgoRBTree(self)
@@ -79,13 +81,13 @@ class RedBlackTreeWhatIs(AlgoScene):
         self.show_message("右孩子的值大于根节点")
         self.compare_nodes(right, root, ">")
         
-        self.show_message("左右子树分别为二叉查找树")
+        self.show_message("任意节点左右子树分别为二叉查找树")
         self.hide_and_show(tree, root)
 
         self.show_message("红黑树有5条性质")
 
         text_list = [
-            "1 每个节点是红色或者黑色，包括叶子nil节点",
+            "1 每个节点是红色或者黑色",
             "2 根节点是黑色",
             "3 叶子nil节点是黑色",
             "4 如果一个节点是红色，则其子节点都是黑色",
@@ -181,7 +183,6 @@ class RedBlackTreeRotate(AlgoScene):
         self.show_message("节点1插入后，需要右旋节点3达到平衡", tex=True, tex_map={"右旋": BLUE, "1":RED, "3":RED})
 
     def construct(self):
-        
         self.start_logo(animate=False)
         self.init_message("红黑树的旋转")
 
@@ -197,9 +198,9 @@ class RedBlackTreeInsert(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def rand(self, seed, animate_index):
+    def rand(self, seed, animate_index, fadeout=True):
         tree = AlgoRBTree(self)
-        self.add(tree)
+        
         tree.ctx.insert_message = False
         tree.ctx.delete_message = False
         tree.ctx.animate = False
@@ -214,18 +215,23 @@ class RedBlackTreeInsert(AlgoScene):
             if index >= animate_index:
                 tree.ctx.insert_message = True
                 tree.ctx.animate = True
+                tree.update_nodes()
+                self.add(tree)
+                self.update_frame()
             tree.set(i, i)
             index += 1
 
-        self.play(FadeOut(tree))
+        if fadeout:
+            self.play(FadeOut(tree))
     
     def construct(self):
-        self.init_message("红黑树插入")
+        self.start_logo(animate=False)
+        self.init_message("红黑树插入的3个case",tex=True, tex_map={"case":RED})
         # left case 
-        self.rand(5, 6)
+        self.rand(5, 6, fadeout=True)
 
         # right case 1,2,3
-        self.rand(3, 6)
+        self.rand(3, 6, fadeout=False)
 
         self.wait()
 

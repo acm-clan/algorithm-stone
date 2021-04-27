@@ -26,7 +26,7 @@ class AlgoText(Text):
 
     def __init__(self, text, **kwargs):
         super().__init__(text, **kwargs)
-        self.scale(0.3)
+        self.scale(0.6)
 
 class AlgoPropertyPanel(AlgoVGroup):
     def __init__(self, scene, text_list, **kwargs):

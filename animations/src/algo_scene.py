@@ -38,7 +38,7 @@ class AlgoScene(Scene):
 
         sub = None
         if subtitle != "" and animate:
-            sub = Text(subtitle, font=AlgoFontName, color="#333").scale(0.5)
+            sub = Text(subtitle, font=AlgoFontName, color="#333").scale(1)
             sub.next_to(text, direction=DOWN)
             self.play(ShowCreation(sub))
 
@@ -72,11 +72,16 @@ class AlgoScene(Scene):
     def create_serif_font(self, msg, color=WHITE):
         return Text(msg, font=AlgoSerifFontName, color=color)
 
-    def init_message(self, msg, delay=3):
-        self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-            stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+    def init_message(self, msg, delay=3, tex=False, tex_map={}):
+        if tex:
+            m = TexText(msg, color="#333", tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
+        else:
+            m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
+                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+            
+        self.play(Write(m), run_time=len(msg)*0.2)
+        self.subtitle_message = m
         self.subtitle_message.fix_in_frame()
-        self.play(Write(self.subtitle_message))
         self.wait(delay)
         return self.subtitle_message
 
@@ -87,19 +92,17 @@ class AlgoScene(Scene):
         if not animate:
             return
         self.remove(self.subtitle_message)
+        
         if tex:
             m = TexText(msg, color="#333", tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
-            m.fix_in_frame()
-            self.subtitle_message = m
-            self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
-            self.wait(delay)
         else:
             m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
                 stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
-            m.fix_in_frame()
-            self.subtitle_message = m
-            self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)
-            self.wait(delay)
+
+        m.fix_in_frame()
+        self.subtitle_message = m
+        self.play(Write(m), run_time=len(msg)*0.2)
+        self.wait(delay)
 
     def show_messaged(self, msg, delay=0):
         self.show_message(msg, delay)
