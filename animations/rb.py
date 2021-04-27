@@ -50,7 +50,6 @@ class RedBlackTreeWhatIs(AlgoScene):
         self.play(*animations, run_time=2)
 
     def construct(self):
-        self.go_speed_up()
         self.start_logo(subtitle="红黑树")
         self.init_message("红黑树的性质")
         tree = AlgoRBTree(self)
@@ -182,7 +181,6 @@ class RedBlackTreeRotate(AlgoScene):
         self.show_message("节点1插入后，需要右旋节点3达到平衡", tex=True, tex_map={"右旋": BLUE, "1":RED, "3":RED})
 
     def construct(self):
-        # self.go_speed_up()
         
         self.start_logo(animate=False)
         self.init_message("红黑树的旋转")
@@ -320,24 +318,11 @@ class RedBlackTreeEnd(AlgoScene):
         self.play(FadeOut(tree))
 
     def construct(self):
-        self.go_speed_up()
         self.init_message("红黑树大型树结构变化")
         self.show_message("在最后，让我们创建一个20个节点的巨型树")
         self.show_message("便于我们更加直观的了解红黑树是如何运作的")
         self.camera.frame.shift(OUT*10)
         self.rand(1, 200)
 
-
-
-
-
-
-
-
-
-
-
-
-        
         self.show_message("完成红黑树，谢谢观看！")
         self.wait()
