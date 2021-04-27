@@ -4,7 +4,9 @@ class MeasureScene(AlgoScene):
     def construct(self):
         shape = self.camera.frame.get_shape()
 
-        t = Text("1 width %.2f height %.2f delta 0.00"%(shape[0], shape[1]), color=GREEN, font_size=30).shift(LEFT*3)
+        font_size = 30
+
+        t = Text("1 width %.2f height %.2f delta 0.00"%(shape[0], shape[1]), color=GREEN, font_size=font_size).shift(LEFT*3)
         self.add(t)
 
         hw = shape[0]/2
@@ -28,7 +30,7 @@ class MeasureScene(AlgoScene):
         print("center:", t.get_center())
         while True:
             nt = Text("%d width %.2f height %.2f delta %.2f"%(count, shape[0], shape[1], delta), 
-                color=GREEN, font_size=30).shift(LEFT*3)
+                color=GREEN, font_size=font_size).shift(LEFT*3)
             nt.next_to(t, direction=UP, buff=0)
             p = nt.get_center()
             print("center:", p)
