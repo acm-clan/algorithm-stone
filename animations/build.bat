@@ -1,1 +1,1 @@
-python3 -m manimlib rb.py RedBlackTreeRotate -w
+python3 -m manimlib rb.py RedBlackTreeRotate

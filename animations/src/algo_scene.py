@@ -24,8 +24,8 @@ class AlgoScene(Scene):
         self.add(v)
         
         text = VGroup(
-            Text("ACM", font=AlgoFontName, color="#1fa0cf").scale(0.5),
-            Text("算法日常", font=AlgoFontName, color="#93582e").scale(0.5)
+            Text("ACM", font=AlgoFontName, color="#1fa0cf").scale(1),
+            Text("算法日常", font=AlgoFontName, color="#93582e").scale(1)
         ).arrange(buff=0.1)
 
         self.add(text)
@@ -74,7 +74,7 @@ class AlgoScene(Scene):
 
     def init_message(self, msg, delay=3):
         self.subtitle_message = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-            stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+            stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
         self.subtitle_message.fix_in_frame()
         self.play(Write(self.subtitle_message))
         self.wait(delay)
@@ -95,7 +95,7 @@ class AlgoScene(Scene):
             self.wait(delay)
         else:
             m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-                stroke_color=None).scale(0.3).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
             m.fix_in_frame()
             self.subtitle_message = m
             self.play(ShowIncreasingSubsets(m), run_time=len(msg)*0.2)

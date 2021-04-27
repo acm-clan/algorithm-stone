@@ -35,7 +35,7 @@ class AlgoLogo(VGroup):
         AlgoLogoShield(fill_color="#fff", fill_opacity = 1, stroke_width=0, stroke_opacity=0).scale(1.00),
         AlgoLogoShield(fill_color="#4386f7", fill_opacity = 1, stroke_width=0, stroke_opacity=0).scale(0.96))
 
-        text = Text("A", font="Caladea").scale(2.7)
+        text = Text("A", font="Caladea").scale(5.4)
         text.shift(UP*1.2)
         self.add(text)
 
