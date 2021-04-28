@@ -358,6 +358,7 @@ class AlgoRBTree(AlgoVGroup):
         if z.id in self.node_objs:
             return
         n = AlgoNode(str(z.k))
+        
         if z.isNil():
             n.scale(0.5)
             tri = Triangle().scale(0.2)
@@ -369,6 +370,7 @@ class AlgoRBTree(AlgoVGroup):
         n.set_color(RED)
         self.node_objs[z.id] = n
         self.add(n)
+        n.next_to(self)
         # add edges
         self.add_edge(z.p, z)
         self.add_edge(z, z.left)
