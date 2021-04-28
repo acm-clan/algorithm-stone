@@ -150,7 +150,7 @@ class RedBlackTreeRotate(AlgoScene):
         index = 0
         
         for i in arr:
-            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY))
+            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY), run_time=0.5)
             self.show_message("插入节点%d"%(i), delay=0.5)
             tree.set(i, i)
             index += 1
@@ -175,7 +175,7 @@ class RedBlackTreeRotate(AlgoScene):
 
         index = 0
         for i in arr:
-            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY))
+            self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY), run_time=0.5)
             self.show_message("插入节点%d"%(i), delay=0.5)
             tree.set(i, i)
             index += 1
@@ -226,7 +226,7 @@ class RedBlackTreeInsert(AlgoScene):
     
     def construct(self):
         self.start_logo(animate=False)
-        self.init_message("红黑树插入的3个case",tex=True, tex_map={"case":RED})
+        self.init_message("红黑树插入的3个case",tex=True, tex_map={"case":RED, "3":RED})
         # left case 
         self.rand(5, 6, fadeout=True)
 
