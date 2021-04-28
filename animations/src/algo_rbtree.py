@@ -141,7 +141,10 @@ class AlgoRBTree(AlgoVGroup):
     def surround_node(self, id, color=GREEN):
         if self.ctx.animate:
             node = self.get_node(id)
-            rect = SurroundingRectangle(node, color=GREEN)
+            rect = SurroundingRectangle(node, color=color)
+            def update_rect(node):
+                rect.move_to(node.get_center())
+            node.add_updater(update_rect)
             self.scene.play(Write(rect), run_time=0.5)
             return rect
         return None
