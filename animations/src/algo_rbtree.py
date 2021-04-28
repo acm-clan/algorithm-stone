@@ -5,6 +5,12 @@ from .algo_vgroup import *
 from .algo_node import *
 import queue
 
+COLOR_TARGET = GREEN
+COLOR_PARENT = YELLOW
+COLOR_UNCLE = BLUE
+COLOR_GRAND = PURPLE
+COLOR_BROTHER = TEAL
+
 class DataNode(object):
     def __init__(self, id, k, v, raw):
         self.id = id
@@ -472,64 +478,80 @@ class AlgoRBTree(AlgoVGroup):
 
     def deleteFixUp(self, x):
         while (x != self.root and x.color == BLACK):
+            rect_x = self.surround_node(x.id)
             if (x.isLeft()):
                 self.scene.show_message("替换节点在左边", animate=self.ctx.delete_message)
                 w = x.brother()
                 if (w.color == RED):
+                    rect_x = self.surround_node(w.id)
+                    rect_p = self.surround_node(x.p.id, color=BLUE)
                     print("delete left case 1")
-                    self.scene.show_message("删除case 1：兄弟节点是红色，设置兄弟节点为黑色，设置父节点为红色", animate=self.ctx.delete_message)
-                    self.scene.show_message("左旋父节点%d"%(x.p.k), animate=self.ctx.delete_message)
+                    self.scene.show_message("删除case 1：兄弟节点是红色，左旋父节点%d"%(x.p.k), animate=self.ctx.delete_message)
                     w.setColor(BLACK)
                     x.p.setColor(RED)
                     self.leftRotate(x.p)
                     w = x.p.right
                     self.update_nodes()
+                    self.fadeout_rect(rect_x)
+                    self.fadeout_rect(rect_p)
                 if (w.left.color == BLACK and w.right.color == BLACK):
                     print("delete left case 2")
-                    self.scene.show_message("删除case 2：兄弟节点的子节点都是黑色，设置父节点为红色", animate=self.ctx.delete_message)
+                    rect_w = self.surround_node(w.id)
+                    self.scene.show_message("删除case 2：兄弟节点的子节点都是黑色", animate=self.ctx.delete_message)
                     w.setColor(RED)
                     x = x.p
+                    self.fadeout_rect(rect_w)
                 else:
                     if (w.right.color == BLACK):
+                        rect_w = self.surround_node(w.id)
                         print("delete left case 3")
                         self.scene.show_message("删除case 3：兄弟节点的右孩子为黑色，右旋兄弟节点", animate=self.ctx.delete_message)
-                        self.scene.show_message("设置兄弟节点的左孩子为红色，兄弟节点为红色", animate=self.ctx.delete_message)
                         w.left.setColor(BLACK)
                         w.setColor(RED)
                         self.scene.show_message("右旋兄弟节点", animate=self.ctx.delete_message)
                         self.rightRotate(w)
                         w = x.p.right
                         self.update_nodes()
+                        self.fadeout_rect(rect_w)
 
                     print("delete left case 4")
-                    self.scene.show_message("删除case 4：设置兄弟节点为父节点的颜色，父节点为黑色，兄弟节点右孩子黑色，左旋父节点", 
-                        animate=self.ctx.delete_message)
+                    rect_p = self.surround_node(x.p.id)
+                    self.scene.show_message("删除case 4：左旋父节点", animate=self.ctx.delete_message)
                     w.color = x.p.color
                     x.p.setColor(BLACK)
                     w.right.setColor(BLACK)
                     self.leftRotate(x.p)
                     x = self.root
                     self.update_nodes()
+                    self.fadeout_rect(rect_p)
             else:
+                rect_x = self.surround_node(x.id)
                 self.scene.show_message("节点在右边", animate=self.ctx.delete_message)
                 w = x.p.left
                 if (w.color == RED):
+                    rect_x = self.surround_node(w.id)
+                    rect_p = self.surround_node(x.p.id, color=BLUE)
                     print("delete right case 1")
-                    self.scene.show_message("删除case 1：兄弟节点是红色，设置兄弟节点为黑色，设置父节点为红色", animate=self.ctx.delete_message)
+                    self.scene.show_message("删除case 1：兄弟节点是红色", animate=self.ctx.delete_message)
                     self.scene.show_message("右旋父节点%d"%(x.p.k), animate=self.ctx.delete_message)
                     w.setColor(BLACK)
                     x.p.setColor(RED)
                     self.rightRotate(x.p)
                     w = x.p.left
                     self.update_nodes()
+                    self.fadeout_rect(rect_x)
+                    self.fadeout_rect(rect_p)
                 if (w.right.color == BLACK and w.left.color == BLACK):
                     print("delete right case 2")
+                    rect_w = self.surround_node(w.id)
                     self.scene.show_message("删除case 2：兄弟节点的子节点都是黑色，设置父节点为红色", animate=self.ctx.delete_message)
                     w.setColor(RED)
                     x = x.p
                     self.update_nodes()
+                    self.fadeout_rect(rect_w)
                 else:
                     if (w.left.color == BLACK):
+                        rect_w = self.surround_node(w.id)
                         print("delete right case 3")
                         self.scene.show_message("删除case 3：兄弟节点的左孩子为黑色，右旋兄弟节点", animate=self.ctx.delete_message)
                         self.scene.show_message("设置兄弟节点的右孩子为红色，兄弟节点为红色", animate=self.ctx.delete_message)
@@ -538,7 +560,9 @@ class AlgoRBTree(AlgoVGroup):
                         self.leftRotate(w)
                         w = x.p.left
                         self.update_nodes()
+                        self.fadeout_rect(rect_w)
                     print("delete right case 4")
+                    rect_p = self.surround_node(x.p.id)
                     self.scene.show_message("删除case 4：设置兄弟节点为父节点的颜色，父节点为黑色，兄弟节点左孩子黑色，右旋父节点", animate=self.ctx.delete_message)
                     w.color = x.p.color
                     x.p.setColor(BLACK)
@@ -546,6 +570,8 @@ class AlgoRBTree(AlgoVGroup):
                     self.rightRotate(x.p)
                     x = self.root
                     self.update_nodes()
+                    self.fadeout_rect(rect_p)
+            self.fadeout_rect(rect_x)
         x.setColor(BLACK)
 
     def delete(self, k):
