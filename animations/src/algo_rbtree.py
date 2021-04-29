@@ -92,7 +92,7 @@ class AlgoRBTreeContext():
         self.animate = True
         self.insert_message = True
         self.delete_message = True
-        self.run_time = 0.5
+        self.run_time = 0.8
         self.wait_time = 2
 
 class AlgoRBTree(AlgoVGroup):
@@ -408,6 +408,7 @@ class AlgoRBTree(AlgoVGroup):
         n.set_color(RED)
         self.node_objs[z.id] = n
         self.add(n)
+        n.scale(0.7)
         n.next_to(self)
         # add edges
         self.add_edge(z.p, z)
@@ -608,5 +609,5 @@ class AlgoRBTree(AlgoVGroup):
 
     def get_node_pos(self, k):
         p = self.pos_infos[k]
-        ratio = 60
+        ratio = 80
         return [p[0]/ratio, p[1]/ratio, 0]

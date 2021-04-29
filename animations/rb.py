@@ -243,6 +243,7 @@ class RedBlackTreeDelete(AlgoScene):
         super().__init__(**kwargs)
 
     def rand(self, seed, count, animate_index, max):
+        
         tree = AlgoRBTree(self)
         tree.ctx.insert_message = False
         tree.ctx.delete_message = False
@@ -259,6 +260,11 @@ class RedBlackTreeDelete(AlgoScene):
             tree.set(i, i)
 
         np.random.shuffle(arr)
+
+        sub_arr = arr[animate_index:animate_index+max]
+        vector = AlgoVector(self, sub_arr).to_edge(UL, buff=LARGE_BUFF)
+        self.add(vector)
+
         c = 0
         for i in arr:
             if index >= animate_index:
@@ -267,6 +273,8 @@ class RedBlackTreeDelete(AlgoScene):
                 tree.update_nodes()
                 self.add(tree)
                 self.update_frame()
+                self.play(ApplyMethod(vector.submobjects[c].set_color, GREY), run_time=0.8)
+                vector.submobjects[c].add(AlgoExmark().scale(1).move_to(vector.submobjects[c].get_center()))
                 c += 1
             tree.delete(i)
             index += 1
