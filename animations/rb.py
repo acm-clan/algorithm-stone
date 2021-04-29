@@ -223,14 +223,16 @@ class RedBlackTreeInsert(AlgoScene):
 
         if fadeout:
             self.play(FadeOut(tree))
-    
+
     def construct(self):
         self.start_logo(animate=False)
         self.init_message("红黑树插入的3个case",tex=True, tex_map={"case":RED, "3":RED})
         # left case 
+        self.show_message("节点在左边的情况")
         self.rand(5, 6, fadeout=True)
 
         # right case 1,2,3
+        self.show_message("节点在右边的情况")
         self.rand(3, 6, fadeout=False)
 
         self.wait()
@@ -240,10 +242,8 @@ class RedBlackTreeDelete(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def rand(self, seed, count, animate_index):
-        print("--------------rand-------------", seed)
+    def rand(self, seed, count, animate_index, max):
         tree = AlgoRBTree(self)
-        self.add(tree)
         tree.ctx.insert_message = False
         tree.ctx.delete_message = False
         tree.ctx.animate = False
@@ -259,22 +259,34 @@ class RedBlackTreeDelete(AlgoScene):
             tree.set(i, i)
 
         np.random.shuffle(arr)
+        c = 0
         for i in arr:
             if index >= animate_index:
                 tree.ctx.delete_message = True
                 tree.ctx.animate = True
+                tree.update_nodes()
+                self.add(tree)
+                self.update_frame()
+                c += 1
             tree.delete(i)
             index += 1
+            if c == max:
+                break
 
+        self.wait(2)
         self.play(FadeOut(tree))
+        self.wait()
 
     def construct(self):
-        self.init_message("红黑树删除的4个case")
+        self.start_logo(animate=False)
+        self.init_message("红黑树删除的4个case", tex=True, tex_map={"4":RED, "case":RED})
         # left case 1,2,3,4
-        self.rand(560, 9, 3)
+        self.show_message("节点在左边的情况")
+        self.rand(560, 9, 3, 3)
 
         # right case 1,2,3,4
-        self.rand(18, 8, 2)
+        self.show_message("节点在右边的情况")
+        self.rand(18, 8, 2, 3)
         
         self.wait()
 

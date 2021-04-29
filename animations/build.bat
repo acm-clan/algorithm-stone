@@ -1,1 +1,1 @@
-python3 -m manimlib rb.py RedBlackTreeRotate
+python3 -m manimlib rb.py RedBlackTreeDelete

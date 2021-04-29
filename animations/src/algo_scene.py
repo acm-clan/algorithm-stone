@@ -124,8 +124,8 @@ class AlgoScene(Scene):
                 if i % 2 == 1:
                     r = RIGHT*(0.5*math.sqrt(3.0))
                 op = abs(4-i)
-                l = list(Color("#f6f6f6").range_to(Color("#ffffff"), 7))
-                p = Polygon(*self.polygon(6), color=l[op]).shift(i*DOWN*1.5+r)
+                colors = list(Color("#f6f6f6").range_to(Color("#fcfcfc"), 7))
+                p = Polygon(*self.polygon(6), color=colors[op]).shift(i*DOWN*1.5+r)
                 if last != None:
                     p.next_to(last, RIGHT, buff=0)
                 v.add(p)
