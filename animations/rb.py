@@ -243,7 +243,6 @@ class RedBlackTreeDelete(AlgoScene):
         super().__init__(**kwargs)
 
     def rand(self, seed, count, animate_index, max):
-        
         tree = AlgoRBTree(self)
         tree.ctx.insert_message = False
         tree.ctx.delete_message = False
@@ -282,7 +281,7 @@ class RedBlackTreeDelete(AlgoScene):
                 break
 
         self.wait(2)
-        self.play(FadeOut(tree))
+        self.play(FadeOut(tree), FadeOut(vector))
         self.wait()
 
     def construct(self):
