@@ -19,11 +19,12 @@ class DataNode(object):
         self.raw = raw
 
 class AlgoRBTreeNode(object):
-    def __init__(self, t, id, k, v, color):
+    def __init__(self, t, scene, id, k, v, color):
         self.id = id
         self.tree = t
         self.k = k
         self.v = v
+        self.scene = scene
         self.color = color
         self.p = t.nil()
         self.left = t.nil()
@@ -85,7 +86,11 @@ class AlgoRBTreeNode(object):
         self.color = c
         n = self.tree.get_node(self.id)
         if n:
-            n.set_color(c)
+            if self.tree.ctx.animate:
+                self.scene.play(FocusOn(n), run_time=0.5)
+                self.scene.play(ApplyMethod(n.set_color, c))
+            else:
+                n.set_color(c)
 
 class AlgoRBTreeContext():
     def __init__(self):
@@ -110,7 +115,7 @@ class AlgoRBTree(AlgoVGroup):
 
         self.node_id = 0
         self.raw_nil = None
-        self.raw_nil = AlgoRBTreeNode(self, 0, -1, 0, BLACK)
+        self.raw_nil = AlgoRBTreeNode(self, scene, 0, -1, 0, BLACK)
         self.root = self.nil()
         # self.add_node(nil)
         self.center()
@@ -200,7 +205,7 @@ class AlgoRBTree(AlgoVGroup):
                 if y.color == RED:
                     rect_y = self.surround_node(y.id, color=COLOR_UNCLE)
                     print("insert right case 1")
-                    self.scene.show_message("插入%d case 1：叔叔节点存在并且为红色"%(z.k), animate=self.ctx.insert_message)
+                    self.scene.show_message("插入%d case 1：叔叔节点存在并且为红色（无需旋转）"%(z.k), animate=self.ctx.insert_message)
                     z.p.setColor(BLACK)
                     y.setColor(BLACK)
                     z.p.p.setColor(RED)
@@ -384,12 +389,12 @@ class AlgoRBTree(AlgoVGroup):
     def set(self, k, v):
         if self.root.isNil():
             self.scene.show_message("插入元素%d"%(k), animate=self.ctx.insert_message, delay=0)
-            z = AlgoRBTreeNode(self, self.get_node_id(), k, v, BLACK)
+            z = AlgoRBTreeNode(self, self.scene, self.get_node_id(), k, v, BLACK)
             self.root = z
             self.add_node(z)
             self.update_nodes()
         else:
-            z = AlgoRBTreeNode(self, self.get_node_id(), k, v, RED)
+            z = AlgoRBTreeNode(self, self.scene, self.get_node_id(), k, v, RED)
             self.insert(z)
       
     def add_node(self, z):
