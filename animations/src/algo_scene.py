@@ -19,7 +19,7 @@ class AlgoScene(Scene):
         leet = Text(text, color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
         self.play(ShowCreation(leet))
 
-    def start_logo(self, animate=True, stay=False, subtitle=""):
+    def start_logo(self, animate=True, stay=False, subtitle="", tex=False, tex_map={}):
         v = self.create_six_background()
         self.add(v)
         
@@ -38,7 +38,11 @@ class AlgoScene(Scene):
 
         sub = None
         if subtitle != "" and animate:
-            sub = Text(subtitle, font=AlgoFontName, color="#333").scale(1)
+            if tex:
+                sub = TexText(subtitle, color="#333", tex_to_color_map=tex_map).scale(1.2)
+            else:
+                sub = Text(subtitle, font=AlgoFontName, color="#333").scale(1)
+
             sub.next_to(text, direction=DOWN)
             self.play(ShowCreation(sub))
 
@@ -132,6 +136,7 @@ class AlgoScene(Scene):
                 last = p
 
         v.center().scale(0.5)
+        v.fix_in_frame()
         return v
 
     def polygon(self, sides, radius=1, rotation=0, translation=None):

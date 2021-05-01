@@ -1,1 +1,1 @@
-python3 -m manimlib rb.py RedBlackTreeInsert -w
+python3 -m manimlib rb.py RedBlackTreeInsert 
