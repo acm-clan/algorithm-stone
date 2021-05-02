@@ -190,7 +190,7 @@ public:
                     z->p->p->color = RED;
                     z = z->p->p;
                 } else {
-                    // case 2 3
+                    // case 2
                     // 父亲是红色，叔叔是黑色
                     if (z->isRight()) {
                         // z在右边就左旋，z指向父节点
@@ -198,6 +198,7 @@ public:
                         // 左旋父节点
                         leftRotate(z);
                     }
+                    // case 3
                     // 父亲设置为黑色
                     z->p->color = BLACK;
                     // 把祖父变成红色
@@ -215,10 +216,12 @@ public:
                     z = z->p->p;
                 } else {
                     if (z->isLeft()) {
+                        // case 2
                         z = z->p;
                         rightRotate(z);
                     }
 
+                    // case 3
                     z->p->color = BLACK;
                     z->p->p->color = RED;
                     leftRotate(z->p->p);
@@ -254,22 +257,26 @@ public:
             if (x->isLeft()) {
                 auto w = x->brother();
                 if (w->color == RED) {
+                    // case 1
                     w->color = BLACK;
                     x->p->color = RED;
                     leftRotate(x->p);
                     w = x->p->right;
                 }
                 if (w->left->color == BLACK && w->right->color == BLACK) {
+                    // case 2
                     w->color = RED;
                     x = x->p;
                 } else {
                     if (w->right->color == BLACK) {
+                        // case 3
                         w->left->color = BLACK;
                         w->color = RED;
                         rightRotate(w);
                         w = x->p->right;
                     }
 
+                    // case 4
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->right->color = BLACK;
@@ -279,22 +286,26 @@ public:
             } else {
                 auto w = x->p->left;
                 if (w->color == RED) {
+                    // case 1
                     w->color = BLACK;
                     x->p->color = RED;
                     rightRotate(x->p);
                     w = x->p->left;
                 }
                 if (w->right->color == BLACK && w->left->color == BLACK) {
+                    // case 2
                     w->color = RED;
                     x = x->p;
                 } else {
                     if (w->left->color == BLACK) {
+                        // case 3
                         w->right->color = BLACK;
                         w->color = RED;
                         leftRotate(w);
                         w = x->p->left;
                     }
 
+                    // case 4
                     w->color = x->p->color;
                     x->p->color = BLACK;
                     w->left->color = BLACK;

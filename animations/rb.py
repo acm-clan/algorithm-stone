@@ -7,7 +7,7 @@ class RBScene(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def show_colors(self):
+    def show_colors(self, direction=UL):
         v = VGroup()
         scale = 0.15
         tscale = 0.6
@@ -38,7 +38,7 @@ class RBScene(AlgoScene):
 
         v.arrange(direction=UP, aligned_edge=LEFT, buff=0.1)
 
-        v.to_edge(edge=UL)
+        v.to_edge(edge=direction)
         self.update_frame()
         v.fix_in_frame()
         self.add(v)
@@ -190,7 +190,6 @@ class RedBlackTreeRotate(RBScene):
         
         for i in arr:
             self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY), run_time=1)
-            self.show_message("插入节点%d"%(i), delay=0.5, tex=True, tex_map={str(i):BLUE_D})
             tree.set(i, i)
             index += 1
 
@@ -215,7 +214,6 @@ class RedBlackTreeRotate(RBScene):
         index = 0
         for i in arr:
             self.play(FocusOn(vector.submobjects[index]), ApplyMethod(vector.submobjects[index].set_color, GREY), run_time=0.5)
-            self.show_message("插入节点%d"%(i), delay=0.5, tex=True, tex_map={str(i):BLUE_D})
             tree.set(i, i)
             index += 1
 
@@ -330,7 +328,7 @@ class RedBlackTreeDelete(RBScene):
         self.init_message("红黑树删除的4个case", tex=True, tex_map={"4":RED, "case":RED})
         # left case 1,2,3,4
         self.show_message("节点在左边的情况",tex=True, tex_map={"左边":BLUE_D})
-        self.show_colors()
+        self.show_colors(direction=UR)
         self.rand(560, 9, 3, 3)
 
         # right case 1,2,3,4
