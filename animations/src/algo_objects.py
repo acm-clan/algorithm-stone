@@ -2,6 +2,8 @@ from manimlib import *
 from .algo_vgroup import *
 from .algo_node import *
 
+ALGO_NODE_COLOR = "#464445"
+
 class AlgoCheckmark(TexText):
     CONFIG = {
         "color": GREEN
@@ -21,7 +23,7 @@ class AlgoExmark(TexText):
 
 class AlgoText(Text):
     CONFIG = {
-        "color": BLACK,
+        "color": WHITE,
     }
 
     def __init__(self, text, **kwargs):

@@ -19,7 +19,7 @@ class UnionFind(AlgoScene):
         self.dim = VGroup()
         for i in range(self.data.shape[0]):
             for j in range(self.data.shape[1]):
-                s = Square(0.8).add(Text(str(self.data[i][j])).scale(0.3))
+                s = Square(0.8, color=WHITE).add(AlgoText(str(self.data[i][j])))
                 s.shift(DOWN*i + RIGHT*j)
                 self.dim.add(s)
         self.dim.center()
@@ -103,10 +103,10 @@ class UnionFind(AlgoScene):
         self.show_message("每个节点初始状态都指向自己", 2)
 
     def construct(self):
-        self.add_sound("bg2")
+        self.add_sound("bg002")
         self.start_logo()
         m = self.init_message("并查集")
-        leet = Text("LeetCode 547.省份数量", color=GOLD_E).center().scale(0.2).to_edge(UP).shift(UP*0.2)
+        leet = AlgoText("LeetCode 547.省份数量", color=GOLD_E).center().to_edge(UP).shift(UP*0.2)
         self.play(ShowCreation(leet))
         
         self.create_area()

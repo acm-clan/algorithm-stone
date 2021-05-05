@@ -25,7 +25,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/animations",
             "module": "manimlib",
-            "args": ["rb.py", "RedBlackTreeDelete", ""]
+            "args": ["kmp.py", "", ""]
         },
         {
             "name": "merge",

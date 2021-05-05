@@ -9,7 +9,8 @@ class AlgoScene(Scene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         random.seed(datetime.now())
-        self.camera.background_rgba = [1, 1, 1, 0.5]
+        # self.camera.background_rgba = [1, 1, 1, 0.5]
+        # self.camera.background_rgba = [0, 0, 0, 0]
         # remove
         from pathlib import Path
         for p in Path(".").glob("algo*.png"):
@@ -20,7 +21,7 @@ class AlgoScene(Scene):
         self.play(ShowCreation(leet))
 
     def start_logo(self, animate=True, stay=False, subtitle="", tex=False, tex_map={}):
-        v = self.create_six_background()
+        v = self.create_six_background(color_start="#363636", color_end="#363636")
         self.add(v)
         
         text = VGroup(
@@ -78,10 +79,10 @@ class AlgoScene(Scene):
 
     def init_message(self, msg, delay=3, tex=False, tex_map={}):
         if tex:
-            m = TexText(msg, color="#333", tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
+            m = TexText(msg, color=WHITE, tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
         else:
             m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color(WHITE)
             
         self.play(Write(m), run_time=len(msg)*0.2)
         self.subtitle_message = m
@@ -98,10 +99,10 @@ class AlgoScene(Scene):
         self.remove(self.subtitle_message)
         
         if tex:
-            m = TexText(msg, color="#333", tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
+            m = TexText(msg, color=WHITE, tex_to_color_map=tex_map).scale(0.8).to_edge(DOWN).shift(UP*0.5)
         else:
             m = Text(msg, font=AlgoFontName, stroke_width=0, stroke_opacity=0.5, 
-                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color("#333")
+                stroke_color=None).scale(0.6).to_edge(DOWN).shift(UP*0.5).set_color(WHITE)
 
         m.fix_in_frame()
         self.subtitle_message = m
@@ -118,7 +119,7 @@ class AlgoScene(Scene):
     def finish(self):
         self.wait(10)
 
-    def create_six_background(self):
+    def create_six_background(self, color_start="#f6f6f6", color_end="#fcfcfc"):
         v = VGroup()
 
         for i in range(0, 11):
@@ -128,7 +129,7 @@ class AlgoScene(Scene):
                 if i % 2 == 1:
                     r = RIGHT*(0.5*math.sqrt(3.0))
                 op = abs(4-i)
-                colors = list(Color("#f6f6f6").range_to(Color("#fcfcfc"), 7))
+                colors = list(Color(color_start).range_to(Color(color_end), 7))
                 p = Polygon(*self.polygon(6), color=colors[op]).shift(i*DOWN*1.5+r)
                 if last != None:
                     p.next_to(last, RIGHT, buff=0)

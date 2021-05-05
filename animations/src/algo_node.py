@@ -4,7 +4,7 @@ from .algo_config import *
 class AlgoNode(VGroup):
     def __init__(self, text, is_circle=False, **kwargs):
         super().__init__(**kwargs)
-        color = "#464445"
+        color = "#fff"
         self.text_obj = Text(text, color=color, font="Consolas").scale(0.6)
         self.text_sub_obj = Text("", color=color, font="Consolas").scale(0.6)
 
@@ -17,7 +17,7 @@ class AlgoNode(VGroup):
         self.add(self.text_obj, self.outline_obj, self.text_sub_obj)
 
     def set_text(self, text):
-        color = "#464445"
+        color = "#fff"
         c = self.text_obj.get_center()
         self.remove(self.text_obj)
         self.text_obj = Text(text, font="Consolas").scale(0.6).set_color(color)
