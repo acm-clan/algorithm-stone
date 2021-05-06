@@ -24,6 +24,7 @@ public:
             // 必须小于n[i]+t的值
             if (lb != st.end() && *lb <= (long)n[i] + t)
                 return 1;
+            // 滑动窗口大小为k
             st.insert(n[i]);
             if (i >= k)
                 st.erase(n[i - k]);
