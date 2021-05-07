@@ -50,6 +50,7 @@
         "typeinfo": "cpp",
         "xfacet": "cpp",
         "xhash": "cpp",
-        "xlocinfo": "cpp"
+        "xlocinfo": "cpp",
+        "unordered_map": "cpp"
     }
 }
