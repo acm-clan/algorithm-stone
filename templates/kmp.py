@@ -35,8 +35,8 @@ def check_next(next):
 
 def run():
     random.seed(1)
-    for _ in range(100):
-        p = ''.join(random.choices("abc", k=15))
+    for _ in range(100000):
+        p = ''.join(random.choices("abc", k=10))
         next = compute_prefix_function(p)
         if check_next(next):
             print(p)
@@ -58,4 +58,4 @@ def run2():
 # 
 
 if __name__ == "__main__":
-    run2()
+    run()
