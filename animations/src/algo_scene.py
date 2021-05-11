@@ -40,9 +40,9 @@ class AlgoScene(Scene):
         sub = None
         if subtitle != "" and animate:
             if tex:
-                sub = TexText(subtitle, color="#333", tex_to_color_map=tex_map).scale(1.2)
+                sub = TexText(subtitle, color=WHITE, tex_to_color_map=tex_map).scale(1.2)
             else:
-                sub = Text(subtitle, font=AlgoFontName, color="#333").scale(1)
+                sub = Text(subtitle, font=AlgoFontName, color=WHITE).scale(1)
 
             sub.next_to(text, direction=DOWN)
             self.play(ShowCreation(sub))

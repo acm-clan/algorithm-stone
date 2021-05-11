@@ -3,7 +3,7 @@ from manim_imports_ext import *
 class KmpPrefixScene(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.data = "ababcabaab"
+        self.data = "cbccbcbccb"
 
     def compute_prefix_function(self):
         t = self.data
@@ -56,8 +56,6 @@ class KmpPrefixScene(AlgoScene):
                     self.play(vector_prefix.submobjects[j].set_color, BLUE)
                 else:
                     self.play(vector_prefix.submobjects[j].set_color, RED)
-                
-                self.update_frame()
             else:
                 self.play(ApplyMethod(vector_string.get_node(j).set_color, RED), 
                         ApplyMethod(vector_string.get_node(k).set_color, RED))
@@ -87,15 +85,15 @@ class KmpPrefixScene(AlgoScene):
         print(prefix)
 
     def construct(self):
-        # self.start_logo()
-        self.init_message("KMP算法")
+        self.start_logo(subtitle="KMP算法")
+        self.init_message("KMP算法 - 前缀表")
         self.compute_prefix_function()
         self.wait(2)
 
 class KmpScene(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.text = "abcbcabcccbccbcbccbcab"
+        self.text = "acbccbccbcbccbcab"
         self.pattern = "cbccbcbccb"
 
     def compute_prefix_function(self, p):
@@ -120,37 +118,66 @@ class KmpScene(AlgoScene):
         j = 0
         k = 0
 
-        vector_text = AlgoVector(self, list(t)).arrange(buff=0).to_edge(edge=UP)
-        self.add(vector_text)
-        text = AlgoText("text", color=BLUE).next_to(vector_text, direction=LEFT)
-        self.add(text)
+        groups = []
 
-        vector_pattern = AlgoVector(self, list(p))
-        self.add(vector_pattern)
-        vector_pattern.next_to(vector_text, direction=DOWN)
-        text = AlgoText("pattern", color=BLUE).next_to(vector_pattern, direction=LEFT)
-        self.add(text)
+        vector_index = AlgoVector(self, range(0, len(t))).arrange(buff=0.15).scale(0.7).set_color(GREY)
+        groups.append(VGroup(*[vector_index]))
 
-        vector_index = AlgoVector(self, range(0, n))
-        self.add(vector_index)
-        vector_index.next_to(vector_pattern, direction=DOWN)
-        text = AlgoText("index", color=BLUE).next_to(vector_index, direction=LEFT)
-        self.add(text)
+        vector_text = AlgoVector(self, list(t)).arrange(buff=0.15).to_edge(edge=UP).scale(0.7).set_color(GREY)
+        groups.append(VGroup(*[vector_text]))
 
-        vector_prefix = AlgoVector(self, prefix)
-        self.add(vector_prefix)
-        vector_prefix.next_to(vector_index, direction=DOWN)
-        text = AlgoText("prefix", color=BLUE).next_to(vector_prefix, direction=LEFT)
-        self.add(text)
+        vector_pattern = AlgoVector(self, list(p)).arrange(buff=0.15).scale(0.7).set_color(GREY)
+        groups.append(VGroup(*[vector_pattern]))
 
-        self.snapshot()
+        vector_prefix = AlgoVector(self, prefix).arrange(buff=0.15).scale(0.7).set_color(TEAL_E)
+        groups.append(VGroup(*[vector_prefix]))
+        
+        v = VGroup(*groups)
+        v.arrange(direction=DOWN, buff=0.7, aligned_edge=LEFT)
+        v.shift(RIGHT*0.5)
+
+        v.add(AlgoText("text", color=WHITE).scale(0.7).next_to(vector_text, direction=LEFT), 
+            AlgoText("pattern", color=WHITE).scale(0.7).next_to(vector_pattern, direction=LEFT),
+            AlgoText("index", color=WHITE).scale(0.7).next_to(vector_index, direction=LEFT), 
+            AlgoText("prefix", color=WHITE).scale(0.7).next_to(vector_prefix, direction=LEFT))
+        
+        self.add(v)
+
+        cursor_j = vector_text.add_arrow(0, color=RED, text="j")
+        cursor_k = vector_pattern.add_arrow(0, color=BLUE, text="k")
 
         while j < len(t) and k < len(p):
             if k == -1 or t[j] == p[k]:
                 k += 1
                 j += 1
+                if j < len(t) and k < len(p):
+                    vector_text.move_arrow(cursor_j, j, run_time=0.5)
+                    vector_pattern.move_arrow(cursor_k, k, run_time=0.5)
+                    g = [ApplyMethod(vector_text.submobjects[j].set_color, GREEN), 
+                        ApplyMethod(vector_pattern.submobjects[k].set_color, BLUE)]
+                    self.play(*g)
             else:
+                g = [ApplyMethod(vector_text.submobjects[j].set_color, RED), 
+                    ApplyMethod(vector_pattern.submobjects[k].set_color, RED)]
+                self.play(*g)
+
+                old_k = k
                 k = prefix[k]
+                g = []
+                for i in range(k+1, old_k+1):
+                    g.append(ApplyMethod(vector_pattern.submobjects[i].set_color, GREY))
+                self.play(*g)
+
+                if k != -1:
+                    arrow = Arrow(vector_prefix.get_node(old_k).get_center()-LEFT*0.2,
+                        vector_prefix.get_node(k).get_center()-RIGHT*0.2, path_arc=-np.pi*0.6, thickness=0.02, color=WHITE)
+                else:
+                    arrow = Arrow(vector_prefix.get_node(old_k).get_center()-LEFT*0.2,
+                        vector_prefix.get_node(old_k).get_center()+LEFT*0.7, path_arc=-np.pi*0.6, thickness=0.02, color=WHITE)
+                arrow.set_color(BLUE)
+                self.play(ShowCreation(arrow), run_time=0.5)
+
+                vector_pattern.move_arrow(cursor_k, k)
 
         if k == len(p):
             return j - len(p)
@@ -158,9 +185,9 @@ class KmpScene(AlgoScene):
         return -1
 
     def construct(self):
-        # self.start_logo(animate=False)
-        # self.init_message("KMP算法")
-        prefix = self.compute_prefix_function(self.text)
+        self.start_logo(animate=False)
+        self.init_message("KMP算法")
+        prefix = self.compute_prefix_function(self.pattern)
         self.kmp_matcher(prefix)
         self.wait(2)
 

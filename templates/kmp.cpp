@@ -8,6 +8,7 @@
 #include <unordered_set>
 using namespace std;
 
+// 计算kmp前缀表，用于匹配失败后进行回退操作
 std::vector<int> compute_prefix_function(std::string& p)
 {
     int n = p.length();
@@ -19,23 +20,17 @@ std::vector<int> compute_prefix_function(std::string& p)
 
     while (j < n - 1) {
         if (k == -1 || p[k] == p[j]) {
+            // 如果相同，则记录当前k的位置
             k++;
             j++;
             prefix[j] = k;
         } else {
+            // 不同则回退
             k = prefix[k];
         }
     }
 
     return prefix;
-}
-
-void print(std::vector<int> v)
-{
-    for (auto i : v) {
-        printf("%d ", i);
-    }
-    printf("\n");
 }
 
 int kmp_matcher(std::string& t, std::string& p)
@@ -47,9 +42,11 @@ int kmp_matcher(std::string& t, std::string& p)
 
     while (j < t.length() && k < p.length()) {
         if (k == -1 || t[j] == p[k]) {
+            // 相同则前进
             k++;
             j++;
         } else {
+            // 不同则回退尝试
             k = prefix[k];
         }
     }
@@ -58,6 +55,14 @@ int kmp_matcher(std::string& t, std::string& p)
         return j - p.length();
     }
     return -1;
+}
+
+void print(std::vector<int> v)
+{
+    for (auto i : v) {
+        printf("%d ", i);
+    }
+    printf("\n");
 }
 
 int main()
