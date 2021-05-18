@@ -11,9 +11,9 @@ using namespace std;
 std::vector<int> compute_prefix_function(std::string& p)
 {
     int n = p.length();
-    std::vector<int> next(n);
+    std::vector<int> prefix(n);
 
-    next[0] = -1;
+    prefix[0] = -1;
     int j = 0;
     int k = -1;
 
@@ -21,13 +21,13 @@ std::vector<int> compute_prefix_function(std::string& p)
         if (k == -1 || p[k] == p[j]) {
             k++;
             j++;
-            next[j] = k;
+            prefix[j] = k;
         } else {
-            k = next[k];
+            k = prefix[k];
         }
     }
 
-    return next;
+    return prefix;
 }
 
 void print(std::vector<int> v)
@@ -40,7 +40,7 @@ void print(std::vector<int> v)
 
 int kmp_matcher(std::string& t, std::string& p)
 {
-    auto next = compute_prefix_function(p);
+    auto prefix = compute_prefix_function(p);
 
     int j = 0;
     int k = 0;
@@ -50,7 +50,7 @@ int kmp_matcher(std::string& t, std::string& p)
             k++;
             j++;
         } else {
-            k = next[k];
+            k = prefix[k];
         }
     }
 
