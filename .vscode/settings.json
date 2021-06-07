@@ -53,5 +53,6 @@
         "xlocinfo": "cpp",
         "unordered_map": "cpp",
         "bit": "cpp"
-    }
+    },
+    "python.pythonPath": "C:\\Program Files\\Python39\\python.exe"
 }
