@@ -9,6 +9,12 @@ class TrieScene(AlgoScene):
     def construct(self):
         # self.start_logo(subtitle="Trie前缀树")
 
+        vector = AlgoVector(self, datas=self.data)
+        self.add(vector)
+        self.play(vector.shift, UP*2)
+
+        self.snapshot()
+
         tree = AlgoTrieTree(self)
         for w in self.data:
             tree.add_word(w)
