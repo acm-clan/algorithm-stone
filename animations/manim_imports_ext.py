@@ -12,4 +12,5 @@ from src.algo_table import *
 from src.algo_objects import *
 from src.algo_segtree import *
 from src.algo_rbtree import *
+from src.algo_trie import *
 

@@ -1,5 +1,7 @@
 ### 视频教程
 
+python3 -m manimlib kmp.py -w
+
 一句话系列
 - [x] 一句话记住单调栈
 - [ ] 一句话记住Knuth随机算法
