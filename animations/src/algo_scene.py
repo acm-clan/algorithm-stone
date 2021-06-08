@@ -47,8 +47,8 @@ class AlgoScene(Scene):
             sub.next_to(text, direction=DOWN)
             self.play(ShowCreation(sub))
 
-        if animate:
-            self.play(ShowCreation(logo))
+        # if animate:
+            # self.play(ShowCreation(logo))
 
         group = VGroup(logo, text)
 
