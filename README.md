@@ -90,7 +90,7 @@
 |[几何题](https://leetcode-cn.com/tag/geometry)| geometry  | 12 | `dansen`| 100% |
 |[排序Map](https://leetcode-cn.com/tag/ordered-map)| ordered-map  | 13 |`dansen` | 100% |
 |[线段树](https://leetcode-cn.com/tag/segment-tree)| segment-tree  | 15 | | 100% |
-|[Trie树](https://leetcode-cn.com/tag/trie)| trie  | 17 | | 0% |
+|[Trie树](https://leetcode-cn.com/tag/trie)| trie  | 17 | | 100% |
 |[滑动窗口](https://leetcode-cn.com/tag/sliding-window)| sliding-window  | 25 |`dansen` | 100% |
 |[分治算法](https://leetcode-cn.com/tag/divide-and-conquer)| divide-and-conquer  | 28 | | 0% |
 |[并查集](https://leetcode-cn.com/tag/union-find)| union-find  |  29  | | 100% |
