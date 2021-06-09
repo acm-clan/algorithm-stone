@@ -239,20 +239,20 @@
    <path d="M786,-1079.88C814.51,-1069.15 851.15,-1055.36 879.86,-1044.55" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="881.15,-1047.81 889.28,-1041.01 878.68,-1041.26 881.15,-1047.81" stroke="lightgrey"/>
   </g>
-  <!-- Trie字典树 -->
+  <!-- Trie前缀树 -->
   <g class="node" id="node65">
    <title>
-    Trie字典树
+    Trie前缀树
    </title>
    <polygon fill="lightslategray" points="1529,-1044 1434,-1044 1434,-1008 1529,-1008 1529,-1044" stroke="lightgrey"/>
    <text fill="white" font-family="Microsoft YaHei" font-size="12.00" text-anchor="middle" x="1481.5" y="-1022.9">
-    Trie字典树(13)
+    Trie前缀树(13)
    </text>
   </g>
-  <!-- Leetcode&#45;小众题&#45;&gt;Trie字典树 -->
+  <!-- Leetcode&#45;小众题&#45;&gt;Trie前缀树 -->
   <g class="edge" id="edge78">
    <title>
-    Leetcode-小众题-&gt;Trie字典树
+    Leetcode-小众题-&gt;Trie前缀树
    </title>
    <path d="M817.7,-1093.48C940.19,-1087.29 1186.43,-1072.32 1393.5,-1044 1403.33,-1042.66 1413.72,-1040.93 1423.78,-1039.09" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1424.52,-1042.51 1433.7,-1037.22 1423.23,-1035.63 1424.52,-1042.51" stroke="lightgrey"/>
@@ -1633,10 +1633,10 @@
     <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
-  <!-- Trie字典树&#45;&gt;720 -->
+  <!-- Trie前缀树&#45;&gt;720 -->
   <g class="edge" id="edge79">
    <title>
-    Trie字典树-&gt;720
+    Trie前缀树-&gt;720
    </title>
    <path d="M1497.57,-1007.7C1505.44,-999.22 1515.06,-988.86 1523.67,-979.58" fill="none" stroke="lightgrey"/>
    <polygon fill="lightgrey" points="1526.38,-981.81 1530.62,-972.1 1521.25,-977.05 1526.38,-981.81" stroke="lightgrey"/>
@@ -1862,6 +1862,10 @@
      </text>
     </a>
    </g>
+   <g transform="translate(1673.5, -330.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
   </g>
   <!-- 472&#45;&gt;745 -->
   <g class="edge" id="edge88">
@@ -1883,6 +1887,10 @@
       1032. 字符流
      </text>
     </a>
+   </g>
+   <g transform="translate(1652.5, -258.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 745&#45;&gt;1032 -->
@@ -1906,6 +1914,10 @@
      </text>
     </a>
    </g>
+   <g transform="translate(1706.5, -186.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
+   </g>
   </g>
   <!-- 1032&#45;&gt;1707 -->
   <g class="edge" id="edge90">
@@ -1927,6 +1939,10 @@
       1803. 统计异或值在范围内的数对有多少
      </text>
     </a>
+   </g>
+   <g transform="translate(1724.5, -114.0) scale(0.3)">
+    <circle cx="24" cy="24" fill="#4caf50" r="21"/>
+    <polygon fill="#ccff90" points="34.6,14.6 21,28.2 15.4,22.6 12.6,25.4 21,33.8 37.4,17.4"/>
    </g>
   </g>
   <!-- 1707&#45;&gt;1803 -->
@@ -2130,7 +2146,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1579.5" y="-859.0">
-    trie实现
+    前缀树实现
    </text>
   </g>
   <g class="key">
@@ -2158,7 +2174,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1613.5" y="-715.0">
-    字典树做这题很慢
+    前缀树做这题很慢
    </text>
   </g>
   <g class="key">
@@ -2172,7 +2188,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1614.5" y="-643.0">
-    递归遍历字典树
+    递归遍历前缀树
    </text>
   </g>
   <g class="key">
@@ -2186,7 +2202,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-571.0">
-    递归遍历字典树
+    递归遍历前缀树
    </text>
   </g>
   <g class="key">
@@ -2200,7 +2216,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-499.0">
-    递归遍历字典树
+    递归遍历前缀树
    </text>
   </g>
   <g class="key">
@@ -2214,7 +2230,7 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-427.0">
-    递归遍历字典树
+    递归遍历前缀树
    </text>
   </g>
   <g class="key">
@@ -2228,7 +2244,63 @@
     </filter>
    </defs>
    <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-355.0">
-    字典树高性能
+    前缀树高性能
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-283.0">
+    前缀树后缀树
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-211.0">
+    前缀树高性能
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-139.0">
+    前缀树与异或
+   </text>
+  </g>
+  <g class="key">
+   <defs>
+    <filter height="1.2" id="solid" width="1.2" x="-0.1" y="-0.1">
+     <feFlood flood-color="#ccff90" result="bg"/>
+     <feMerge>
+      <feMergeNode in="bg"/>
+      <feMergeNode in="SourceGraphic"/>
+     </feMerge>
+    </filter>
+   </defs>
+   <text filter="url(#solid)" font-family="Microsoft YaHei" font-size="10.00" text-anchor="middle" x="1617.5" y="-67.0">
+    前缀树与异或
    </text>
   </g>
  </g>
