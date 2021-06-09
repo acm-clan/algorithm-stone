@@ -7,8 +7,11 @@ from .algo_tree import *
 import numpy
 
 class AlgoTrieTreeNode(AlgoTreeNode):
-    def __init__(self):
+    def __init__(self, tree):
+        super().__init__(tree)
         self.end = False
+        self.tree = tree
+        self.setText("")
         self.c = numpy.empty(26, dtype=object)
 
 class AlgoTrieTree(AlgoTree):
@@ -16,7 +19,7 @@ class AlgoTrieTree(AlgoTree):
         self.scene = scene
         super().__init__(**kwargs)
         # empty
-        self.root = AlgoTrieTreeNode()
+        self.root = AlgoTrieTreeNode(self)
 
     def add_word(self, word):
         self.scene.show_message("插入单词%s"%(word))
@@ -24,13 +27,15 @@ class AlgoTrieTree(AlgoTree):
         for ch in word:
             index = ord(ch) - ord('a')
             if p.c[index] == None:
-                p.c[index] = AlgoTrieTreeNode()
+                p.c[index] = AlgoTrieTreeNode(self)
+                p.c[index].setText(ch)
                 self.update_tree()
             p = p.c[index]
             self.update_tree()
         p.end = True
         self.update_tree()
 
+    # overwrite
     def calc_tree_data(self):
         q = []
         q.append(self.root)
@@ -39,28 +44,26 @@ class AlgoTrieTree(AlgoTree):
 
         while len(q)>0:
             p = q.pop(0)
-            nodes.append(AlgoTreeNode(p.id))
+            self.check_node(p)
+            nodes.append(p)
 
-            if p.left:
-                self.check_node(p.left)
-                self.check_edge(p, p.left)
-                edges.append((p.id, p.left.id))
-                q.append(p.left)
-            if p.right:
-                self.check_node(p.right)
-                self.check_edge(p, p.right)
-                edges.append((p.id, p.right.id))
-                q.append(p.right)
+            for i in range(0, 26):
+                child = p.c[i]
+                if child:
+                    self.check_node(child)
+                    self.check_edge(p, child)
+                    edges.append((p.id, child.id))
+                    q.append(child)
 
         return nodes, edges
 
     def update_tree(self):
         # 数据层
-        nodes, edges = self.calc_tree_data(self.root)
+        nodes, edges = self.calc_tree_data()
         # layout
-        pos_infos = self.calc_networkx(nodes, edges)
+        self.calc_networkx(nodes, edges)
         # 
-        self.move_nodes(pos_infos, nodes, edges)
+        self.move_nodes(nodes, edges)
         # 构造树
 
     def query(self, word):

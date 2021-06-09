@@ -7,6 +7,7 @@ class TrieScene(AlgoScene):
         self.data_find = ["hello", "te", "ted", "ins"]
 
     def construct(self):
+        self.go_speed_up()
         self.start_logo(subtitle="Trie前缀树", animate=True)
         self.init_message("Trie树也叫做前缀树、字典树")
 
@@ -18,6 +19,7 @@ class TrieScene(AlgoScene):
         self.show_message("前缀树是如何存储这些单词的呢？")
         self.show_message("我们先来看看前缀树的插入操作")
 
+        self.reset_speed_up()
         tree = AlgoTrieTree(self)
         for w in self.data:
             tree.add_word(w)
