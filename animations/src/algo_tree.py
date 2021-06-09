@@ -2,8 +2,8 @@ from manimlib import *
 import networkx as nx
 from .algo_vgroup import *
 from .algo_node import *
-import numpy
 
+# tree的配置等信息
 class AlgoTreeContext():
     def __init__(self):
         self.animate = True
@@ -12,14 +12,21 @@ class AlgoTreeContext():
         self.run_time = 0.8
         self.wait_time = 2
 
+# 通用树节点
 class AlgoTreeNode(object):
     def __init__(self, tree):
+        # 节点唯一id
         self.id = tree.gen_id()
+        # 显示在节点上的文本
         self.text = str(id)
+        # 左右孩子
+        self.left = None
+        self.right = None
 
     def setText(self, t):
         self.text = t
 
+# 通用树结构
 class AlgoTree(AlgoVGroup):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -28,6 +35,7 @@ class AlgoTree(AlgoVGroup):
         # 显示的对象
         self.node_objs = {}
         self.edge_objs = {}
+        # tree的配置信息
         self.ctx = AlgoTreeContext()
 
     def gen_id(self):
@@ -84,6 +92,7 @@ class AlgoTree(AlgoVGroup):
         self.add(n)
         n.next_to(self)
 
+    # 通过graphviz计算节点位置
     def calc_networkx(self, nodes, edges):
         self.g = nx.Graph()
         for k in nodes:
@@ -113,6 +122,7 @@ class AlgoTree(AlgoVGroup):
     def get_edge(self, i, j):
         return self.edge_objs[(i, j)]
 
+    # 移动节点和边
     def move_nodes(self, nodes, edges):
         self.nodes = nodes
         self.edges = edges
