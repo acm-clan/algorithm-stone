@@ -11,7 +11,9 @@ class AlgoTreeNode(object):
 class AlgoTree(AlgoVGroup):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        # 每个节点有一个id
         self.tree_node_id = 0
+        # 显示的对象
         self.node_objs = {}
         self.edge_objs = {}
 
@@ -30,11 +32,12 @@ class AlgoTree(AlgoVGroup):
     def add_edge(self, n, t):
         if not n or not t:
             return
-        a = Arrow(ORIGIN, ORIGIN, thickness=0.03, buff=1.25)
-        a.set_color(GREY)
-        self.add(a)
-        self.edge_objs[(n.id, t.id)] = a
+        arrow = Arrow(ORIGIN, ORIGIN, thickness=0.03, buff=1.25)
+        arrow.set_color(GREY)
+        self.add(arrow)
+        self.edge_objs[(n.id, t.id)] = arrow
 
+    # 二叉树
     def calc_tree_data(self):
         q = []
         q.append(self.root)

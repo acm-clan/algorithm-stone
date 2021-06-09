@@ -1,7 +1,6 @@
 from manimlib import *
 import networkx as nx
 
-from algo_tree import AlgoTreeNode
 from .algo_vgroup import *
 from .algo_node import *
 from .algo_tree import *
