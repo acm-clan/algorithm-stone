@@ -11,7 +11,6 @@ class AlgoTrieTreeNode(AlgoTreeNode):
         super().__init__(tree)
         self.end = False
         self.tree = tree
-        self.setText("")
         self.c = numpy.empty(26, dtype=object)
 
 class AlgoTrieTree(AlgoTree):
@@ -20,6 +19,7 @@ class AlgoTrieTree(AlgoTree):
         super().__init__(**kwargs)
         # empty
         self.root = AlgoTrieTreeNode(self)
+        self.root.setText("root")
 
     def add_word(self, word):
         self.scene.show_message("插入单词%s"%(word))
@@ -56,15 +56,6 @@ class AlgoTrieTree(AlgoTree):
                     q.append(child)
 
         return nodes, edges
-
-    def update_tree(self):
-        # 数据层
-        nodes, edges = self.calc_tree_data()
-        # layout
-        self.calc_networkx(nodes, edges)
-        # 
-        self.move_nodes(nodes, edges)
-        # 构造树
 
     def query(self, word):
         p = self.root

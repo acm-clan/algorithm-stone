@@ -38,18 +38,33 @@ class AlgoTree(AlgoVGroup):
         # tree的配置信息
         self.ctx = AlgoTreeContext()
 
+    # 生成一个节点id
     def gen_id(self):
         self.tree_node_id = self.tree_node_id + 1
         return self.tree_node_id
     
+    # 检查节点是否创建
     def check_node(self, p):
         if p.id not in self.node_objs:
             self.add_node(p)
 
+    # 检查边是否创建
     def check_edge(self, x, y):
         if (x.id, y.id) not in self.edge_objs:
             self.add_edge(x, y)
 
+    # 增加一个节点
+    def add_node(self, z:AlgoTreeNode):
+        if z.id in self.node_objs:
+            return
+        n = AlgoNode(str(z.text))
+
+        n.set_color(RED)
+        self.node_objs[z.id] = n
+        self.add(n)
+        n.next_to(self)
+
+    # 增加一条边
     def add_edge(self, n, t):
         if not n or not t:
             return
@@ -58,7 +73,7 @@ class AlgoTree(AlgoVGroup):
         self.add(arrow)
         self.edge_objs[(n.id, t.id)] = arrow
 
-    # 二叉树
+    # 默认为二叉树
     def calc_tree_data(self):
         q = []
         q.append(self.root)
@@ -82,16 +97,6 @@ class AlgoTree(AlgoVGroup):
 
         return nodes, edges
 
-    def add_node(self, z:AlgoTreeNode):
-        if z.id in self.node_objs:
-            return
-        n = AlgoNode(str(z.text))
-
-        n.set_color(RED)
-        self.node_objs[z.id] = n
-        self.add(n)
-        n.next_to(self)
-
     # 通过graphviz计算节点位置
     def calc_networkx(self, nodes, edges):
         self.g = nx.Graph()
@@ -109,20 +114,23 @@ class AlgoTree(AlgoVGroup):
 
         return self.pos_infos
 
+    # 获取节点的位置
     def get_node_pos(self, k):
         p = self.pos_infos[k]
         ratio = 60
         return [p[0]/ratio, p[1]/ratio, 0]
 
+    # 获取节点
     def get_node(self, id):
         if id not in self.node_objs:
             return None
         return self.node_objs[id]
 
+    # 获取边对象
     def get_edge(self, i, j):
         return self.edge_objs[(i, j)]
 
-    # 移动节点和边
+    # 更新操作，移动节点和边
     def move_nodes(self, nodes, edges):
         self.nodes = nodes
         self.edges = edges
@@ -174,3 +182,11 @@ class AlgoTree(AlgoVGroup):
 
         if self.ctx.animate:
             self.scene.wait(self.ctx.wait_time)
+    
+    def update_tree(self):
+        # 数据层
+        nodes, edges = self.calc_tree_data()
+        # layout
+        self.calc_networkx(nodes, edges)
+        # move nodes and edges
+        self.move_nodes(nodes, edges)

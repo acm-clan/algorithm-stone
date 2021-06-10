@@ -1,1 +1,1 @@
-python3 -m manimlib kmp.py
+python3 -m manimlib trie.py -w
