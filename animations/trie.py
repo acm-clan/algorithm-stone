@@ -14,7 +14,7 @@ class TrieScene(AlgoScene):
         vector = AlgoVector(self, datas=self.data)
         self.add(vector)
         vector.set_color(GOLD)
-        self.play(vector.shift, UP*2)
+        self.play(vector.shift, UP*3.5)
 
         self.show_message("如上所示，有6个单词")
         self.show_message("前缀树是如何存储这些单词的呢？")

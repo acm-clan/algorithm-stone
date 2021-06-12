@@ -20,7 +20,7 @@ class AlgoTrieTree(AlgoTree):
         super().__init__(**kwargs)
         # empty
         self.root = AlgoTrieTreeNode(self)
-        self.root.setText("root")
+        self.root.setText("*")
 
     def add_word(self, word):
         self.scene.show_message("插入单词%s"%(word))
