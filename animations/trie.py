@@ -13,6 +13,7 @@ class TrieScene(AlgoScene):
 
         vector = AlgoVector(self, datas=self.data)
         self.add(vector)
+        vector.set_color(GOLD)
         self.play(vector.shift, UP*2)
 
         self.show_message("如上所示，有6个单词")

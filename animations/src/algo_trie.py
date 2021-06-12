@@ -11,6 +11,7 @@ class AlgoTrieTreeNode(AlgoTreeNode):
         super().__init__(tree)
         self.end = False
         self.tree = tree
+        self.color = TEAL_D
         self.c = numpy.empty(26, dtype=object)
 
 class AlgoTrieTree(AlgoTree):

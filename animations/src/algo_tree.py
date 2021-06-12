@@ -22,6 +22,7 @@ class AlgoTreeNode(object):
         # 左右孩子
         self.left = None
         self.right = None
+        self.color = WHITE
 
     def setText(self, t):
         self.text = t
@@ -59,7 +60,7 @@ class AlgoTree(AlgoVGroup):
             return
         n = AlgoNode(str(z.text))
 
-        n.set_color(RED)
+        n.set_color(z.color)
         self.node_objs[z.id] = n
         self.add(n)
         n.next_to(self)
@@ -69,7 +70,7 @@ class AlgoTree(AlgoVGroup):
         if not n or not t:
             return
         arrow = Arrow(ORIGIN, ORIGIN, thickness=0.03, buff=1.25)
-        arrow.set_color(GREY)
+        arrow.set_color(GREY_BROWN)
         self.add(arrow)
         self.edge_objs[(n.id, t.id)] = arrow
 
