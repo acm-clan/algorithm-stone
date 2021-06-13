@@ -11,7 +11,10 @@ class AlgoNode(VGroup):
         if is_circle:
             self.outline_obj = Circle(color=color).scale(0.3)
         else:
-            self.outline_obj = Square(color=color).scale(0.3)
+            if 'is_rect' in self.__dict__ and self.is_rect:
+                self.outline_obj = Rectangle(color=color).scale(0.3)
+            else:
+                self.outline_obj = Square(color=color).scale(0.3)
 
         self.text_sub_obj.shift(DR/4).set_color(RED)
         self.add(self.text_obj, self.outline_obj, self.text_sub_obj)

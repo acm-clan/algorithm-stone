@@ -9,7 +9,7 @@ class AlgoVector(AlgoVGroup):
         self.scene = scene
         super().__init__(**kwargs)
         for k in datas:
-            self.add(AlgoNode(str(k)))
+            self.add(AlgoNode(str(k), **kwargs))
         self.arrange()
     
     def print(self):

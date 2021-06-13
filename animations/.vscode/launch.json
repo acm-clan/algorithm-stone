@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "module": "manimlib",
-            "args": ["trie.py", "-w"]
+            "args": ["trie.py", ""]
         }
     ]
 }

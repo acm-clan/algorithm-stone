@@ -11,7 +11,7 @@ class TrieScene(AlgoScene):
         self.start_logo(subtitle="Trie前缀树", animate=True)
         self.init_message("Trie树也叫做前缀树、字典树")
 
-        vector = AlgoVector(self, datas=self.data)
+        vector = AlgoVector(self, datas=self.data, is_rect=True)
         self.add(vector)
         vector.set_color(GOLD)
         self.play(vector.shift, UP*3.5)
