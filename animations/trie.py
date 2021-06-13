@@ -32,3 +32,5 @@ class TrieScene(AlgoScene):
             print("word %s %s"%(w, v))
 
         self.wait(2)
+        self.show_message("完成Trie前缀树，谢谢观看！")
+        self.wait(10)
