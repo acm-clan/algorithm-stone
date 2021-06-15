@@ -36,3 +36,4 @@ class AlgoNode(VGroup):
         self.add(self.text_sub_obj)
         self.text_sub_obj.move_to(self.text_obj)
         self.text_sub_obj.shift(DR/4).set_color(RED)
+        return self.text_sub_obj

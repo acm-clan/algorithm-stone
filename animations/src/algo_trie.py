@@ -40,10 +40,12 @@ class AlgoTrieTree(AlgoTree):
                 self.scene.play(node.set_color, RED, time=0.5)
             nodes.append((node, old_color))
         p.end = True
+        node = self.get_node(p.id)
         a = []
         for n in nodes:
             a.append(ApplyMethod(n[0].set_color, n[1]))
         self.scene.play(*a, time=0.5)
+        node.set_sub("$").set_color(RED).scale(0.5).shift(DR/8)
 
     # overwrite
     def calc_tree_data(self):
@@ -74,5 +76,10 @@ class AlgoTrieTree(AlgoTree):
             if not p.c[index]:
                 return False
             p = p.c[index]
+            node = self.get_node(p.id)
+            old_color = node.get_color()
+            if node.get_color != RED:
+                self.scene.play(node.set_color, RED, time=0.5)
+            nodes.append((node, old_color))
         return p.end
             

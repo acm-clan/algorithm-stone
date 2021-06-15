@@ -27,6 +27,7 @@ class TrieScene(AlgoScene):
             
         self.add(tree)
 
+        self.show_message("前缀树的查询操作")
         for w in self.data_find:
             v = tree.query(w)
             print("word %s %s"%(w, v))
