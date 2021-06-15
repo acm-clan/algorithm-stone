@@ -102,5 +102,5 @@ def process():
     view.generate_leetcode(leet, "leetcode/leetcode-union-find.txt", "union-find", "leetcode_union_find")
     view.generate_leetcode(leet, "leetcode/leetcode-heap-stack-queue.txt", "", "leetcode_heap_stack_queue")
     view.generate_leetcode(leet, "leetcode/leetcode-geometry.txt", "geometry", "leetcode_geometry")
-    view.generate_leetcode(leet, "leetcode/leetcode-binary-search.txt", "binary-search", "binary_search")
+    view.generate_leetcode(leet, "leetcode/leetcode-binary-search.txt", "binary-search", "leetcode_binary_search")
     leet.close_db()
