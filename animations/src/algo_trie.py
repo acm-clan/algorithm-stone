@@ -70,16 +70,30 @@ class AlgoTrieTree(AlgoTree):
         return nodes, edges
 
     def query(self, word):
+        self.scene.show_message("查询单词%s"%(word))
         p = self.root
+
+        nodes = []
+
         for ch in word:
             index = ord(ch) - ord('a')
             if not p.c[index]:
                 return False
             p = p.c[index]
+
             node = self.get_node(p.id)
             old_color = node.get_color()
             if node.get_color != RED:
                 self.scene.play(node.set_color, RED, time=0.5)
             nodes.append((node, old_color))
+
+        a = []
+        for n in nodes:
+            a.append(ApplyMethod(n[0].set_color, n[1]))
+        self.scene.play(*a, time=0.5)
+        if p.end:
+            self.scene.show_message("结尾符号包含$，查询成功（%s）"%(word))
+        else:
+            self.scene.show_message("结尾符号不包含$，查询失败（%s）"%(word))
         return p.end
             
