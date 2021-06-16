@@ -4,11 +4,12 @@ class TrieScene(AlgoScene):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.data = ["to", "tea", "ted", "ten", "inn", "in"]
-        self.data_find = ["hello", "te", "ted", "ins"]
+        self.data_find = ["te", "ted", "ins"]
 
     def construct(self):
         self.go_speed_up()
         self.reset_speed_up()
+        
         self.start_logo(subtitle="Trie前缀树", animate=True)
         self.init_message("Trie树也叫做前缀树、字典树")
 
@@ -26,12 +27,23 @@ class TrieScene(AlgoScene):
             tree.add_word(w)
             
         self.add(tree)
-
-        self.show_message("前缀树的查询操作")
         
+        self.show_message("前缀树的查询操作")
+
+        vector2 = AlgoVector(self, datas=self.data_find, is_rect=True)
+        vector2.shift(UP*3.5)
+        vector2.set_color(GOLD)
+        self.play(Transform(vector, vector2))
+        
+        i = 0
         for w in self.data_find:
             v = tree.query(w)
+            if v:
+                self.play(vector2.submobjects[i].set_color, BLUE)
+            else:
+                self.play(vector2.submobjects[i].set_color, GREEN)
             print("word %s %s"%(w, v))
+            i += 1
 
         self.wait(2)
         self.show_message("完成Trie前缀树，谢谢观看！")
