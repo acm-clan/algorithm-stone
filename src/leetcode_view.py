@@ -61,7 +61,6 @@ class LeetcodeView(platform_view.PlatformView):
                 idstr = str(p.id)
                 if title == None:
                     continue 
-                print("------title:", idstr, title)
                 title = idstr+". "+title
                 color = "lightgrey"
 
