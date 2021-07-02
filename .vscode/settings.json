@@ -52,7 +52,9 @@
         "xhash": "cpp",
         "xlocinfo": "cpp",
         "unordered_map": "cpp",
-        "bit": "cpp"
+        "bit": "cpp",
+        "clocale": "cpp",
+        "ctime": "cpp"
     },
     "python.pythonPath": "C:\\Program Files\\Python39\\python.exe"
 }

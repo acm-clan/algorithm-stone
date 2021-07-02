@@ -13,64 +13,47 @@ using namespace std;
 // @lc code=start
 class NumArray {
 public:
-    vector<int> tree;
-    int n = 0;
-
-    void buildTree(vector<int>& nums)
+    int n;
+    int *tree;
+    int lowbit(int x)
     {
-        for (int i = n, j = 0; i < 2 * n; i++, j++)
-            tree[i] = nums[j];
-        for (int i = n - 1; i > 0; --i)
-            tree[i] = tree[i * 2] + tree[i * 2 + 1];
+        return x&-x;
     }
-
-    NumArray(vector<int>& nums)
+    int query(int x)
     {
-        n = nums.size();
-        if (n) {
-            tree.resize(n*2);
-            buildTree(nums);
+        int ans=0;
+        for(int i=x;i>0;i-=lowbit(i))
+        {
+            ans+=tree[i];
+        }
+        return ans;
+    }
+    void add(int x,int u)
+    {
+        for(int i=x;i<=n;i+=lowbit(i))
+        {
+            tree[i]+=u;
         }
     }
-
-    void update(int pos, int val)
-    {
-        pos += n;
-        tree[pos] = val;
-        while (pos > 0) {
-            int left = pos;
-            int right = pos;
-            if (pos % 2 == 0) {
-                right = pos + 1;
-            } else {
-                left = pos - 1;
-            }
-            // parent is updated after child is updated
-            tree[pos / 2] = tree[left] + tree[right];
-            pos /= 2;
+    
+    vector<int> vec;
+    NumArray(vector<int>& nums) {
+        n=nums.size();
+        vec.assign(nums.begin(),nums.end());
+        tree=new int[n+1]();
+        for(int i=0;i<n;++i)
+        {
+            add(i+1,vec[i]);
         }
     }
-
-    int sumRange(int l, int r)
-    {
-        // get leaf with value 'l'
-        l += n;
-        // get leaf with value 'r'
-        r += n;
-        int sum = 0;
-        while (l <= r) {
-            if ((l % 2) == 1) {
-                sum += tree[l];
-                l++;
-            }
-            if ((r % 2) == 0) {
-                sum += tree[r];
-                r--;
-            }
-            l /= 2;
-            r /= 2;
-        }
-        return sum;
+    
+    void update(int index, int val) {
+        add(index+1,val-vec[index]);
+        vec[index]=val;
+    }
+    
+    int sumRange(int left, int right) {
+        return query(right+1)-query(left);
     }
 };
 
