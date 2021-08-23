@@ -92,11 +92,11 @@
 |[队列](https://leetcode-cn.com/tag/queue)| queue  | 10 |`dansen` | 100% |
 |[几何题](https://leetcode-cn.com/tag/geometry)| geometry  | 12 | `dansen`| 100% |
 |[排序Map](https://leetcode-cn.com/tag/ordered-map)| ordered-map  | 13 |`dansen` | 100% |
-|[线段树](https://leetcode-cn.com/tag/segment-tree)| segment-tree  | 15 | | 100% |
-|[Trie树](https://leetcode-cn.com/tag/trie)| trie  | 17 | | 100% |
+|[线段树](https://leetcode-cn.com/tag/segment-tree)| segment-tree  | 15 |`dansen` | 100% |
+|[Trie树](https://leetcode-cn.com/tag/trie)| trie  | 17 |`dansen` | 100% |
 |[滑动窗口](https://leetcode-cn.com/tag/sliding-window)| sliding-window  | 25 |`dansen` | 100% |
 |[分治算法](https://leetcode-cn.com/tag/divide-and-conquer)| divide-and-conquer  | 28 | | 0% |
-|[并查集](https://leetcode-cn.com/tag/union-find)| union-find  |  29  | | 100% |
+|[并查集](https://leetcode-cn.com/tag/union-find)| union-find  |  29  |`dansen` | 100% |
 |[递归](https://leetcode-cn.com/tag/recursion)| recursion  | 40 | | 0% |
 |[图论](https://leetcode-cn.com/tag/graph)| graph  | 43 | | 0% |
 |[堆](https://leetcode-cn.com/tag/heap)| heap  |43  |`dansen` | 100% |
@@ -108,7 +108,7 @@
 |[排序](https://leetcode-cn.com/tag/sort)| sort  |68  | | 0% |
 |[双指针](https://leetcode-cn.com/tag/two-pointers)| two-pointers  | 73 | | 0% |
 |[BFS搜索](https://leetcode-cn.com/tag/breadth-first-search)| breadth-first-search  | 76 | | 0% |
-|[二分查找](https://leetcode-cn.com/tag/binary-search)| binary-search  | 97 | | 0% |
+|[二分查找](https://leetcode-cn.com/tag/binary-search)| binary-search  | 97 | `dansen`| 30% |
 |[Hash表](https://leetcode-cn.com/tag/hash-table)| hash-table  | 121 | | 0% |
 |[贪心算法](https://leetcode-cn.com/tag/greedy)| greedy  | 128 | | 0% |
 |[DFS搜索](https://leetcode-cn.com/tag/depth-first-search)| depth-first-search  | 137 | | 0% |
