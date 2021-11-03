@@ -6,6 +6,7 @@ import requests
 from sqlitedict import SqliteDict
 import util
 import os
+import certifi
 
 class PageProblemInfo:
     def __init__(self):
@@ -142,7 +143,7 @@ class Codeforces:
         url = "https://codeforces.com/api/problemset.problems"
         
         try:
-            f = urllib.request.urlopen(url)
+            f = urllib.request.urlopen(url, cafile=certifi.where())
             content = f.read().decode('utf-8')
             qlist = json.loads(content)
         
