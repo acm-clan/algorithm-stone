@@ -34,7 +34,7 @@
 [08.算法竞赛入门经典第2版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/08.%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC2%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
 [09.挑战程序设计竞赛1第2版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/09.%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B1%E7%AC%AC2%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
 [10.挑战程序设计竞赛2 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/10.%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B2%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[11.算法竞赛进阶指南 有水印.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/11.%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%20%E6%9C%89%E6%B0%B4%E5%8D%B0.pdf)<br>
+[11.算法竞赛进阶指南 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/11.%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
 [12.漫画算法-小灰的算法之旅 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/12.%E6%BC%AB%E7%94%BB%E7%AE%97%E6%B3%95-%E5%B0%8F%E7%81%B0%E7%9A%84%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
 
 ### Leetcode路线图合集
