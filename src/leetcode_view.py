@@ -96,6 +96,7 @@ def process():
     leet.update_db()
     view.generate_leetcode(leet, "leetcode/leetcode-dp.txt", "dynamic-programming", "leetcode_dp")
     view.generate_leetcode(leet, "leetcode/leetcode-tree.txt", "tree", "leetcode_tree")
+    view.generate_leetcode(leet, "leetcode/leetcode-string.txt", "string", "leetcode_string")
     view.generate_leetcode(leet, "leetcode/leetcode-mini.txt", "", "leetcode_mini")
     view.generate_leetcode(leet, "leetcode/leetcode-linked-list.txt", "linked-list", "leetcode_linked_list")
     view.generate_leetcode(leet, "leetcode/leetcode-union-find.txt", "union-find", "leetcode_union_find")
