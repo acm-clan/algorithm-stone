@@ -22,20 +22,20 @@
 [国家集训队论文1999-2019](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/%E5%9B%BD%E5%AE%B6%E9%9B%86%E8%AE%AD%E9%98%9F%E8%AE%BA%E6%96%871999-2019.zip)  
 
 ### 新手入门-算法书籍推荐
-[01.数据结构与算法分析-C语言描述 详细书签.pdf](https://oss.v8cloud.cn/acm-clan/book/algorithm/01.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90-C%E8%AF%AD%E8%A8%80%E6%8F%8F%E8%BF%B0%20%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[02.算法设计与分析基础  第3版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/02.%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80%20%20%E7%AC%AC3%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[03.算法引论：一种创造性方法 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/03.%E7%AE%97%E6%B3%95%E5%BC%95%E8%AE%BA%EF%BC%9A%E4%B8%80%E7%A7%8D%E5%88%9B%E9%80%A0%E6%80%A7%E6%96%B9%E6%B3%95%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[04.编程原本 详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/04.%E7%BC%96%E7%A8%8B%E5%8E%9F%E6%9C%AC%20%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[05.C语言接口与实现：创建可重用软件的技术 详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/05.C%E8%AF%AD%E8%A8%80%E6%8E%A5%E5%8F%A3%E4%B8%8E%E5%AE%9E%E7%8E%B0%EF%BC%9A%E5%88%9B%E5%BB%BA%E5%8F%AF%E9%87%8D%E7%94%A8%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%8A%80%E6%9C%AF%20%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[06.算法导论中文第三版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/06.%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E4%B8%AD%E6%96%87%E7%AC%AC%E4%B8%89%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[06.算法导论英文第三版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/06.%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E8%8B%B1%E6%96%87%E7%AC%AC%E4%B8%89%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[07.算法中文第4版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/07.%E7%AE%97%E6%B3%95%E4%B8%AD%E6%96%87%E7%AC%AC4%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[07.算法英文第4版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/07.%E7%AE%97%E6%B3%95%E8%8B%B1%E6%96%87%E7%AC%AC4%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[08.算法竞赛入门经典第2版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/08.%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B8%E7%AC%AC2%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[09.挑战程序设计竞赛1第2版 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/09.%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B1%E7%AC%AC2%E7%89%88%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[10.挑战程序设计竞赛2 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/10.%E6%8C%91%E6%88%98%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B2%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[11.算法竞赛进阶指南 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/11.%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
-[12.漫画算法-小灰的算法之旅 高清详细书签.pdf](https://v8cloud.oss-cn-hangzhou.aliyuncs.com/acm-clan/book/algorithm/12.%E6%BC%AB%E7%94%BB%E7%AE%97%E6%B3%95-%E5%B0%8F%E7%81%B0%E7%9A%84%E7%AE%97%E6%B3%95%E4%B9%8B%E6%97%85%20%E9%AB%98%E6%B8%85%E8%AF%A6%E7%BB%86%E4%B9%A6%E7%AD%BE.pdf)<br>
+[01.数据结构与算法分析-C语言描述 详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[02.算法设计与分析基础  第3版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[03.算法引论：一种创造性方法 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[04.编程原本 详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[05.C语言接口与实现：创建可重用软件的技术 详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[06.算法导论中文第三版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[06.算法导论英文第三版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[07.算法中文第4版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[07.算法英文第4版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[08.算法竞赛入门经典第2版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[09.挑战程序设计竞赛1第2版 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[10.挑战程序设计竞赛2 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[11.算法竞赛进阶指南 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
+[12.漫画算法-小灰的算法之旅 高清详细书签.pdf](https://www.aliyundrive.com/s/wKKdv4XAazq)<br>
 
 ### Leetcode路线图合集
 
