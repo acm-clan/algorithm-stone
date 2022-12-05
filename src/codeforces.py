@@ -27,7 +27,7 @@ class Codeforces:
         p = util.get_root("user", "codeforces")
         entries = os.listdir(p)
         for k in entries:
-            if k.endswith(".cpp"):
+            if k.endswith(".cpp") or k.endswith(".py"):
                 self.finished.append(k)
             elif k.endswith(".md"):
                 self.flasks.append(k)

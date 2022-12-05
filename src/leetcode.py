@@ -31,7 +31,7 @@ class Leetcode:
         p = util.get_root("user", "leetcode")
         entries = os.listdir(p)
         for k in entries:
-            if k.endswith(".cpp"):
+            if k.endswith(".cpp") or k.endswith(".py"):
                 self.finished.append(k)
             elif k.endswith(".md"):
                 self.flasks.append(k)
